@@ -16,10 +16,10 @@ struct Edge{
     ll v;
     double len;
     double avg_t;
-    std::vector<ll> sp_profile;// can be missisng as well
     bool oneway;
     std::string roadtype;
     bool disable = false;
+    std::vector<ll> sp_profile;// can be missisng as well
 };
 
 class Graph{
