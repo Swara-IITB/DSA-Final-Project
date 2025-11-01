@@ -18,7 +18,6 @@ struct Edge{
     double avg_t;
     bool oneway;
     std::string roadtype;
-    bool disable = false;
     std::vector<ll> sp_profile;// can be missisng as well
 };
 
