@@ -19,8 +19,8 @@ void Graph::add_edge(ll id,ll u, ll v,double len,double avg_t, bool oneway,std::
     if(!oneway) adj[vp][up].second = e.id;
 }
 void Graph::remove_edge(ll id){
-    adj[edges.at(id).u][edges.at(id).v]=-1;// default for non existing edge
-    adj[edges.at(id).v][edges.at(id).u]=-1;
+    adj[edges.at(id).u][edges.at(id).v].second=-1;// default for non existing edge
+    adj[edges.at(id).v][edges.at(id).u].second=-1;
     edges.erase(id);
 }
 void Graph::modify_edge_len(ll id, double len){
