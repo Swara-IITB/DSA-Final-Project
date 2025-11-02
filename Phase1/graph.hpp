@@ -19,6 +19,7 @@ struct Edge{
     bool oneway;
     std::string roadtype;
     std::vector<ll> sp_profile;// can be missisng as well
+    bool disable=false; 
 };
 
 class Graph{
@@ -36,5 +37,4 @@ class Graph{
         void modify_edge_way(ll id, bool way);
         void modify_edge_avg_t(ll id, double t);
         void modify_edge_roadtype(ll id, std::string road);
-
 };

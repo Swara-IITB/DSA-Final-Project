@@ -19,19 +19,21 @@ void Graph::add_edge(ll id,ll u, ll v,double len,double avg_t, bool oneway,std::
     if(!oneway) adj[vp][up].second = e.id;
 }
 void Graph::remove_edge(ll id){
-    adj[edges.at(id).u][edges.at(id).v].second=-1;// default for non existing edge
-    adj[edges.at(id).v][edges.at(id).u].second=-1;
-    edges.erase(id);
+    edges.at(id).disable=true;
 }
 void Graph::modify_edge_len(ll id, double len){
     edges.at(id).len = len;
+    edges.at(id).disable=false;
 }
 void Graph::modify_edge_way(ll id, bool way){
     edges.at(id).oneway = way;
+    edges.at(id).disable=false;
 }
 void Graph::modify_edge_avg_t(ll id, double t){
     edges.at(id).avg_t = t;
+    edges.at(id).disable=false;
 }
 void Graph::modify_edge_roadtype(ll id, std::string road){
     edges.at(id).roadtype = road;
+    edges.at(id).disable=false;
 }
