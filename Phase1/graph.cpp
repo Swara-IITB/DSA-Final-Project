@@ -37,3 +37,5 @@ void Graph::modify_edge_roadtype(ll id, std::string road){
     edges.at(id).roadtype = road;
     edges.at(id).disable=false;
 }
+
+// We are assuming oneway var never changes once given
