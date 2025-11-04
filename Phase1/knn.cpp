@@ -37,9 +37,9 @@ std::vector<ll>shortest_path(const Graph &g,ll id, std::string poi, ll k, double
         auto x = pq.top();
         pq.pop();
         for(auto y: g.adj[x.second]){
-            if(!visit[y.second]){
-                if(y.first + sp[x.second] < sp[y.second]){
-                    sp[y.second] = y.first + sp[x.second];
+            if(!visit[y.second]){ // Check other things like oneway or disabled if applicable
+                if(y.first + sp[x.second] < sp[y.second]){ // wouldn't y.first be a node id? we need to add edge weight 
+                    sp[y.second] = y.first + sp[x.second]; // we are storing edge id in second position of each pair
                     pq.push({sp[y.second], y.second});
                 }
             }
