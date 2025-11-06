@@ -1,0 +1,15 @@
+{
+    "meta": {
+        "id":"testcase2_modify_edge_query"
+    },
+    "events":[
+        {
+            "id":1,
+            "type":"modify_edge",
+            "edge_id":2001,
+            "patch":{
+                "average_time":40.0
+            }
+        }
+    ]
+}

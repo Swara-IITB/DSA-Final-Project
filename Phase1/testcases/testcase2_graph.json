@@ -1,0 +1,44 @@
+{
+    "meta":{
+        "id":"testcase_graph_2",
+        "nodes":5,
+        "description":"common graph for debugging each of the queries"
+    },
+    "nodes":[
+        {
+            "id":0,"lat":19.0684,"lon":72.8649,"pois":["restaurant"]
+        },
+        {
+            "id":1,"lat":19.0698, "lon": 72.8671,"pois":["hospital","restaurant"]},
+            {
+                "id":2,"lat":19.0715,"lon":72.8699,"pois":[]
+        },
+        {
+            "id":3,"lat":19.0727,"lon":72.8724,"pois":["petrol station"]
+
+        },
+        {
+            "id":4, "lat":19.0705,"lon":72.8738,"pois":["atm"]
+        }
+    ],
+    "edges":[
+        {
+            "id":2001, "u":0,"v":1,"length":380.0,"average_time":25.0,"oneway":false,"road_type":"primary"
+        },
+        {
+            "id":2002,"u":1, "v":2,"length":410.0,"average_time":28.0,"oneway":false,"road_type":"secondary"
+        },
+        {
+            "id":2003,"u":0, "v":2,"length":820.0,"average_time":50.0,"oneway":false,"road_type":"expressway"
+        },
+        {
+            "id":2004,"u":2, "v":3,"length":460.0,"average_time":35.0,"oneway":false,"road_type":"tertiary"
+        },
+        {
+            "id":2005,"u":1, "v":4,"length":500.0,"average_time":32.0,"oneway":false,"road_type":"local"
+        },
+        {
+            "id":2006,"u":4, "v":3,"length":350.0,"average_time":22.0,"oneway":false,"road_type":"primary"
+        }
+    ]
+}

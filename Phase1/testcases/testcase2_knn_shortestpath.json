@@ -1,0 +1,15 @@
+{
+    "meta": {
+        "id":"testcase2_knn_shortestpath_query"
+    },
+    "events":[
+        {
+            "id":1,
+            "type":"knn",
+            "poi":"restaurant",
+            "query_point": { "lat":19.0700, "lon":72.8690},
+            "k":2,
+            "metric":"shortest_path"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "meta": {
+        "id":"testcase2_remove_edge_query"
+    },
+    "events":[
+        {
+            "id":1,
+            "type":"remove_edge",
+            "edge_id":2003
+        }
+    ]
+}

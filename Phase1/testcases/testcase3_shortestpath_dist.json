@@ -1,0 +1,14 @@
+{
+    "meta": {
+        "id":"testcase3_shortestpath_dist_query"
+    },
+    "events":[
+        {
+            "id":1,
+            "type":"shortest_path",
+            "source":0,
+            "target":9,
+            "mode":"distance"
+        }
+    ]
+}

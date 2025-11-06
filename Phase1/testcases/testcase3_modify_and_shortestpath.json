@@ -1,0 +1,22 @@
+{
+    "meta": {
+        "id":"testcase3_modify_edge_and_shortestpath_query"
+    },
+    "events":[
+        {
+            "id":1,
+            "type":"modify_edge",
+            "edge_id":4006,
+            "patch":{
+                "average_time":25.0
+            }
+        },
+        {
+            "id":2,
+            "type":"shortest_path",
+            "source":0,
+            "destination":9,
+            "mode":"time"
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "meta": {
+        "id":"testcase3_knn_shortestpath_query"
+    },
+    "events":[
+        {
+            "id":1,
+            "type":"knn",
+            "poi":"atm",
+            "query_point": { "lat": 48.8540,"lon":2.3545},
+            "k":1,
+            "metric":"shortest_path"
+        }
+    ]
+}
