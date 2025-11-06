@@ -25,8 +25,8 @@ void Graph::modify_edge_len(ll id, double len){
     edges.at(id).len = len;
     edges.at(id).disable=false;
 }
-void Graph::modify_edge_way(ll id, bool way){
-    edges.at(id).oneway = way;
+void Graph::modify_edge_sp_profile(ll id, std::vector<ll> sp){ // replaced way with speed profile 
+    edges.at(id).sp_profile = sp;                              // due to the updated problem statement
     edges.at(id).disable=false;
 }
 void Graph::modify_edge_avg_t(ll id, double t){
@@ -37,3 +37,5 @@ void Graph::modify_edge_roadtype(ll id, std::string road){
     edges.at(id).roadtype = road;
     edges.at(id).disable=false;
 }
+
+// We are assuming oneway var never changes once given
