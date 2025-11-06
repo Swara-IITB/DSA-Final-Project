@@ -36,5 +36,6 @@ class Graph{
         void modify_edge_len(ll id, double len);
         void modify_edge_way(ll id, bool way);
         void modify_edge_avg_t(ll id, double t);
+        void modify_edge_sp_profile(ll id, std::vector<ll> sp);
         void modify_edge_roadtype(ll id, std::string road);
 };
