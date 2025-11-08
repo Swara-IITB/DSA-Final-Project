@@ -1,5 +1,5 @@
 #include "knn.hpp"
-std::vector<ll> euclidean(const Graph &g, ll id, std::string poi, ll k, double lat, double lon){
+std::vector<ll> euclidean(const Graph &g, std::string poi, ll k, double lat, double lon){
     std::vector<std::pair<double,ll>> list;
     for(auto n : g.nodes){
         if(std::find(n.pois.begin(),n.pois.end(),poi)!=n.pois.end()){
@@ -26,7 +26,15 @@ ll nn(const Graph &g, double lat, double lon){
     return list[0].second;
 }
 
-std::vector<ll>shortest_path(const Graph &g,ll id, std::string poi, ll k, double lat, double lon){
+Edge findedge(const Graph &g, ll i){
+    for(auto edge : g.edges){
+        if(edge.first == i){
+            return edge.second;
+        }
+    }
+}
+
+std::vector<ll>shortest_path(const Graph &g, std::string poi, ll k, double lat, double lon){
     ll nn_id = nn(g,lat,lon);
     std::vector<double> sp(g.adjMatrix.size(),__LONG_LONG_MAX__);
     sp[nn_id]=0;
@@ -37,15 +45,16 @@ std::vector<ll>shortest_path(const Graph &g,ll id, std::string poi, ll k, double
         auto x = pq.top();
         pq.pop();
         for(auto y: g.adjList[x.second]){
-            if(!visit[y.second]){ // Check other things like oneway or disabled if applicable
-                if(y.first + sp[x.second] < sp[y.second]){ // wouldn't y.first be a node id? we need to add edge weight 
-                    sp[y.second] = y.first + sp[x.second]; // we are storing edge id in second position of each pair
+            if(!findedge(g,y.second).disable && !visit[y.first]){ // Check other things like oneway or disabled if applicable
+                if(findedge(g,y.second).len + sp[x.second] < sp[y.second]){ // wouldn't y.first be a node id? we need to add edge weight 
+                    sp[y.second] = findedge(g,y.second).len + sp[x.second]; // we are storing edge id in second position of each pair
                     pq.push({sp[y.second], y.second});
                 }
             }
         }
         visit[x.second]=true;
     }
+
     std::vector<std::pair<double,ll>>ans;
     for(int i=0;i<g.adjMatrix.size();i++){
         auto n = g.nodes[i];
@@ -54,6 +63,7 @@ std::vector<ll>shortest_path(const Graph &g,ll id, std::string poi, ll k, double
         }
     }
     std::sort(ans.begin(),ans.end());
+
     std::vector<ll>final;
     int x = (ans.size()<k)? ans.size() : k;
     for(int i=0;i<x;i++){
