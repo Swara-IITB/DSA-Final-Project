@@ -12,8 +12,8 @@ void Graph::add_node(ll id, double lat, double lon, std::vector<std::string> poi
     Node n = {id,lat,lon,pois};
     nodes[id] = n;
 }
-void Graph::add_edge(ll id,ll u, ll v,double len,double avg_t, bool oneway,std::string roadtype,std::vector<ll> sp_profile={}){
-    Edge e = {id, u, v, len, avg_t, oneway, roadtype,sp_profile};
+void Graph::add_edge(ll id,ll u, ll v,double len,double avg_t, bool oneway,std::string roadtype,std::vector<double> sp_profile={}){
+    Edge e = {id, u, v, len, avg_t, oneway, roadtype,sp_profile};                                           // changed from ll to double
     edges[id]=e;
     ll up = e.u, vp = e.v;
     adjMatrix[up][vp] = e.id;   
@@ -30,7 +30,7 @@ void Graph::modify_edge_len(ll id, double len){
     edges.at(id).len = len;
     edges.at(id).disable=false;
 }
-void Graph::modify_edge_sp_profile(ll id, std::vector<ll> sp){ // replaced way with speed profile 
+void Graph::modify_edge_sp_profile(ll id, std::vector<double> sp){ // replaced way with speed profile 
     edges.at(id).sp_profile = sp;                              // due to the updated problem statement
     edges.at(id).disable=false;
 }
