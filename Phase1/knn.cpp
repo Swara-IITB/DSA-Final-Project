@@ -28,9 +28,9 @@ ll nn(const Graph &g, double lat, double lon){
 
 std::vector<ll>shortest_path(const Graph &g, std::string poi, ll k, double lat, double lon){
     ll nn_id = nn(g,lat,lon);
-    std::vector<double> sp(g.adjMatrix.size(),__LONG_LONG_MAX__);
+    std::vector<double> sp(g.V,__LONG_LONG_MAX__);
     sp[nn_id]=0;
-    std::vector<bool> visit(g.adjMatrix.size(),false);
+    std::vector<bool> visit(g.V,false);
     std::priority_queue<std::pair<double,ll>, std::vector<std::pair<double,ll>>, std::greater<std::pair<double,ll>>> pq;
     pq.push({0.0,nn_id});
     while(!pq.empty()){
@@ -54,7 +54,7 @@ std::vector<ll>shortest_path(const Graph &g, std::string poi, ll k, double lat, 
     }
 
     std::vector<std::pair<double,ll>>ans;
-    for(int i=0;i<g.adjMatrix.size();i++){
+    for(int i=0;i<g.V;i++){
         auto n = g.nodes[i];
         if(sp[i] != __LONG_LONG_MAX__ && std::find(n.pois.begin(), n.pois.end(),poi) != n.pois.end()){
             ans.push_back({sp[i],n.id});

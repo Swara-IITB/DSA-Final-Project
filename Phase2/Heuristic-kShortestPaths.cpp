@@ -1,1 +1,82 @@
 #include "Heuristic-kShortestPaths.hpp"
+std::vector<ll> dijsktra(const Graph& g, ll source, ll target){
+    std::vector<ll> ans;
+    std::vector<bool> visit(g.V,false);
+    std::vector<ll>parent(g.V,-1);
+    std::vector<double> sp(g.V, __LONG_LONG_MAX__);
+    std::priority_queue<std::pair<double,ll>, std::vector<std::pair<double,ll>>, std::greater<std::pair<double,ll>>> pq;
+    sp[source]=0;
+    pq.push({0.0,source});
+
+    while(!pq.empty()){
+        auto x = pq.top();
+        pq.pop();
+        for(auto y: g.adjList[x.second]){
+            try{
+                auto &edge = g.edges.at(y.second);
+                if(!edge.disable && !visit[y.first]){ 
+                    if(edge.len + sp[x.second] < sp[y.first]){
+                        sp[y.first] = edge.len + sp[x.second];
+                        parent[y.first]=x.second;
+                        pq.push({sp[y.first], y.first});
+                    }
+                }
+            }
+            catch(const std::out_of_range& ex){
+                std::cerr<<"Requested edge is not found in the graph"<<std::endl;
+            }
+        }
+        visit[x.second]=true;
+    }
+
+    if(parent[target]== -1){return ans;}
+    else{
+        ll u = target;
+        while(parent[u]!=-1){
+            ans.push_back(u);
+            u = parent[u];
+        }
+        ans.push_back(source);
+    }
+    std::reverse(ans.begin(),ans.end());
+    return ans;
+}
+
+double pathlength(std::vector<ll>path, const Graph&g, std::vector<ll> timesUsed){
+    double pathlength=0.0;
+    for(int i=0;i<path.size()-1;i++){
+        auto x = g.adjMatrix[path[i]][path[i+1]];
+        timesUsed[x]++;
+        pathlength+= g.edges.at(x).len;
+    }
+    return pathlength;
+}
+
+std::vector<std::pair<std::vector<ll>, double>> ksp(const Graph& g, ll source, ll target, ll k, ll threshold){
+    std::vector<std::pair<std::vector<ll>, double>> ans;
+    std::vector<ll> timesUsed(g.edges.size(),0);
+    while(k>0){
+        if(k==1){
+            auto path = dijsktra(g,source,target);
+            if(path.empty()){break;}
+            ans.push_back({path,pathlength(path,g,timesUsed)});
+        }
+        else{
+            auto copy = g;
+            for(auto &u : copy.edges){
+                double perc = 100*timesUsed[u.first]/ans.size();
+                if(perc>0){
+                    u.second.len *= 1 + (perc/100.0)*(threshold/100.0);
+                }
+            }
+
+            auto path = dijsktra(copy,source,target);
+            if(path.empty()){break;}
+            ans.push_back({path,pathlength(path,g,timesUsed)});
+        }
+        k--;
+    }
+
+    std::sort(ans.begin(),ans.end(),[](const auto &a, const auto &b){return a.second < b.second;});
+    return ans;
+}
