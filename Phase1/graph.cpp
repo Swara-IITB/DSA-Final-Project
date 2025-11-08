@@ -19,7 +19,7 @@ void Graph::add_edge(ll id,ll u, ll v,double len,double avg_t, bool oneway,std::
     adjMatrix[up][vp] = e.id;   
     adjList[up].push_back({vp,e.id}); // added adjList
     if(!oneway){ 
-        adj[vp][up] = e.id;
+        adjMatrix[vp][up] = e.id;
         adjList[vp].push_back({up,e.id}); // added adjList
     }
 }

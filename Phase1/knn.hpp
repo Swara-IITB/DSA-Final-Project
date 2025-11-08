@@ -5,6 +5,7 @@
 #include<cmath>
 #include<queue>
 #include<algorithm>
-std::vector<ll> euclidean(const Graph &g,ll id, std::string poi, ll k, double lat, double lon);
-std::vector<ll>shortest_path(const Graph &g,ll id, std::string poi, ll k, double lat, double lon);
+std::vector<ll> euclidean(const Graph &g, std::string poi, ll k, double lat, double lon);
+std::vector<ll>shortest_path(const Graph &g, std::string poi, ll k, double lat, double lon);
 ll nn(const Graph &g, double lat, double lon);
+Edge findedge(const Graph &g, ll i);
