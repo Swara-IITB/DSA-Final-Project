@@ -34,8 +34,9 @@ std::vector<ll> dijsktra(const Graph& g, ll source, ll target){
         ll u = target;
         while(parent[u]!=-1){
             ans.push_back(u);
-            u = parent[u];
-        }
+            u = parent[u];  // can you store pairs of parent and the edge id in the parent vector,
+                            // when we iterate here we can simultaneously calculate path length and timeUsed, maybe?
+        }                   // Also (I might be wrong) isn't the pathlength supposed to be in sp itself?
         ans.push_back(source);
     }
     std::reverse(ans.begin(),ans.end());
@@ -45,10 +46,10 @@ std::vector<ll> dijsktra(const Graph& g, ll source, ll target){
 double pathlength(std::vector<ll>path, const Graph&g, std::vector<ll> timesUsed){
     double pathlength=0.0;
     for(int i=0;i<path.size()-1;i++){
-        auto x = g.adjMatrix[path[i]][path[i+1]];
-        timesUsed[x]++;
-        pathlength+= g.edges.at(x).len;
-    }
+        auto x = g.adjMatrix[path[i]][path[i+1]]; // I was only saying that because this is the only place when we use matrix 
+        timesUsed[x]++;                           // and matrix takes a lot of space
+        pathlength+= g.edges.at(x).len;           // and for approx path I'll need one more adjList representing reverse graph
+    }                                             // see if you can optimise this 
     return pathlength;
 }
 
