@@ -35,7 +35,7 @@ std::pair<double,std::vector<ll>> modeTime(Graph & g,const ll& src,const ll& tar
         }
         auto x = pq.top();
         pq.pop();
-        for(auto &y: g.adj[x.second]){
+        for(auto &y: g.adjList[x.second]){
             Edge &ed = g.edges.at(y.second);
             if(!forbidden[y.first] && mforbidRoads[ed.roadtype]!=1 && !ed.disable ){//new entry might be created in the map, but maybe it doesn't matter, check!
                 if(!visited[y.first]){
@@ -102,7 +102,7 @@ std::pair<double,std::vector<ll>> modeDist(Graph & g,const ll& src,const ll& tar
         }
         auto x = pq.top();
         pq.pop();
-        for(auto &y: g.adj[x.second]){
+        for(auto &y: g.adjList[x.second]){
             Edge &ed = g.edges.at(y.second);
             if(!forbidden[y.first] && mforbidRoads[ed.roadtype]!=1 && !ed.disable ){//new entry might be created in the map, but maybe it doesn't matter, check!
                 if(!visited[y.first]){

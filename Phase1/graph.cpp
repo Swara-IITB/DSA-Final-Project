@@ -4,7 +4,8 @@ typedef long long ll;
 
 Graph::Graph(ll v){
     this->V = v;//for you Priya<3
-    adj.resize(V,std::vector<std::pair<ll,ll>>(V));
+    adjMatrix.resize(V,std::vector<ll>(V)); // changed to ll instead of pair<ll,ll>
+    adjList.resize(V);
     nodes.resize(V);
 }
 void Graph::add_node(ll id, double lat, double lon, std::vector<std::string> pois){
@@ -15,8 +16,12 @@ void Graph::add_edge(ll id,ll u, ll v,double len,double avg_t, bool oneway,std::
     Edge e = {id, u, v, len, avg_t, oneway, roadtype,sp_profile};
     edges[id]=e;
     ll up = e.u, vp = e.v;
-    adj[up][vp].second = e.id;   
-    if(!oneway) adj[vp][up].second = e.id;
+    adjMatrix[up][vp] = e.id;   
+    adjList[up].push_back({vp,e.id}); // added adjList
+    if(!oneway){ 
+        adj[vp][up] = e.id;
+        adjList[vp].push_back({up,e.id}); // added adjList
+    }
 }
 void Graph::remove_edge(ll id){
     edges.at(id).disable=true;

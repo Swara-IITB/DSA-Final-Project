@@ -24,17 +24,16 @@ struct Edge{
 
 class Graph{
     public :
-        std::vector<std::vector<std::pair<ll,ll>>> adj;
+        std::vector<std::vector<ll>> adjMatrix;
+        std::vector<std::vector<std::pair<ll,ll>>> adjList;
         ll V;
         std::vector<Node> nodes;
         std::map<ll,Edge> edges;
         Graph(ll v);
-        ~Graph();
         void add_node(ll id, double lat, double lon, std::vector<std::string> pois);
         void add_edge(ll id,ll u, ll v,double len,double avg_t, bool oneway,std::string roadtype,std::vector<ll> sp_profile={});
         void remove_edge(ll id);
         void modify_edge_len(ll id, double len);
-        void modify_edge_way(ll id, bool way);
         void modify_edge_avg_t(ll id, double t);
         void modify_edge_sp_profile(ll id, std::vector<ll> sp);
         void modify_edge_roadtype(ll id, std::string road);
