@@ -1,8 +1,8 @@
 #include "Heuristic-kShortestPaths.hpp"
-std::vector<ll> dijsktra(const Graph& g, ll source, ll target){
+std::pair<std::vector<ll>,double> dijsktra(const Graph& g, ll source, ll target, std::vector<ll> &timesUsed){
     std::vector<ll> ans;
     std::vector<bool> visit(g.V,false);
-    std::vector<ll>parent(g.V,-1);
+    std::vector<std::pair<ll,ll>>parent(g.V,{-1,-1});
     std::vector<double> sp(g.V, __LONG_LONG_MAX__);
     std::priority_queue<std::pair<double,ll>, std::vector<std::pair<double,ll>>, std::greater<std::pair<double,ll>>> pq;
     sp[source]=0;
@@ -17,7 +17,7 @@ std::vector<ll> dijsktra(const Graph& g, ll source, ll target){
                 if(!edge.disable && !visit[y.first]){ 
                     if(edge.len + sp[x.second] < sp[y.first]){
                         sp[y.first] = edge.len + sp[x.second];
-                        parent[y.first]=x.second;
+                        parent[y.first]={x.second,y.second};
                         pq.push({sp[y.first], y.first});
                     }
                 }
@@ -29,28 +29,19 @@ std::vector<ll> dijsktra(const Graph& g, ll source, ll target){
         visit[x.second]=true;
     }
 
-    if(parent[target]== -1){return ans;}
+    if(parent[target].first== -1){return {ans,sp[target]};}
     else{
         ll u = target;
-        while(parent[u]!=-1){
+        while(parent[u].first!=-1){
             ans.push_back(u);
-            u = parent[u];  // can you store pairs of parent and the edge id in the parent vector,
+            timesUsed[parent[u].second]++;
+            u = parent[u].first;  // can you store pairs of parent and the edge id in the parent vector,
                             // when we iterate here we can simultaneously calculate path length and timeUsed, maybe?
         }                   // Also (I might be wrong) isn't the pathlength supposed to be in sp itself?
         ans.push_back(source);
     }
     std::reverse(ans.begin(),ans.end());
-    return ans;
-}
-
-double pathlength(std::vector<ll>path, const Graph&g, std::vector<ll> timesUsed){
-    double pathlength=0.0;
-    for(int i=0;i<path.size()-1;i++){
-        auto x = g.adjMatrix[path[i]][path[i+1]]; // I was only saying that because this is the only place when we use matrix 
-        timesUsed[x]++;                           // and matrix takes a lot of space
-        pathlength+= g.edges.at(x).len;           // and for approx path I'll need one more adjList representing reverse graph
-    }                                             // see if you can optimise this 
-    return pathlength;
+    return {ans,sp[target]};
 }
 
 std::vector<std::pair<std::vector<ll>, double>> ksp(const Graph& g, ll source, ll target, ll k, ll threshold){
@@ -58,9 +49,9 @@ std::vector<std::pair<std::vector<ll>, double>> ksp(const Graph& g, ll source, l
     std::vector<ll> timesUsed(g.edges.size(),0);
     while(k>0){
         if(k==1){
-            auto path = dijsktra(g,source,target);
-            if(path.empty()){break;}
-            ans.push_back({path,pathlength(path,g,timesUsed)});
+            auto path = dijsktra(g,source,target,timesUsed);
+            if(path.first.empty()){break;}
+            ans.push_back(path);
         }
         else{
             auto copy = g;
@@ -71,9 +62,9 @@ std::vector<std::pair<std::vector<ll>, double>> ksp(const Graph& g, ll source, l
                 }
             }
 
-            auto path = dijsktra(copy,source,target);
-            if(path.empty()){break;}
-            ans.push_back({path,pathlength(path,g,timesUsed)});
+            auto path = dijsktra(copy,source,target,timesUsed);
+            if(path.first.empty()){break;}
+            ans.push_back(path);
         }
         k--;
     }
