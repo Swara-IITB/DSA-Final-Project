@@ -1,0 +1,772 @@
+{
+  "meta": {
+    "id": "queries_for_graph_osm_hyderabad_india"
+  },
+  "events": [
+    {
+      "id": 1,
+      "type": "shortest_path",
+      "source": 662,
+      "target": 493,
+      "mode": "time"
+    },
+    {
+      "id": 2,
+      "type": "remove_edge",
+      "edge_id": 1453
+    },
+    {
+      "id": 5,
+      "type": "knn",
+      "poi": "petrol station",
+      "query_point": {
+        "lat": 17.460734,
+        "lon": 78.541235
+      },
+      "k": 2,
+      "metric": "euclidean"
+    },
+    {
+      "id": 6,
+      "type": "knn",
+      "poi": "petrol station",
+      "query_point": {
+        "lat": 17.473069,
+        "lon": 78.543084
+      },
+      "k": 3,
+      "metric": "euclidean"
+    },
+    {
+      "id": 9,
+      "type": "shortest_path",
+      "source": 182,
+      "target": 201,
+      "mode": "time"
+    },
+    {
+      "id": 12,
+      "type": "shortest_path",
+      "source": 714,
+      "target": 629,
+      "mode": "time"
+    },
+    {
+      "id": 14,
+      "type": "knn",
+      "poi": "pharmacy",
+      "query_point": {
+        "lat": 17.472036,
+        "lon": 78.555252
+      },
+      "k": 5,
+      "metric": "shortest_path"
+    },
+    {
+      "id": 15,
+      "type": "remove_edge",
+      "edge_id": 1762
+    },
+    {
+      "id": 16,
+      "type": "shortest_path",
+      "source": 426,
+      "target": 86,
+      "mode": "distance"
+    },
+    {
+      "id": 17,
+      "type": "remove_edge",
+      "edge_id": 1102
+    },
+    {
+      "id": 18,
+      "type": "remove_edge",
+      "edge_id": 1844
+    },
+    {
+      "id": 19,
+      "type": "shortest_path",
+      "source": 527,
+      "target": 114,
+      "mode": "distance"
+    },
+    {
+      "id": 20,
+      "type": "knn",
+      "poi": "hotel",
+      "query_point": {
+        "lat": 17.467856,
+        "lon": 78.553227
+      },
+      "k": 5,
+      "metric": "euclidean"
+    },
+    {
+      "id": 22,
+      "type": "knn",
+      "poi": "hotel",
+      "query_point": {
+        "lat": 17.46604,
+        "lon": 78.542469
+      },
+      "k": 1,
+      "metric": "shortest_path"
+    },
+    {
+      "id": 25,
+      "type": "remove_edge",
+      "edge_id": 1147
+    },
+    {
+      "id": 26,
+      "type": "knn",
+      "poi": "restaurant",
+      "query_point": {
+        "lat": 17.470832,
+        "lon": 78.546597
+      },
+      "k": 4,
+      "metric": "euclidean"
+    },
+    {
+      "id": 27,
+      "type": "shortest_path",
+      "source": 365,
+      "target": 441,
+      "mode": "distance"
+    },
+    {
+      "id": 28,
+      "type": "remove_edge",
+      "edge_id": 1285
+    },
+    {
+      "id": 31,
+      "type": "remove_edge",
+      "edge_id": 1193
+    },
+    {
+      "id": 32,
+      "type": "remove_edge",
+      "edge_id": 1672
+    },
+    {
+      "id": 35,
+      "type": "knn",
+      "poi": "atm",
+      "query_point": {
+        "lat": 17.466626,
+        "lon": 78.539959
+      },
+      "k": 3,
+      "metric": "euclidean"
+    },
+    {
+      "id": 36,
+      "type": "shortest_path",
+      "source": 328,
+      "target": 775,
+      "mode": "time"
+    },
+    {
+      "id": 37,
+      "type": "knn",
+      "poi": "restaurant",
+      "query_point": {
+        "lat": 17.467376,
+        "lon": 78.539238
+      },
+      "k": 6,
+      "metric": "shortest_path"
+    },
+    {
+      "id": 39,
+      "type": "shortest_path",
+      "source": 344,
+      "target": 656,
+      "mode": "distance"
+    },
+    {
+      "id": 40,
+      "type": "remove_edge",
+      "edge_id": 1852
+    },
+    {
+      "id": 41,
+      "type": "remove_edge",
+      "edge_id": 1954
+    },
+    {
+      "id": 44,
+      "type": "knn",
+      "poi": "restaurant",
+      "query_point": {
+        "lat": 17.47177,
+        "lon": 78.546522
+      },
+      "k": 7,
+      "metric": "shortest_path"
+    },
+    {
+      "id": 47,
+      "type": "knn",
+      "poi": "pharmacy",
+      "query_point": {
+        "lat": 17.467833,
+        "lon": 78.554142
+      },
+      "k": 6,
+      "metric": "euclidean"
+    },
+    {
+      "id": 49,
+      "type": "knn",
+      "poi": "atm",
+      "query_point": {
+        "lat": 17.469254,
+        "lon": 78.542136
+      },
+      "k": 3,
+      "metric": "shortest_path"
+    },
+    {
+      "id": 51,
+      "type": "shortest_path",
+      "source": 315,
+      "target": 284,
+      "mode": "distance"
+    },
+    {
+      "id": 53,
+      "type": "knn",
+      "poi": "atm",
+      "query_point": {
+        "lat": 17.460198,
+        "lon": 78.550494
+      },
+      "k": 9,
+      "metric": "euclidean"
+    },
+    {
+      "id": 54,
+      "type": "remove_edge",
+      "edge_id": 1996
+    },
+    {
+      "id": 56,
+      "type": "knn",
+      "poi": "atm",
+      "query_point": {
+        "lat": 17.465481,
+        "lon": 78.539736
+      },
+      "k": 10,
+      "metric": "euclidean"
+    },
+    {
+      "id": 57,
+      "type": "shortest_path",
+      "source": 558,
+      "target": 327,
+      "mode": "time"
+    },
+    {
+      "id": 60,
+      "type": "knn",
+      "poi": "restaurant",
+      "query_point": {
+        "lat": 17.465522,
+        "lon": 78.539554
+      },
+      "k": 1,
+      "metric": "shortest_path"
+    },
+    {
+      "id": 62,
+      "type": "remove_edge",
+      "edge_id": 1612
+    },
+    {
+      "id": 64,
+      "type": "knn",
+      "poi": "restaurant",
+      "query_point": {
+        "lat": 17.468462,
+        "lon": 78.55005
+      },
+      "k": 9,
+      "metric": "shortest_path"
+    },
+    {
+      "id": 67,
+      "type": "shortest_path",
+      "source": 616,
+      "target": 295,
+      "mode": "time"
+    },
+    {
+      "id": 68,
+      "type": "shortest_path",
+      "source": 718,
+      "target": 717,
+      "mode": "distance"
+    },
+    {
+      "id": 71,
+      "type": "knn",
+      "poi": "hospital",
+      "query_point": {
+        "lat": 17.470868,
+        "lon": 78.549104
+      },
+      "k": 9,
+      "metric": "shortest_path"
+    },
+    {
+      "id": 74,
+      "type": "shortest_path",
+      "source": 575,
+      "target": 769,
+      "mode": "distance"
+    },
+    {
+      "id": 75,
+      "type": "shortest_path",
+      "source": 414,
+      "target": 633,
+      "mode": "time"
+    },
+    {
+      "id": 76,
+      "type": "remove_edge",
+      "edge_id": 1456
+    },
+    {
+      "id": 77,
+      "type": "knn",
+      "poi": "petrol station",
+      "query_point": {
+        "lat": 17.472163,
+        "lon": 78.542292
+      },
+      "k": 6,
+      "metric": "euclidean"
+    },
+    {
+      "id": 78,
+      "type": "knn",
+      "poi": "atm",
+      "query_point": {
+        "lat": 17.462653,
+        "lon": 78.552789
+      },
+      "k": 5,
+      "metric": "euclidean"
+    },
+    {
+      "id": 81,
+      "type": "shortest_path",
+      "source": 729,
+      "target": 136,
+      "mode": "time"
+    },
+    {
+      "id": 84,
+      "type": "remove_edge",
+      "edge_id": 1054
+    },
+    {
+      "id": 85,
+      "type": "remove_edge",
+      "edge_id": 1175
+    },
+    {
+      "id": 86,
+      "type": "remove_edge",
+      "edge_id": 1731
+    },
+    {
+      "id": 88,
+      "type": "knn",
+      "poi": "atm",
+      "query_point": {
+        "lat": 17.461684,
+        "lon": 78.555482
+      },
+      "k": 6,
+      "metric": "shortest_path"
+    },
+    {
+      "id": 89,
+      "type": "remove_edge",
+      "edge_id": 1399
+    },
+    {
+      "id": 91,
+      "type": "remove_edge",
+      "edge_id": 1251
+    },
+    {
+      "id": 93,
+      "type": "shortest_path",
+      "source": 503,
+      "target": 17,
+      "mode": "distance"
+    },
+    {
+      "id": 94,
+      "type": "remove_edge",
+      "edge_id": 1656
+    },
+    {
+      "id": 95,
+      "type": "shortest_path",
+      "source": 125,
+      "target": 297,
+      "mode": "distance"
+    },
+    {
+      "id": 97,
+      "type": "remove_edge",
+      "edge_id": 1992
+    },
+    {
+      "id": 98,
+      "type": "shortest_path",
+      "source": 111,
+      "target": 560,
+      "mode": "time"
+    },
+    {
+      "id": 101,
+      "type": "remove_edge",
+      "edge_id": 1563
+    },
+    {
+      "id": 102,
+      "type": "remove_edge",
+      "edge_id": 1646
+    },
+    {
+      "id": 103,
+      "type": "shortest_path",
+      "source": 297,
+      "target": 766,
+      "mode": "time"
+    },
+    {
+      "id": 104,
+      "type": "remove_edge",
+      "edge_id": 1607
+    },
+    {
+      "id": 106,
+      "type": "shortest_path",
+      "source": 673,
+      "target": 765,
+      "mode": "distance"
+    },
+    {
+      "id": 108,
+      "type": "shortest_path",
+      "source": 122,
+      "target": 331,
+      "mode": "distance"
+    },
+    {
+      "id": 111,
+      "type": "remove_edge",
+      "edge_id": 1096
+    },
+    {
+      "id": 112,
+      "type": "shortest_path",
+      "source": 23,
+      "target": 22,
+      "mode": "distance"
+    },
+    {
+      "id": 113,
+      "type": "shortest_path",
+      "source": 423,
+      "target": 463,
+      "mode": "distance"
+    },
+    {
+      "id": 114,
+      "type": "remove_edge",
+      "edge_id": 1013
+    },
+    {
+      "id": 115,
+      "type": "remove_edge",
+      "edge_id": 1730
+    },
+    {
+      "id": 116,
+      "type": "remove_edge",
+      "edge_id": 1024
+    },
+    {
+      "id": 118,
+      "type": "shortest_path",
+      "source": 640,
+      "target": 763,
+      "mode": "distance"
+    },
+    {
+      "id": 120,
+      "type": "remove_edge",
+      "edge_id": 1846
+    },
+    {
+      "id": 121,
+      "type": "knn",
+      "poi": "petrol station",
+      "query_point": {
+        "lat": 17.465231,
+        "lon": 78.539643
+      },
+      "k": 10,
+      "metric": "shortest_path"
+    },
+    {
+      "id": 124,
+      "type": "knn",
+      "poi": "atm",
+      "query_point": {
+        "lat": 17.462947,
+        "lon": 78.5489
+      },
+      "k": 10,
+      "metric": "euclidean"
+    },
+    {
+      "id": 125,
+      "type": "knn",
+      "poi": "hotel",
+      "query_point": {
+        "lat": 17.470324,
+        "lon": 78.537577
+      },
+      "k": 1,
+      "metric": "shortest_path"
+    },
+    {
+      "id": 126,
+      "type": "remove_edge",
+      "edge_id": 1013
+    },
+    {
+      "id": 127,
+      "type": "shortest_path",
+      "source": 668,
+      "target": 526,
+      "mode": "time"
+    },
+    {
+      "id": 128,
+      "type": "knn",
+      "poi": "restaurant",
+      "query_point": {
+        "lat": 17.461055,
+        "lon": 78.538939
+      },
+      "k": 9,
+      "metric": "shortest_path"
+    },
+    {
+      "id": 129,
+      "type": "remove_edge",
+      "edge_id": 2069
+    },
+    {
+      "id": 130,
+      "type": "shortest_path",
+      "source": 448,
+      "target": 397,
+      "mode": "distance"
+    },
+    {
+      "id": 131,
+      "type": "shortest_path",
+      "source": 121,
+      "target": 87,
+      "mode": "distance"
+    },
+    {
+      "id": 132,
+      "type": "remove_edge",
+      "edge_id": 1411
+    },
+    {
+      "id": 133,
+      "type": "remove_edge",
+      "edge_id": 1589
+    },
+    {
+      "id": 134,
+      "type": "knn",
+      "poi": "atm",
+      "query_point": {
+        "lat": 17.467331,
+        "lon": 78.548499
+      },
+      "k": 6,
+      "metric": "shortest_path"
+    },
+    {
+      "id": 136,
+      "type": "shortest_path",
+      "source": 655,
+      "target": 65,
+      "mode": "time"
+    },
+    {
+      "id": 138,
+      "type": "knn",
+      "poi": "pharmacy",
+      "query_point": {
+        "lat": 17.464035,
+        "lon": 78.546637
+      },
+      "k": 5,
+      "metric": "euclidean"
+    },
+    {
+      "id": 141,
+      "type": "shortest_path",
+      "source": 661,
+      "target": 155,
+      "mode": "time"
+    },
+    {
+      "id": 143,
+      "type": "shortest_path",
+      "source": 465,
+      "target": 362,
+      "mode": "time"
+    },
+    {
+      "id": 145,
+      "type": "shortest_path",
+      "source": 671,
+      "target": 466,
+      "mode": "distance"
+    },
+    {
+      "id": 146,
+      "type": "shortest_path",
+      "source": 140,
+      "target": 444,
+      "mode": "time"
+    },
+    {
+      "id": 149,
+      "type": "shortest_path",
+      "source": 355,
+      "target": 176,
+      "mode": "time"
+    },
+    {
+      "id": 150,
+      "type": "remove_edge",
+      "edge_id": 1167
+    },
+    {
+      "id": 153,
+      "type": "remove_edge",
+      "edge_id": 1973
+    },
+    {
+      "id": 155,
+      "type": "remove_edge",
+      "edge_id": 1882
+    },
+    {
+      "id": 157,
+      "type": "remove_edge",
+      "edge_id": 1889
+    },
+    {
+      "id": 159,
+      "type": "knn",
+      "poi": "atm",
+      "query_point": {
+        "lat": 17.463218,
+        "lon": 78.547729
+      },
+      "k": 6,
+      "metric": "shortest_path"
+    },
+    {
+      "id": 160,
+      "type": "remove_edge",
+      "edge_id": 1071
+    },
+    {
+      "id": 161,
+      "type": "knn",
+      "poi": "petrol station",
+      "query_point": {
+        "lat": 17.466605,
+        "lon": 78.541232
+      },
+      "k": 9,
+      "metric": "shortest_path"
+    },
+    {
+      "id": 162,
+      "type": "shortest_path",
+      "source": 236,
+      "target": 418,
+      "mode": "distance"
+    },
+    {
+      "id": 164,
+      "type": "shortest_path",
+      "source": 132,
+      "target": 64,
+      "mode": "time"
+    },
+    {
+      "id": 167,
+      "type": "shortest_path",
+      "source": 559,
+      "target": 589,
+      "mode": "distance"
+    },
+    {
+      "id": 169,
+      "type": "shortest_path",
+      "source": 318,
+      "target": 354,
+      "mode": "time"
+    },
+    {
+      "id": 171,
+      "type": "remove_edge",
+      "edge_id": 1202
+    },
+    {
+      "id": 174,
+      "type": "remove_edge",
+      "edge_id": 1574
+    },
+    {
+      "id": 177,
+      "type": "shortest_path",
+      "source": 163,
+      "target": 432,
+      "mode": "time"
+    },
+    {
+      "id": 180,
+      "type": "shortest_path",
+      "source": 68,
+      "target": 1,
+      "mode": "distance"
+    }
+  ]
+}

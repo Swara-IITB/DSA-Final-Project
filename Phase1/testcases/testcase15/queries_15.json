@@ -1,0 +1,68 @@
+{
+  "meta": {
+    "id": "queries_for_graph_osm_hyderabad_india"
+  },
+  "events": [
+    {
+      "id": 1,
+      "type": "shortest_path",
+      "source": 297,
+      "target": 152,
+      "mode": "time"
+    },
+    {
+      "id": 3,
+      "type": "knn",
+      "poi": "pharmacy",
+      "query_point": {
+        "lat": 17.492758,
+        "lon": 78.460586
+      },
+      "k": 7,
+      "metric": "euclidean"
+    },
+    {
+      "id": 5,
+      "type": "shortest_path",
+      "source": 154,
+      "target": 251,
+      "mode": "distance"
+    },
+    {
+      "id": 7,
+      "type": "knn",
+      "poi": "restaurant",
+      "query_point": {
+        "lat": 17.433562,
+        "lon": 78.258478
+      },
+      "k": 3,
+      "metric": "euclidean"
+    },
+    {
+      "id": 10,
+      "type": "shortest_path",
+      "source": 34,
+      "target": 191,
+      "mode": "time"
+    },
+    {
+      "id": 13,
+      "type": "shortest_path",
+      "source": 145,
+      "target": 29,
+      "mode": "time"
+    },
+    {
+      "id": 14,
+      "type": "knn",
+      "poi": "atm",
+      "query_point": {
+        "lat": 17.463077,
+        "lon": 78.56403
+      },
+      "k": 1,
+      "metric": "euclidean"
+    }
+  ]
+}

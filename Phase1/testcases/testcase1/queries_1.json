@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "id": "queries_for_graph_osm_pune_india"
+  },
+  "events": [
+    {
+      "id": 1,
+      "type": "shortest_path",
+      "source": 2,
+      "target": 0,
+      "mode": "time"
+    },
+    {
+      "id": 3,
+      "type": "knn",
+      "poi": "petrol station",
+      "query_point": {
+        "lat": 18.480472,
+        "lon": 73.898398
+      },
+      "k": 3,
+      "metric": "euclidean"
+    },
+    {
+      "id": 4,
+      "type": "shortest_path",
+      "source": 4,
+      "target": 5,
+      "mode": "time"
+    },
+    {
+      "id": 5,
+      "type": "remove_edge",
+      "edge_id": 1003
+    },
+    {
+      "id": 6,
+      "type": "knn",
+      "poi": "petrol station",
+      "query_point": {
+        "lat": 18.480831,
+        "lon": 73.899048
+      },
+      "k": 3,
+      "metric": "euclidean"
+    },
+    {
+      "id": 9,
+      "type": "remove_edge",
+      "edge_id": 1006
+    },
+    {
+      "id": 10,
+      "type": "shortest_path",
+      "source": 2,
+      "target": 6,
+      "mode": "distance"
+    },
+    {
+      "id": 11,
+      "type": "remove_edge",
+      "edge_id": 1002
+    },
+    {
+      "id": 13,
+      "type": "remove_edge",
+      "edge_id": 1004
+    },
+    {
+      "id": 16,
+      "type": "knn",
+      "poi": "hotel",
+      "query_point": {
+        "lat": 18.480614,
+        "lon": 73.899229
+      },
+      "k": 1,
+      "metric": "shortest_path"
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "id": "queries_for_graph_osm_satara_india"
+  },
+  "events": [
+    {
+      "id": 1,
+      "type": "shortest_path",
+      "source": 5,
+      "target": 9,
+      "mode": "distance"
+    },
+    {
+      "id": 4,
+      "type": "remove_edge",
+      "edge_id": 1009
+    },
+    {
+      "id": 6,
+      "type": "shortest_path",
+      "source": 4,
+      "target": 5,
+      "mode": "time"
+    },
+    {
+      "id": 9,
+      "type": "shortest_path",
+      "source": 7,
+      "target": 5,
+      "mode": "distance"
+    },
+    {
+      "id": 11,
+      "type": "remove_edge",
+      "edge_id": 1001
+    },
+    {
+      "id": 14,
+      "type": "remove_edge",
+      "edge_id": 1006
+    },
+    {
+      "id": 17,
+      "type": "knn",
+      "poi": "petrol station",
+      "query_point": {
+        "lat": 17.695272,
+        "lon": 73.978236
+      },
+      "k": 2,
+      "metric": "shortest_path"
+    },
+    {
+      "id": 18,
+      "type": "shortest_path",
+      "source": 1,
+      "target": 5,
+      "mode": "distance"
+    },
+    {
+      "id": 19,
+      "type": "knn",
+      "poi": "hotel",
+      "query_point": {
+        "lat": 17.69496,
+        "lon": 73.977151
+      },
+      "k": 3,
+      "metric": "euclidean"
+    },
+    {
+      "id": 21,
+      "type": "knn",
+      "poi": "restaurant",
+      "query_point": {
+        "lat": 17.695597,
+        "lon": 73.978041
+      },
+      "k": 2,
+      "metric": "shortest_path"
+    },
+    {
+      "id": 22,
+      "type": "shortest_path",
+      "source": 1,
+      "target": 4,
+      "mode": "time"
+    },
+    {
+      "id": 24,
+      "type": "shortest_path",
+      "source": 1,
+      "target": 0,
+      "mode": "distance"
+    },
+    {
+      "id": 25,
+      "type": "remove_edge",
+      "edge_id": 1003
+    },
+    {
+      "id": 27,
+      "type": "knn",
+      "poi": "hospital",
+      "query_point": {
+        "lat": 17.695382,
+        "lon": 73.977584
+      },
+      "k": 0,
+      "metric": "shortest_path"
+    },
+    {
+      "id": 28,
+      "type": "shortest_path",
+      "source": 7,
+      "target": 3,
+      "mode": "time"
+    },
+    {
+      "id": 30,
+      "type": "shortest_path",
+      "source": 9,
+      "target": 8,
+      "mode": "distance"
+    },
+    {
+      "id": 32,
+      "type": "knn",
+      "poi": "pharmacy",
+      "query_point": {
+        "lat": 17.695796,
+        "lon": 73.978682
+      },
+      "k": 0,
+      "metric": "shortest_path"
+    },
+    {
+      "id": 34,
+      "type": "shortest_path",
+      "source": 9,
+      "target": 3,
+      "mode": "time"
+    },
+    {
+      "id": 37,
+      "type": "remove_edge",
+      "edge_id": 1006
+    },
+    {
+      "id": 38,
+      "type": "remove_edge",
+      "edge_id": 1009
+    },
+    {
+      "id": 39,
+      "type": "remove_edge",
+      "edge_id": 1009
+    }
+  ]
+}

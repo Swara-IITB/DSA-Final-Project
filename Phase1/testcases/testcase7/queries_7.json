@@ -1,0 +1,371 @@
+{
+  "meta": {
+    "id": "queries_for_graph_osm_delhi_india"
+  },
+  "events": [
+    {
+      "id": 1,
+      "type": "shortest_path",
+      "source": 3,
+      "target": 32,
+      "mode": "distance"
+    },
+    {
+      "id": 2,
+      "type": "shortest_path",
+      "source": 8,
+      "target": 36,
+      "mode": "distance"
+    },
+    {
+      "id": 5,
+      "type": "shortest_path",
+      "source": 23,
+      "target": 29,
+      "mode": "distance"
+    },
+    {
+      "id": 8,
+      "type": "knn",
+      "poi": "atm",
+      "query_point": {
+        "lat": 28.541287,
+        "lon": 76.928623
+      },
+      "k": 7,
+      "metric": "euclidean"
+    },
+    {
+      "id": 9,
+      "type": "knn",
+      "poi": "pharmacy",
+      "query_point": {
+        "lat": 28.576903,
+        "lon": 77.012844
+      },
+      "k": 3,
+      "metric": "euclidean"
+    },
+    {
+      "id": 10,
+      "type": "shortest_path",
+      "source": 12,
+      "target": 28,
+      "mode": "time"
+    },
+    {
+      "id": 11,
+      "type": "knn",
+      "poi": "restaurant",
+      "query_point": {
+        "lat": 28.468233,
+        "lon": 77.160424
+      },
+      "k": 0,
+      "metric": "euclidean"
+    },
+    {
+      "id": 12,
+      "type": "knn",
+      "poi": "petrol station",
+      "query_point": {
+        "lat": 28.511746,
+        "lon": 77.177876
+      },
+      "k": 3,
+      "metric": "euclidean"
+    },
+    {
+      "id": 14,
+      "type": "shortest_path",
+      "source": 22,
+      "target": 37,
+      "mode": "distance"
+    },
+    {
+      "id": 17,
+      "type": "knn",
+      "poi": "pharmacy",
+      "query_point": {
+        "lat": 28.495295,
+        "lon": 77.295433
+      },
+      "k": 2,
+      "metric": "shortest_path"
+    },
+    {
+      "id": 20,
+      "type": "knn",
+      "poi": "restaurant",
+      "query_point": {
+        "lat": 28.560853,
+        "lon": 77.128034
+      },
+      "k": 0,
+      "metric": "shortest_path"
+    },
+    {
+      "id": 21,
+      "type": "shortest_path",
+      "source": 36,
+      "target": 7,
+      "mode": "time"
+    },
+    {
+      "id": 22,
+      "type": "knn",
+      "poi": "pharmacy",
+      "query_point": {
+        "lat": 28.455068,
+        "lon": 77.098858
+      },
+      "k": 3,
+      "metric": "euclidean"
+    },
+    {
+      "id": 23,
+      "type": "knn",
+      "poi": "restaurant",
+      "query_point": {
+        "lat": 28.576944,
+        "lon": 77.030188
+      },
+      "k": 0,
+      "metric": "shortest_path"
+    },
+    {
+      "id": 24,
+      "type": "knn",
+      "poi": "hotel",
+      "query_point": {
+        "lat": 28.697235,
+        "lon": 77.085553
+      },
+      "k": 5,
+      "metric": "euclidean"
+    },
+    {
+      "id": 27,
+      "type": "shortest_path",
+      "source": 0,
+      "target": 20,
+      "mode": "time"
+    },
+    {
+      "id": 30,
+      "type": "shortest_path",
+      "source": 26,
+      "target": 35,
+      "mode": "time"
+    },
+    {
+      "id": 32,
+      "type": "shortest_path",
+      "source": 4,
+      "target": 19,
+      "mode": "time"
+    },
+    {
+      "id": 34,
+      "type": "knn",
+      "poi": "restaurant",
+      "query_point": {
+        "lat": 28.63531,
+        "lon": 77.045295
+      },
+      "k": 0,
+      "metric": "shortest_path"
+    },
+    {
+      "id": 37,
+      "type": "shortest_path",
+      "source": 22,
+      "target": 31,
+      "mode": "time"
+    },
+    {
+      "id": 40,
+      "type": "knn",
+      "poi": "hotel",
+      "query_point": {
+        "lat": 28.61273,
+        "lon": 77.176154
+      },
+      "k": 6,
+      "metric": "shortest_path"
+    },
+    {
+      "id": 42,
+      "type": "shortest_path",
+      "source": 38,
+      "target": 2,
+      "mode": "distance"
+    },
+    {
+      "id": 45,
+      "type": "shortest_path",
+      "source": 33,
+      "target": 34,
+      "mode": "distance"
+    },
+    {
+      "id": 48,
+      "type": "shortest_path",
+      "source": 6,
+      "target": 3,
+      "mode": "distance"
+    },
+    {
+      "id": 50,
+      "type": "knn",
+      "poi": "petrol station",
+      "query_point": {
+        "lat": 28.563399,
+        "lon": 76.988966
+      },
+      "k": 4,
+      "metric": "shortest_path"
+    },
+    {
+      "id": 51,
+      "type": "knn",
+      "poi": "atm",
+      "query_point": {
+        "lat": 28.60728,
+        "lon": 77.028291
+      },
+      "k": 6,
+      "metric": "shortest_path"
+    },
+    {
+      "id": 52,
+      "type": "knn",
+      "poi": "atm",
+      "query_point": {
+        "lat": 28.543081,
+        "lon": 77.077582
+      },
+      "k": 4,
+      "metric": "shortest_path"
+    },
+    {
+      "id": 54,
+      "type": "shortest_path",
+      "source": 21,
+      "target": 27,
+      "mode": "time"
+    },
+    {
+      "id": 57,
+      "type": "knn",
+      "poi": "hospital",
+      "query_point": {
+        "lat": 28.751643,
+        "lon": 77.211572
+      },
+      "k": 1,
+      "metric": "euclidean"
+    },
+    {
+      "id": 60,
+      "type": "shortest_path",
+      "source": 3,
+      "target": 15,
+      "mode": "distance"
+    },
+    {
+      "id": 63,
+      "type": "shortest_path",
+      "source": 18,
+      "target": 13,
+      "mode": "time"
+    },
+    {
+      "id": 66,
+      "type": "knn",
+      "poi": "hospital",
+      "query_point": {
+        "lat": 28.584675,
+        "lon": 76.953508
+      },
+      "k": 3,
+      "metric": "shortest_path"
+    },
+    {
+      "id": 69,
+      "type": "knn",
+      "poi": "hospital",
+      "query_point": {
+        "lat": 28.458985,
+        "lon": 77.080329
+      },
+      "k": 3,
+      "metric": "euclidean"
+    },
+    {
+      "id": 71,
+      "type": "knn",
+      "poi": "atm",
+      "query_point": {
+        "lat": 28.568416,
+        "lon": 77.018141
+      },
+      "k": 7,
+      "metric": "shortest_path"
+    },
+    {
+      "id": 72,
+      "type": "shortest_path",
+      "source": 9,
+      "target": 13,
+      "mode": "distance"
+    },
+    {
+      "id": 74,
+      "type": "knn",
+      "poi": "restaurant",
+      "query_point": {
+        "lat": 28.565304,
+        "lon": 76.942044
+      },
+      "k": 0,
+      "metric": "shortest_path"
+    },
+    {
+      "id": 75,
+      "type": "knn",
+      "poi": "restaurant",
+      "query_point": {
+        "lat": 28.694982,
+        "lon": 77.084064
+      },
+      "k": 0,
+      "metric": "euclidean"
+    },
+    {
+      "id": 78,
+      "type": "shortest_path",
+      "source": 18,
+      "target": 15,
+      "mode": "distance"
+    },
+    {
+      "id": 79,
+      "type": "knn",
+      "poi": "hospital",
+      "query_point": {
+        "lat": 28.607484,
+        "lon": 77.128117
+      },
+      "k": 1,
+      "metric": "euclidean"
+    },
+    {
+      "id": 82,
+      "type": "shortest_path",
+      "source": 42,
+      "target": 13,
+      "mode": "distance"
+    }
+  ]
+}

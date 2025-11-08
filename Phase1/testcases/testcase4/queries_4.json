@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "id": "queries_for_graph_osm_pune_india"
+  },
+  "events": [
+    {
+      "id": 1,
+      "type": "knn",
+      "poi": "restaurant",
+      "query_point": {
+        "lat": 18.482862,
+        "lon": 73.799984
+      },
+      "k": 0,
+      "metric": "euclidean"
+    },
+    {
+      "id": 4,
+      "type": "shortest_path",
+      "source": 0,
+      "target": 3,
+      "mode": "time"
+    },
+    {
+      "id": 5,
+      "type": "knn",
+      "poi": "pharmacy",
+      "query_point": {
+        "lat": 18.484387,
+        "lon": 73.801377
+      },
+      "k": 0,
+      "metric": "shortest_path"
+    },
+    {
+      "id": 6,
+      "type": "shortest_path",
+      "source": 2,
+      "target": 4,
+      "mode": "distance"
+    },
+    {
+      "id": 8,
+      "type": "shortest_path",
+      "source": 7,
+      "target": 4,
+      "mode": "distance"
+    }
+  ]
+}

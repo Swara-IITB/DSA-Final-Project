@@ -1,0 +1,154 @@
+{
+  "meta": {
+    "id": "queries_for_graph_osm_gangtok_india"
+  },
+  "events": [
+    {
+      "id": 1,
+      "type": "remove_edge",
+      "edge_id": 1008
+    },
+    {
+      "id": 4,
+      "type": "shortest_path",
+      "source": 9,
+      "target": 7,
+      "mode": "distance"
+    },
+    {
+      "id": 7,
+      "type": "remove_edge",
+      "edge_id": 1014
+    },
+    {
+      "id": 10,
+      "type": "knn",
+      "poi": "hospital",
+      "query_point": {
+        "lat": 27.330606,
+        "lon": 88.610494
+      },
+      "k": 0,
+      "metric": "shortest_path"
+    },
+    {
+      "id": 12,
+      "type": "shortest_path",
+      "source": 0,
+      "target": 8,
+      "mode": "time"
+    },
+    {
+      "id": 13,
+      "type": "knn",
+      "poi": "atm",
+      "query_point": {
+        "lat": 27.334176,
+        "lon": 88.61178
+      },
+      "k": 0,
+      "metric": "euclidean"
+    },
+    {
+      "id": 14,
+      "type": "shortest_path",
+      "source": 5,
+      "target": 7,
+      "mode": "distance"
+    },
+    {
+      "id": 17,
+      "type": "remove_edge",
+      "edge_id": 1008
+    },
+    {
+      "id": 18,
+      "type": "knn",
+      "poi": "atm",
+      "query_point": {
+        "lat": 27.330404,
+        "lon": 88.610822
+      },
+      "k": 0,
+      "metric": "euclidean"
+    },
+    {
+      "id": 20,
+      "type": "knn",
+      "poi": "hospital",
+      "query_point": {
+        "lat": 27.333768,
+        "lon": 88.61332
+      },
+      "k": 0,
+      "metric": "shortest_path"
+    },
+    {
+      "id": 21,
+      "type": "remove_edge",
+      "edge_id": 1002
+    },
+    {
+      "id": 22,
+      "type": "shortest_path",
+      "source": 3,
+      "target": 7,
+      "mode": "time"
+    },
+    {
+      "id": 24,
+      "type": "remove_edge",
+      "edge_id": 1002
+    },
+    {
+      "id": 26,
+      "type": "knn",
+      "poi": "pharmacy",
+      "query_point": {
+        "lat": 27.331397,
+        "lon": 88.614464
+      },
+      "k": 1,
+      "metric": "shortest_path"
+    },
+    {
+      "id": 28,
+      "type": "remove_edge",
+      "edge_id": 1013
+    },
+    {
+      "id": 30,
+      "type": "shortest_path",
+      "source": 0,
+      "target": 5,
+      "mode": "distance"
+    },
+    {
+      "id": 31,
+      "type": "knn",
+      "poi": "atm",
+      "query_point": {
+        "lat": 27.331054,
+        "lon": 88.612975
+      },
+      "k": 0,
+      "metric": "euclidean"
+    },
+    {
+      "id": 34,
+      "type": "knn",
+      "poi": "atm",
+      "query_point": {
+        "lat": 27.331813,
+        "lon": 88.610465
+      },
+      "k": 0,
+      "metric": "shortest_path"
+    },
+    {
+      "id": 37,
+      "type": "remove_edge",
+      "edge_id": 1014
+    }
+  ]
+}
