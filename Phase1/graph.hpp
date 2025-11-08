@@ -1,5 +1,5 @@
 #pragma once
-#include <map>
+#include <unordered_map>
 #include <vector>
 typedef long long ll;
 
@@ -28,7 +28,7 @@ class Graph{
         std::vector<std::vector<std::pair<ll,ll>>> adjList;
         ll V;
         std::vector<Node> nodes;
-        std::map<ll,Edge> edges;
+        std::unordered_map<ll,Edge> edges;
         Graph(ll v);
         void add_node(ll id, double lat, double lon, std::vector<std::string> pois);
         void add_edge(ll id,ll u, ll v,double len,double avg_t, bool oneway,std::string roadtype,std::vector<double> sp_profile={});
