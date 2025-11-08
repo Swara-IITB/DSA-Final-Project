@@ -1,0 +1,123 @@
+{
+  "meta": {
+    "id": "phase2_queries_graph_osm_satara_india"
+  },
+  "events": [
+    {
+      "id": 1,
+      "type": "k_shortest_paths_heuristic",
+      "source": 1,
+      "target": 8,
+      "k": 4,
+      "overlap_threshold": 62
+    },
+    {
+      "id": 4,
+      "type": "k_shortest_paths",
+      "source": 10,
+      "target": 6,
+      "k": 16,
+      "mode": "distance"
+    },
+    {
+      "id": 5,
+      "type": "k_shortest_paths",
+      "source": 10,
+      "target": 6,
+      "k": 14,
+      "mode": "distance"
+    },
+    {
+      "id": 6,
+      "type": "k_shortest_paths",
+      "source": 10,
+      "target": 6,
+      "k": 11,
+      "mode": "distance"
+    },
+    {
+      "id": 7,
+      "type": "approx_shortest_path",
+      "queries": [
+        {
+          "source": 0,
+          "target": 4
+        },
+        {
+          "source": 6,
+          "target": 10
+        },
+        {
+          "source": 10,
+          "target": 8
+        },
+        {
+          "source": 8,
+          "target": 1
+        }
+      ],
+      "time_budget_ms": 18,
+      "acceptable_error_pct": 10.0
+    },
+    {
+      "id": 9,
+      "type": "approx_shortest_path",
+      "queries": [
+        {
+          "source": 4,
+          "target": 1
+        },
+        {
+          "source": 1,
+          "target": 6
+        },
+        {
+          "source": 0,
+          "target": 1
+        },
+        {
+          "source": 7,
+          "target": 5
+        },
+        {
+          "source": 5,
+          "target": 8
+        },
+        {
+          "source": 1,
+          "target": 9
+        },
+        {
+          "source": 0,
+          "target": 6
+        }
+      ],
+      "time_budget_ms": 13,
+      "acceptable_error_pct": 15.0
+    },
+    {
+      "id": 10,
+      "type": "k_shortest_paths_heuristic",
+      "source": 3,
+      "target": 6,
+      "k": 2,
+      "overlap_threshold": 56
+    },
+    {
+      "id": 11,
+      "type": "k_shortest_paths_heuristic",
+      "source": 3,
+      "target": 5,
+      "k": 7,
+      "overlap_threshold": 73
+    },
+    {
+      "id": 13,
+      "type": "k_shortest_paths",
+      "source": 1,
+      "target": 5,
+      "k": 18,
+      "mode": "distance"
+    }
+  ]
+}

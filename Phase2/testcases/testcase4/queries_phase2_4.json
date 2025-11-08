@@ -1,0 +1,227 @@
+{
+  "meta": {
+    "id": "phase2_queries_graph_osm_pune_india"
+  },
+  "events": [
+    {
+      "id": 1,
+      "type": "k_shortest_paths",
+      "source": 5,
+      "target": 7,
+      "k": 18,
+      "mode": "distance"
+    },
+    {
+      "id": 3,
+      "type": "k_shortest_paths",
+      "source": 8,
+      "target": 6,
+      "k": 3,
+      "mode": "distance"
+    },
+    {
+      "id": 4,
+      "type": "k_shortest_paths_heuristic",
+      "source": 6,
+      "target": 8,
+      "k": 5,
+      "overlap_threshold": 68
+    },
+    {
+      "id": 7,
+      "type": "k_shortest_paths_heuristic",
+      "source": 1,
+      "target": 7,
+      "k": 5,
+      "overlap_threshold": 71
+    },
+    {
+      "id": 9,
+      "type": "approx_shortest_path",
+      "queries": [
+        {
+          "source": 5,
+          "target": 8
+        },
+        {
+          "source": 8,
+          "target": 2
+        },
+        {
+          "source": 0,
+          "target": 1
+        }
+      ],
+      "time_budget_ms": 12,
+      "acceptable_error_pct": 10.0
+    },
+    {
+      "id": 10,
+      "type": "approx_shortest_path",
+      "queries": [
+        {
+          "source": 7,
+          "target": 0
+        },
+        {
+          "source": 5,
+          "target": 1
+        },
+        {
+          "source": 8,
+          "target": 1
+        },
+        {
+          "source": 3,
+          "target": 5
+        },
+        {
+          "source": 5,
+          "target": 0
+        },
+        {
+          "source": 5,
+          "target": 3
+        },
+        {
+          "source": 0,
+          "target": 7
+        },
+        {
+          "source": 1,
+          "target": 8
+        }
+      ],
+      "time_budget_ms": 14,
+      "acceptable_error_pct": 15.0
+    },
+    {
+      "id": 13,
+      "type": "k_shortest_paths",
+      "source": 3,
+      "target": 8,
+      "k": 20,
+      "mode": "distance"
+    },
+    {
+      "id": 14,
+      "type": "k_shortest_paths",
+      "source": 1,
+      "target": 8,
+      "k": 12,
+      "mode": "distance"
+    },
+    {
+      "id": 16,
+      "type": "k_shortest_paths",
+      "source": 6,
+      "target": 2,
+      "k": 7,
+      "mode": "distance"
+    },
+    {
+      "id": 19,
+      "type": "k_shortest_paths_heuristic",
+      "source": 7,
+      "target": 0,
+      "k": 6,
+      "overlap_threshold": 87
+    },
+    {
+      "id": 20,
+      "type": "k_shortest_paths",
+      "source": 0,
+      "target": 7,
+      "k": 18,
+      "mode": "distance"
+    },
+    {
+      "id": 23,
+      "type": "k_shortest_paths_heuristic",
+      "source": 0,
+      "target": 1,
+      "k": 3,
+      "overlap_threshold": 67
+    },
+    {
+      "id": 24,
+      "type": "approx_shortest_path",
+      "queries": [
+        {
+          "source": 3,
+          "target": 6
+        },
+        {
+          "source": 7,
+          "target": 2
+        },
+        {
+          "source": 8,
+          "target": 1
+        },
+        {
+          "source": 7,
+          "target": 6
+        },
+        {
+          "source": 6,
+          "target": 4
+        },
+        {
+          "source": 0,
+          "target": 5
+        },
+        {
+          "source": 6,
+          "target": 4
+        },
+        {
+          "source": 8,
+          "target": 4
+        },
+        {
+          "source": 1,
+          "target": 8
+        },
+        {
+          "source": 6,
+          "target": 2
+        },
+        {
+          "source": 7,
+          "target": 2
+        },
+        {
+          "source": 2,
+          "target": 8
+        },
+        {
+          "source": 2,
+          "target": 8
+        },
+        {
+          "source": 2,
+          "target": 4
+        }
+      ],
+      "time_budget_ms": 32,
+      "acceptable_error_pct": 5.0
+    },
+    {
+      "id": 27,
+      "type": "k_shortest_paths_heuristic",
+      "source": 8,
+      "target": 1,
+      "k": 6,
+      "overlap_threshold": 71
+    },
+    {
+      "id": 29,
+      "type": "k_shortest_paths",
+      "source": 2,
+      "target": 1,
+      "k": 2,
+      "mode": "distance"
+    }
+  ]
+}

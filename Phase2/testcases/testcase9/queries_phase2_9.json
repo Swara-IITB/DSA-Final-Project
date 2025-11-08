@@ -1,0 +1,343 @@
+{
+  "meta": {
+    "id": "phase2_queries_graph_osm_gangtok_india"
+  },
+  "events": [
+    {
+      "id": 1,
+      "type": "k_shortest_paths_heuristic",
+      "source": 11,
+      "target": 5,
+      "k": 4,
+      "overlap_threshold": 77
+    },
+    {
+      "id": 4,
+      "type": "k_shortest_paths_heuristic",
+      "source": 3,
+      "target": 10,
+      "k": 2,
+      "overlap_threshold": 64
+    },
+    {
+      "id": 6,
+      "type": "k_shortest_paths",
+      "source": 9,
+      "target": 4,
+      "k": 13,
+      "mode": "distance"
+    },
+    {
+      "id": 8,
+      "type": "k_shortest_paths_heuristic",
+      "source": 13,
+      "target": 5,
+      "k": 2,
+      "overlap_threshold": 80
+    },
+    {
+      "id": 10,
+      "type": "k_shortest_paths",
+      "source": 6,
+      "target": 7,
+      "k": 8,
+      "mode": "distance"
+    },
+    {
+      "id": 11,
+      "type": "k_shortest_paths",
+      "source": 7,
+      "target": 10,
+      "k": 12,
+      "mode": "distance"
+    },
+    {
+      "id": 13,
+      "type": "k_shortest_paths_heuristic",
+      "source": 6,
+      "target": 5,
+      "k": 2,
+      "overlap_threshold": 73
+    },
+    {
+      "id": 14,
+      "type": "k_shortest_paths",
+      "source": 10,
+      "target": 6,
+      "k": 2,
+      "mode": "distance"
+    },
+    {
+      "id": 15,
+      "type": "k_shortest_paths_heuristic",
+      "source": 13,
+      "target": 0,
+      "k": 5,
+      "overlap_threshold": 54
+    },
+    {
+      "id": 17,
+      "type": "k_shortest_paths_heuristic",
+      "source": 13,
+      "target": 8,
+      "k": 4,
+      "overlap_threshold": 68
+    },
+    {
+      "id": 18,
+      "type": "approx_shortest_path",
+      "queries": [
+        {
+          "source": 0,
+          "target": 3
+        },
+        {
+          "source": 4,
+          "target": 8
+        },
+        {
+          "source": 2,
+          "target": 14
+        },
+        {
+          "source": 7,
+          "target": 9
+        },
+        {
+          "source": 3,
+          "target": 14
+        },
+        {
+          "source": 8,
+          "target": 13
+        },
+        {
+          "source": 12,
+          "target": 7
+        },
+        {
+          "source": 4,
+          "target": 11
+        },
+        {
+          "source": 7,
+          "target": 14
+        },
+        {
+          "source": 7,
+          "target": 11
+        },
+        {
+          "source": 3,
+          "target": 10
+        },
+        {
+          "source": 10,
+          "target": 1
+        }
+      ],
+      "time_budget_ms": 32,
+      "acceptable_error_pct": 5.0
+    },
+    {
+      "id": 19,
+      "type": "k_shortest_paths_heuristic",
+      "source": 12,
+      "target": 11,
+      "k": 4,
+      "overlap_threshold": 69
+    },
+    {
+      "id": 22,
+      "type": "approx_shortest_path",
+      "queries": [
+        {
+          "source": 3,
+          "target": 11
+        },
+        {
+          "source": 7,
+          "target": 10
+        },
+        {
+          "source": 0,
+          "target": 11
+        },
+        {
+          "source": 11,
+          "target": 1
+        },
+        {
+          "source": 14,
+          "target": 5
+        },
+        {
+          "source": 6,
+          "target": 13
+        }
+      ],
+      "time_budget_ms": 28,
+      "acceptable_error_pct": 5.0
+    },
+    {
+      "id": 24,
+      "type": "k_shortest_paths",
+      "source": 3,
+      "target": 4,
+      "k": 5,
+      "mode": "distance"
+    },
+    {
+      "id": 25,
+      "type": "k_shortest_paths_heuristic",
+      "source": 13,
+      "target": 0,
+      "k": 2,
+      "overlap_threshold": 78
+    },
+    {
+      "id": 27,
+      "type": "approx_shortest_path",
+      "queries": [
+        {
+          "source": 2,
+          "target": 7
+        },
+        {
+          "source": 14,
+          "target": 1
+        },
+        {
+          "source": 13,
+          "target": 4
+        },
+        {
+          "source": 3,
+          "target": 2
+        },
+        {
+          "source": 5,
+          "target": 0
+        },
+        {
+          "source": 3,
+          "target": 13
+        },
+        {
+          "source": 4,
+          "target": 0
+        },
+        {
+          "source": 8,
+          "target": 10
+        },
+        {
+          "source": 4,
+          "target": 6
+        },
+        {
+          "source": 9,
+          "target": 6
+        },
+        {
+          "source": 5,
+          "target": 8
+        },
+        {
+          "source": 9,
+          "target": 12
+        }
+      ],
+      "time_budget_ms": 33,
+      "acceptable_error_pct": 5.0
+    },
+    {
+      "id": 29,
+      "type": "k_shortest_paths",
+      "source": 6,
+      "target": 2,
+      "k": 14,
+      "mode": "distance"
+    },
+    {
+      "id": 30,
+      "type": "k_shortest_paths_heuristic",
+      "source": 14,
+      "target": 2,
+      "k": 2,
+      "overlap_threshold": 60
+    },
+    {
+      "id": 31,
+      "type": "k_shortest_paths_heuristic",
+      "source": 3,
+      "target": 4,
+      "k": 4,
+      "overlap_threshold": 71
+    },
+    {
+      "id": 33,
+      "type": "k_shortest_paths",
+      "source": 7,
+      "target": 3,
+      "k": 9,
+      "mode": "distance"
+    },
+    {
+      "id": 36,
+      "type": "k_shortest_paths_heuristic",
+      "source": 3,
+      "target": 7,
+      "k": 7,
+      "overlap_threshold": 51
+    },
+    {
+      "id": 37,
+      "type": "k_shortest_paths_heuristic",
+      "source": 14,
+      "target": 3,
+      "k": 5,
+      "overlap_threshold": 69
+    },
+    {
+      "id": 39,
+      "type": "approx_shortest_path",
+      "queries": [
+        {
+          "source": 5,
+          "target": 0
+        },
+        {
+          "source": 3,
+          "target": 2
+        },
+        {
+          "source": 7,
+          "target": 2
+        },
+        {
+          "source": 4,
+          "target": 10
+        }
+      ],
+      "time_budget_ms": 14,
+      "acceptable_error_pct": 10.0
+    },
+    {
+      "id": 41,
+      "type": "k_shortest_paths_heuristic",
+      "source": 8,
+      "target": 7,
+      "k": 4,
+      "overlap_threshold": 89
+    },
+    {
+      "id": 43,
+      "type": "k_shortest_paths",
+      "source": 0,
+      "target": 10,
+      "k": 15,
+      "mode": "distance"
+    }
+  ]
+}

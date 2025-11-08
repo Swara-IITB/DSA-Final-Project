@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "id": "phase2_queries_graph_osm_hyderabad_india"
+  },
+  "events": [
+    {
+      "id": 1,
+      "type": "approx_shortest_path",
+      "queries": [
+        {
+          "source": 30,
+          "target": 146
+        },
+        {
+          "source": 234,
+          "target": 254
+        },
+        {
+          "source": 57,
+          "target": 287
+        },
+        {
+          "source": 154,
+          "target": 175
+        }
+      ],
+      "time_budget_ms": 12,
+      "acceptable_error_pct": 15.0
+    },
+    {
+      "id": 3,
+      "type": "k_shortest_paths_heuristic",
+      "source": 75,
+      "target": 241,
+      "k": 7,
+      "overlap_threshold": 62
+    },
+    {
+      "id": 6,
+      "type": "k_shortest_paths",
+      "source": 55,
+      "target": 276,
+      "k": 12,
+      "mode": "distance"
+    },
+    {
+      "id": 8,
+      "type": "k_shortest_paths",
+      "source": 78,
+      "target": 267,
+      "k": 15,
+      "mode": "distance"
+    },
+    {
+      "id": 11,
+      "type": "k_shortest_paths_heuristic",
+      "source": 158,
+      "target": 282,
+      "k": 7,
+      "overlap_threshold": 82
+    },
+    {
+      "id": 14,
+      "type": "k_shortest_paths",
+      "source": 174,
+      "target": 147,
+      "k": 14,
+      "mode": "distance"
+    },
+    {
+      "id": 15,
+      "type": "k_shortest_paths_heuristic",
+      "source": 222,
+      "target": 39,
+      "k": 5,
+      "overlap_threshold": 64
+    }
+  ]
+}

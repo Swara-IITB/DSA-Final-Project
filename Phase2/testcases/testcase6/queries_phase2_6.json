@@ -1,0 +1,123 @@
+{
+  "meta": {
+    "id": "phase2_queries_graph_osm_paris_france"
+  },
+  "events": [
+    {
+      "id": 1,
+      "type": "k_shortest_paths",
+      "source": 4,
+      "target": 1,
+      "k": 5,
+      "mode": "distance"
+    },
+    {
+      "id": 4,
+      "type": "k_shortest_paths",
+      "source": 1,
+      "target": 4,
+      "k": 6,
+      "mode": "distance"
+    },
+    {
+      "id": 5,
+      "type": "k_shortest_paths_heuristic",
+      "source": 3,
+      "target": 4,
+      "k": 5,
+      "overlap_threshold": 54
+    },
+    {
+      "id": 7,
+      "type": "approx_shortest_path",
+      "queries": [
+        {
+          "source": 0,
+          "target": 1
+        },
+        {
+          "source": 2,
+          "target": 1
+        },
+        {
+          "source": 0,
+          "target": 3
+        }
+      ],
+      "time_budget_ms": 10,
+      "acceptable_error_pct": 15.0
+    },
+    {
+      "id": 10,
+      "type": "k_shortest_paths_heuristic",
+      "source": 2,
+      "target": 0,
+      "k": 4,
+      "overlap_threshold": 90
+    },
+    {
+      "id": 13,
+      "type": "approx_shortest_path",
+      "queries": [
+        {
+          "source": 4,
+          "target": 0
+        },
+        {
+          "source": 3,
+          "target": 4
+        },
+        {
+          "source": 3,
+          "target": 1
+        },
+        {
+          "source": 4,
+          "target": 2
+        },
+        {
+          "source": 1,
+          "target": 3
+        },
+        {
+          "source": 3,
+          "target": 0
+        },
+        {
+          "source": 1,
+          "target": 3
+        },
+        {
+          "source": 2,
+          "target": 4
+        },
+        {
+          "source": 1,
+          "target": 3
+        },
+        {
+          "source": 4,
+          "target": 3
+        },
+        {
+          "source": 2,
+          "target": 1
+        },
+        {
+          "source": 0,
+          "target": 1
+        },
+        {
+          "source": 4,
+          "target": 1
+        },
+        {
+          "source": 3,
+          "target": 0
+        }
+      ],
+      "time_budget_ms": 24,
+      "acceptable_error_pct": 10.0
+    }
+  ]
+}

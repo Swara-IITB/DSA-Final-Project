@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "id": "phase2_queries_graph_osm_pune_india"
+  },
+  "events": [
+    {
+      "id": 1,
+      "type": "k_shortest_paths_heuristic",
+      "source": 3,
+      "target": 66,
+      "k": 5,
+      "overlap_threshold": 56
+    },
+    {
+      "id": 4,
+      "type": "k_shortest_paths_heuristic",
+      "source": 10,
+      "target": 52,
+      "k": 3,
+      "overlap_threshold": 86
+    },
+    {
+      "id": 7,
+      "type": "k_shortest_paths_heuristic",
+      "source": 8,
+      "target": 63,
+      "k": 7,
+      "overlap_threshold": 52
+    },
+    {
+      "id": 10,
+      "type": "approx_shortest_path",
+      "queries": [
+        {
+          "source": 64,
+          "target": 62
+        },
+        {
+          "source": 22,
+          "target": 17
+        },
+        {
+          "source": 59,
+          "target": 64
+        },
+        {
+          "source": 66,
+          "target": 12
+        },
+        {
+          "source": 21,
+          "target": 2
+        },
+        {
+          "source": 16,
+          "target": 35
+        },
+        {
+          "source": 17,
+          "target": 65
+        },
+        {
+          "source": 37,
+          "target": 9
+        },
+        {
+          "source": 63,
+          "target": 44
+        }
+      ],
+      "time_budget_ms": 15,
+      "acceptable_error_pct": 10.0
+    },
+    {
+      "id": 12,
+      "type": "k_shortest_paths",
+      "source": 12,
+      "target": 14,
+      "k": 13,
+      "mode": "distance"
+    },
+    {
+      "id": 13,
+      "type": "k_shortest_paths",
+      "source": 41,
+      "target": 8,
+      "k": 2,
+      "mode": "distance"
+    },
+    {
+      "id": 15,
+      "type": "k_shortest_paths_heuristic",
+      "source": 61,
+      "target": 7,
+      "k": 7,
+      "overlap_threshold": 69
+    },
+    {
+      "id": 16,
+      "type": "k_shortest_paths_heuristic",
+      "source": 54,
+      "target": 66,
+      "k": 7,
+      "overlap_threshold": 87
+    },
+    {
+      "id": 17,
+      "type": "approx_shortest_path",
+      "queries": [
+        {
+          "source": 23,
+          "target": 36
+        },
+        {
+          "source": 52,
+          "target": 40
+        },
+        {
+          "source": 41,
+          "target": 62
+        },
+        {
+          "source": 17,
+          "target": 28
+        },
+        {
+          "source": 3,
+          "target": 24
+        }
+      ],
+      "time_budget_ms": 10,
+      "acceptable_error_pct": 15.0
+    },
+    {
+      "id": 19,
+      "type": "k_shortest_paths",
+      "source": 33,
+      "target": 46,
+      "k": 5,
+      "mode": "distance"
+    },
+    {
+      "id": 21,
+      "type": "k_shortest_paths",
+      "source": 3,
+      "target": 41,
+      "k": 8,
+      "mode": "distance"
+    },
+    {
+      "id": 23,
+      "type": "k_shortest_paths",
+      "source": 58,
+      "target": 2,
+      "k": 12,
+      "mode": "distance"
+    }
+  ]
+}

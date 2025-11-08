@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "id": "graph_osm_paris_france",
+    "nodes": 5,
+    "description": "Auto-generated graph for Paris, France"
+  },
+  "nodes": [
+    {
+      "id": 0,
+      "lat": 48.882254,
+      "lon": 2.286064,
+      "pois": [
+        "pharmacy"
+      ]
+    },
+    {
+      "id": 1,
+      "lat": 48.836728,
+      "lon": 2.306345
+    },
+    {
+      "id": 2,
+      "lat": 48.8307,
+      "lon": 2.33286,
+      "pois": [
+        "pharmacy",
+        "atm",
+        "hospital"
+      ]
+    },
+    {
+      "id": 3,
+      "lat": 48.887845,
+      "lon": 2.310895,
+      "pois": [
+        "restaurant",
+        "pharmacy"
+      ]
+    },
+    {
+      "id": 4,
+      "lat": 48.847366,
+      "lon": 2.29793
+    }
+  ],
+  "edges": []
+}

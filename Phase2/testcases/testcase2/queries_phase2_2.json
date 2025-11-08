@@ -1,0 +1,531 @@
+{
+  "meta": {
+    "id": "phase2_queries_graph_osm_hyderabad_india"
+  },
+  "events": [
+    {
+      "id": 1,
+      "type": "k_shortest_paths",
+      "source": 22,
+      "target": 25,
+      "k": 5,
+      "mode": "distance"
+    },
+    {
+      "id": 4,
+      "type": "k_shortest_paths_heuristic",
+      "source": 24,
+      "target": 26,
+      "k": 7,
+      "overlap_threshold": 70
+    },
+    {
+      "id": 5,
+      "type": "approx_shortest_path",
+      "queries": [
+        {
+          "source": 12,
+          "target": 31
+        },
+        {
+          "source": 12,
+          "target": 23
+        },
+        {
+          "source": 30,
+          "target": 9
+        },
+        {
+          "source": 12,
+          "target": 29
+        },
+        {
+          "source": 0,
+          "target": 31
+        },
+        {
+          "source": 31,
+          "target": 12
+        },
+        {
+          "source": 10,
+          "target": 24
+        }
+      ],
+      "time_budget_ms": 27,
+      "acceptable_error_pct": 5.0
+    },
+    {
+      "id": 7,
+      "type": "k_shortest_paths",
+      "source": 19,
+      "target": 31,
+      "k": 4,
+      "mode": "distance"
+    },
+    {
+      "id": 9,
+      "type": "approx_shortest_path",
+      "queries": [
+        {
+          "source": 28,
+          "target": 24
+        },
+        {
+          "source": 24,
+          "target": 15
+        },
+        {
+          "source": 14,
+          "target": 9
+        },
+        {
+          "source": 21,
+          "target": 25
+        },
+        {
+          "source": 6,
+          "target": 30
+        }
+      ],
+      "time_budget_ms": 21,
+      "acceptable_error_pct": 5.0
+    },
+    {
+      "id": 11,
+      "type": "k_shortest_paths",
+      "source": 0,
+      "target": 26,
+      "k": 10,
+      "mode": "distance"
+    },
+    {
+      "id": 12,
+      "type": "k_shortest_paths_heuristic",
+      "source": 4,
+      "target": 18,
+      "k": 2,
+      "overlap_threshold": 73
+    },
+    {
+      "id": 13,
+      "type": "k_shortest_paths_heuristic",
+      "source": 4,
+      "target": 13,
+      "k": 5,
+      "overlap_threshold": 53
+    },
+    {
+      "id": 15,
+      "type": "k_shortest_paths",
+      "source": 15,
+      "target": 21,
+      "k": 9,
+      "mode": "distance"
+    },
+    {
+      "id": 16,
+      "type": "k_shortest_paths",
+      "source": 2,
+      "target": 22,
+      "k": 3,
+      "mode": "distance"
+    },
+    {
+      "id": 19,
+      "type": "approx_shortest_path",
+      "queries": [
+        {
+          "source": 9,
+          "target": 7
+        },
+        {
+          "source": 16,
+          "target": 28
+        },
+        {
+          "source": 16,
+          "target": 31
+        },
+        {
+          "source": 13,
+          "target": 5
+        },
+        {
+          "source": 5,
+          "target": 8
+        },
+        {
+          "source": 17,
+          "target": 12
+        },
+        {
+          "source": 7,
+          "target": 5
+        }
+      ],
+      "time_budget_ms": 37,
+      "acceptable_error_pct": 5.0
+    },
+    {
+      "id": 22,
+      "type": "approx_shortest_path",
+      "queries": [
+        {
+          "source": 21,
+          "target": 0
+        },
+        {
+          "source": 12,
+          "target": 23
+        },
+        {
+          "source": 19,
+          "target": 25
+        },
+        {
+          "source": 25,
+          "target": 5
+        },
+        {
+          "source": 28,
+          "target": 25
+        },
+        {
+          "source": 21,
+          "target": 11
+        },
+        {
+          "source": 15,
+          "target": 22
+        },
+        {
+          "source": 30,
+          "target": 3
+        },
+        {
+          "source": 5,
+          "target": 15
+        },
+        {
+          "source": 16,
+          "target": 9
+        },
+        {
+          "source": 29,
+          "target": 4
+        },
+        {
+          "source": 16,
+          "target": 4
+        },
+        {
+          "source": 1,
+          "target": 6
+        },
+        {
+          "source": 28,
+          "target": 29
+        }
+      ],
+      "time_budget_ms": 13,
+      "acceptable_error_pct": 15.0
+    },
+    {
+      "id": 25,
+      "type": "k_shortest_paths",
+      "source": 25,
+      "target": 4,
+      "k": 3,
+      "mode": "distance"
+    },
+    {
+      "id": 27,
+      "type": "k_shortest_paths",
+      "source": 22,
+      "target": 8,
+      "k": 19,
+      "mode": "distance"
+    },
+    {
+      "id": 30,
+      "type": "k_shortest_paths",
+      "source": 25,
+      "target": 5,
+      "k": 9,
+      "mode": "distance"
+    },
+    {
+      "id": 32,
+      "type": "k_shortest_paths",
+      "source": 3,
+      "target": 29,
+      "k": 17,
+      "mode": "distance"
+    },
+    {
+      "id": 35,
+      "type": "k_shortest_paths",
+      "source": 2,
+      "target": 23,
+      "k": 5,
+      "mode": "distance"
+    },
+    {
+      "id": 37,
+      "type": "k_shortest_paths",
+      "source": 21,
+      "target": 29,
+      "k": 5,
+      "mode": "distance"
+    },
+    {
+      "id": 38,
+      "type": "k_shortest_paths",
+      "source": 5,
+      "target": 10,
+      "k": 8,
+      "mode": "distance"
+    },
+    {
+      "id": 41,
+      "type": "k_shortest_paths_heuristic",
+      "source": 8,
+      "target": 10,
+      "k": 2,
+      "overlap_threshold": 69
+    },
+    {
+      "id": 44,
+      "type": "k_shortest_paths_heuristic",
+      "source": 11,
+      "target": 14,
+      "k": 2,
+      "overlap_threshold": 88
+    },
+    {
+      "id": 46,
+      "type": "k_shortest_paths",
+      "source": 20,
+      "target": 30,
+      "k": 8,
+      "mode": "distance"
+    },
+    {
+      "id": 49,
+      "type": "k_shortest_paths_heuristic",
+      "source": 30,
+      "target": 19,
+      "k": 3,
+      "overlap_threshold": 50
+    },
+    {
+      "id": 51,
+      "type": "k_shortest_paths",
+      "source": 23,
+      "target": 31,
+      "k": 6,
+      "mode": "distance"
+    },
+    {
+      "id": 54,
+      "type": "k_shortest_paths",
+      "source": 27,
+      "target": 7,
+      "k": 9,
+      "mode": "distance"
+    },
+    {
+      "id": 55,
+      "type": "k_shortest_paths_heuristic",
+      "source": 29,
+      "target": 0,
+      "k": 2,
+      "overlap_threshold": 63
+    },
+    {
+      "id": 58,
+      "type": "k_shortest_paths_heuristic",
+      "source": 29,
+      "target": 23,
+      "k": 3,
+      "overlap_threshold": 66
+    },
+    {
+      "id": 60,
+      "type": "k_shortest_paths",
+      "source": 13,
+      "target": 6,
+      "k": 17,
+      "mode": "distance"
+    },
+    {
+      "id": 63,
+      "type": "k_shortest_paths_heuristic",
+      "source": 30,
+      "target": 25,
+      "k": 3,
+      "overlap_threshold": 58
+    },
+    {
+      "id": 64,
+      "type": "k_shortest_paths",
+      "source": 25,
+      "target": 15,
+      "k": 8,
+      "mode": "distance"
+    },
+    {
+      "id": 67,
+      "type": "k_shortest_paths_heuristic",
+      "source": 17,
+      "target": 26,
+      "k": 6,
+      "overlap_threshold": 90
+    },
+    {
+      "id": 70,
+      "type": "k_shortest_paths_heuristic",
+      "source": 22,
+      "target": 4,
+      "k": 7,
+      "overlap_threshold": 82
+    },
+    {
+      "id": 72,
+      "type": "k_shortest_paths",
+      "source": 29,
+      "target": 7,
+      "k": 20,
+      "mode": "distance"
+    },
+    {
+      "id": 74,
+      "type": "approx_shortest_path",
+      "queries": [
+        {
+          "source": 5,
+          "target": 20
+        },
+        {
+          "source": 20,
+          "target": 16
+        },
+        {
+          "source": 7,
+          "target": 29
+        },
+        {
+          "source": 13,
+          "target": 15
+        },
+        {
+          "source": 0,
+          "target": 25
+        },
+        {
+          "source": 8,
+          "target": 12
+        },
+        {
+          "source": 0,
+          "target": 6
+        },
+        {
+          "source": 22,
+          "target": 24
+        },
+        {
+          "source": 9,
+          "target": 19
+        },
+        {
+          "source": 11,
+          "target": 30
+        },
+        {
+          "source": 21,
+          "target": 29
+        },
+        {
+          "source": 27,
+          "target": 0
+        }
+      ],
+      "time_budget_ms": 26,
+      "acceptable_error_pct": 10.0
+    },
+    {
+      "id": 76,
+      "type": "k_shortest_paths_heuristic",
+      "source": 11,
+      "target": 27,
+      "k": 2,
+      "overlap_threshold": 77
+    },
+    {
+      "id": 77,
+      "type": "k_shortest_paths",
+      "source": 15,
+      "target": 25,
+      "k": 12,
+      "mode": "distance"
+    },
+    {
+      "id": 79,
+      "type": "k_shortest_paths_heuristic",
+      "source": 0,
+      "target": 2,
+      "k": 3,
+      "overlap_threshold": 79
+    },
+    {
+      "id": 81,
+      "type": "k_shortest_paths_heuristic",
+      "source": 0,
+      "target": 1,
+      "k": 2,
+      "overlap_threshold": 87
+    },
+    {
+      "id": 82,
+      "type": "k_shortest_paths",
+      "source": 23,
+      "target": 1,
+      "k": 13,
+      "mode": "distance"
+    },
+    {
+      "id": 85,
+      "type": "k_shortest_paths_heuristic",
+      "source": 28,
+      "target": 1,
+      "k": 7,
+      "overlap_threshold": 53
+    },
+    {
+      "id": 88,
+      "type": "k_shortest_paths",
+      "source": 25,
+      "target": 12,
+      "k": 9,
+      "mode": "distance"
+    },
+    {
+      "id": 91,
+      "type": "k_shortest_paths",
+      "source": 18,
+      "target": 31,
+      "k": 8,
+      "mode": "distance"
+    },
+    {
+      "id": 92,
+      "type": "k_shortest_paths_heuristic",
+      "source": 24,
+      "target": 28,
+      "k": 2,
+      "overlap_threshold": 61
+    }
+  ]
+}
