@@ -26,14 +26,6 @@ ll nn(const Graph &g, double lat, double lon){
     return list[0].second;
 }
 
-Edge findedge(const Graph &g, ll i){
-    for(auto edge : g.edges){
-        if(edge.first == i){
-            return edge.second;
-        }
-    }
-}
-
 std::vector<ll>shortest_path(const Graph &g, std::string poi, ll k, double lat, double lon){
     ll nn_id = nn(g,lat,lon);
     std::vector<double> sp(g.adjMatrix.size(),__LONG_LONG_MAX__);
@@ -45,11 +37,17 @@ std::vector<ll>shortest_path(const Graph &g, std::string poi, ll k, double lat, 
         auto x = pq.top();
         pq.pop();
         for(auto y: g.adjList[x.second]){
-            if(!findedge(g,y.second).disable && !visit[y.first]){ // Check other things like oneway or disabled if applicable
-                if(findedge(g,y.second).len + sp[x.second] < sp[y.second]){ // wouldn't y.first be a node id? we need to add edge weight 
-                    sp[y.second] = findedge(g,y.second).len + sp[x.second]; // we are storing edge id in second position of each pair
-                    pq.push({sp[y.second], y.second});
+            try{
+                auto &edge = g.edges.at(y.second);
+                if(!edge.disable && !visit[y.first]){ // Check other things like oneway or disabled if applicable
+                    if(edge.len + sp[x.second] < sp[y.first]){ // wouldn't y.first be a node id? we need to add edge weight 
+                        sp[y.first] = edge.len + sp[x.second]; // we are storing edge id in second position of each pair
+                        pq.push({sp[y.first], y.first});
+                    }
                 }
+            }
+            catch(const std::out_of_range& ex){
+                std::cerr<<"Requested edge is not found in the graph"<<std::endl;
             }
         }
         visit[x.second]=true;
