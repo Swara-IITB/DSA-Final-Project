@@ -1,5 +1,6 @@
 #pragma once
 #include "graph.hpp"
+#include<iostream>
 #include<vector>
 #include<string>
 #include<cmath>
@@ -8,4 +9,3 @@
 std::vector<ll> euclidean(const Graph &g, std::string poi, ll k, double lat, double lon);
 std::vector<ll>shortest_path(const Graph &g, std::string poi, ll k, double lat, double lon);
 ll nn(const Graph &g, double lat, double lon);
-Edge findedge(const Graph &g, ll i);
