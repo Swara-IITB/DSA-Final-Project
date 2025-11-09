@@ -16,7 +16,7 @@ int main(int argc, char* argv[]) {
     }
 
     // Read graph from first file
-    std::string filename = argv[2];
+    std::string filename = argv[1];
     Graph g = loadGraph_parse(filename); // will throw runtime error if unable to open
                         // for precomputation we can use floyd warshall for small graphs, hopefully
 

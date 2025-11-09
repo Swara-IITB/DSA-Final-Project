@@ -3,9 +3,9 @@
 #include <fstream>
 #include <chrono>
 #include <vector>
-/*
-    Add other includes that you require, only write code wherever indicated
-*/
+#include "graph.hpp"
+#include "Phase1/loadGraph1.hpp"
+#include "queryHandler2.hpp"
 
 using json = nlohmann::json;
 
@@ -16,11 +16,9 @@ int main(int argc, char* argv[]) {
     }
 
     // Read graph from first file
-    /*
-        Add your graph reading and processing code here
-        Initialize any classes and data structures needed for query processing
-        Close the file after reading it
-    */
+    std::string filename = argv[1];
+    Graph g = loadGraph_parse(filename); // will throw runtime error if unable to open
+                        // for precomputation we can use floyd warshall for small graphs, hopefully
 
     // Read queries from second file
     std::ifstream queries_file(argv[2]);
@@ -38,15 +36,9 @@ int main(int argc, char* argv[]) {
 
     for (const auto& query : queries_json["events"]) {
         auto start_time = std::chrono::high_resolution_clock::now();
-
-        /*
-            Add your query processing code here
-            Each query should return a json object which should be printed to sample.json
-        */
-
         // Answer each query replacing the function process_query using 
         // whatever function or class methods that you have implemented
-        json result = process_query(query);
+        json result = process_query_phase2(g,query,start_time);
 
         auto end_time = std::chrono::high_resolution_clock::now();
         result["processing_time"] = std::chrono::duration<double, std::milli>(end_time - start_time).count();

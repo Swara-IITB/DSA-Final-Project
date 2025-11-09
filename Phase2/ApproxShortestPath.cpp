@@ -14,10 +14,11 @@ double eucl_dist_latlon(double x1, double y1, double x2, double y2){
 }
 
 // normal weighted Astar, might take longer
-double unidir_approx_Astar_meet(const Graph& g, ll src, ll target, double w, int queries_left, double time_left_ms, double acc_error){
+double unidir_approx_Astar_meet(const Graph& g, ll src, ll target, double w, int queries_left, double time_left_ms, double acc_error, double tick_multi=0.9){
     auto start = std::chrono::high_resolution_clock::now();
+    w = 1+w*acc_error;
     if(src==target) return 0.0;
-    double tick = (time_left_ms/queries_left)*0.9; // check with the stopping condn * (1.1 - acc_error / 20.0);
+    double tick = (time_left_ms/queries_left)*tick_multi; // check with the stopping condn * (1.1 - acc_error / 20.0);
     //Using A*
     std::vector<double> sp(g.V,1e18);
     sp[src]=0.0;
@@ -26,7 +27,7 @@ double unidir_approx_Astar_meet(const Graph& g, ll src, ll target, double w, int
     while(!pq.empty()){
         // stop if taken too long
         auto now = std::chrono::high_resolution_clock::now();
-        if (std::chrono::duration_cast<std::chrono::milliseconds>(now - start).count()>tick){
+        if (std::chrono::duration<double, std::milli>(now - start).count()>tick){
             return sp[pq.top().second]+eucl_dist_nodes(g,pq.top().second,target)*(1+acc_error);
         }
         if(pq.top().second==target){
@@ -48,11 +49,11 @@ double unidir_approx_Astar_meet(const Graph& g, ll src, ll target, double w, int
 
 
 // enough time to explore more even after finding a potential path
-double bidir_approx_Astar_meet( const Graph& g, ll src, ll target, double w, int queries_left, double time_left_ms, double acc_error){
+double bidir_approx_Astar_meet( const Graph& g, ll src, ll target, double w, int queries_left, double time_left_ms, double acc_error, double tick_multi=0.9){
     auto start = std::chrono::high_resolution_clock::now();
     w = 1+w*acc_error;
     if(src==target) return 0.0;
-    double tick = (time_left_ms/queries_left)*0.9;                             // if u want to try with a diff w for rev
+    double tick = (time_left_ms/queries_left)*tick_multi;                             // if u want to try with a diff w for rev
     double ans = 1e18;
     //Using A*
     std::vector<double> sp(g.V,1e18), sprev(g.V,1e18);
@@ -64,7 +65,7 @@ double bidir_approx_Astar_meet( const Graph& g, ll src, ll target, double w, int
     while(!pq.empty() || !pqrev.empty()){
         // stop if taken too long
         auto now = std::chrono::high_resolution_clock::now();
-        if (std::chrono::duration_cast<std::chrono::milliseconds>(now - start).count()>tick){
+        if (std::chrono::duration<double, std::milli>(now - start).count()>tick){
             if(ans<1e18) return ans;
             if(pq.empty() || pqrev.empty()) return ans;
             return sp[pq.top().second]+sprev[pqrev.top().second]+eucl_dist_nodes(g,pq.top().second,pqrev.top().second)*(1+acc_error);
@@ -104,10 +105,10 @@ double bidir_approx_Astar_meet( const Graph& g, ll src, ll target, double w, int
 
 
 // very less time left or given and high error percentage
-double bidir_approx_Astar_range(Graph& g, ll src, ll target, double w,int queries_left, double time_left_ms, double acc_error){
+double bidir_approx_Astar_range(Graph& g, ll src, ll target, double w,int queries_left, double time_left_ms, double acc_error, double tick_multi=0.9){
     auto start = std::chrono::high_resolution_clock::now();
     w = 1+w*acc_error; // if error more then time less hence we need to search more aggressively
-    double tick = (time_left_ms/queries_left)*0.9;
+    double tick = (time_left_ms/queries_left)*tick_multi;
     if(src==target) return 0.0;                             // if u want to try with a diff w for rev
     double ans = 1e18;
     //Using A*
@@ -120,7 +121,7 @@ double bidir_approx_Astar_range(Graph& g, ll src, ll target, double w,int querie
     while(!pq.empty() || !pqrev.empty()){
         // stop if taken too long
         auto now = std::chrono::high_resolution_clock::now();
-        if (std::chrono::duration_cast<std::chrono::milliseconds>(now - start).count()>tick){
+        if (std::chrono::duration<double, std::milli>(now - start).count()>tick){
             if(pq.empty() || pqrev.empty()) return ans;
             return sp[pq.top().second]+sprev[pqrev.top().second]+eucl_dist_nodes(g,pq.top().second,pqrev.top().second)*(1+acc_error);
         }
@@ -163,3 +164,6 @@ double bidir_approx_Astar_range(Graph& g, ll src, ll target, double w,int querie
 }
 
 // Assumption , a path exists for sure between src and target
+// testing metrics
+// processing time, ratio of correct queries and maybe MSE
+// based on time budget, error percentage , chosen algo and chosen w
