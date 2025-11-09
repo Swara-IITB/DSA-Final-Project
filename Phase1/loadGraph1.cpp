@@ -1,4 +1,5 @@
 #include "loadGraph1.hpp"
+typedef long long ll;
 using json = nlohmann::json;
 
 Graph loadGraph_parse(const std::string &filename){
@@ -11,11 +12,12 @@ Graph loadGraph_parse(const std::string &filename){
     Graph g(v);
 
     for(auto& n : graphdata["nodes"]){
-        g.add_node(n["id"],n["lat"],n["lon"],n["pois"]);// what if they don't give v nodes?
+        if (n.contains("pois")) g.add_node(n["id"], n["lat"], n["lon"], n["pois"]);
+        else g.add_node(n["id"], n["lat"], n["lon"], {});// pois can be missing
     }
     for(auto& e : graphdata["edges"]){
-        g.add_edge(e["id"],e["u"],e["v"],e["length"],e["average_time"],e["oneway"],e["roadtype"])
-        if(!e["speed_profile"].empty()) g.edges[e["id"]].sp_profile = e["speed_profile"];
+        if(e.contains("speed_profile")) g.add_edge(e["id"],e["u"],e["v"],e["length"],e["average_time"],e["oneway"],e["roadtype"],e["speed_profile"]);
+        else g.add_edge(e["id"],e["u"],e["v"],e["length"],e["average_time"],e["oneway"],e["roadtype"],{});     
     }
     return g;
 }

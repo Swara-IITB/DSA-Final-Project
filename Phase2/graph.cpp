@@ -23,25 +23,24 @@ void Graph::add_edge(ll id,ll u, ll v,double len,double avg_t, bool oneway,std::
         adjList[vp].push_back({up,e.id}); // added adjList
     }
 }
-// not needed for phase 2
-// void Graph::remove_edge(ll id){
-//     edges.at(id).disable=true;
-// }
-// void Graph::modify_edge_len(ll id, double len){
-//     edges.at(id).len = len;
-//     edges.at(id).disable=false;
-// }
-// void Graph::modify_edge_sp_profile(ll id, std::vector<double> sp){ // replaced way with speed profile 
-//     edges.at(id).sp_profile = sp;                              // due to the updated problem statement
-//     edges.at(id).disable=false;
-// }
-// void Graph::modify_edge_avg_t(ll id, double t){
-//     edges.at(id).avg_t = t;
-//     edges.at(id).disable=false;
-// }
-// void Graph::modify_edge_roadtype(ll id, std::string road){
-//     edges.at(id).roadtype = road;
-//     edges.at(id).disable=false;
-// }
+void Graph::remove_edge(ll id){
+    edges.at(id).disable=true;
+}
+void Graph::modify_edge_len(ll id, double len){
+    edges.at(id).len = len;
+    edges.at(id).disable=false;
+}
+void Graph::modify_edge_sp_profile(ll id, std::vector<double> sp){ // replaced way with speed profile 
+    edges.at(id).sp_profile = sp;                              // due to the updated problem statement
+    edges.at(id).disable=false;
+}
+void Graph::modify_edge_avg_t(ll id, double t){
+    edges.at(id).avg_t = t;
+    edges.at(id).disable=false;
+}
+void Graph::modify_edge_roadtype(ll id, std::string road){
+    edges.at(id).roadtype = road;
+    edges.at(id).disable=false;
+}
 
 // We are assuming oneway var never changes once given
