@@ -24,7 +24,8 @@ struct Edge{
 
 class Graph{
     public :
-        std::vector<std::vector<ll>> adjMatrix;
+        //don't need the matrix
+        // std::vector<std::vector<ll>> adjMatrix;
         std::vector<std::vector<std::pair<ll,ll>>> adjList;
         ll V;
         std::vector<Node> nodes;

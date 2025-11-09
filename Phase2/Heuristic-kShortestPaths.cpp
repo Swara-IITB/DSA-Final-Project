@@ -35,9 +35,8 @@ std::pair<std::vector<ll>,double> dijsktra(const Graph& g, ll source, ll target,
         while(parent[u].first!=-1){
             ans.push_back(u);
             timesUsed[parent[u].second]++;
-            u = parent[u].first;  // can you store pairs of parent and the edge id in the parent vector,
-                            // when we iterate here we can simultaneously calculate path length and timeUsed, maybe?
-        }                   // Also (I might be wrong) isn't the pathlength supposed to be in sp itself?
+            u = parent[u].first;  
+        }                  
         ans.push_back(source);
     }
     std::reverse(ans.begin(),ans.end());

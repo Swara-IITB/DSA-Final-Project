@@ -24,7 +24,7 @@ struct Edge{
 
 class Graph{
     public :
-        std::vector<std::vector<ll>> adjMatrix;
+        std::vector<std::vector<std::pair<ll,ll>>> revAdjList;
         std::vector<std::vector<std::pair<ll,ll>>> adjList;
         ll V;
         std::vector<Node> nodes;
@@ -32,9 +32,10 @@ class Graph{
         Graph(ll v);
         void add_node(ll id, double lat, double lon, std::vector<std::string> pois);
         void add_edge(ll id,ll u, ll v,double len,double avg_t, bool oneway,std::string roadtype,std::vector<double> sp_profile={});
-        void remove_edge(ll id);
-        void modify_edge_len(ll id, double len);
-        void modify_edge_avg_t(ll id, double t);
-        void modify_edge_sp_profile(ll id, std::vector<double> sp);
-        void modify_edge_roadtype(ll id, std::string road);
+        //not needed for phase 2
+        // void remove_edge(ll id);
+        // void modify_edge_len(ll id, double len);
+        // void modify_edge_avg_t(ll id, double t);
+        // void modify_edge_sp_profile(ll id, std::vector<double> sp);
+        // void modify_edge_roadtype(ll id, std::string road);
 };
