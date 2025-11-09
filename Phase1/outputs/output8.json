@@ -1,0 +1,128 @@
+{
+    "meta": {
+        "id": "queries_for_graph_osm_satara_india"
+    },
+    "results": [
+        {
+            "id": 1,
+            "minimum_time/minimum_distance": 76.5,
+            "path": [
+                5,
+                3,
+                0,
+                9
+            ],
+            "possible": true,
+            "processing_time": 0.09752
+        },
+        {
+            "done": "true",
+            "id": 4,
+            "processing_time": 0.025514
+        },
+        {
+            "id": 6,
+            "possible": "false",
+            "processing_time": 0.0339
+        },
+        {
+            "id": 9,
+            "possible": "false",
+            "processing_time": 0.029152
+        },
+        {
+            "done": "true",
+            "id": 11,
+            "processing_time": 0.016913
+        },
+        {
+            "done": "true",
+            "id": 14,
+            "processing_time": 0.015934
+        },
+        {
+            "id": 17,
+            "nodes": [
+                0
+            ],
+            "processing_time": 0.049503
+        },
+        {
+            "id": 18,
+            "possible": "false",
+            "processing_time": 0.028761
+        },
+        {
+            "id": 19,
+            "nodes": [
+                7,
+                8,
+                0
+            ],
+            "processing_time": 0.031892
+        },
+        {
+            "id": 21,
+            "nodes": [
+                8,
+                0
+            ],
+            "processing_time": 0.044004
+        },
+        {
+            "id": 22,
+            "possible": "false",
+            "processing_time": 0.028549
+        },
+        {
+            "id": 24,
+            "possible": "false",
+            "processing_time": 0.027315
+        },
+        {
+            "done": "true",
+            "id": 25,
+            "processing_time": 0.016512
+        },
+        {
+            "id": 27,
+            "nodes": [],
+            "processing_time": 0.035159
+        },
+        {
+            "id": 28,
+            "possible": "false",
+            "processing_time": 0.028348
+        },
+        {
+            "id": 30,
+            "possible": "false",
+            "processing_time": 0.030413
+        },
+        {
+            "id": 32,
+            "nodes": [],
+            "processing_time": 0.038255
+        },
+        {
+            "id": 34,
+            "possible": "false",
+            "processing_time": 0.031014
+        },
+        {
+            "done": "false",
+            "id": 37,
+            "processing_time": 0.046565
+        },
+        {
+            "done": "false",
+            "id": 38,
+            "processing_time": 0.019204
+        },
+        {
+            "done": "false",
+            "id": 39,
+            "processing_time": 0.016628
+        }
+    ]
+}

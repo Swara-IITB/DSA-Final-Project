@@ -16,8 +16,8 @@ Graph loadGraph_parse(const std::string &filename){
         else g.add_node(n["id"], n["lat"], n["lon"], {});// pois can be missing
     }
     for(auto& e : graphdata["edges"]){
-        if(e.contains("speed_profile")) g.add_edge(e["id"],e["u"],e["v"],e["length"],e["average_time"],e["oneway"],e["roadtype"],e["speed_profile"]);
-        else g.add_edge(e["id"],e["u"],e["v"],e["length"],e["average_time"],e["oneway"],e["roadtype"],{});     
+        if(e.contains("speed_profile")) g.add_edge(e["id"],e["u"],e["v"],e["length"],e["average_time"],e["oneway"],e.value("roadtype", "unknown"),e["speed_profile"]);
+        else g.add_edge(e["id"],e["u"],e["v"],e["length"],e["average_time"],e["oneway"],e.value("roadtype", "unknown"),{});     
     }
     return g;
 }

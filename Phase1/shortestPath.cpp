@@ -5,16 +5,16 @@
 #include<algorithm>
 typedef long long ll;
 
-std::pair<double,std::vector<ll>> shortestPath(Graph & g,ll src, ll target, string mode,const std::vector<ll> forbidNodes, const std::vector<string> forbidRoads ){
+std::pair<double,std::vector<ll>> shortestPath(Graph & g,ll src, ll target, std::string mode, std::vector<ll> forbidNodes, std::vector<std::string> forbidRoads ){
     std::unordered_map<std::string,ll> mforbidRoads;
     for(auto s : forbidRoads) mforbidRoads[s] = 1;
     if(mode=="time") return modeTime(g,src,target,forbidNodes,mforbidRoads);
     if(mode=="distance") return modeDist(g,src,target,forbidNodes,mforbidRoads);
     // what if mode is not given?
     std::cerr << "mode not specified" << std::endl;
-    return std::make_pair(0,{});
+    return std::make_pair(0.0, std::vector<ll>{});
 }
-std::pair<double,std::vector<ll>> modeTime(Graph & g,const ll& src,const ll& target,const std::vector<ll>& forbidNodes, const std::unordered_map<string,ll>& mforbidRoads){
+std::pair<double,std::vector<ll>> modeTime(Graph & g,const ll& src,const ll& target,std::vector<ll>& forbidNodes, std::unordered_map<std::string,ll>& mforbidRoads){
     if(src==target) return {0.0,{src}};
     double ans = 0.0;
 
@@ -67,7 +67,7 @@ std::pair<double,std::vector<ll>> modeTime(Graph & g,const ll& src,const ll& tar
         }
         visited[x.second]=true;
     }
-    if(ans==0.0) return {0,{}}; // empty output means not possible
+    if(ans==0.0) return std::make_pair(0.0, std::vector<ll>{}); // empty output means not possible
     std::vector<ll> path;
     //for (ll v = target; v != -1; v = parent[v]) path.push_back(v);
     path.push_back(target);
@@ -77,11 +77,11 @@ std::pair<double,std::vector<ll>> modeTime(Graph & g,const ll& src,const ll& tar
         path.push_back(tmp);
     }
     path.push_back(src);
-    std::reverse(path);
+    std::reverse(path.begin(),path.end());
     return {ans,path};
 }
 
-std::pair<double,std::vector<ll>> modeDist(Graph & g,const ll& src,const ll& target,const std::vector<ll>& forbidNodes, const std::unordered_map<string,ll>& mforbidRoads){
+std::pair<double,std::vector<ll>> modeDist(Graph & g,const ll& src,const ll& target, std::vector<ll>& forbidNodes, std::unordered_map<std::string,ll>& mforbidRoads){
     if(src==target) return {0.0,{src}};
     double ans = 0.0;
 
@@ -116,7 +116,7 @@ std::pair<double,std::vector<ll>> modeDist(Graph & g,const ll& src,const ll& tar
         }
         visited[x.second]=true;
     }
-    if(ans==0.0) return {0,{}}; // empty output means not possible
+    if(ans==0.0) return std::make_pair(0.0, std::vector<ll>{}); // empty output means not possible
     std::vector<ll> path;
     //for (ll v = target; v != -1; v = parent[v]) path.push_back(v);
     path.push_back(target);
@@ -126,7 +126,7 @@ std::pair<double,std::vector<ll>> modeDist(Graph & g,const ll& src,const ll& tar
         path.push_back(tmp);
     }
     path.push_back(src);
-    std::reverse(path);
+    std::reverse(path.begin(),path.end());
     return {ans,path};
 }
 

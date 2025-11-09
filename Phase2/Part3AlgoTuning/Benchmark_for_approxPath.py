@@ -9,7 +9,7 @@ def load_graph_as_nx(graph_file):
 
     G = nx.DiGraph()
     for e in data["edges"]:
-        u, v, w = e["source"], e["target"], e["length"]
+        u, v, w = e["u"], e["v"], e["length"]
         G.add_edge(u, v, weight=w)
         if e.get("oneway") == False:
             G.add_edge(v, u, weight=w)
@@ -73,7 +73,7 @@ def main():
     queries_json = generate_approx_queries(G, n_queries)
     queries_json = add_ground_truth(G, queries_json)
 
-    output_file = "queries_with_truth.json"
+    output_file = "queries_with_truth14.json"
     with open(output_file, "w") as f:
         json.dump(queries_json, f, indent=2)
 

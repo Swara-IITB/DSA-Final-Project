@@ -3,16 +3,16 @@
 using json = nlohmann::json;
 typedef long long ll;
 
-json process_3algo_approx1(Graph& g,json query,std::chrono::time_point<std::chrono::high_resolution_clock> start_time,double w=1){
+json process_3algo_approx1(Graph& g,json query,std::chrono::time_point<std::chrono::high_resolution_clock> start_time,double w){
     json result;
     result["id"] = query["id"];
     std::vector<json> distances;
     int q_left = query["queries"].size();
-    double t_budget = query["time_budget_ms"] ;
-    double err = query["acceptable_error_pct"]/100;
+    double t_budget = query["time_budget_ms"].get<double>() ;
+    double err = query["acceptable_error_pct"].get<double>()/100;
     for (auto &q : query["queries"]){
         json r;
-        ll s = q["source"], t = q["target"];
+        ll s = q["source"].get<ll>(), t = q["target"].get<ll>();
         r["source"] = s;
         r["target"] = t;
         auto now = std::chrono::high_resolution_clock::now();
@@ -24,16 +24,16 @@ json process_3algo_approx1(Graph& g,json query,std::chrono::time_point<std::chro
     return result;
 }
 
-json process_3algo_approx2(Graph& g,json query,std::chrono::time_point<std::chrono::high_resolution_clock> start_time,double w=1){
+json process_3algo_approx2(Graph& g,json query,std::chrono::time_point<std::chrono::high_resolution_clock> start_time,double w){
     json result;
     result["id"] = query["id"];
     std::vector<json> distances;
     int q_left = query["queries"].size();
-    double t_budget = query["time_budget_ms"] ;
-    double err = query["acceptable_error_pct"]/100;
+    double t_budget = query["time_budget_ms"].get<double>() ;
+    double err = query["acceptable_error_pct"].get<double>()/100;
     for (auto &q : query["queries"]){
         json r;
-        ll s = q["source"], t = q["target"];
+        ll s = q["source"].get<ll>(), t = q["target"].get<ll>();
         r["source"] = s;
         r["target"] = t;
         auto now = std::chrono::high_resolution_clock::now();
@@ -45,16 +45,16 @@ json process_3algo_approx2(Graph& g,json query,std::chrono::time_point<std::chro
     return result;
 }
 
-json process_3algo_approx3(Graph& g,json query,std::chrono::time_point<std::chrono::high_resolution_clock> start_time, double w=1){
+json process_3algo_approx3(Graph& g,json query,std::chrono::time_point<std::chrono::high_resolution_clock> start_time, double w){
     json result;
     result["id"] = query["id"];
     std::vector<json> distances;
     int q_left = query["queries"].size();
-    double t_budget = query["time_budget_ms"] ;
-    double err = query["acceptable_error_pct"]/100;
+    double t_budget = query["time_budget_ms"].get<double>() ;
+    double err = query["acceptable_error_pct"].get<double>()/100;
     for (auto &q : query["queries"]){
         json r;
-        ll s = q["source"], t = q["target"];
+        ll s = q["source"].get<ll>(), t = q["target"].get<ll>();
         r["source"] = s;
         r["target"] = t;
         auto now = std::chrono::high_resolution_clock::now();

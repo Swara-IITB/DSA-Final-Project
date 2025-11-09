@@ -1,0 +1,44 @@
+{
+    "meta": {
+        "id": "queries_for_graph_osm_pune_india"
+    },
+    "results": [
+        {
+            "id": 1,
+            "nodes": [],
+            "processing_time": 0.063125
+        },
+        {
+            "id": 4,
+            "minimum_time/minimum_distance": 0.37944162436548223,
+            "path": [
+                0,
+                3
+            ],
+            "possible": true,
+            "processing_time": 0.057128
+        },
+        {
+            "id": 5,
+            "nodes": [],
+            "processing_time": 0.249139
+        },
+        {
+            "id": 6,
+            "possible": "false",
+            "processing_time": 0.063532
+        },
+        {
+            "id": 8,
+            "minimum_time/minimum_distance": 62.459999999999994,
+            "path": [
+                7,
+                0,
+                3,
+                4
+            ],
+            "possible": true,
+            "processing_time": 0.046617
+        }
+    ]
+}

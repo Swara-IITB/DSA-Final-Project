@@ -1,0 +1,56 @@
+{
+    "meta": {
+        "id": "queries_for_graph_osm_hyderabad_india"
+    },
+    "results": [
+        {
+            "id": 1,
+            "possible": "false",
+            "processing_time": 0.074043
+        },
+        {
+            "id": 3,
+            "nodes": [
+                290,
+                172,
+                179,
+                46,
+                65,
+                278,
+                189
+            ],
+            "processing_time": 0.092289
+        },
+        {
+            "id": 5,
+            "possible": "false",
+            "processing_time": 0.022362
+        },
+        {
+            "id": 7,
+            "nodes": [
+                3,
+                11,
+                141
+            ],
+            "processing_time": 0.077503
+        },
+        {
+            "id": 10,
+            "possible": "false",
+            "processing_time": 0.018965
+        },
+        {
+            "id": 13,
+            "possible": "false",
+            "processing_time": 0.018584
+        },
+        {
+            "id": 14,
+            "nodes": [
+                6
+            ],
+            "processing_time": 0.077125
+        }
+    ]
+}

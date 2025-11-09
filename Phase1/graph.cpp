@@ -8,11 +8,11 @@ Graph::Graph(ll v){
     adjList.resize(V);
     nodes.resize(V);
 }
-void Graph::add_node(ll id, double lat, double lon, std::vector<std::string> pois={}){
+void Graph::add_node(ll id, double lat, double lon, std::vector<std::string> pois){
     Node n = {id,lat,lon,pois};
     nodes[id] = n;
 }
-void Graph::add_edge(ll id,ll u, ll v,double len,double avg_t, bool oneway,std::string roadtype,std::vector<double> sp_profile={}){
+void Graph::add_edge(ll id,ll u, ll v,double len,double avg_t, bool oneway,std::string roadtype,std::vector<double> sp_profile){
     Edge e = {id, u, v, len, avg_t, oneway, roadtype,sp_profile};                                           // changed from ll to double
     edges[id]=e;
     ll up = e.u, vp = e.v;

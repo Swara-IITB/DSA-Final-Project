@@ -3,6 +3,7 @@
 #include <fstream>
 #include <chrono>
 #include <vector>
+#include <string>
 #include "graph.hpp"
 #include "loadGraph1.hpp"
 #include "queryHandler.hpp"

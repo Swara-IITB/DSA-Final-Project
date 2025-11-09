@@ -5,6 +5,12 @@
 /*
     Add other includes that you require, only write code wherever indicated
 */
+#include "Phase1/graph.hpp"
+#include "Phase1/loadGraph1.hpp"
+#include "Phase1/knn.hpp"
+#include "Phase1/shortestPath.hpp"
+#include "Phase2/ApproxShortestPath.hpp"
+#include "Phase2/Heuristic-kShortestPaths.hpp"
 
 using json = nlohmann::json;
 

@@ -1,10 +1,12 @@
+#pragma once
 #include <iostream>
 #include <vector>
 #include <string>
 #include <unordered_map>
 #include <chrono>
 #include <queue>
-#include "graph.hpp"
+#include <cmath>
+#include "../Phase1/graph.hpp"
 typedef long long ll;
 
 double eucl_dist_nodes(Graph& g,ll x, ll y); // takes node ids

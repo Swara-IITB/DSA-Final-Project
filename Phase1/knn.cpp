@@ -26,7 +26,7 @@ ll nn(const Graph &g, double lat, double lon){
     return list[0].second;
 }
 
-std::vector<ll>shortest_path(const Graph &g, std::string poi, ll k, double lat, double lon){
+std::vector<ll> shortest_path(const Graph &g, std::string poi, ll k, double lat, double lon){
     ll nn_id = nn(g,lat,lon);
     std::vector<double> sp(g.V,__LONG_LONG_MAX__);
     sp[nn_id]=0;

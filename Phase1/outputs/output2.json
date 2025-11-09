@@ -1,0 +1,275 @@
+{
+    "meta": {
+        "id": "queries_for_graph_osm_hyderabad_india"
+    },
+    "results": [
+        {
+            "id": 1,
+            "nodes": [
+                8,
+                2,
+                12,
+                1,
+                14
+            ],
+            "processing_time": 0.062247
+        },
+        {
+            "id": 2,
+            "minimum_time/minimum_distance": 378.65,
+            "path": [
+                1,
+                6,
+                7,
+                9,
+                30,
+                8
+            ],
+            "possible": true,
+            "processing_time": 0.073441
+        },
+        {
+            "id": 4,
+            "minimum_time/minimum_distance": 44.79,
+            "path": [
+                12,
+                30
+            ],
+            "possible": true,
+            "processing_time": 0.022648
+        },
+        {
+            "done": "true",
+            "id": 7,
+            "processing_time": 0.02247
+        },
+        {
+            "id": 10,
+            "minimum_time/minimum_distance": 31.68,
+            "path": [
+                4,
+                19
+            ],
+            "possible": true,
+            "processing_time": 0.027457
+        },
+        {
+            "done": "true",
+            "id": 12,
+            "processing_time": 0.01535
+        },
+        {
+            "done": "true",
+            "id": 13,
+            "processing_time": 0.013665
+        },
+        {
+            "id": 15,
+            "minimum_time/minimum_distance": 64.59,
+            "path": [
+                19,
+                4,
+                18
+            ],
+            "possible": true,
+            "processing_time": 0.032464
+        },
+        {
+            "id": 16,
+            "possible": "false",
+            "processing_time": 0.026127
+        },
+        {
+            "id": 19,
+            "possible": "false",
+            "processing_time": 0.03133
+        },
+        {
+            "id": 21,
+            "minimum_time/minimum_distance": 42.58,
+            "path": [
+                11,
+                26
+            ],
+            "possible": true,
+            "processing_time": 0.032229
+        },
+        {
+            "done": "true",
+            "id": 22,
+            "processing_time": 0.014057
+        },
+        {
+            "done": "true",
+            "id": 24,
+            "processing_time": 0.013642
+        },
+        {
+            "id": 27,
+            "nodes": [
+                4
+            ],
+            "processing_time": 0.063743
+        },
+        {
+            "id": 30,
+            "nodes": [],
+            "processing_time": 0.044652
+        },
+        {
+            "id": 32,
+            "nodes": [
+                2
+            ],
+            "processing_time": 0.031046
+        },
+        {
+            "done": "true",
+            "id": 34,
+            "processing_time": 0.014592
+        },
+        {
+            "id": 36,
+            "nodes": [
+                25,
+                4,
+                15
+            ],
+            "processing_time": 0.031737
+        },
+        {
+            "done": "true",
+            "id": 37,
+            "processing_time": 0.014132
+        },
+        {
+            "id": 38,
+            "nodes": [
+                12,
+                2,
+                8,
+                1,
+                14
+            ],
+            "processing_time": 0.031281
+        },
+        {
+            "done": "false",
+            "id": 41,
+            "processing_time": 0.01455
+        },
+        {
+            "id": 43,
+            "possible": "false",
+            "processing_time": 0.037239
+        },
+        {
+            "id": 45,
+            "nodes": [
+                4,
+                25
+            ],
+            "processing_time": 0.057953
+        },
+        {
+            "id": 48,
+            "possible": "false",
+            "processing_time": 0.021625
+        },
+        {
+            "done": "true",
+            "id": 50,
+            "processing_time": 0.014293
+        },
+        {
+            "id": 52,
+            "nodes": [],
+            "processing_time": 0.043475
+        },
+        {
+            "done": "true",
+            "id": 55,
+            "processing_time": 0.014318
+        },
+        {
+            "done": "true",
+            "id": 57,
+            "processing_time": 0.013904
+        },
+        {
+            "done": "true",
+            "id": 60,
+            "processing_time": 0.013858
+        },
+        {
+            "done": "true",
+            "id": 62,
+            "processing_time": 0.01368
+        },
+        {
+            "id": 64,
+            "nodes": [
+                1,
+                8
+            ],
+            "processing_time": 0.031092
+        },
+        {
+            "id": 65,
+            "nodes": [
+                15,
+                25,
+                4
+            ],
+            "processing_time": 0.030329
+        },
+        {
+            "id": 67,
+            "possible": "false",
+            "processing_time": 0.024594
+        },
+        {
+            "done": "true",
+            "id": 70,
+            "processing_time": 0.013854
+        },
+        {
+            "id": 73,
+            "possible": "false",
+            "processing_time": 0.021597
+        },
+        {
+            "id": 75,
+            "nodes": [
+                15,
+                14,
+                8,
+                12,
+                4
+            ],
+            "processing_time": 0.032839
+        },
+        {
+            "id": 78,
+            "possible": "false",
+            "processing_time": 0.024371
+        },
+        {
+            "id": 80,
+            "possible": "false",
+            "processing_time": 0.029422
+        },
+        {
+            "done": "true",
+            "id": 83,
+            "processing_time": 0.014154
+        },
+        {
+            "id": 85,
+            "nodes": [
+                2
+            ],
+            "processing_time": 0.029956
+        }
+    ]
+}
