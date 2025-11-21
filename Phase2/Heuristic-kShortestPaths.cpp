@@ -3,7 +3,7 @@ std::pair<std::vector<ll>,double> dijsktra(const Graph& g, ll source, ll target,
     std::vector<ll> ans;
     std::vector<bool> visit(g.V,false);
     std::vector<std::pair<ll,ll>>parent(g.V,{-1,-1});
-    std::vector<double> sp(g.V, __LONG_LONG_MAX__);
+    std::vector<double> sp(g.V, std::numeric_limits<double>::infinity());
     std::priority_queue<std::pair<double,ll>, std::vector<std::pair<double,ll>>, std::greater<std::pair<double,ll>>> pq;
     sp[source]=0;
     pq.push({0.0,source});
@@ -34,7 +34,8 @@ std::pair<std::vector<ll>,double> dijsktra(const Graph& g, ll source, ll target,
         ll u = target;
         while(parent[u].first!=-1){
             ans.push_back(u);
-            timesUsed[parent[u].second]++;
+            ll e = parent[u].second;
+            if (e >= 0 && e < (ll)timesUsed.size()) timesUsed[e]++;
             u = parent[u].first;  
         }                  
         ans.push_back(source);
@@ -54,10 +55,11 @@ std::vector<std::pair<std::vector<ll>, double>> ksp(const Graph& g, ll source, l
         }
         else{
             auto copy = g;
-            for(auto &u : copy.edges){
-                double perc = 100*timesUsed[u.first]/ans.size();
+            for(auto i=0; i<copy.edges.size();i++){
+                if(ans.size()==0){continue;}
+                double perc = 100*timesUsed[i]/ans.size();
                 if(perc>0){
-                    u.second.len *= 1 + (perc/100.0)*(threshold/100.0);
+                    copy.edges[i].len *= 1 + (perc/100.0)*(threshold/100.0);
                 }
             }
 
