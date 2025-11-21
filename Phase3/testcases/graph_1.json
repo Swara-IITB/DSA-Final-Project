@@ -1,0 +1,311 @@
+{
+  "meta": {
+    "id": "graph_osm_pune_india",
+    "nodes": 20,
+    "description": "Auto-generated graph for Pune, India"
+  },
+  "nodes": [
+    {
+      "id": 0,
+      "lat": 18.5467,
+      "lon": 73.921375,
+      "pois": []
+    },
+    {
+      "id": 1,
+      "lat": 18.546056,
+      "lon": 73.921716,
+      "pois": []
+    },
+    {
+      "id": 2,
+      "lat": 18.546048,
+      "lon": 73.921177,
+      "pois": []
+    },
+    {
+      "id": 3,
+      "lat": 18.546891,
+      "lon": 73.922487,
+      "pois": []
+    },
+    {
+      "id": 4,
+      "lat": 18.546788,
+      "lon": 73.92133,
+      "pois": []
+    },
+    {
+      "id": 5,
+      "lat": 18.547543,
+      "lon": 73.92076,
+      "pois": []
+    },
+    {
+      "id": 6,
+      "lat": 18.546571,
+      "lon": 73.920423,
+      "pois": []
+    },
+    {
+      "id": 7,
+      "lat": 18.546283,
+      "lon": 73.920405,
+      "pois": []
+    },
+    {
+      "id": 8,
+      "lat": 18.546827,
+      "lon": 73.922107,
+      "pois": []
+    },
+    {
+      "id": 9,
+      "lat": 18.547821,
+      "lon": 73.920502,
+      "pois": []
+    },
+    {
+      "id": 10,
+      "lat": 18.546662,
+      "lon": 73.922131,
+      "pois": []
+    },
+    {
+      "id": 11,
+      "lat": 18.546219,
+      "lon": 73.921632,
+      "pois": []
+    },
+    {
+      "id": 12,
+      "lat": 18.54626,
+      "lon": 73.922764,
+      "pois": []
+    },
+    {
+      "id": 13,
+      "lat": 18.546264,
+      "lon": 73.922501,
+      "pois": []
+    },
+    {
+      "id": 14,
+      "lat": 18.546559,
+      "lon": 73.922515,
+      "pois": []
+    },
+    {
+      "id": 15,
+      "lat": 18.546724,
+      "lon": 73.920431,
+      "pois": []
+    },
+    {
+      "id": 16,
+      "lat": 18.546545,
+      "lon": 73.920712,
+      "pois": []
+    },
+    {
+      "id": 17,
+      "lat": 18.546419,
+      "lon": 73.921529,
+      "pois": []
+    },
+    {
+      "id": 18,
+      "lat": 18.54643,
+      "lon": 73.920946,
+      "pois": []
+    },
+    {
+      "id": 19,
+      "lat": 18.545994,
+      "lon": 73.921751,
+      "pois": []
+    }
+  ],
+  "edges": [
+    {
+      "id": 1001,
+      "u": 0,
+      "v": 4,
+      "length": 10.88,
+      "average_time": 46.3,
+      "oneway": false,
+      "road_type": "local"
+    },
+    {
+      "id": 1002,
+      "u": 0,
+      "v": 8,
+      "length": 78.41,
+      "average_time": 14.58,
+      "oneway": false,
+      "road_type": "primary"
+    },
+    {
+      "id": 1003,
+      "u": 0,
+      "v": 17,
+      "length": 35.27,
+      "average_time": 43.84,
+      "oneway": false,
+      "road_type": "secondary"
+    },
+    {
+      "id": 1004,
+      "u": 0,
+      "v": 15,
+      "length": 101.07,
+      "average_time": 46.75,
+      "oneway": false,
+      "road_type": "local"
+    },
+    {
+      "id": 1005,
+      "u": 1,
+      "v": 11,
+      "length": 20.25,
+      "average_time": 22.73,
+      "oneway": false,
+      "road_type": "local"
+    },
+    {
+      "id": 1006,
+      "u": 1,
+      "v": 19,
+      "length": 7.75,
+      "average_time": 16.53,
+      "oneway": false,
+      "road_type": "secondary"
+    },
+    {
+      "id": 1007,
+      "u": 1,
+      "v": 2,
+      "length": 56.83,
+      "average_time": 24.15,
+      "oneway": false,
+      "road_type": "local"
+    },
+    {
+      "id": 1008,
+      "u": 3,
+      "v": 8,
+      "length": 40.73,
+      "average_time": 16.37,
+      "oneway": false,
+      "road_type": "local"
+    },
+    {
+      "id": 1009,
+      "u": 4,
+      "v": 5,
+      "length": 103.45,
+      "average_time": 19.03,
+      "oneway": false,
+      "road_type": "secondary"
+    },
+    {
+      "id": 1010,
+      "u": 5,
+      "v": 9,
+      "length": 41.08,
+      "average_time": 29.66,
+      "oneway": false,
+      "road_type": "primary"
+    },
+    {
+      "id": 1011,
+      "u": 6,
+      "v": 7,
+      "length": 32.08,
+      "average_time": 43.65,
+      "oneway": false,
+      "road_type": "primary"
+    },
+    {
+      "id": 1012,
+      "u": 6,
+      "v": 15,
+      "length": 17.06,
+      "average_time": 33.57,
+      "oneway": false,
+      "road_type": "local"
+    },
+    {
+      "id": 1013,
+      "u": 6,
+      "v": 16,
+      "length": 30.62,
+      "average_time": 47.57,
+      "oneway": false,
+      "road_type": "local"
+    },
+    {
+      "id": 1014,
+      "u": 8,
+      "v": 10,
+      "length": 18.48,
+      "average_time": 44.35,
+      "oneway": false,
+      "road_type": "primary"
+    },
+    {
+      "id": 1015,
+      "u": 9,
+      "v": 15,
+      "length": 122.64,
+      "average_time": 13.26,
+      "oneway": false,
+      "road_type": "primary"
+    },
+    {
+      "id": 1016,
+      "u": 11,
+      "v": 17,
+      "length": 24.7,
+      "average_time": 18.24,
+      "oneway": false,
+      "road_type": "local"
+    },
+    {
+      "id": 1017,
+      "u": 11,
+      "v": 13,
+      "length": 92.84,
+      "average_time": 11.05,
+      "oneway": false,
+      "road_type": "local"
+    },
+    {
+      "id": 1018,
+      "u": 12,
+      "v": 13,
+      "length": 27.71,
+      "average_time": 41.16,
+      "oneway": false,
+      "road_type": "primary"
+    },
+    {
+      "id": 1019,
+      "u": 13,
+      "v": 14,
+      "length": 32.78,
+      "average_time": 48.25,
+      "oneway": false,
+      "road_type": "local"
+    },
+    {
+      "id": 1020,
+      "u": 17,
+      "v": 18,
+      "length": 61.66,
+      "average_time": 33.58,
+      "oneway": false,
+      "road_type": "primary"
+    }
+  ]
+}
