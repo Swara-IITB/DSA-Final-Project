@@ -5,8 +5,8 @@
     "results": [
         {
             "id": 1,
-            "possible": "false",
-            "processing_time": 0.074043
+            "possible": false,
+            "processing_time": 1.464722
         },
         {
             "id": 3,
@@ -19,12 +19,12 @@
                 278,
                 189
             ],
-            "processing_time": 0.092289
+            "processing_time": 0.049858
         },
         {
             "id": 5,
-            "possible": "false",
-            "processing_time": 0.022362
+            "possible": false,
+            "processing_time": 0.011994
         },
         {
             "id": 7,
@@ -33,24 +33,24 @@
                 11,
                 141
             ],
-            "processing_time": 0.077503
+            "processing_time": 0.043836
         },
         {
             "id": 10,
-            "possible": "false",
-            "processing_time": 0.018965
+            "possible": false,
+            "processing_time": 0.010442
         },
         {
             "id": 13,
-            "possible": "false",
-            "processing_time": 0.018584
+            "possible": false,
+            "processing_time": 0.010069
         },
         {
             "id": 14,
             "nodes": [
                 6
             ],
-            "processing_time": 0.077125
+            "processing_time": 0.043192
         }
     ]
 }

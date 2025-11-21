@@ -5,18 +5,18 @@
     "results": [
         {
             "id": 1,
-            "possible": "false",
-            "processing_time": 0.087946
+            "possible": false,
+            "processing_time": 1.82453
         },
         {
             "id": 3,
-            "possible": "false",
-            "processing_time": 0.0232
+            "possible": false,
+            "processing_time": 0.010886
         },
         {
             "id": 4,
-            "possible": "false",
-            "processing_time": 0.020149
+            "possible": false,
+            "processing_time": 0.009292
         }
     ]
 }

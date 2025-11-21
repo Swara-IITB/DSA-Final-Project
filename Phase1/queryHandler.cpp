@@ -24,9 +24,9 @@ json process_query_phase1(Graph& g, json query){
 json process_remove_edge(Graph& g, json query){
     if(query.contains("edge_id")){
         bool done = g.remove_edge(query["edge_id"].get<ll>());
-        if(done) return {{"id", query["id"]}, {"done", "true"}};
-        else return {{"id", query["id"]}, {"done", "false"}};
-    } else return {{"id", query["id"]}, {"done", "false"}};
+        if(done) return {{"id", query["id"]}, {"done", json(true)}};
+        else return {{"id", query["id"]}, {"done", json(false)}};
+    } else return {{"id", query["id"]}, {"done", json(false)}};
 }
 
 json process_modify_edge(Graph& g,json query){
@@ -46,8 +46,8 @@ json process_modify_edge(Graph& g,json query){
             }
         } 
         if(g.edges.find(query["edge_id"])!=g.edges.end()) g.edges.at(query["edge_id"].get<ll>()).disable=false;    
-        return {{"id", query["id"]}, {"done", "true"}};
-    } else return {{"id", query["id"]}, {"done", "false"}};
+        return {{"id", query["id"]}, {"done", json(true)}};
+    } else return {{"id", query["id"]}, {"done", json(false)}};
 }
 
 json process_shortest_path(Graph& g,json query){
@@ -68,7 +68,7 @@ json process_shortest_path(Graph& g,json query){
         min_dist_time=x;
         path = y;
     }
-    if(path.empty()) return {{"id", query["id"]}, {"possible", "false"}};
+    if(path.empty()) return {{"id", query["id"]}, {"possible", json(false)}};
     json result;
     result["id"] = query["id"];
     result["possible"] = true;

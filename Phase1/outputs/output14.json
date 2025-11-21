@@ -5,13 +5,13 @@
     "results": [
         {
             "id": 1,
-            "possible": "false",
-            "processing_time": 1.020601
+            "possible": false,
+            "processing_time": 2.167586
         },
         {
-            "done": "true",
+            "done": true,
             "id": 2,
-            "processing_time": 0.018951
+            "processing_time": 0.008668
         },
         {
             "id": 5,
@@ -19,7 +19,7 @@
                 349,
                 545
             ],
-            "processing_time": 0.23787
+            "processing_time": 0.11026
         },
         {
             "id": 6,
@@ -28,7 +28,7 @@
                 439,
                 223
             ],
-            "processing_time": 0.224585
+            "processing_time": 0.103042
         },
         {
             "id": 9,
@@ -45,7 +45,7 @@
                 201
             ],
             "possible": true,
-            "processing_time": 0.084749
+            "processing_time": 0.033958
         },
         {
             "id": 12,
@@ -57,7 +57,7 @@
                 629
             ],
             "possible": true,
-            "processing_time": 0.089176
+            "processing_time": 0.024825
         },
         {
             "id": 14,
@@ -68,12 +68,12 @@
                 600,
                 732
             ],
-            "processing_time": 0.630737
+            "processing_time": 0.285187
         },
         {
-            "done": "true",
+            "done": true,
             "id": 15,
-            "processing_time": 0.019626
+            "processing_time": 0.007723
         },
         {
             "id": 16,
@@ -115,22 +115,22 @@
                 86
             ],
             "possible": true,
-            "processing_time": 0.348615
+            "processing_time": 0.151025
         },
         {
-            "done": "true",
+            "done": true,
             "id": 17,
-            "processing_time": 0.015278
+            "processing_time": 0.007096
         },
         {
-            "done": "true",
+            "done": true,
             "id": 18,
-            "processing_time": 0.014487
+            "processing_time": 0.006286
         },
         {
             "id": 19,
-            "possible": "false",
-            "processing_time": 0.552943
+            "possible": false,
+            "processing_time": 0.214669
         },
         {
             "id": 20,
@@ -141,19 +141,19 @@
                 716,
                 756
             ],
-            "processing_time": 0.235991
+            "processing_time": 0.110704
         },
         {
             "id": 22,
             "nodes": [
                 352
             ],
-            "processing_time": 0.986142
+            "processing_time": 0.456635
         },
         {
-            "done": "true",
+            "done": true,
             "id": 25,
-            "processing_time": 0.016945
+            "processing_time": 0.007726
         },
         {
             "id": 26,
@@ -163,27 +163,27 @@
                 146,
                 149
             ],
-            "processing_time": 0.220559
+            "processing_time": 0.108202
         },
         {
             "id": 27,
-            "possible": "false",
-            "processing_time": 0.844454
+            "possible": false,
+            "processing_time": 0.351938
         },
         {
-            "done": "true",
+            "done": true,
             "id": 28,
-            "processing_time": 0.017548
+            "processing_time": 0.007015
         },
         {
-            "done": "true",
+            "done": true,
             "id": 31,
-            "processing_time": 0.013616
+            "processing_time": 0.006073
         },
         {
-            "done": "true",
+            "done": true,
             "id": 32,
-            "processing_time": 0.014259
+            "processing_time": 0.006176
         },
         {
             "id": 35,
@@ -192,7 +192,7 @@
                 15,
                 607
             ],
-            "processing_time": 0.222433
+            "processing_time": 0.104951
         },
         {
             "id": 36,
@@ -230,27 +230,27 @@
                 775
             ],
             "possible": true,
-            "processing_time": 0.212217
+            "processing_time": 0.085349
         },
         {
             "id": 37,
             "nodes": [],
-            "processing_time": 0.596766
+            "processing_time": 0.262063
         },
         {
             "id": 39,
-            "possible": "false",
-            "processing_time": 0.665116
+            "possible": false,
+            "processing_time": 0.240227
         },
         {
-            "done": "true",
+            "done": true,
             "id": 40,
-            "processing_time": 0.017612
+            "processing_time": 0.006869
         },
         {
-            "done": "true",
+            "done": true,
             "id": 41,
-            "processing_time": 0.013695
+            "processing_time": 0.006072
         },
         {
             "id": 44,
@@ -263,7 +263,7 @@
                 707,
                 207
             ],
-            "processing_time": 0.890062
+            "processing_time": 0.52726
         },
         {
             "id": 47,
@@ -275,7 +275,7 @@
                 220,
                 214
             ],
-            "processing_time": 0.213231
+            "processing_time": 0.120732
         },
         {
             "id": 49,
@@ -284,7 +284,7 @@
                 223,
                 104
             ],
-            "processing_time": 0.871963
+            "processing_time": 0.42241
         },
         {
             "id": 51,
@@ -321,7 +321,7 @@
                 284
             ],
             "possible": true,
-            "processing_time": 0.274125
+            "processing_time": 0.142521
         },
         {
             "id": 53,
@@ -336,12 +336,12 @@
                 204,
                 379
             ],
-            "processing_time": 0.188688
+            "processing_time": 0.121863
         },
         {
-            "done": "true",
+            "done": true,
             "id": 54,
-            "processing_time": 0.014212
+            "processing_time": 0.009015
         },
         {
             "id": 56,
@@ -357,31 +357,31 @@
                 518,
                 15
             ],
-            "processing_time": 0.188978
+            "processing_time": 0.11504
         },
         {
             "id": 57,
-            "possible": "false",
-            "processing_time": 0.027823
+            "possible": false,
+            "processing_time": 0.016327
         },
         {
             "id": 60,
             "nodes": [
                 633
             ],
-            "processing_time": 0.731456
+            "processing_time": 0.46096
         },
         {
-            "done": "true",
+            "done": true,
             "id": 62,
-            "processing_time": 0.012146
+            "processing_time": 0.007203
         },
         {
             "id": 64,
             "nodes": [
                 751
             ],
-            "processing_time": 0.465288
+            "processing_time": 0.284643
         },
         {
             "id": 67,
@@ -411,12 +411,12 @@
                 295
             ],
             "possible": true,
-            "processing_time": 0.271513
+            "processing_time": 0.173918
         },
         {
             "id": 68,
-            "possible": "false",
-            "processing_time": 0.031576
+            "possible": false,
+            "processing_time": 0.017029
         },
         {
             "id": 71,
@@ -431,7 +431,7 @@
                 203,
                 246
             ],
-            "processing_time": 0.742427
+            "processing_time": 0.456351
         },
         {
             "id": 74,
@@ -464,17 +464,17 @@
                 769
             ],
             "possible": true,
-            "processing_time": 0.341215
+            "processing_time": 0.206909
         },
         {
             "id": 75,
-            "possible": "false",
-            "processing_time": 0.038728
+            "possible": false,
+            "processing_time": 0.024401
         },
         {
-            "done": "true",
+            "done": true,
             "id": 76,
-            "processing_time": 0.012243
+            "processing_time": 0.007042
         },
         {
             "id": 77,
@@ -486,7 +486,7 @@
                 436,
                 65
             ],
-            "processing_time": 0.174989
+            "processing_time": 0.110546
         },
         {
             "id": 78,
@@ -497,27 +497,27 @@
                 270,
                 777
             ],
-            "processing_time": 0.175111
+            "processing_time": 0.105914
         },
         {
             "id": 81,
-            "possible": "false",
-            "processing_time": 0.616206
+            "possible": false,
+            "processing_time": 0.661661
         },
         {
-            "done": "true",
+            "done": true,
             "id": 84,
-            "processing_time": 0.013188
+            "processing_time": 0.019499
         },
         {
-            "done": "true",
+            "done": true,
             "id": 85,
-            "processing_time": 0.011101
+            "processing_time": 0.014286
         },
         {
-            "done": "true",
+            "done": true,
             "id": 86,
-            "processing_time": 0.010773
+            "processing_time": 0.013855
         },
         {
             "id": 88,
@@ -529,17 +529,17 @@
                 392,
                 754
             ],
-            "processing_time": 0.783941
+            "processing_time": 1.11915
         },
         {
-            "done": "true",
+            "done": true,
             "id": 89,
-            "processing_time": 0.011985
+            "processing_time": 0.017548
         },
         {
-            "done": "true",
+            "done": true,
             "id": 91,
-            "processing_time": 0.010563
+            "processing_time": 0.01352
         },
         {
             "id": 93,
@@ -563,37 +563,37 @@
                 17
             ],
             "possible": true,
-            "processing_time": 0.177565
+            "processing_time": 0.225916
         },
         {
-            "done": "true",
+            "done": true,
             "id": 94,
-            "processing_time": 0.012076
+            "processing_time": 0.015743
         },
         {
             "id": 95,
-            "possible": "false",
-            "processing_time": 0.051947
+            "possible": false,
+            "processing_time": 0.07081899999999999
         },
         {
-            "done": "true",
+            "done": true,
             "id": 97,
-            "processing_time": 0.011531
+            "processing_time": 0.038113
         },
         {
             "id": 98,
-            "possible": "false",
-            "processing_time": 0.020131
+            "possible": false,
+            "processing_time": 0.029949
         },
         {
-            "done": "true",
+            "done": true,
             "id": 101,
-            "processing_time": 0.011155
+            "processing_time": 0.015585
         },
         {
-            "done": "true",
+            "done": true,
             "id": 102,
-            "processing_time": 0.0113
+            "processing_time": 0.014989
         },
         {
             "id": 103,
@@ -635,12 +635,12 @@
                 766
             ],
             "possible": true,
-            "processing_time": 0.286814
+            "processing_time": 0.370697
         },
         {
-            "done": "true",
+            "done": true,
             "id": 104,
-            "processing_time": 0.014583
+            "processing_time": 0.016273
         },
         {
             "id": 106,
@@ -677,52 +677,52 @@
                 765
             ],
             "possible": true,
-            "processing_time": 0.182997
+            "processing_time": 0.211317
         },
         {
             "id": 108,
-            "possible": "false",
-            "processing_time": 0.490751
+            "possible": false,
+            "processing_time": 0.567768
         },
         {
-            "done": "true",
+            "done": true,
             "id": 111,
-            "processing_time": 0.012031
+            "processing_time": 0.013764
         },
         {
             "id": 112,
-            "possible": "false",
-            "processing_time": 0.02245
+            "possible": false,
+            "processing_time": 0.024626
         },
         {
             "id": 113,
-            "possible": "false",
-            "processing_time": 0.019099
+            "possible": false,
+            "processing_time": 0.021243
         },
         {
-            "done": "true",
+            "done": true,
             "id": 114,
-            "processing_time": 0.011875
+            "processing_time": 0.012304
         },
         {
-            "done": "true",
+            "done": true,
             "id": 115,
-            "processing_time": 0.011218
+            "processing_time": 0.011895
         },
         {
-            "done": "true",
+            "done": true,
             "id": 116,
-            "processing_time": 0.01073
+            "processing_time": 0.012052
         },
         {
             "id": 118,
-            "possible": "false",
-            "processing_time": 0.019576
+            "possible": false,
+            "processing_time": 0.020356
         },
         {
-            "done": "true",
+            "done": true,
             "id": 120,
-            "processing_time": 0.011193
+            "processing_time": 0.011596
         },
         {
             "id": 121,
@@ -738,7 +738,7 @@
                 152,
                 749
             ],
-            "processing_time": 0.672886
+            "processing_time": 0.722378
         },
         {
             "id": 124,
@@ -754,39 +754,39 @@
                 597,
                 348
             ],
-            "processing_time": 0.177859
+            "processing_time": 0.197227
         },
         {
             "id": 125,
             "nodes": [
                 292
             ],
-            "processing_time": 0.470907
+            "processing_time": 0.477236
         },
         {
-            "done": "false",
+            "done": false,
             "id": 126,
-            "processing_time": 0.014152
+            "processing_time": 0.014061
         },
         {
             "id": 127,
-            "possible": "false",
-            "processing_time": 0.353533
+            "possible": false,
+            "processing_time": 0.337051
         },
         {
             "id": 128,
             "nodes": [],
-            "processing_time": 0.464691
+            "processing_time": 0.418209
         },
         {
-            "done": "true",
+            "done": true,
             "id": 129,
-            "processing_time": 0.013274
+            "processing_time": 0.011045
         },
         {
             "id": 130,
-            "possible": "false",
-            "processing_time": 0.453286
+            "possible": false,
+            "processing_time": 0.397089
         },
         {
             "id": 131,
@@ -802,17 +802,17 @@
                 87
             ],
             "possible": true,
-            "processing_time": 0.053434
+            "processing_time": 0.048731
         },
         {
-            "done": "true",
+            "done": true,
             "id": 132,
-            "processing_time": 0.011507999999999999
+            "processing_time": 0.010491
         },
         {
-            "done": "true",
+            "done": true,
             "id": 133,
-            "processing_time": 0.011135
+            "processing_time": 0.009349
         },
         {
             "id": 134,
@@ -824,12 +824,12 @@
                 703,
                 106
             ],
-            "processing_time": 0.744665
+            "processing_time": 0.610348
         },
         {
             "id": 136,
-            "possible": "false",
-            "processing_time": 0.349192
+            "possible": false,
+            "processing_time": 0.265196
         },
         {
             "id": 138,
@@ -840,52 +840,52 @@
                 720,
                 476
             ],
-            "processing_time": 0.179961
+            "processing_time": 0.160044
         },
         {
             "id": 141,
-            "possible": "false",
-            "processing_time": 0.030525
+            "possible": false,
+            "processing_time": 0.023284
         },
         {
             "id": 143,
-            "possible": "false",
-            "processing_time": 0.019403
+            "possible": false,
+            "processing_time": 0.015195
         },
         {
             "id": 145,
-            "possible": "false",
-            "processing_time": 0.308489
+            "possible": false,
+            "processing_time": 0.235716
         },
         {
             "id": 146,
-            "possible": "false",
-            "processing_time": 0.405169
+            "possible": false,
+            "processing_time": 0.288628
         },
         {
             "id": 149,
-            "possible": "false",
-            "processing_time": 0.438295
+            "possible": false,
+            "processing_time": 0.330833
         },
         {
-            "done": "true",
+            "done": true,
             "id": 150,
-            "processing_time": 0.013352
+            "processing_time": 0.00895
         },
         {
-            "done": "true",
+            "done": true,
             "id": 153,
-            "processing_time": 0.010984
+            "processing_time": 0.007908
         },
         {
-            "done": "true",
+            "done": true,
             "id": 155,
-            "processing_time": 0.010606
+            "processing_time": 0.007815
         },
         {
-            "done": "true",
+            "done": true,
             "id": 157,
-            "processing_time": 0.010872
+            "processing_time": 0.007848
         },
         {
             "id": 159,
@@ -894,12 +894,12 @@
                 466,
                 476
             ],
-            "processing_time": 0.472303
+            "processing_time": 0.370482
         },
         {
-            "done": "true",
+            "done": true,
             "id": 160,
-            "processing_time": 0.011865
+            "processing_time": 0.009182
         },
         {
             "id": 161,
@@ -914,12 +914,12 @@
                 223,
                 205
             ],
-            "processing_time": 0.674567
+            "processing_time": 0.487462
         },
         {
             "id": 162,
-            "possible": "false",
-            "processing_time": 0.022355
+            "possible": false,
+            "processing_time": 0.016141
         },
         {
             "id": 164,
@@ -973,37 +973,37 @@
                 64
             ],
             "possible": true,
-            "processing_time": 0.408808
+            "processing_time": 0.283023
         },
         {
             "id": 167,
-            "possible": "false",
-            "processing_time": 0.024181
+            "possible": false,
+            "processing_time": 0.015906
         },
         {
             "id": 169,
-            "possible": "false",
-            "processing_time": 0.029502
+            "possible": false,
+            "processing_time": 0.01436
         },
         {
-            "done": "true",
+            "done": true,
             "id": 171,
-            "processing_time": 0.014182
+            "processing_time": 0.008942
         },
         {
-            "done": "true",
+            "done": true,
             "id": 174,
-            "processing_time": 0.011279
+            "processing_time": 0.007012
         },
         {
             "id": 177,
-            "possible": "false",
-            "processing_time": 0.384387
+            "possible": false,
+            "processing_time": 0.276878
         },
         {
             "id": 180,
-            "possible": "false",
-            "processing_time": 0.288404
+            "possible": false,
+            "processing_time": 0.205873
         }
     ]
 }

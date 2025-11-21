@@ -5,6 +5,10 @@
 #include<algorithm>
 typedef long long ll;
 
+double eucl_dist(Graph& g, ll x, ll y){
+    return std::sqrt((g.nodes[x].lat - g.nodes[y].lat)*(g.nodes[x].lat - g.nodes[y].lat) + (g.nodes[x].lon - g.nodes[y].lon)*(g.nodes[x].lon - g.nodes[y].lon));
+}
+
 std::pair<double,std::vector<ll>> shortestPath(Graph & g,ll src, ll target, std::string mode, std::vector<ll> forbidNodes, std::vector<std::string> forbidRoads ){
     std::unordered_map<std::string,ll> mforbidRoads;
     for(auto s : forbidRoads) mforbidRoads[s] = 1;
@@ -18,7 +22,7 @@ std::pair<double,std::vector<ll>> modeTime(Graph & g,const ll& src,const ll& tar
     if(src==target) return {0.0,{src}};
     double ans = 0.0;
 
-    //Using Dijkstra's algorithm
+    //Using A* algorithm
     std::vector<double> st(g.V,1e18);
     st[src]=0.0;
     std::vector<bool> visited(g.V,false), forbidden(g.V,false);
@@ -27,7 +31,7 @@ std::pair<double,std::vector<ll>> modeTime(Graph & g,const ll& src,const ll& tar
     }
     std::vector<ll> parent(g.V,-1);
     std::priority_queue<std::pair<double,ll>, std::vector<std::pair<double,ll>>, std::greater<std::pair<double,ll>>> pq;
-    pq.push({0.0,src});
+    pq.push({0.0+eucl_dist(g,src,target),src});
     while(!pq.empty()){
         if(pq.top().second==target){
             ans = pq.top().first;
@@ -42,7 +46,7 @@ std::pair<double,std::vector<ll>> modeTime(Graph & g,const ll& src,const ll& tar
                     if(ed.sp_profile.empty()){
                         if(ed.avg_t + st[x.second] < st[y.first]){ 
                             st[y.first] = ed.avg_t + st[x.second]; 
-                            pq.push({st[y.first], y.first});
+                            pq.push({st[y.first]+eucl_dist(g,y.first,target), y.first});
                             parent[y.first] = x.second;
                         } else continue;
                     } else {
@@ -57,7 +61,7 @@ std::pair<double,std::vector<ll>> modeTime(Graph & g,const ll& src,const ll& tar
                         tmp += (ed.len-tlen) / ed.sp_profile[idx];
                         if(tmp < st[y.first]){ 
                             st[y.first] = tmp ; 
-                            pq.push({tmp, y.first});
+                            pq.push({tmp+eucl_dist(g,y.first,target), y.first});
                             parent[y.first] = x.second;
                         } else continue;
                     }
@@ -85,7 +89,7 @@ std::pair<double,std::vector<ll>> modeDist(Graph & g,const ll& src,const ll& tar
     if(src==target) return {0.0,{src}};
     double ans = 0.0;
 
-    //Using Dijkstra's algorithm
+    //Using A* algorithm
     std::vector<double> sp(g.V,1e18);
     sp[src]=0.0;
     std::vector<bool> visited(g.V,false), forbidden(g.V,false);
@@ -94,7 +98,7 @@ std::pair<double,std::vector<ll>> modeDist(Graph & g,const ll& src,const ll& tar
     }
     std::vector<ll> parent(g.V,-1);
     std::priority_queue<std::pair<double,ll>, std::vector<std::pair<double,ll>>, std::greater<std::pair<double,ll>>> pq;
-    pq.push({0.0,src});
+    pq.push({0.0+eucl_dist(g,src,target),src});
     while(!pq.empty()){
         if(pq.top().second==target){
             ans = pq.top().first;
@@ -108,7 +112,7 @@ std::pair<double,std::vector<ll>> modeDist(Graph & g,const ll& src,const ll& tar
                 if(!visited[y.first]){
                     if(ed.len + sp[x.second] < sp[y.first]){ 
                         sp[y.first] = ed.len + sp[x.second]; 
-                        pq.push({sp[y.first], y.first});
+                        pq.push({sp[y.first]+eucl_dist(g,y.first,target), y.first});
                         parent[y.first] = x.second;
                     }
                 }

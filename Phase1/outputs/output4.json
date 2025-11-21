@@ -6,7 +6,7 @@
         {
             "id": 1,
             "nodes": [],
-            "processing_time": 0.063125
+            "processing_time": 1.614427
         },
         {
             "id": 4,
@@ -16,17 +16,17 @@
                 3
             ],
             "possible": true,
-            "processing_time": 0.057128
+            "processing_time": 0.023157
         },
         {
             "id": 5,
             "nodes": [],
-            "processing_time": 0.249139
+            "processing_time": 0.018623
         },
         {
             "id": 6,
-            "possible": "false",
-            "processing_time": 0.063532
+            "possible": false,
+            "processing_time": 0.0139
         },
         {
             "id": 8,
@@ -38,7 +38,7 @@
                 4
             ],
             "possible": true,
-            "processing_time": 0.046617
+            "processing_time": 0.013079
         }
     ]
 }

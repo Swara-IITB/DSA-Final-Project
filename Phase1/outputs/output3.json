@@ -5,8 +5,8 @@
     "results": [
         {
             "id": 1,
-            "possible": "false",
-            "processing_time": 0.251253
+            "possible": false,
+            "processing_time": 3.683777
         },
         {
             "id": 2,
@@ -16,22 +16,22 @@
                 11524,
                 13979
             ],
-            "processing_time": 32.983625
+            "processing_time": 19.352177
         },
         {
             "id": 4,
             "nodes": [],
-            "processing_time": 21.822479
+            "processing_time": 14.050065
         },
         {
-            "done": "true",
+            "done": true,
             "id": 6,
-            "processing_time": 0.023994
+            "processing_time": 0.015412
         },
         {
             "id": 8,
-            "possible": "false",
-            "processing_time": 0.285293
+            "possible": false,
+            "processing_time": 0.170725
         },
         {
             "id": 11,
@@ -39,22 +39,22 @@
                 19026,
                 19031
             ],
-            "processing_time": 6.898372
+            "processing_time": 4.647509
         },
         {
             "id": 14,
-            "possible": "false",
-            "processing_time": 0.268725
+            "possible": false,
+            "processing_time": 0.198689
         },
         {
-            "done": "true",
+            "done": true,
             "id": 17,
-            "processing_time": 0.016243
+            "processing_time": 0.010547
         },
         {
-            "done": "true",
+            "done": true,
             "id": 18,
-            "processing_time": 0.012421
+            "processing_time": 0.007597
         },
         {
             "id": 19,
@@ -64,7 +64,7 @@
                 21133,
                 21128
             ],
-            "processing_time": 6.74764
+            "processing_time": 4.539688
         },
         {
             "id": 21,
@@ -74,12 +74,12 @@
                 28927,
                 28928
             ],
-            "processing_time": 23.081952
+            "processing_time": 15.267821
         },
         {
             "id": 24,
-            "possible": "false",
-            "processing_time": 0.117964
+            "possible": false,
+            "processing_time": 0.077482
         },
         {
             "id": 25,
@@ -91,12 +91,12 @@
                 19386,
                 3417
             ],
-            "processing_time": 7.325999
+            "processing_time": 5.367106
         },
         {
             "id": 27,
             "nodes": [],
-            "processing_time": 21.783508
+            "processing_time": 22.799123
         },
         {
             "id": 30,
@@ -104,17 +104,17 @@
                 16391,
                 7610
             ],
-            "processing_time": 6.693889
+            "processing_time": 5.333959
         },
         {
             "id": 32,
             "nodes": [],
-            "processing_time": 21.56856
+            "processing_time": 13.401173
         },
         {
             "id": 33,
             "nodes": [],
-            "processing_time": 21.797935
+            "processing_time": 20.077167
         },
         {
             "id": 34,
@@ -123,17 +123,17 @@
                 2736,
                 27087
             ],
-            "processing_time": 21.315041
+            "processing_time": 13.910384
         },
         {
-            "done": "true",
+            "done": true,
             "id": 37,
-            "processing_time": 0.029708
+            "processing_time": 0.04895
         },
         {
             "id": 38,
-            "possible": "false",
-            "processing_time": 0.467106
+            "possible": false,
+            "processing_time": 0.418868
         },
         {
             "id": 40,
@@ -142,17 +142,17 @@
                 17374,
                 29486
             ],
-            "processing_time": 21.593673
+            "processing_time": 14.054149
         },
         {
             "id": 42,
-            "possible": "false",
-            "processing_time": 0.50463
+            "possible": false,
+            "processing_time": 1.486228
         },
         {
-            "done": "true",
+            "done": true,
             "id": 44,
-            "processing_time": 0.017298
+            "processing_time": 0.010046
         },
         {
             "id": 45,
@@ -167,17 +167,17 @@
                 22564,
                 23793
             ],
-            "processing_time": 25.383241
+            "processing_time": 14.862308
         },
         {
             "id": 46,
-            "possible": "false",
-            "processing_time": 1.367061
+            "possible": false,
+            "processing_time": 0.924399
         },
         {
-            "done": "true",
+            "done": true,
             "id": 47,
-            "processing_time": 0.015534
+            "processing_time": 0.01068
         },
         {
             "id": 49,
@@ -190,44 +190,44 @@
                 28589,
                 18644
             ],
-            "processing_time": 7.463032
+            "processing_time": 5.121286
         },
         {
-            "done": "true",
+            "done": true,
             "id": 51,
-            "processing_time": 0.031937
+            "processing_time": 0.015589
         },
         {
             "id": 53,
-            "possible": "false",
-            "processing_time": 0.187038
+            "possible": false,
+            "processing_time": 0.124828
         },
         {
-            "done": "true",
+            "done": true,
             "id": 56,
-            "processing_time": 0.016255
+            "processing_time": 0.010569
         },
         {
-            "done": "true",
+            "done": true,
             "id": 58,
-            "processing_time": 0.015778
+            "processing_time": 0.009002
         },
         {
             "id": 59,
-            "possible": "false",
-            "processing_time": 0.138016
+            "possible": false,
+            "processing_time": 0.081788
         },
         {
             "id": 62,
             "nodes": [
                 31000
             ],
-            "processing_time": 25.468111
+            "processing_time": 15.561408
         },
         {
             "id": 63,
-            "possible": "false",
-            "processing_time": 0.148307
+            "possible": false,
+            "processing_time": 0.086703
         },
         {
             "id": 66,
@@ -237,42 +237,42 @@
                 19031,
                 30419
             ],
-            "processing_time": 6.547952
+            "processing_time": 4.832412
         },
         {
             "id": 68,
-            "possible": "false",
-            "processing_time": 0.097324
+            "possible": false,
+            "processing_time": 0.068623
         },
         {
-            "done": "true",
+            "done": true,
             "id": 69,
-            "processing_time": 0.015443
+            "processing_time": 0.010786
         },
         {
             "id": 71,
-            "possible": "false",
-            "processing_time": 0.07725
+            "possible": false,
+            "processing_time": 0.055596
         },
         {
             "id": 73,
-            "possible": "false",
-            "processing_time": 0.133947
+            "possible": false,
+            "processing_time": 0.090417
         },
         {
-            "done": "true",
+            "done": true,
             "id": 75,
-            "processing_time": 0.012679
+            "processing_time": 0.009197
         },
         {
             "id": 77,
-            "possible": "false",
-            "processing_time": 14.013272
+            "possible": false,
+            "processing_time": 8.790868
         },
         {
-            "done": "true",
+            "done": true,
             "id": 80,
-            "processing_time": 0.24697
+            "processing_time": 0.015243
         },
         {
             "id": 81,
@@ -285,7 +285,7 @@
                 18942,
                 18936
             ],
-            "processing_time": 22.97339
+            "processing_time": 14.885929
         },
         {
             "id": 82,
@@ -438,12 +438,12 @@
                 4540
             ],
             "possible": true,
-            "processing_time": 15.047718
+            "processing_time": 13.025676
         },
         {
-            "done": "true",
+            "done": true,
             "id": 83,
-            "processing_time": 0.02769
+            "processing_time": 0.020681
         },
         {
             "id": 85,
@@ -451,12 +451,12 @@
                 22577,
                 12352
             ],
-            "processing_time": 24.05481
+            "processing_time": 15.373653
         },
         {
-            "done": "true",
+            "done": true,
             "id": 88,
-            "processing_time": 0.026674
+            "processing_time": 0.013485
         },
         {
             "id": 89,
@@ -466,27 +466,27 @@
                 17252,
                 32272
             ],
-            "processing_time": 26.029765
+            "processing_time": 16.067259
         },
         {
-            "done": "true",
+            "done": true,
             "id": 90,
-            "processing_time": 0.027189
+            "processing_time": 0.013702
         },
         {
-            "done": "true",
+            "done": true,
             "id": 91,
-            "processing_time": 0.012145
+            "processing_time": 0.007788
         },
         {
             "id": 94,
-            "possible": "false",
-            "processing_time": 1.608681
+            "possible": false,
+            "processing_time": 0.803564
         },
         {
             "id": 97,
-            "possible": "false",
-            "processing_time": 0.80932
+            "possible": false,
+            "processing_time": 0.378633
         },
         {
             "id": 99,
@@ -494,7 +494,7 @@
                 7127,
                 7132
             ],
-            "processing_time": 6.774309
+            "processing_time": 5.761122
         },
         {
             "id": 101,
@@ -504,27 +504,27 @@
                 2212,
                 2908
             ],
-            "processing_time": 9.918778
+            "processing_time": 4.588697
         },
         {
             "id": 104,
-            "possible": "false",
-            "processing_time": 0.221261
+            "possible": false,
+            "processing_time": 0.080659
         },
         {
-            "done": "true",
+            "done": true,
             "id": 107,
-            "processing_time": 0.017306
+            "processing_time": 0.009634
         },
         {
-            "done": "true",
+            "done": true,
             "id": 110,
-            "processing_time": 0.012491
+            "processing_time": 0.007989
         },
         {
-            "done": "true",
+            "done": true,
             "id": 113,
-            "processing_time": 0.150865
+            "processing_time": 0.007728
         },
         {
             "id": 114,
@@ -538,42 +538,42 @@
                 2750,
                 9614
             ],
-            "processing_time": 25.802678
+            "processing_time": 19.243589
         },
         {
-            "done": "true",
+            "done": true,
             "id": 116,
-            "processing_time": 0.03211
+            "processing_time": 0.011572
         },
         {
             "id": 118,
-            "possible": "false",
-            "processing_time": 0.122739
+            "possible": false,
+            "processing_time": 0.053976
         },
         {
-            "done": "true",
+            "done": true,
             "id": 119,
-            "processing_time": 0.015497
+            "processing_time": 0.007728
         },
         {
-            "done": "true",
+            "done": true,
             "id": 122,
-            "processing_time": 0.015226
+            "processing_time": 0.007161
         },
         {
-            "done": "true",
+            "done": true,
             "id": 124,
-            "processing_time": 0.015227
+            "processing_time": 0.007035
         },
         {
-            "done": "true",
+            "done": true,
             "id": 127,
-            "processing_time": 0.015036
+            "processing_time": 0.007448
         },
         {
-            "done": "true",
+            "done": true,
             "id": 128,
-            "processing_time": 0.014859
+            "processing_time": 0.006754
         },
         {
             "id": 131,
@@ -588,42 +588,42 @@
                 28394,
                 16499
             ],
-            "processing_time": 8.378439
+            "processing_time": 6.477378
         },
         {
-            "done": "true",
+            "done": true,
             "id": 134,
-            "processing_time": 0.028706
+            "processing_time": 0.011891
         },
         {
-            "done": "true",
+            "done": true,
             "id": 137,
-            "processing_time": 0.015182
+            "processing_time": 0.006889
         },
         {
-            "done": "true",
+            "done": true,
             "id": 139,
-            "processing_time": 0.014948
+            "processing_time": 0.00636
         },
         {
-            "done": "true",
+            "done": true,
             "id": 141,
-            "processing_time": 0.014144
+            "processing_time": 0.006195
         },
         {
             "id": 144,
-            "possible": "false",
-            "processing_time": 0.139166
+            "possible": false,
+            "processing_time": 0.054083
         },
         {
             "id": 147,
-            "possible": "false",
-            "processing_time": 0.125887
+            "possible": false,
+            "processing_time": 0.050688
         },
         {
             "id": 148,
-            "possible": "false",
-            "processing_time": 0.139134
+            "possible": false,
+            "processing_time": 0.057399
         },
         {
             "id": 151,
@@ -634,17 +634,17 @@
                 31674,
                 27297
             ],
-            "processing_time": 24.244274
+            "processing_time": 15.374659
         },
         {
-            "done": "true",
+            "done": true,
             "id": 152,
-            "processing_time": 0.026945
+            "processing_time": 0.013676
         },
         {
             "id": 155,
-            "possible": "false",
-            "processing_time": 0.108975
+            "possible": false,
+            "processing_time": 0.060932
         },
         {
             "id": 156,
@@ -659,12 +659,12 @@
                 6713,
                 22461
             ],
-            "processing_time": 6.782075
+            "processing_time": 4.650662
         },
         {
             "id": 159,
-            "possible": "false",
-            "processing_time": 0.125459
+            "possible": false,
+            "processing_time": 0.069955
         },
         {
             "id": 162,
@@ -679,17 +679,17 @@
                 31272,
                 29260
             ],
-            "processing_time": 6.624664
+            "processing_time": 4.871949
         },
         {
-            "done": "true",
+            "done": true,
             "id": 165,
-            "processing_time": 0.021791
+            "processing_time": 0.01333
         },
         {
-            "done": "true",
+            "done": true,
             "id": 168,
-            "processing_time": 0.01293
+            "processing_time": 0.008071
         },
         {
             "id": 169,
@@ -697,7 +697,7 @@
                 29027,
                 14618
             ],
-            "processing_time": 23.574229
+            "processing_time": 16.016984
         },
         {
             "id": 171,
@@ -706,7 +706,7 @@
                 4786,
                 6003
             ],
-            "processing_time": 23.415623
+            "processing_time": 14.194271
         },
         {
             "id": 173,
@@ -717,49 +717,49 @@
                 19015,
                 29624
             ],
-            "processing_time": 6.468726
+            "processing_time": 4.503817
         },
         {
-            "done": "true",
+            "done": true,
             "id": 174,
-            "processing_time": 0.022676
+            "processing_time": 0.014102
         },
         {
-            "done": "true",
+            "done": true,
             "id": 177,
-            "processing_time": 0.01275
+            "processing_time": 0.007939
         },
         {
-            "done": "true",
+            "done": true,
             "id": 178,
-            "processing_time": 0.012644
+            "processing_time": 0.007517
         },
         {
             "id": 181,
             "nodes": [],
-            "processing_time": 24.165844
+            "processing_time": 14.146966
         },
         {
             "id": 184,
             "nodes": [],
-            "processing_time": 24.57839
+            "processing_time": 14.189233
         },
         {
             "id": 186,
             "nodes": [
                 14664
             ],
-            "processing_time": 8.683373
+            "processing_time": 4.675746
         },
         {
-            "done": "true",
+            "done": true,
             "id": 187,
-            "processing_time": 0.024601
+            "processing_time": 0.014141
         },
         {
-            "done": "true",
+            "done": true,
             "id": 188,
-            "processing_time": 0.013442
+            "processing_time": 0.007767
         },
         {
             "id": 190,
@@ -769,7 +769,7 @@
                 13925,
                 1906
             ],
-            "processing_time": 24.685336
+            "processing_time": 14.381158
         },
         {
             "id": 191,
@@ -781,27 +781,27 @@
                 1896,
                 2149
             ],
-            "processing_time": 6.743253
+            "processing_time": 4.561429
         },
         {
             "id": 193,
-            "possible": "false",
-            "processing_time": 0.11068
+            "possible": false,
+            "processing_time": 0.073223
         },
         {
             "id": 196,
             "nodes": [],
-            "processing_time": 24.029872
+            "processing_time": 14.400838
         },
         {
             "id": 198,
-            "possible": "false",
-            "processing_time": 12.893749
+            "possible": false,
+            "processing_time": 9.104338
         },
         {
-            "done": "true",
+            "done": true,
             "id": 201,
-            "processing_time": 0.017469
+            "processing_time": 0.016268
         },
         {
             "id": 204,
@@ -811,12 +811,12 @@
                 30425,
                 21715
             ],
-            "processing_time": 7.377866
+            "processing_time": 6.739174
         },
         {
-            "done": "true",
+            "done": true,
             "id": 206,
-            "processing_time": 0.021224
+            "processing_time": 0.015412
         },
         {
             "id": 207,
@@ -824,12 +824,12 @@
                 14284,
                 14282
             ],
-            "processing_time": 7.258336
+            "processing_time": 4.39757
         },
         {
-            "done": "true",
+            "done": true,
             "id": 208,
-            "processing_time": 0.019505
+            "processing_time": 0.010192
         },
         {
             "id": 209,
@@ -951,54 +951,54 @@
                 29764
             ],
             "possible": true,
-            "processing_time": 6.078601
+            "processing_time": 6.496665
         },
         {
-            "done": "true",
+            "done": true,
             "id": 211,
-            "processing_time": 0.021178
+            "processing_time": 0.011101
         },
         {
             "id": 213,
-            "possible": "false",
-            "processing_time": 0.191432
+            "possible": false,
+            "processing_time": 0.087074
         },
         {
             "id": 214,
-            "possible": "false",
-            "processing_time": 1.52296
+            "possible": false,
+            "processing_time": 1.230248
         },
         {
             "id": 215,
-            "possible": "false",
-            "processing_time": 0.105054
+            "possible": false,
+            "processing_time": 0.051242
         },
         {
-            "done": "true",
+            "done": true,
             "id": 218,
-            "processing_time": 0.015788
+            "processing_time": 0.008058
         },
         {
             "id": 220,
             "nodes": [
                 16459
             ],
-            "processing_time": 7.088197
+            "processing_time": 3.824627
         },
         {
-            "done": "true",
+            "done": true,
             "id": 222,
-            "processing_time": 0.018661
+            "processing_time": 0.010181
         },
         {
             "id": 224,
-            "possible": "false",
-            "processing_time": 0.092304
+            "possible": false,
+            "processing_time": 0.048684
         },
         {
-            "done": "true",
+            "done": true,
             "id": 225,
-            "processing_time": 0.012932
+            "processing_time": 0.006596
         },
         {
             "id": 227,
@@ -1012,12 +1012,12 @@
                 4665,
                 28069
             ],
-            "processing_time": 7.073381
+            "processing_time": 3.807149
         },
         {
             "id": 230,
-            "possible": "false",
-            "processing_time": 0.100677
+            "possible": false,
+            "processing_time": 0.064931
         },
         {
             "id": 233,
@@ -1025,17 +1025,17 @@
                 17369,
                 22483
             ],
-            "processing_time": 23.23519
+            "processing_time": 13.300306
         },
         {
             "id": 236,
-            "possible": "false",
-            "processing_time": 0.09256
+            "possible": false,
+            "processing_time": 0.06045
         },
         {
             "id": 238,
-            "possible": "false",
-            "processing_time": 0.199656
+            "possible": false,
+            "processing_time": 0.130209
         },
         {
             "id": 240,
@@ -1045,14 +1045,14 @@
                 7229,
                 17466
             ],
-            "processing_time": 21.354082
+            "processing_time": 14.233489
         },
         {
             "id": 243,
             "nodes": [
                 17762
             ],
-            "processing_time": 6.584905
+            "processing_time": 4.500365
         },
         {
             "id": 245,
@@ -1067,7 +1067,7 @@
                 27269,
                 8331
             ],
-            "processing_time": 7.626287
+            "processing_time": 4.526562
         },
         {
             "id": 246,
@@ -1082,19 +1082,19 @@
                 21830,
                 18137
             ],
-            "processing_time": 6.550728
+            "processing_time": 4.674148
         },
         {
-            "done": "true",
+            "done": true,
             "id": 248,
-            "processing_time": 0.018856
+            "processing_time": 0.013716
         },
         {
             "id": 249,
             "nodes": [
                 29440
             ],
-            "processing_time": 26.298895
+            "processing_time": 14.453147
         },
         {
             "id": 252,
@@ -1107,7 +1107,7 @@
                 18508,
                 16792
             ],
-            "processing_time": 21.321694
+            "processing_time": 14.245558
         },
         {
             "id": 255,
@@ -1120,12 +1120,12 @@
                 17294,
                 4787
             ],
-            "processing_time": 28.435622
+            "processing_time": 15.297582
         },
         {
-            "done": "true",
+            "done": true,
             "id": 258,
-            "processing_time": 0.029286
+            "processing_time": 0.015055
         },
         {
             "id": 259,
@@ -1139,37 +1139,37 @@
                 9205,
                 12430
             ],
-            "processing_time": 6.757456
+            "processing_time": 4.973562
         },
         {
             "id": 260,
-            "possible": "false",
-            "processing_time": 0.147427
+            "possible": false,
+            "processing_time": 0.075917
         },
         {
             "id": 262,
-            "possible": "false",
-            "processing_time": 1.540899
+            "possible": false,
+            "processing_time": 0.978709
         },
         {
-            "done": "true",
+            "done": true,
             "id": 263,
-            "processing_time": 0.016068
+            "processing_time": 0.010024
         },
         {
             "id": 266,
-            "possible": "false",
-            "processing_time": 0.101685
+            "possible": false,
+            "processing_time": 0.075355
         },
         {
             "id": 267,
-            "possible": "false",
-            "processing_time": 12.515693
+            "possible": false,
+            "processing_time": 8.123063
         },
         {
             "id": 270,
             "nodes": [],
-            "processing_time": 24.524474
+            "processing_time": 14.659333
         },
         {
             "id": 271,
@@ -1181,47 +1181,47 @@
                 15644,
                 19029
             ],
-            "processing_time": 6.841449
+            "processing_time": 4.462885
         },
         {
-            "done": "true",
+            "done": true,
             "id": 272,
-            "processing_time": 0.025682
+            "processing_time": 0.0142
         },
         {
             "id": 273,
-            "possible": "false",
-            "processing_time": 0.130362
+            "possible": false,
+            "processing_time": 0.06207
         },
         {
-            "done": "true",
+            "done": true,
             "id": 275,
-            "processing_time": 0.013471
+            "processing_time": 0.008298
         },
         {
             "id": 277,
-            "possible": "false",
-            "processing_time": 0.077032
+            "possible": false,
+            "processing_time": 0.051387
         },
         {
-            "done": "true",
+            "done": true,
             "id": 280,
-            "processing_time": 0.012704
+            "processing_time": 0.008074
         },
         {
-            "done": "true",
+            "done": true,
             "id": 283,
-            "processing_time": 0.012276
+            "processing_time": 0.007484
         },
         {
             "id": 285,
-            "possible": "false",
-            "processing_time": 0.3141
+            "possible": false,
+            "processing_time": 0.189323
         },
         {
-            "done": "true",
+            "done": true,
             "id": 288,
-            "processing_time": 0.012177
+            "processing_time": 0.007644
         },
         {
             "id": 290,
@@ -1236,32 +1236,32 @@
                 5732,
                 4715
             ],
-            "processing_time": 24.416119
+            "processing_time": 14.968336
         },
         {
-            "done": "true",
+            "done": true,
             "id": 293,
-            "processing_time": 0.027375
+            "processing_time": 0.01263
         },
         {
             "id": 294,
-            "possible": "false",
-            "processing_time": 0.11744
+            "possible": false,
+            "processing_time": 0.062103
         },
         {
-            "done": "true",
+            "done": true,
             "id": 296,
-            "processing_time": 0.014037
+            "processing_time": 0.008106
         },
         {
             "id": 297,
             "nodes": [],
-            "processing_time": 23.297433
+            "processing_time": 14.150665
         },
         {
             "id": 299,
-            "possible": "false",
-            "processing_time": 0.127971
+            "possible": false,
+            "processing_time": 0.064386
         },
         {
             "id": 302,
@@ -1270,27 +1270,27 @@
                 18412,
                 21150
             ],
-            "processing_time": 23.669201
+            "processing_time": 14.235239
         },
         {
-            "done": "true",
+            "done": true,
             "id": 305,
-            "processing_time": 0.027264
+            "processing_time": 0.012873
         },
         {
-            "done": "true",
+            "done": true,
             "id": 308,
-            "processing_time": 0.013986
+            "processing_time": 0.008176
         },
         {
-            "done": "true",
+            "done": true,
             "id": 309,
-            "processing_time": 0.012269
+            "processing_time": 0.007742
         },
         {
-            "done": "true",
+            "done": true,
             "id": 310,
-            "processing_time": 0.011936
+            "processing_time": 0.007386
         },
         {
             "id": 311,
@@ -1441,27 +1441,27 @@
                 1810
             ],
             "possible": true,
-            "processing_time": 12.998393
+            "processing_time": 7.045224
         },
         {
             "id": 312,
-            "possible": "false",
-            "processing_time": 0.126164
+            "possible": false,
+            "processing_time": 0.074537
         },
         {
-            "done": "true",
+            "done": true,
             "id": 315,
-            "processing_time": 0.014146
+            "processing_time": 0.00853
         },
         {
             "id": 318,
-            "possible": "false",
-            "processing_time": 0.091533
+            "possible": false,
+            "processing_time": 0.059303
         },
         {
-            "done": "true",
+            "done": true,
             "id": 321,
-            "processing_time": 0.012015
+            "processing_time": 0.008143
         },
         {
             "id": 323,
@@ -1473,12 +1473,12 @@
                 3717,
                 27134
             ],
-            "processing_time": 7.696239
+            "processing_time": 4.421665
         },
         {
-            "done": "true",
+            "done": true,
             "id": 325,
-            "processing_time": 0.019365
+            "processing_time": 0.012072
         },
         {
             "id": 327,
@@ -1486,17 +1486,17 @@
                 19032,
                 19031
             ],
-            "processing_time": 22.616018
+            "processing_time": 14.972245
         },
         {
-            "done": "true",
+            "done": true,
             "id": 328,
-            "processing_time": 0.026371
+            "processing_time": 0.013274
         },
         {
             "id": 329,
-            "possible": "false",
-            "processing_time": 1.488774
+            "possible": false,
+            "processing_time": 1.216277
         },
         {
             "id": 331,
@@ -1505,22 +1505,22 @@
                 3943,
                 3697
             ],
-            "processing_time": 32.265126
+            "processing_time": 20.634705
         },
         {
             "id": 333,
-            "possible": "false",
-            "processing_time": 0.273435
+            "possible": false,
+            "processing_time": 0.15954
         },
         {
             "id": 335,
-            "possible": "false",
-            "processing_time": 0.078186
+            "possible": false,
+            "processing_time": 0.049235
         },
         {
-            "done": "true",
+            "done": true,
             "id": 338,
-            "processing_time": 0.014499
+            "processing_time": 0.008861
         },
         {
             "id": 340,
@@ -1662,12 +1662,12 @@
                 18905
             ],
             "possible": true,
-            "processing_time": 6.084711
+            "processing_time": 3.443961
         },
         {
             "id": 342,
-            "possible": "false",
-            "processing_time": 0.278924
+            "possible": false,
+            "processing_time": 0.16912
         },
         {
             "id": 345,
@@ -1680,17 +1680,17 @@
                 17726,
                 22768
             ],
-            "processing_time": 23.541749
+            "processing_time": 23.483404
         },
         {
             "id": 348,
-            "possible": "false",
-            "processing_time": 1.558328
+            "possible": false,
+            "processing_time": 0.982791
         },
         {
-            "done": "true",
+            "done": true,
             "id": 350,
-            "processing_time": 0.016347
+            "processing_time": 0.010391
         },
         {
             "id": 353,
@@ -1698,12 +1698,12 @@
                 24639,
                 20218
             ],
-            "processing_time": 6.547433
+            "processing_time": 4.796366
         },
         {
             "id": 355,
-            "possible": "false",
-            "processing_time": 15.498836
+            "possible": false,
+            "processing_time": 7.281401
         },
         {
             "id": 357,
@@ -1712,7 +1712,7 @@
                 32295,
                 2585
             ],
-            "processing_time": 8.166706
+            "processing_time": 4.456405
         },
         {
             "id": 358,
@@ -1723,7 +1723,7 @@
                 19587,
                 27542
             ],
-            "processing_time": 6.639653
+            "processing_time": 4.893399
         },
         {
             "id": 361,
@@ -1733,12 +1733,12 @@
                 27297,
                 16792
             ],
-            "processing_time": 21.936942
+            "processing_time": 12.42395
         },
         {
-            "done": "true",
+            "done": true,
             "id": 363,
-            "processing_time": 0.022189
+            "processing_time": 0.016049
         },
         {
             "id": 364,
@@ -1749,27 +1749,27 @@
                 20072,
                 18362
             ],
-            "processing_time": 8.51913
+            "processing_time": 4.592287
         },
         {
-            "done": "true",
+            "done": true,
             "id": 367,
-            "processing_time": 0.023517
+            "processing_time": 0.01276
         },
         {
             "id": 369,
-            "possible": "false",
-            "processing_time": 0.231011
+            "possible": false,
+            "processing_time": 0.162401
         },
         {
-            "done": "true",
+            "done": true,
             "id": 372,
-            "processing_time": 0.014642
+            "processing_time": 0.009093
         },
         {
-            "done": "true",
+            "done": true,
             "id": 374,
-            "processing_time": 0.012676
+            "processing_time": 0.007105
         },
         {
             "id": 375,
@@ -1778,12 +1778,12 @@
                 19032,
                 18207
             ],
-            "processing_time": 6.585191
+            "processing_time": 4.507145
         },
         {
             "id": 377,
-            "possible": "false",
-            "processing_time": 0.103484
+            "possible": false,
+            "processing_time": 0.058827
         },
         {
             "id": 379,
@@ -1795,32 +1795,32 @@
                 28278,
                 20769
             ],
-            "processing_time": 8.555869
+            "processing_time": 4.667233
         },
         {
             "id": 381,
             "nodes": [],
-            "processing_time": 22.369926
+            "processing_time": 14.040865
         },
         {
             "id": 383,
-            "possible": "false",
-            "processing_time": 0.145997
+            "possible": false,
+            "processing_time": 0.088027
         },
         {
             "id": 386,
-            "possible": "false",
-            "processing_time": 0.120591
+            "possible": false,
+            "processing_time": 0.078621
         },
         {
-            "done": "true",
+            "done": true,
             "id": 388,
-            "processing_time": 0.014316
+            "processing_time": 0.009662
         },
         {
             "id": 391,
-            "possible": "false",
-            "processing_time": 0.076345
+            "possible": false,
+            "processing_time": 0.051349
         },
         {
             "id": 394,
@@ -1835,22 +1835,22 @@
                 14466,
                 14468
             ],
-            "processing_time": 8.177063
+            "processing_time": 4.534317
         },
         {
             "id": 397,
-            "possible": "false",
-            "processing_time": 16.082146
+            "possible": false,
+            "processing_time": 7.540762
         },
         {
             "id": 400,
-            "possible": "false",
-            "processing_time": 0.094121
+            "possible": false,
+            "processing_time": 0.054487
         },
         {
             "id": 401,
-            "possible": "false",
-            "processing_time": 0.240546
+            "possible": false,
+            "processing_time": 0.14608
         },
         {
             "id": 403,
@@ -1885,7 +1885,7 @@
                 1703
             ],
             "possible": true,
-            "processing_time": 0.41565
+            "processing_time": 0.266929
         },
         {
             "id": 404,
@@ -1894,37 +1894,37 @@
                 14418,
                 21373
             ],
-            "processing_time": 6.515209
+            "processing_time": 4.496356
         },
         {
             "id": 406,
-            "possible": "false",
-            "processing_time": 10.996695
+            "possible": false,
+            "processing_time": 6.903441
         },
         {
             "id": 407,
-            "possible": "false",
-            "processing_time": 0.094197
+            "possible": false,
+            "processing_time": 0.062697
         },
         {
             "id": 408,
-            "possible": "false",
-            "processing_time": 1.343061
+            "possible": false,
+            "processing_time": 0.745093
         },
         {
             "id": 409,
-            "possible": "false",
-            "processing_time": 0.115193
+            "possible": false,
+            "processing_time": 0.05339
         },
         {
-            "done": "true",
+            "done": true,
             "id": 412,
-            "processing_time": 0.018817
+            "processing_time": 0.009528
         },
         {
             "id": 415,
-            "possible": "false",
-            "processing_time": 0.587474
+            "possible": false,
+            "processing_time": 0.283057
         },
         {
             "id": 417,
@@ -1932,17 +1932,17 @@
                 19774,
                 19704
             ],
-            "processing_time": 8.23079
+            "processing_time": 4.654591
         },
         {
-            "done": "true",
+            "done": true,
             "id": 419,
-            "processing_time": 0.037365
+            "processing_time": 0.012206
         },
         {
             "id": 421,
-            "possible": "false",
-            "processing_time": 0.279278
+            "possible": false,
+            "processing_time": 0.180969
         },
         {
             "id": 423,
@@ -1985,26 +1985,26 @@
                 16349
             ],
             "possible": true,
-            "processing_time": 0.420731
+            "processing_time": 0.216826
         },
         {
             "id": 425,
             "nodes": [
                 19220
             ],
-            "processing_time": 22.183728
+            "processing_time": 14.470597
         },
         {
             "id": 426,
             "nodes": [
                 2321
             ],
-            "processing_time": 24.049608
+            "processing_time": 14.789041
         },
         {
             "id": 429,
             "nodes": [],
-            "processing_time": 22.514118
+            "processing_time": 14.688467
         },
         {
             "id": 432,
@@ -2015,32 +2015,32 @@
                 17106,
                 22250
             ],
-            "processing_time": 6.720489
+            "processing_time": 4.645404
         },
         {
             "id": 434,
-            "possible": "false",
-            "processing_time": 0.095573
+            "possible": false,
+            "processing_time": 0.071224
         },
         {
-            "done": "true",
+            "done": true,
             "id": 437,
-            "processing_time": 0.015894
+            "processing_time": 0.011301
         },
         {
             "id": 440,
-            "possible": "false",
-            "processing_time": 0.082581
+            "possible": false,
+            "processing_time": 0.056703
         },
         {
             "id": 442,
-            "possible": "false",
-            "processing_time": 1.481762
+            "possible": false,
+            "processing_time": 1.075269
         },
         {
             "id": 445,
-            "possible": "false",
-            "processing_time": 2.032217
+            "possible": false,
+            "processing_time": 1.335756
         },
         {
             "id": 446,
@@ -2051,44 +2051,44 @@
                 19029,
                 15644
             ],
-            "processing_time": 6.606851
+            "processing_time": 4.49104
         },
         {
             "id": 448,
-            "possible": "false",
-            "processing_time": 0.280871
+            "possible": false,
+            "processing_time": 0.156473
         },
         {
             "id": 449,
-            "possible": "false",
-            "processing_time": 0.095855
+            "possible": false,
+            "processing_time": 0.061417
         },
         {
             "id": 450,
-            "possible": "false",
-            "processing_time": 0.089482
+            "possible": false,
+            "processing_time": 0.057899
         },
         {
-            "done": "true",
+            "done": true,
             "id": 451,
-            "processing_time": 0.014835
+            "processing_time": 0.008866
         },
         {
-            "done": "true",
+            "done": true,
             "id": 453,
-            "processing_time": 0.012178
+            "processing_time": 0.007395
         },
         {
             "id": 455,
-            "possible": "false",
-            "processing_time": 11.515711
+            "possible": false,
+            "processing_time": 7.148603
         },
         {
             "id": 457,
             "nodes": [
                 24292
             ],
-            "processing_time": 6.40133
+            "processing_time": 4.638013
         },
         {
             "id": 460,
@@ -2098,32 +2098,32 @@
                 13845,
                 16966
             ],
-            "processing_time": 6.514693
+            "processing_time": 4.729368
         },
         {
             "id": 462,
-            "possible": "false",
-            "processing_time": 0.110409
+            "possible": false,
+            "processing_time": 0.067452
         },
         {
             "id": 465,
-            "possible": "false",
-            "processing_time": 0.076529
+            "possible": false,
+            "processing_time": 0.051905
         },
         {
             "id": 467,
-            "possible": "false",
-            "processing_time": 0.08418
+            "possible": false,
+            "processing_time": 0.055398
         },
         {
             "id": 468,
-            "possible": "false",
-            "processing_time": 0.101894
+            "possible": false,
+            "processing_time": 0.065771
         },
         {
-            "done": "true",
+            "done": true,
             "id": 471,
-            "processing_time": 0.014247
+            "processing_time": 0.009348
         },
         {
             "id": 473,
@@ -2133,7 +2133,7 @@
                 20050,
                 20046
             ],
-            "processing_time": 6.467386
+            "processing_time": 4.686035
         },
         {
             "id": 474,
@@ -2144,7 +2144,7 @@
                 27532,
                 27542
             ],
-            "processing_time": 6.839283
+            "processing_time": 4.72116
         },
         {
             "id": 477,
@@ -2152,7 +2152,7 @@
                 14665,
                 25855
             ],
-            "processing_time": 8.229482
+            "processing_time": 4.446684
         },
         {
             "id": 478,
@@ -2167,7 +2167,7 @@
                 19028,
                 32772
             ],
-            "processing_time": 8.964766
+            "processing_time": 4.682285
         },
         {
             "id": 481,
@@ -2181,12 +2181,12 @@
                 17040,
                 17055
             ],
-            "processing_time": 6.999479
+            "processing_time": 7.049788
         },
         {
             "id": 482,
-            "possible": "false",
-            "processing_time": 13.533571
+            "possible": false,
+            "processing_time": 11.716325
         },
         {
             "id": 485,
@@ -2261,12 +2261,12 @@
                 5727
             ],
             "possible": true,
-            "processing_time": 2.743407
+            "processing_time": 2.267959
         },
         {
             "id": 487,
-            "possible": "false",
-            "processing_time": 0.092243
+            "possible": false,
+            "processing_time": 0.079201
         },
         {
             "id": 489,
@@ -2275,17 +2275,17 @@
                 19023,
                 15690
             ],
-            "processing_time": 7.819521
+            "processing_time": 4.850371
         },
         {
             "id": 490,
-            "possible": "false",
-            "processing_time": 0.227352
+            "possible": false,
+            "processing_time": 0.108925
         },
         {
-            "done": "true",
+            "done": true,
             "id": 493,
-            "processing_time": 0.01438
+            "processing_time": 0.0079
         },
         {
             "id": 494,
@@ -2295,7 +2295,7 @@
                 4587,
                 19230
             ],
-            "processing_time": 23.209376
+            "processing_time": 13.247758
         },
         {
             "id": 496,
@@ -2310,7 +2310,7 @@
                 272,
                 18748
             ],
-            "processing_time": 7.270681
+            "processing_time": 3.817069
         },
         {
             "id": 499,
@@ -2324,37 +2324,37 @@
                 28823,
                 28828
             ],
-            "processing_time": 7.194147
+            "processing_time": 3.901303
         },
         {
             "id": 502,
             "nodes": [],
-            "processing_time": 21.938063
+            "processing_time": 12.989995
         },
         {
             "id": 503,
             "nodes": [],
-            "processing_time": 24.132993
+            "processing_time": 14.149429
         },
         {
             "id": 504,
-            "possible": "false",
-            "processing_time": 1.643995
+            "possible": false,
+            "processing_time": 0.839368
         },
         {
             "id": 506,
-            "possible": "false",
-            "processing_time": 0.612954
+            "possible": false,
+            "processing_time": 0.261973
         },
         {
             "id": 508,
-            "possible": "false",
-            "processing_time": 0.109352
+            "possible": false,
+            "processing_time": 0.070438
         },
         {
-            "done": "true",
+            "done": true,
             "id": 511,
-            "processing_time": 0.015627
+            "processing_time": 0.010087
         },
         {
             "id": 512,
@@ -2363,49 +2363,49 @@
                 18033,
                 17726
             ],
-            "processing_time": 22.903424
+            "processing_time": 14.549488
         },
         {
             "id": 515,
             "nodes": [
                 1895
             ],
-            "processing_time": 22.702603
+            "processing_time": 14.298558
         },
         {
-            "done": "true",
+            "done": true,
             "id": 518,
-            "processing_time": 0.026199
+            "processing_time": 0.018738
         },
         {
-            "done": "true",
+            "done": true,
             "id": 519,
-            "processing_time": 0.012707
+            "processing_time": 0.008061
         },
         {
             "id": 522,
-            "possible": "false",
-            "processing_time": 0.103492
+            "possible": false,
+            "processing_time": 0.062266
         },
         {
-            "done": "true",
+            "done": true,
             "id": 523,
-            "processing_time": 0.014542
+            "processing_time": 0.010169
         },
         {
-            "done": "true",
+            "done": true,
             "id": 525,
-            "processing_time": 0.015289
+            "processing_time": 0.008629
         },
         {
-            "done": "true",
+            "done": true,
             "id": 528,
-            "processing_time": 0.012243
+            "processing_time": 0.008255
         },
         {
-            "done": "true",
+            "done": true,
             "id": 531,
-            "processing_time": 0.012184
+            "processing_time": 0.007878
         },
         {
             "id": 532,
@@ -2416,12 +2416,12 @@
                 32576,
                 21141
             ],
-            "processing_time": 22.421404
+            "processing_time": 14.58646
         },
         {
-            "done": "true",
+            "done": true,
             "id": 535,
-            "processing_time": 0.027052
+            "processing_time": 0.023304
         },
         {
             "id": 538,
@@ -2436,34 +2436,34 @@
                 15203,
                 3489
             ],
-            "processing_time": 7.405541
+            "processing_time": 4.744163
         },
         {
             "id": 539,
-            "possible": "false",
-            "processing_time": 11.959971
+            "possible": false,
+            "processing_time": 7.79177
         },
         {
             "id": 540,
             "nodes": [
                 20084
             ],
-            "processing_time": 24.281587
+            "processing_time": 24.291136
         },
         {
-            "done": "true",
+            "done": true,
             "id": 543,
-            "processing_time": 0.026378
+            "processing_time": 0.015649
         },
         {
             "id": 546,
-            "possible": "false",
-            "processing_time": 0.102552
+            "possible": false,
+            "processing_time": 0.14914
         },
         {
             "id": 549,
-            "possible": "false",
-            "processing_time": 0.091125
+            "possible": false,
+            "processing_time": 0.106652
         },
         {
             "id": 551,
@@ -2477,44 +2477,44 @@
                 2166,
                 2188
             ],
-            "processing_time": 6.777246
+            "processing_time": 4.196752
         },
         {
-            "done": "true",
+            "done": true,
             "id": 553,
-            "processing_time": 0.020087
+            "processing_time": 0.011034
         },
         {
             "id": 556,
-            "possible": "false",
-            "processing_time": 0.33025
+            "possible": false,
+            "processing_time": 0.17746
         },
         {
             "id": 559,
             "nodes": [],
-            "processing_time": 23.893449
+            "processing_time": 17.168044
         },
         {
             "id": 561,
             "nodes": [
                 27121
             ],
-            "processing_time": 7.207788
+            "processing_time": 3.886376
         },
         {
             "id": 562,
             "nodes": [],
-            "processing_time": 22.335359
+            "processing_time": 12.10119
         },
         {
             "id": 565,
-            "possible": "false",
-            "processing_time": 0.168164
+            "possible": false,
+            "processing_time": 0.092057
         },
         {
             "id": 566,
-            "possible": "false",
-            "processing_time": 14.429462
+            "possible": false,
+            "processing_time": 8.469755
         },
         {
             "id": 568,
@@ -2523,59 +2523,59 @@
                 16122,
                 31981
             ],
-            "processing_time": 6.709986
+            "processing_time": 4.340864
         },
         {
-            "done": "true",
+            "done": true,
             "id": 569,
-            "processing_time": 0.023631
+            "processing_time": 0.011551
         },
         {
-            "done": "true",
+            "done": true,
             "id": 570,
-            "processing_time": 0.01209
+            "processing_time": 0.006711
         },
         {
-            "done": "true",
+            "done": true,
             "id": 571,
-            "processing_time": 0.012102
+            "processing_time": 0.006184
         },
         {
             "id": 573,
-            "possible": "false",
-            "processing_time": 0.220146
+            "possible": false,
+            "processing_time": 0.07984
         },
         {
-            "done": "true",
+            "done": true,
             "id": 574,
-            "processing_time": 0.013743
+            "processing_time": 0.007053
         },
         {
             "id": 576,
-            "possible": "false",
-            "processing_time": 0.109105
+            "possible": false,
+            "processing_time": 0.05911
         },
         {
-            "done": "true",
+            "done": true,
             "id": 579,
-            "processing_time": 0.012395
+            "processing_time": 0.00695
         },
         {
             "id": 581,
             "nodes": [
                 30899
             ],
-            "processing_time": 22.07212
+            "processing_time": 13.940569
         },
         {
             "id": 583,
-            "possible": "false",
-            "processing_time": 2.534506
+            "possible": false,
+            "processing_time": 1.558843
         },
         {
-            "done": "true",
+            "done": true,
             "id": 585,
-            "processing_time": 0.016374
+            "processing_time": 0.010189
         },
         {
             "id": 586,
@@ -2584,32 +2584,32 @@
                 26867,
                 19135
             ],
-            "processing_time": 6.61301
+            "processing_time": 3.890701
         },
         {
-            "done": "true",
+            "done": true,
             "id": 589,
-            "processing_time": 0.018022
+            "processing_time": 0.009859
         },
         {
-            "done": "true",
+            "done": true,
             "id": 590,
-            "processing_time": 0.012408
+            "processing_time": 0.006774
         },
         {
-            "done": "true",
+            "done": true,
             "id": 592,
-            "processing_time": 0.012635
+            "processing_time": 0.006651
         },
         {
-            "done": "true",
+            "done": true,
             "id": 593,
-            "processing_time": 0.011578
+            "processing_time": 0.00643
         },
         {
-            "done": "true",
+            "done": true,
             "id": 595,
-            "processing_time": 0.011562
+            "processing_time": 0.006552
         },
         {
             "id": 597,
@@ -2618,17 +2618,17 @@
                 19054,
                 19052
             ],
-            "processing_time": 6.789135
+            "processing_time": 3.742166
         },
         {
-            "done": "true",
+            "done": true,
             "id": 600,
-            "processing_time": 0.021698
+            "processing_time": 0.011876
         },
         {
-            "done": "true",
+            "done": true,
             "id": 601,
-            "processing_time": 0.013344
+            "processing_time": 0.006361
         },
         {
             "id": 604,
@@ -2642,7 +2642,7 @@
                 16755,
                 27642
             ],
-            "processing_time": 6.694017
+            "processing_time": 3.917408
         },
         {
             "id": 605,
@@ -2657,12 +2657,12 @@
                 19052,
                 28439
             ],
-            "processing_time": 8.295071
+            "processing_time": 4.281362
         },
         {
-            "done": "true",
+            "done": true,
             "id": 608,
-            "processing_time": 0.026121
+            "processing_time": 0.013049
         },
         {
             "id": 609,
@@ -2673,14 +2673,14 @@
                 13845,
                 16966
             ],
-            "processing_time": 22.50743
+            "processing_time": 14.913361
         },
         {
             "id": 612,
             "nodes": [
                 6601
             ],
-            "processing_time": 34.1116
+            "processing_time": 20.024221
         },
         {
             "id": 613,
@@ -2696,7 +2696,7 @@
                 18665,
                 32633
             ],
-            "processing_time": 23.889486
+            "processing_time": 13.211323
         },
         {
             "id": 616,
@@ -2826,7 +2826,7 @@
                 6167
             ],
             "possible": true,
-            "processing_time": 7.727758
+            "processing_time": 4.316744
         },
         {
             "id": 619,
@@ -2834,7 +2834,7 @@
                 27897,
                 27896
             ],
-            "processing_time": 8.442031
+            "processing_time": 3.901181
         },
         {
             "id": 622,
@@ -2939,17 +2939,17 @@
                 26307
             ],
             "possible": true,
-            "processing_time": 6.293754
+            "processing_time": 3.267133
         },
         {
             "id": 624,
-            "possible": "false",
-            "processing_time": 0.094431
+            "possible": false,
+            "processing_time": 0.056548
         },
         {
             "id": 626,
-            "possible": "false",
-            "processing_time": 2.423544
+            "possible": false,
+            "processing_time": 2.39587
         },
         {
             "id": 628,
@@ -2964,7 +2964,7 @@
                 14122,
                 25727
             ],
-            "processing_time": 8.217498
+            "processing_time": 6.058218
         },
         {
             "id": 629,
@@ -2976,22 +2976,22 @@
                 13591,
                 13620
             ],
-            "processing_time": 7.336412
+            "processing_time": 4.587341
         },
         {
-            "done": "true",
+            "done": true,
             "id": 631,
-            "processing_time": 0.023081
+            "processing_time": 0.013402
         },
         {
-            "done": "true",
+            "done": true,
             "id": 634,
-            "processing_time": 0.013814
+            "processing_time": 0.00832
         },
         {
-            "done": "true",
+            "done": true,
             "id": 635,
-            "processing_time": 0.012034
+            "processing_time": 0.007804
         },
         {
             "id": 636,
@@ -3001,7 +3001,7 @@
                 31863,
                 31862
             ],
-            "processing_time": 6.949918
+            "processing_time": 4.899996
         },
         {
             "id": 637,
@@ -3010,26 +3010,26 @@
                 721,
                 31981
             ],
-            "processing_time": 7.466785
+            "processing_time": 4.443219
         },
         {
             "id": 638,
             "nodes": [
                 9205
             ],
-            "processing_time": 21.660634
+            "processing_time": 15.427957
         },
         {
             "id": 641,
             "nodes": [
                 12424
             ],
-            "processing_time": 6.655861
+            "processing_time": 4.693496
         },
         {
             "id": 644,
-            "possible": "false",
-            "processing_time": 0.134424
+            "possible": false,
+            "processing_time": 0.073941
         },
         {
             "id": 647,
@@ -3045,7 +3045,7 @@
                 30014,
                 2938
             ],
-            "processing_time": 23.457981
+            "processing_time": 14.785189
         },
         {
             "id": 648,
@@ -3061,12 +3061,12 @@
                 23443,
                 23295
             ],
-            "processing_time": 33.638769
+            "processing_time": 22.010132
         },
         {
-            "done": "true",
+            "done": true,
             "id": 650,
-            "processing_time": 0.028393
+            "processing_time": 0.023099
         },
         {
             "id": 652,
@@ -3078,52 +3078,52 @@
                 18411,
                 19617
             ],
-            "processing_time": 8.002544
+            "processing_time": 6.984804
         },
         {
-            "done": "true",
+            "done": true,
             "id": 654,
-            "processing_time": 0.023018
+            "processing_time": 0.014876
         },
         {
-            "done": "true",
+            "done": true,
             "id": 655,
-            "processing_time": 0.015225
+            "processing_time": 0.009749
         },
         {
-            "done": "true",
+            "done": true,
             "id": 658,
-            "processing_time": 0.014012
+            "processing_time": 0.009227
         },
         {
             "id": 659,
-            "possible": "false",
-            "processing_time": 0.154047
+            "possible": false,
+            "processing_time": 0.097566
         },
         {
             "id": 660,
-            "possible": "false",
-            "processing_time": 0.170008
+            "possible": false,
+            "processing_time": 0.114498
         },
         {
             "id": 662,
-            "possible": "false",
-            "processing_time": 0.099539
+            "possible": false,
+            "processing_time": 0.069715
         },
         {
             "id": 665,
-            "possible": "false",
-            "processing_time": 11.584957
+            "possible": false,
+            "processing_time": 6.691368
         },
         {
             "id": 668,
-            "possible": "false",
-            "processing_time": 0.730546
+            "possible": false,
+            "processing_time": 0.410175
         },
         {
-            "done": "true",
+            "done": true,
             "id": 671,
-            "processing_time": 0.012783
+            "processing_time": 0.007717
         },
         {
             "id": 674,
@@ -3131,7 +3131,7 @@
                 19154,
                 27737
             ],
-            "processing_time": 22.342064
+            "processing_time": 12.171451
         },
         {
             "id": 675,
@@ -3145,7 +3145,7 @@
                 5060,
                 5057
             ],
-            "processing_time": 29.288305
+            "processing_time": 17.928442
         },
         {
             "id": 677,
@@ -3155,22 +3155,22 @@
                 21782,
                 31406
             ],
-            "processing_time": 21.213504
+            "processing_time": 13.870097
         },
         {
             "id": 678,
             "nodes": [],
-            "processing_time": 21.623407
+            "processing_time": 12.818781
         },
         {
             "id": 679,
-            "possible": "false",
-            "processing_time": 0.257937
+            "possible": false,
+            "processing_time": 0.14163799999999999
         },
         {
             "id": 680,
-            "possible": "false",
-            "processing_time": 0.164637
+            "possible": false,
+            "processing_time": 0.08795
         },
         {
             "id": 682,
@@ -3183,12 +3183,12 @@
                 21308,
                 16998
             ],
-            "processing_time": 7.587021
+            "processing_time": 4.049554
         },
         {
-            "done": "true",
+            "done": true,
             "id": 683,
-            "processing_time": 0.019928
+            "processing_time": 0.010419
         },
         {
             "id": 686,
@@ -3203,17 +3203,17 @@
                 1589,
                 17653
             ],
-            "processing_time": 30.159316
+            "processing_time": 20.050965
         },
         {
-            "done": "true",
+            "done": true,
             "id": 689,
-            "processing_time": 0.01862
+            "processing_time": 0.012035
         },
         {
             "id": 692,
-            "possible": "false",
-            "processing_time": 0.339242
+            "possible": false,
+            "processing_time": 0.206076
         },
         {
             "id": 695,
@@ -3222,12 +3222,12 @@
                 32526,
                 10993
             ],
-            "processing_time": 6.544524
+            "processing_time": 3.914594
         },
         {
-            "done": "true",
+            "done": true,
             "id": 698,
-            "processing_time": 0.017084
+            "processing_time": 0.010264
         },
         {
             "id": 699,
@@ -3236,29 +3236,29 @@
                 19397,
                 18665
             ],
-            "processing_time": 8.781859
+            "processing_time": 4.138051
         },
         {
-            "done": "true",
+            "done": true,
             "id": 701,
-            "processing_time": 0.035412
+            "processing_time": 0.010523
         },
         {
             "id": 704,
             "nodes": [
                 9228
             ],
-            "processing_time": 21.809141
+            "processing_time": 12.74298
         },
         {
             "id": 706,
-            "possible": "false",
-            "processing_time": 0.267268
+            "possible": false,
+            "processing_time": 0.14704
         },
         {
-            "done": "true",
+            "done": true,
             "id": 707,
-            "processing_time": 0.015487
+            "processing_time": 0.008566
         },
         {
             "id": 708,
@@ -3274,7 +3274,7 @@
                 30014,
                 2938
             ],
-            "processing_time": 22.256142
+            "processing_time": 12.97286
         },
         {
             "id": 710,
@@ -3288,39 +3288,39 @@
                 21173,
                 21126
             ],
-            "processing_time": 6.483137
+            "processing_time": 4.944068
         },
         {
             "id": 711,
-            "possible": "false",
-            "processing_time": 0.333525
+            "possible": false,
+            "processing_time": 0.184424
         },
         {
             "id": 714,
-            "possible": "false",
-            "processing_time": 0.166542
+            "possible": false,
+            "processing_time": 0.093097
         },
         {
-            "done": "true",
+            "done": true,
             "id": 717,
-            "processing_time": 0.01409
+            "processing_time": 0.00783
         },
         {
             "id": 720,
-            "possible": "false",
-            "processing_time": 1.917182
+            "possible": false,
+            "processing_time": 0.055285
         },
         {
             "id": 721,
             "nodes": [
                 19602
             ],
-            "processing_time": 21.257863
+            "processing_time": 12.594636
         },
         {
-            "done": "true",
+            "done": true,
             "id": 724,
-            "processing_time": 0.020323
+            "processing_time": 0.011864
         },
         {
             "id": 727,
@@ -3331,22 +3331,22 @@
                 3812,
                 16209
             ],
-            "processing_time": 6.816691
+            "processing_time": 4.064992
         },
         {
-            "done": "true",
+            "done": true,
             "id": 730,
-            "processing_time": 0.018728
+            "processing_time": 0.010216
         },
         {
-            "done": "true",
+            "done": true,
             "id": 731,
-            "processing_time": 0.012646
+            "processing_time": 0.006913
         },
         {
             "id": 732,
-            "possible": "false",
-            "processing_time": 0.094866
+            "possible": false,
+            "processing_time": 0.058792
         },
         {
             "id": 733,
@@ -3356,12 +3356,12 @@
                 21516,
                 7809
             ],
-            "processing_time": 7.041008
+            "processing_time": 4.171117
         },
         {
             "id": 734,
-            "possible": "false",
-            "processing_time": 0.108075
+            "possible": false,
+            "processing_time": 0.137418
         },
         {
             "id": 737,
@@ -3372,36 +3372,36 @@
                 28393,
                 28401
             ],
-            "processing_time": 21.706077
+            "processing_time": 13.546218
         },
         {
-            "done": "true",
+            "done": true,
             "id": 738,
-            "processing_time": 0.020037
+            "processing_time": 0.013516
         },
         {
             "id": 740,
-            "possible": "false",
-            "processing_time": 0.515845
+            "possible": false,
+            "processing_time": 0.337115
         },
         {
-            "done": "true",
+            "done": true,
             "id": 742,
-            "processing_time": 0.012665
+            "processing_time": 0.009178
         },
         {
             "id": 744,
             "nodes": [
                 25327
             ],
-            "processing_time": 22.150357
+            "processing_time": 14.34267
         },
         {
             "id": 746,
             "nodes": [
                 21132
             ],
-            "processing_time": 21.831193
+            "processing_time": 14.07178
         },
         {
             "id": 747,
@@ -3412,17 +3412,17 @@
                 17434,
                 7519
             ],
-            "processing_time": 6.628579
+            "processing_time": 4.486377
         },
         {
             "id": 748,
-            "possible": "false",
-            "processing_time": 1.787646
+            "possible": false,
+            "processing_time": 1.063555
         },
         {
-            "done": "true",
+            "done": true,
             "id": 751,
-            "processing_time": 0.015959
+            "processing_time": 0.010844
         },
         {
             "id": 753,
@@ -3450,54 +3450,54 @@
                 3305
             ],
             "possible": true,
-            "processing_time": 0.462257
+            "processing_time": 0.32417
         },
         {
-            "done": "true",
+            "done": true,
             "id": 754,
-            "processing_time": 0.014661
+            "processing_time": 0.009288
         },
         {
             "id": 756,
             "nodes": [
                 20079
             ],
-            "processing_time": 6.54062
+            "processing_time": 4.610732
         },
         {
-            "done": "true",
+            "done": true,
             "id": 757,
-            "processing_time": 0.018968
+            "processing_time": 0.011831
         },
         {
-            "done": "true",
+            "done": true,
             "id": 760,
-            "processing_time": 0.013093
+            "processing_time": 0.008799
         },
         {
             "id": 761,
-            "possible": "false",
-            "processing_time": 0.08569
+            "possible": false,
+            "processing_time": 0.055727
         },
         {
-            "done": "true",
+            "done": true,
             "id": 764,
-            "processing_time": 0.013011
+            "processing_time": 0.008008
         },
         {
             "id": 765,
-            "possible": "false",
-            "processing_time": 0.1021
+            "possible": false,
+            "processing_time": 0.064545
         },
         {
             "id": 766,
-            "possible": "false",
-            "processing_time": 11.721386
+            "possible": false,
+            "processing_time": 7.412311
         },
         {
-            "done": "true",
+            "done": true,
             "id": 767,
-            "processing_time": 0.014887
+            "processing_time": 0.010014
         },
         {
             "id": 768,
@@ -3510,17 +3510,17 @@
                 19666,
                 8530
             ],
-            "processing_time": 21.692996
+            "processing_time": 21.458303
         },
         {
             "id": 769,
-            "possible": "false",
-            "processing_time": 0.088908
+            "possible": false,
+            "processing_time": 0.059318
         },
         {
             "id": 771,
-            "possible": "false",
-            "processing_time": 0.090682
+            "possible": false,
+            "processing_time": 0.057117
         },
         {
             "id": 773,
@@ -3534,12 +3534,12 @@
                 32163,
                 25643
             ],
-            "processing_time": 6.3102
+            "processing_time": 3.946785
         },
         {
             "id": 775,
-            "possible": "false",
-            "processing_time": 0.103622
+            "possible": false,
+            "processing_time": 0.061903
         },
         {
             "id": 777,
@@ -3554,7 +3554,7 @@
                 30919,
                 32541
             ],
-            "processing_time": 6.039645
+            "processing_time": 4.194677
         },
         {
             "id": 780,
@@ -3568,52 +3568,52 @@
                 6225,
                 1787
             ],
-            "processing_time": 6.41368
+            "processing_time": 4.851192
         },
         {
             "id": 783,
-            "possible": "false",
-            "processing_time": 10.764053
+            "possible": false,
+            "processing_time": 6.121643
         },
         {
             "id": 784,
-            "possible": "false",
-            "processing_time": 0.257438
+            "possible": false,
+            "processing_time": 0.135772
         },
         {
             "id": 786,
-            "possible": "false",
-            "processing_time": 0.931529
+            "possible": false,
+            "processing_time": 0.621997
         },
         {
-            "done": "true",
+            "done": true,
             "id": 787,
-            "processing_time": 0.013126
+            "processing_time": 0.008669
         },
         {
             "id": 789,
-            "possible": "false",
-            "processing_time": 9.76626
+            "possible": false,
+            "processing_time": 6.096094
         },
         {
-            "done": "true",
+            "done": true,
             "id": 790,
-            "processing_time": 0.01423
+            "processing_time": 0.010411
         },
         {
             "id": 792,
-            "possible": "false",
-            "processing_time": 10.238307
+            "possible": false,
+            "processing_time": 7.328254
         },
         {
             "id": 793,
-            "possible": "false",
-            "processing_time": 0.533899
+            "possible": false,
+            "processing_time": 0.356745
         },
         {
             "id": 796,
-            "possible": "false",
-            "processing_time": 0.068826
+            "possible": false,
+            "processing_time": 0.04671
         },
         {
             "id": 798,
@@ -3626,19 +3626,19 @@
                 19452,
                 27431
             ],
-            "processing_time": 6.125956
+            "processing_time": 4.692759
         },
         {
             "id": 800,
             "nodes": [
                 1663
             ],
-            "processing_time": 6.686391
+            "processing_time": 4.632522
         },
         {
             "id": 802,
-            "possible": "false",
-            "processing_time": 1.215791
+            "possible": false,
+            "processing_time": 0.580247
         },
         {
             "id": 804,
@@ -3647,27 +3647,27 @@
                 21519,
                 14135
             ],
-            "processing_time": 8.355076
+            "processing_time": 4.576402
         },
         {
-            "done": "true",
+            "done": true,
             "id": 807,
-            "processing_time": 0.019681
+            "processing_time": 0.013119
         },
         {
-            "done": "true",
+            "done": true,
             "id": 808,
-            "processing_time": 0.012281
+            "processing_time": 0.008457
         },
         {
             "id": 811,
-            "possible": "false",
-            "processing_time": 0.205184
+            "possible": false,
+            "processing_time": 0.187491
         },
         {
             "id": 813,
-            "possible": "false",
-            "processing_time": 0.347844
+            "possible": false,
+            "processing_time": 0.237193
         },
         {
             "id": 814,
@@ -3680,12 +3680,12 @@
                 20224,
                 27689
             ],
-            "processing_time": 6.573701
+            "processing_time": 4.782283
         },
         {
-            "done": "true",
+            "done": true,
             "id": 816,
-            "processing_time": 0.01839
+            "processing_time": 0.013335
         },
         {
             "id": 818,
@@ -3696,7 +3696,7 @@
                 12144,
                 23862
             ],
-            "processing_time": 6.505329
+            "processing_time": 4.604375
         },
         {
             "id": 821,
@@ -3757,12 +3757,12 @@
                 2483
             ],
             "possible": true,
-            "processing_time": 3.515259
+            "processing_time": 2.019969
         },
         {
-            "done": "true",
+            "done": true,
             "id": 823,
-            "processing_time": 0.019302
+            "processing_time": 0.011382
         },
         {
             "id": 825,
@@ -3770,17 +3770,17 @@
                 30385,
                 30373
             ],
-            "processing_time": 28.150543
+            "processing_time": 15.012062
         },
         {
-            "done": "true",
+            "done": true,
             "id": 827,
-            "processing_time": 0.026329
+            "processing_time": 0.013885
         },
         {
             "id": 830,
-            "possible": "false",
-            "processing_time": 15.830159
+            "possible": false,
+            "processing_time": 6.723862
         },
         {
             "id": 831,
@@ -3925,7 +3925,7 @@
                 4268
             ],
             "possible": true,
-            "processing_time": 5.99701
+            "processing_time": 3.513292
         },
         {
             "id": 834,
@@ -3935,32 +3935,32 @@
                 27114,
                 1778
             ],
-            "processing_time": 29.703725
+            "processing_time": 15.405387
         },
         {
             "id": 836,
-            "possible": "false",
-            "processing_time": 0.713815
+            "possible": false,
+            "processing_time": 0.40479
         },
         {
             "id": 837,
-            "possible": "false",
-            "processing_time": 1.850481
+            "possible": false,
+            "processing_time": 0.517297
         },
         {
-            "done": "true",
+            "done": true,
             "id": 839,
-            "processing_time": 0.02767
+            "processing_time": 0.009819
         },
         {
             "id": 840,
-            "possible": "false",
-            "processing_time": 0.144074
+            "possible": false,
+            "processing_time": 0.05029
         },
         {
             "id": 841,
-            "possible": "false",
-            "processing_time": 0.175501
+            "possible": false,
+            "processing_time": 0.059186
         },
         {
             "id": 844,
@@ -3976,32 +3976,32 @@
                 27344,
                 30963
             ],
-            "processing_time": 6.480976
+            "processing_time": 4.636891
         },
         {
             "id": 846,
-            "possible": "false",
-            "processing_time": 0.550787
+            "possible": false,
+            "processing_time": 0.3293
         },
         {
-            "done": "true",
+            "done": true,
             "id": 848,
-            "processing_time": 0.014513
+            "processing_time": 0.009789
         },
         {
             "id": 851,
-            "possible": "false",
-            "processing_time": 0.218332
+            "possible": false,
+            "processing_time": 0.132796
         },
         {
             "id": 853,
-            "possible": "false",
-            "processing_time": 1.427955
+            "possible": false,
+            "processing_time": 0.762165
         },
         {
             "id": 856,
-            "possible": "false",
-            "processing_time": 0.280837
+            "possible": false,
+            "processing_time": 0.125151
         },
         {
             "id": 859,
@@ -4009,12 +4009,12 @@
                 3404,
                 3407
             ],
-            "processing_time": 7.597835
+            "processing_time": 4.508968
         },
         {
-            "done": "true",
+            "done": true,
             "id": 860,
-            "processing_time": 0.026396
+            "processing_time": 0.012064
         },
         {
             "id": 863,
@@ -4027,22 +4027,22 @@
                 17636,
                 17641
             ],
-            "processing_time": 7.189686
+            "processing_time": 4.930777
         },
         {
             "id": 866,
-            "possible": "false",
-            "processing_time": 0.450294
+            "possible": false,
+            "processing_time": 0.299953
         },
         {
             "id": 868,
-            "possible": "false",
-            "processing_time": 14.648337
+            "possible": false,
+            "processing_time": 7.03247
         },
         {
             "id": 870,
-            "possible": "false",
-            "processing_time": 0.114796
+            "possible": false,
+            "processing_time": 0.060559
         },
         {
             "id": 871,
@@ -4057,12 +4057,12 @@
                 14302
             ],
             "possible": true,
-            "processing_time": 0.195352
+            "processing_time": 0.110804
         },
         {
-            "done": "true",
+            "done": true,
             "id": 873,
-            "processing_time": 0.018515
+            "processing_time": 0.009961
         },
         {
             "id": 876,
@@ -4077,29 +4077,29 @@
                 173,
                 28627
             ],
-            "processing_time": 7.91368
+            "processing_time": 5.006655
         },
         {
             "id": 877,
             "nodes": [
                 21150
             ],
-            "processing_time": 22.88504
+            "processing_time": 15.725043
         },
         {
-            "done": "true",
+            "done": true,
             "id": 880,
-            "processing_time": 0.027588
+            "processing_time": 0.014248
         },
         {
             "id": 881,
-            "possible": "false",
-            "processing_time": 0.104449
+            "possible": false,
+            "processing_time": 0.063285
         },
         {
             "id": 882,
-            "possible": "false",
-            "processing_time": 0.144504
+            "possible": false,
+            "processing_time": 0.102136
         },
         {
             "id": 884,
@@ -4174,17 +4174,17 @@
                 31046
             ],
             "possible": true,
-            "processing_time": 8.495894
+            "processing_time": 4.257764
         },
         {
             "id": 886,
-            "possible": "false",
-            "processing_time": 1.166948
+            "possible": false,
+            "processing_time": 0.756979
         },
         {
-            "done": "true",
+            "done": true,
             "id": 889,
-            "processing_time": 0.014486
+            "processing_time": 0.009451
         },
         {
             "id": 890,
@@ -4194,7 +4194,7 @@
                 28149,
                 28158
             ],
-            "processing_time": 26.002661
+            "processing_time": 14.275125
         },
         {
             "id": 891,
@@ -4209,12 +4209,12 @@
                 20341,
                 20400
             ],
-            "processing_time": 7.84538
+            "processing_time": 4.972797
         },
         {
             "id": 894,
-            "possible": "false",
-            "processing_time": 1.810078
+            "possible": false,
+            "processing_time": 0.624692
         },
         {
             "id": 895,
@@ -4223,7 +4223,7 @@
                 24754,
                 3333
             ],
-            "processing_time": 25.247824
+            "processing_time": 24.576769
         },
         {
             "id": 897,
@@ -4237,67 +4237,67 @@
                 17015,
                 29533
             ],
-            "processing_time": 25.961153
+            "processing_time": 37.385694
         },
         {
-            "done": "true",
+            "done": true,
             "id": 898,
-            "processing_time": 0.028183
+            "processing_time": 0.017132
         },
         {
             "id": 900,
             "nodes": [],
-            "processing_time": 27.38511
+            "processing_time": 40.948556
         },
         {
             "id": 903,
-            "possible": "false",
-            "processing_time": 0.13144
+            "possible": false,
+            "processing_time": 0.138896
         },
         {
             "id": 904,
-            "possible": "false",
-            "processing_time": 0.12895
+            "possible": false,
+            "processing_time": 0.253132
         },
         {
             "id": 906,
-            "possible": "false",
-            "processing_time": 0.29446
+            "possible": false,
+            "processing_time": 0.329021
         },
         {
             "id": 907,
-            "possible": "false",
-            "processing_time": 0.100141
+            "possible": false,
+            "processing_time": 0.118365
         },
         {
-            "done": "true",
+            "done": true,
             "id": 908,
-            "processing_time": 0.01497
+            "processing_time": 0.017073
         },
         {
-            "done": "true",
+            "done": true,
             "id": 910,
-            "processing_time": 0.012378
+            "processing_time": 0.014201
         },
         {
             "id": 912,
             "nodes": [],
-            "processing_time": 21.814782
+            "processing_time": 15.4036
         },
         {
-            "done": "true",
+            "done": true,
             "id": 913,
-            "processing_time": 0.025473
+            "processing_time": 0.014501
         },
         {
             "id": 914,
-            "possible": "false",
-            "processing_time": 0.118874
+            "possible": false,
+            "processing_time": 0.077608
         },
         {
-            "done": "true",
+            "done": true,
             "id": 915,
-            "processing_time": 0.013782
+            "processing_time": 0.00725
         },
         {
             "id": 916,
@@ -4308,27 +4308,27 @@
                 32591,
                 29278
             ],
-            "processing_time": 8.774487
+            "processing_time": 6.798566
         },
         {
             "id": 917,
-            "possible": "false",
-            "processing_time": 0.158868
+            "possible": false,
+            "processing_time": 0.08998
         },
         {
-            "done": "true",
+            "done": true,
             "id": 920,
-            "processing_time": 0.044002
+            "processing_time": 0.008555
         },
         {
             "id": 923,
-            "possible": "false",
-            "processing_time": 0.357286
+            "possible": false,
+            "processing_time": 0.16877
         },
         {
             "id": 924,
             "nodes": [],
-            "processing_time": 23.925392
+            "processing_time": 12.745652
         },
         {
             "id": 927,
@@ -4392,17 +4392,17 @@
                 20966
             ],
             "possible": true,
-            "processing_time": 4.23094
+            "processing_time": 2.392792
         },
         {
             "id": 928,
-            "possible": "false",
-            "processing_time": 0.105482
+            "possible": false,
+            "processing_time": 0.059753
         },
         {
-            "done": "true",
+            "done": true,
             "id": 931,
-            "processing_time": 0.016056
+            "processing_time": 0.008125
         },
         {
             "id": 933,
@@ -4411,22 +4411,22 @@
                 21519,
                 21526
             ],
-            "processing_time": 8.00891
+            "processing_time": 3.953692
         },
         {
-            "done": "true",
+            "done": true,
             "id": 935,
-            "processing_time": 0.024553
+            "processing_time": 0.010082
         },
         {
             "id": 936,
-            "possible": "false",
-            "processing_time": 0.450175
+            "possible": false,
+            "processing_time": 0.210231
         },
         {
             "id": 937,
-            "possible": "false",
-            "processing_time": 0.09601
+            "possible": false,
+            "processing_time": 0.044372
         },
         {
             "id": 939,
@@ -4436,47 +4436,47 @@
                 31859,
                 19028
             ],
-            "processing_time": 7.517237
+            "processing_time": 3.961202
         },
         {
             "id": 941,
-            "possible": "false",
-            "processing_time": 12.748092
+            "possible": false,
+            "processing_time": 7.748285
         },
         {
-            "done": "true",
+            "done": true,
             "id": 942,
-            "processing_time": 0.021545
+            "processing_time": 0.009816
         },
         {
             "id": 945,
-            "possible": "false",
-            "processing_time": 0.341853
+            "possible": false,
+            "processing_time": 0.154208
         },
         {
             "id": 948,
-            "possible": "false",
-            "processing_time": 0.118732
+            "possible": false,
+            "processing_time": 0.059106
         },
         {
-            "done": "true",
+            "done": true,
             "id": 949,
-            "processing_time": 0.014583
+            "processing_time": 0.00726
         },
         {
-            "done": "true",
+            "done": true,
             "id": 950,
-            "processing_time": 0.013556
+            "processing_time": 0.006521
         },
         {
             "id": 951,
-            "possible": "false",
-            "processing_time": 0.222183
+            "possible": false,
+            "processing_time": 0.116691
         },
         {
             "id": 953,
-            "possible": "false",
-            "processing_time": 0.106607
+            "possible": false,
+            "processing_time": 0.05327
         },
         {
             "id": 954,
@@ -4490,22 +4490,22 @@
                 2237,
                 4797
             ],
-            "processing_time": 22.350039
+            "processing_time": 19.361659
         },
         {
-            "done": "true",
+            "done": true,
             "id": 956,
-            "processing_time": 0.025935
+            "processing_time": 0.013732
         },
         {
-            "done": "true",
+            "done": true,
             "id": 957,
-            "processing_time": 0.012837
+            "processing_time": 0.007174
         },
         {
             "id": 959,
-            "possible": "false",
-            "processing_time": 0.104582
+            "possible": false,
+            "processing_time": 0.068398
         },
         {
             "id": 960,
@@ -4519,39 +4519,39 @@
                 29672,
                 6604
             ],
-            "processing_time": 8.435299
+            "processing_time": 4.011936
         },
         {
-            "done": "true",
+            "done": true,
             "id": 961,
-            "processing_time": 0.021202
+            "processing_time": 0.012544
         },
         {
-            "done": "true",
+            "done": true,
             "id": 962,
-            "processing_time": 0.014029
+            "processing_time": 0.007268
         },
         {
             "id": 964,
             "nodes": [
                 22951
             ],
-            "processing_time": 24.473804
+            "processing_time": 12.961014
         },
         {
-            "done": "true",
+            "done": true,
             "id": 965,
-            "processing_time": 0.027669
+            "processing_time": 0.013767
         },
         {
-            "done": "true",
+            "done": true,
             "id": 967,
-            "processing_time": 0.015345
+            "processing_time": 0.007216
         },
         {
             "id": 968,
-            "possible": "false",
-            "processing_time": 0.117506
+            "possible": false,
+            "processing_time": 0.062751
         },
         {
             "id": 971,
@@ -4560,51 +4560,51 @@
                 19031,
                 30414
             ],
-            "processing_time": 22.08283
+            "processing_time": 16.418393
         },
         {
             "id": 973,
             "nodes": [],
-            "processing_time": 23.08955
+            "processing_time": 13.441284
         },
         {
             "id": 975,
-            "possible": "false",
-            "processing_time": 1.507344
+            "possible": false,
+            "processing_time": 0.79343
         },
         {
-            "done": "true",
+            "done": true,
             "id": 977,
-            "processing_time": 0.017145
+            "processing_time": 0.009614
         },
         {
             "id": 978,
-            "possible": "false",
-            "processing_time": 0.11304
+            "possible": false,
+            "processing_time": 0.064349
         },
         {
             "id": 981,
             "nodes": [
                 18137
             ],
-            "processing_time": 22.723631
+            "processing_time": 23.022628
         },
         {
             "id": 984,
             "nodes": [
                 19220
             ],
-            "processing_time": 8.028023
+            "processing_time": 8.941067
         },
         {
-            "done": "true",
+            "done": true,
             "id": 987,
-            "processing_time": 0.025698
+            "processing_time": 0.017215
         },
         {
-            "done": "true",
+            "done": true,
             "id": 990,
-            "processing_time": 0.01328
+            "processing_time": 0.008187
         }
     ]
 }

@@ -4,24 +4,24 @@
     },
     "results": [
         {
-            "done": "true",
+            "done": true,
             "id": 1,
-            "processing_time": 0.050068
+            "processing_time": 0.016101
         },
         {
-            "done": "false",
+            "done": false,
             "id": 3,
-            "processing_time": 0.018859
+            "processing_time": 0.006303
         },
         {
             "id": 5,
-            "possible": "false",
-            "processing_time": 0.273318
+            "possible": false,
+            "processing_time": 1.957925
         },
         {
             "id": 8,
             "nodes": [],
-            "processing_time": 0.094592
+            "processing_time": 0.050673
         },
         {
             "id": 11,
@@ -33,12 +33,12 @@
                 75,
                 61
             ],
-            "processing_time": 0.047876
+            "processing_time": 0.026651
         },
         {
-            "done": "false",
+            "done": false,
             "id": 14,
-            "processing_time": 0.020696
+            "processing_time": 0.010031
         },
         {
             "id": 17,
@@ -49,59 +49,59 @@
                 0,
                 46
             ],
-            "processing_time": 0.043716
+            "processing_time": 0.025105
         },
         {
-            "done": "false",
+            "done": false,
             "id": 20,
-            "processing_time": 0.014323
+            "processing_time": 0.008282
         },
         {
             "id": 23,
-            "possible": "false",
-            "processing_time": 0.02863
+            "possible": false,
+            "processing_time": 0.013752
         },
         {
-            "done": "false",
+            "done": false,
             "id": 24,
-            "processing_time": 0.014381
+            "processing_time": 0.008089
         },
         {
-            "done": "false",
+            "done": false,
             "id": 26,
-            "processing_time": 0.013284
+            "processing_time": 0.00711
         },
         {
-            "done": "false",
+            "done": false,
             "id": 28,
-            "processing_time": 0.013016
+            "processing_time": 0.006974
         },
         {
             "id": 30,
-            "possible": "false",
-            "processing_time": 0.022104
+            "possible": false,
+            "processing_time": 0.012386
         },
         {
             "id": 32,
-            "possible": "false",
-            "processing_time": 0.020969
+            "possible": false,
+            "processing_time": 0.011552
         },
         {
             "id": 33,
-            "possible": "false",
-            "processing_time": 0.02061
+            "possible": false,
+            "processing_time": 0.011369
         },
         {
             "id": 34,
             "nodes": [
                 64
             ],
-            "processing_time": 0.073968
+            "processing_time": 0.042284
         },
         {
             "id": 35,
             "nodes": [],
-            "processing_time": 0.071239
+            "processing_time": 0.040741
         },
         {
             "id": 37,
@@ -115,64 +115,64 @@
                 0,
                 23
             ],
-            "processing_time": 0.041308
+            "processing_time": 0.024383
         },
         {
             "id": 38,
             "nodes": [],
-            "processing_time": 0.066796
+            "processing_time": 0.041576
         },
         {
             "id": 41,
-            "possible": "false",
-            "processing_time": 0.020934
+            "possible": false,
+            "processing_time": 0.011824
         },
         {
             "id": 43,
             "nodes": [],
-            "processing_time": 0.065765
+            "processing_time": 0.040093
         },
         {
-            "done": "false",
+            "done": false,
             "id": 45,
-            "processing_time": 0.013553
+            "processing_time": 0.007895
         },
         {
             "id": 47,
-            "possible": "false",
-            "processing_time": 0.019815
+            "possible": false,
+            "processing_time": 0.01194
         },
         {
-            "done": "false",
+            "done": false,
             "id": 48,
-            "processing_time": 0.012775
+            "processing_time": 0.055447
         },
         {
-            "done": "false",
+            "done": false,
             "id": 49,
-            "processing_time": 0.01179
+            "processing_time": 0.01962
         },
         {
-            "done": "false",
+            "done": false,
             "id": 52,
-            "processing_time": 0.012672
+            "processing_time": 0.013195
         },
         {
             "id": 53,
-            "possible": "false",
-            "processing_time": 0.019585
+            "possible": false,
+            "processing_time": 0.025921
         },
         {
             "id": 54,
             "nodes": [],
-            "processing_time": 0.067188
+            "processing_time": 0.042939
         },
         {
             "id": 55,
             "nodes": [
                 49
             ],
-            "processing_time": 0.081943
+            "processing_time": 0.042105
         },
         {
             "id": 57,
@@ -183,27 +183,27 @@
                 46,
                 25
             ],
-            "processing_time": 0.039734
+            "processing_time": 0.023819
         },
         {
             "id": 59,
-            "possible": "false",
-            "processing_time": 0.020449
+            "possible": false,
+            "processing_time": 0.012698
         },
         {
             "id": 60,
             "nodes": [],
-            "processing_time": 0.065961
+            "processing_time": 0.045533
         },
         {
             "id": 61,
             "nodes": [],
-            "processing_time": 0.06418
+            "processing_time": 0.038786
         },
         {
             "id": 64,
-            "possible": "false",
-            "processing_time": 0.020561
+            "possible": false,
+            "processing_time": 0.012224
         },
         {
             "id": 67,
@@ -215,22 +215,22 @@
                 33,
                 0
             ],
-            "processing_time": 0.040174
+            "processing_time": 0.024643
         },
         {
             "id": 69,
-            "possible": "false",
-            "processing_time": 0.019913
+            "possible": false,
+            "processing_time": 0.012006
         },
         {
             "id": 70,
-            "possible": "false",
-            "processing_time": 0.018762
+            "possible": false,
+            "processing_time": 0.011515
         },
         {
             "id": 71,
             "nodes": [],
-            "processing_time": 0.070239
+            "processing_time": 0.039787
         },
         {
             "id": 72,
@@ -241,44 +241,44 @@
                 33,
                 0
             ],
-            "processing_time": 0.038591
+            "processing_time": 0.022982
         },
         {
             "id": 74,
-            "possible": "false",
-            "processing_time": 0.01957
+            "possible": false,
+            "processing_time": 0.011962
         },
         {
-            "done": "false",
+            "done": false,
             "id": 77,
-            "processing_time": 0.012806
+            "processing_time": 0.007917
         },
         {
             "id": 79,
             "nodes": [],
-            "processing_time": 0.06725
+            "processing_time": 0.041737
         },
         {
             "id": 81,
-            "possible": "false",
-            "processing_time": 0.024305
+            "possible": false,
+            "processing_time": 0.013801
         },
         {
             "id": 84,
-            "possible": "false",
-            "processing_time": 0.019019
+            "possible": false,
+            "processing_time": 0.01185
         },
         {
             "id": 86,
             "nodes": [
                 26
             ],
-            "processing_time": 0.103746
+            "processing_time": 0.040313
         },
         {
             "id": 88,
             "nodes": [],
-            "processing_time": 0.065871
+            "processing_time": 0.039104
         },
         {
             "id": 91,
@@ -291,12 +291,12 @@
                 6,
                 68
             ],
-            "processing_time": 0.041086
+            "processing_time": 0.024986
         },
         {
             "id": 93,
-            "possible": "false",
-            "processing_time": 0.023
+            "possible": false,
+            "processing_time": 0.01185
         },
         {
             "id": 95,
@@ -308,12 +308,12 @@
                 37,
                 75
             ],
-            "processing_time": 0.03939
+            "processing_time": 0.023271
         },
         {
-            "done": "false",
+            "done": false,
             "id": 96,
-            "processing_time": 0.013681
+            "processing_time": 0.008488
         }
     ]
 }

@@ -12,7 +12,7 @@
                 0
             ],
             "possible": true,
-            "processing_time": 0.079327
+            "processing_time": 5.072175
         },
         {
             "id": 3,
@@ -21,17 +21,17 @@
                 3,
                 5
             ],
-            "processing_time": 0.039011
+            "processing_time": 0.018594
         },
         {
             "id": 4,
-            "possible": "false",
-            "processing_time": 0.044754
+            "possible": false,
+            "processing_time": 0.017192
         },
         {
-            "done": "true",
+            "done": true,
             "id": 5,
-            "processing_time": 0.021414
+            "processing_time": 0.008307
         },
         {
             "id": 6,
@@ -40,32 +40,32 @@
                 3,
                 5
             ],
-            "processing_time": 0.030947
+            "processing_time": 0.013635
         },
         {
-            "done": "true",
+            "done": true,
             "id": 9,
-            "processing_time": 0.017913
+            "processing_time": 0.007081
         },
         {
             "id": 10,
-            "possible": "false",
-            "processing_time": 0.030693
+            "possible": false,
+            "processing_time": 0.011487
         },
         {
-            "done": "true",
+            "done": true,
             "id": 11,
-            "processing_time": 0.016454
+            "processing_time": 0.006691
         },
         {
-            "done": "true",
+            "done": true,
             "id": 13,
-            "processing_time": 0.016357
+            "processing_time": 0.006582
         },
         {
             "id": 16,
             "nodes": [],
-            "processing_time": 0.036837
+            "processing_time": 0.016755
         }
     ]
 }

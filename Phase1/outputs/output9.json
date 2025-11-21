@@ -4,9 +4,9 @@
     },
     "results": [
         {
-            "done": "true",
+            "done": true,
             "id": 1,
-            "processing_time": 0.047021
+            "processing_time": 0.01827
         },
         {
             "id": 4,
@@ -19,17 +19,17 @@
                 7
             ],
             "possible": true,
-            "processing_time": 0.061526
+            "processing_time": 1.826937
         },
         {
-            "done": "true",
+            "done": true,
             "id": 7,
-            "processing_time": 0.016352
+            "processing_time": 0.008792
         },
         {
             "id": 10,
             "nodes": [],
-            "processing_time": 0.051128
+            "processing_time": 0.022629
         },
         {
             "id": 12,
@@ -40,77 +40,77 @@
                 8
             ],
             "possible": true,
-            "processing_time": 0.031374
+            "processing_time": 0.014514
         },
         {
             "id": 13,
             "nodes": [],
-            "processing_time": 0.026181
+            "processing_time": 0.011899
         },
         {
             "id": 14,
-            "possible": "false",
-            "processing_time": 0.026037
+            "possible": false,
+            "processing_time": 0.011849
         },
         {
-            "done": "false",
+            "done": false,
             "id": 17,
-            "processing_time": 0.015912
+            "processing_time": 0.006791
         },
         {
             "id": 18,
             "nodes": [],
-            "processing_time": 0.023582
+            "processing_time": 0.011512
         },
         {
             "id": 20,
             "nodes": [],
-            "processing_time": 0.038418
+            "processing_time": 0.01708
         },
         {
-            "done": "true",
+            "done": true,
             "id": 21,
-            "processing_time": 0.014227
+            "processing_time": 0.007001
         },
         {
             "id": 22,
-            "possible": "false",
-            "processing_time": 0.029802
+            "possible": false,
+            "processing_time": 0.014113
         },
         {
-            "done": "false",
+            "done": false,
             "id": 24,
-            "processing_time": 0.014459
+            "processing_time": 0.006452
         },
         {
             "id": 26,
             "nodes": [],
-            "processing_time": 0.035831
+            "processing_time": 0.016554
         },
         {
-            "done": "true",
+            "done": true,
             "id": 28,
-            "processing_time": 0.01397
+            "processing_time": 0.006579
         },
         {
             "id": 30,
-            "possible": "false",
-            "processing_time": 0.025579
+            "possible": false,
+            "processing_time": 0.011829
         },
         {
             "id": 31,
             "nodes": [],
-            "processing_time": 0.024093
+            "processing_time": 0.010804
         },
         {
             "id": 34,
             "nodes": [],
-            "processing_time": 0.034747
+            "processing_time": 0.016016
         },
         {
-            "done": "false",
+            "done": false,
             "id": 37,
-            "processing_time": 0.014621
+            "processing_time": 0.006636
         }
     ]
 }
