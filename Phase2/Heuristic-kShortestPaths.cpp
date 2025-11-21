@@ -54,13 +54,15 @@ std::vector<std::pair<std::vector<ll>, double>> ksp(const Graph& g, ll source, l
         }
         else{
             auto copy = g;
-            for(auto &u : copy.edges){
-                double perc = 100*timesUsed[u.first]/ans.size();
-                if(perc>0){
+            for (auto &u : copy.edges) {
+                double perc = 0.0;
+                if (!ans.empty()) { // added check because it was crashing with FPE
+                    perc = 100.0 * timesUsed[u.first] / ans.size();
+                }
+                if (perc > 0) {
                     u.second.len *= 1 + (perc/100.0)*(threshold/100.0);
                 }
             }
-
             auto path = dijsktra(copy,source,target,timesUsed);
             if(path.first.empty()){break;}
             ans.push_back(path);

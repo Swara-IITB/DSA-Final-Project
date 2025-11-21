@@ -1,0 +1,167 @@
+{
+    "meta": {
+        "id": "phase2_queries_graph_osm_pune_india"
+    },
+    "results": [
+        {
+            "id": 1,
+            "paths": [
+                {
+                    "length": 123.78999999999999,
+                    "path": [
+                        2,
+                        4,
+                        0
+                    ]
+                }
+            ],
+            "processing_time": 0.090268
+        },
+        {
+            "distances": [
+                {
+                    "approx_shortest_distance": 0.0019322399443408769,
+                    "source": 5,
+                    "target": 2
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 5,
+                    "target": 6
+                },
+                {
+                    "approx_shortest_distance": 86.42,
+                    "source": 1,
+                    "target": 3
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 0,
+                    "target": 5
+                },
+                {
+                    "approx_shortest_distance": 52.64,
+                    "source": 1,
+                    "target": 4
+                },
+                {
+                    "approx_shortest_distance": 87.44,
+                    "source": 2,
+                    "target": 4
+                },
+                {
+                    "approx_shortest_distance": 64.51,
+                    "source": 1,
+                    "target": 5
+                },
+                {
+                    "approx_shortest_distance": 86.42,
+                    "source": 1,
+                    "target": 3
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 4,
+                    "target": 1
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 6,
+                    "target": 3
+                },
+                {
+                    "approx_shortest_distance": 86.42,
+                    "source": 3,
+                    "target": 1
+                }
+            ],
+            "id": 3,
+            "processing_time": 0.339045
+        },
+        {
+            "id": 6,
+            "paths": [
+                {
+                    "length": 86.42,
+                    "path": [
+                        1,
+                        3
+                    ]
+                }
+            ],
+            "processing_time": 0.068425
+        },
+        {
+            "distances": [
+                {
+                    "approx_shortest_distance": 139.0603959558719,
+                    "source": 3,
+                    "target": 0
+                },
+                {
+                    "approx_shortest_distance": 123.78999999999999,
+                    "source": 2,
+                    "target": 0
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 0,
+                    "target": 5
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 0,
+                    "target": 5
+                },
+                {
+                    "approx_shortest_distance": 123.78999999999999,
+                    "source": 0,
+                    "target": 2
+                },
+                {
+                    "approx_shortest_distance": 36.35,
+                    "source": 4,
+                    "target": 0
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 5,
+                    "target": 0
+                }
+            ],
+            "id": 7,
+            "processing_time": 0.198476
+        },
+        {
+            "id": 9,
+            "paths": [],
+            "processing_time": 0.066525
+        },
+        {
+            "id": 10,
+            "paths": [
+                {
+                    "length": 64.51,
+                    "path": [
+                        1,
+                        5
+                    ]
+                }
+            ],
+            "processing_time": 0.055633
+        },
+        {
+            "id": 11,
+            "paths": [
+                {
+                    "length": 36.35,
+                    "path": [
+                        0,
+                        4
+                    ]
+                }
+            ],
+            "processing_time": 0.055286
+        }
+    ]
+}

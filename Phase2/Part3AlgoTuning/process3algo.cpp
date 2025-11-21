@@ -13,14 +13,14 @@ json process_3algo_approx1(Graph& g,json query,std::chrono::time_point<std::chro
     for (auto &q : query["queries"]){
         json r;
         ll s = q["source"].get<ll>(), t = q["target"].get<ll>();
-        r["source"] = s;
-        r["target"] = t;
+        r["source"] = json(s);
+        r["target"] = json(t);
         auto now = std::chrono::high_resolution_clock::now();
-        r["approx_shortest_distance"] = unidir_approx_Astar_meet(g,s,t,w,q_left,std::chrono::duration<double, std::milli>(now - start_time).count(),err);
+        r["approx_shortest_distance"] = json(unidir_approx_Astar_meet(g,s,t,w,q_left,std::chrono::duration<double, std::milli>(now - start_time).count(),err));
         q_left--;
         distances.push_back(r);
     }
-    result["distances"] = distances;
+    result["distances"] = json(distances);
     return result;
 }
 
@@ -34,14 +34,14 @@ json process_3algo_approx2(Graph& g,json query,std::chrono::time_point<std::chro
     for (auto &q : query["queries"]){
         json r;
         ll s = q["source"].get<ll>(), t = q["target"].get<ll>();
-        r["source"] = s;
-        r["target"] = t;
+        r["source"] = json(s);
+        r["target"] = json(t);
         auto now = std::chrono::high_resolution_clock::now();
-        r["approx_shortest_distance"] = bidir_approx_Astar_meet(g,s,t,w,q_left,std::chrono::duration<double, std::milli>(now - start_time).count(),err);
+        r["approx_shortest_distance"] = json(bidir_approx_Astar_meet(g,s,t,w,q_left,std::chrono::duration<double, std::milli>(now - start_time).count(),err));
         q_left--;
         distances.push_back(r);
     }
-    result["distances"] = distances;
+    result["distances"] = json(distances);
     return result;
 }
 
@@ -55,13 +55,13 @@ json process_3algo_approx3(Graph& g,json query,std::chrono::time_point<std::chro
     for (auto &q : query["queries"]){
         json r;
         ll s = q["source"].get<ll>(), t = q["target"].get<ll>();
-        r["source"] = s;
-        r["target"] = t;
+        r["source"] = json(s);
+        r["target"] = json(t);
         auto now = std::chrono::high_resolution_clock::now();
-        r["approx_shortest_distance"] = bidir_approx_Astar_range(g,s,t,w,q_left,std::chrono::duration<double, std::milli>(now - start_time).count(),err);
+        r["approx_shortest_distance"] = json(bidir_approx_Astar_range(g,s,t,w,q_left,std::chrono::duration<double, std::milli>(now - start_time).count(),err));
         q_left--;
         distances.push_back(r);
     }
-    result["distances"] = distances;
+    result["distances"] = json(distances);
     return result;
 }

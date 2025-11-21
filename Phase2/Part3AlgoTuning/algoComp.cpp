@@ -25,10 +25,21 @@ int main(int argc, char* argv[]) {
     std::vector<double> w_values = {0.5, 0.75, 1.0, 1.2, 1.5, 2.0};
     json summary;
 
-    // 🔁 For each event in the input JSON
+    // For each event in the input JSON
     for (size_t e = 0; e < qjson["events"].size(); ++e) {
         const auto& event = qjson["events"][e];
-        std::string event_id = event.contains("id") ? event["id"].get<std::string>() : "event_" + std::to_string(e);
+        std::string event_id;
+
+        if (event.contains("id")) {
+            if (event["id"].is_string())
+                event_id = event["id"].get<std::string>();
+            else if (event["id"].is_number_integer())
+                event_id = std::to_string(event["id"].get<long long>());
+            else
+                event_id = "event_" + std::to_string(e);
+        } else {
+            event_id = "event_" + std::to_string(e);
+        }
 
         for (double w : w_values) {
             double total_err1 = 0, total_err2 = 0, total_err3 = 0;
@@ -59,9 +70,9 @@ int main(int argc, char* argv[]) {
                 double truth = q["true_distance"].get<double>();
                 if (truth <= 0) continue;
 
-                double d1 = res1["distances"][i]["approx_shortest_distance"];
-                double d2 = res2["distances"][i]["approx_shortest_distance"];
-                double d3 = res3["distances"][i]["approx_shortest_distance"];
+                double d1 = res1["distances"][i]["approx_shortest_distance"].get<double>();
+                double d2 = res2["distances"][i]["approx_shortest_distance"].get<double>();
+                double d3 = res3["distances"][i]["approx_shortest_distance"].get<double>();
 
                 double acc_err = event.value("acceptable_error_pct", 5.0);
                 double err1 = std::abs(d1 - truth) / truth * 100.0;

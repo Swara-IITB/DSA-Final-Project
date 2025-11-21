@@ -4,7 +4,7 @@
 #include <chrono>
 #include <vector>
 #include "graph.hpp"
-#include "Phase1/loadGraph1.hpp"
+#include "loadGraph1.hpp"
 #include "queryHandler2.hpp"
 
 using json = nlohmann::json;
@@ -18,7 +18,6 @@ int main(int argc, char* argv[]) {
     // Read graph from first file
     std::string filename = argv[1];
     Graph g = loadGraph_parse(filename); // will throw runtime error if unable to open
-                        // for precomputation we can use floyd warshall for small graphs, hopefully
 
     // Read queries from second file
     std::ifstream queries_file(argv[2]);
