@@ -5,6 +5,7 @@
 #include <string>
 #include "graph.hpp"
 #include "Heuristic-kShortestPaths.hpp"
+#include "Exact-kShortestPaths.hpp"
 #include "ApproxShortestPath.hpp"
 using json = nlohmann::json;
 typedef long long ll;
