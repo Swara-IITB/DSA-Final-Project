@@ -1,0 +1,124 @@
+{
+    "meta": {
+        "id": "phase2_queries_graph_osm_paris_france"
+    },
+    "results": [
+        {
+            "id": 1,
+            "paths": [],
+            "processing_time": 0.029136
+        },
+        {
+            "id": 4,
+            "paths": [],
+            "processing_time": 0.010608
+        },
+        {
+            "id": 5,
+            "paths": [],
+            "processing_time": 0.019516
+        },
+        {
+            "distances": [
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 0,
+                    "target": 1
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 2,
+                    "target": 1
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 0,
+                    "target": 3
+                }
+            ],
+            "id": 7,
+            "processing_time": 0.036971
+        },
+        {
+            "id": 10,
+            "paths": [],
+            "processing_time": 0.012385
+        },
+        {
+            "distances": [
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 4,
+                    "target": 0
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 3,
+                    "target": 4
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 3,
+                    "target": 1
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 4,
+                    "target": 2
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 1,
+                    "target": 3
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 3,
+                    "target": 0
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 1,
+                    "target": 3
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 2,
+                    "target": 4
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 1,
+                    "target": 3
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 4,
+                    "target": 3
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 2,
+                    "target": 1
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 0,
+                    "target": 1
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 4,
+                    "target": 1
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 3,
+                    "target": 0
+                }
+            ],
+            "id": 13,
+            "processing_time": 0.111796
+        }
+    ]
+}

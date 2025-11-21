@@ -1,0 +1,402 @@
+{
+    "meta": {
+        "id": "phase2_queries_graph_osm_delhi_india"
+    },
+    "results": [
+        {
+            "id": 1,
+            "paths": [],
+            "processing_time": 0.027054
+        },
+        {
+            "id": 2,
+            "paths": [],
+            "processing_time": 0.01017
+        },
+        {
+            "id": 5,
+            "paths": [],
+            "processing_time": 0.025698
+        },
+        {
+            "distances": [
+                {
+                    "approx_shortest_distance": 0.13137665732244402,
+                    "source": 21,
+                    "target": 39
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 9,
+                    "target": 14
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 25,
+                    "target": 23
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 25,
+                    "target": 8
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 29,
+                    "target": 22
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 39,
+                    "target": 21
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 14,
+                    "target": 10
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 31,
+                    "target": 3
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 2,
+                    "target": 0
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 19,
+                    "target": 0
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 8,
+                    "target": 24
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 6,
+                    "target": 9
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 42,
+                    "target": 11
+                }
+            ],
+            "id": 7,
+            "processing_time": 0.113659
+        },
+        {
+            "id": 9,
+            "paths": [],
+            "processing_time": 0.021417
+        },
+        {
+            "id": 11,
+            "paths": [],
+            "processing_time": 0.009449
+        },
+        {
+            "id": 14,
+            "paths": [],
+            "processing_time": 0.009401
+        },
+        {
+            "id": 17,
+            "paths": [],
+            "processing_time": 0.01996
+        },
+        {
+            "distances": [
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 4,
+                    "target": 32
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 39,
+                    "target": 18
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 39,
+                    "target": 15
+                }
+            ],
+            "id": 20,
+            "processing_time": 0.030508
+        },
+        {
+            "id": 21,
+            "paths": [],
+            "processing_time": 0.018196
+        },
+        {
+            "id": 24,
+            "paths": [],
+            "processing_time": 0.008768
+        },
+        {
+            "id": 25,
+            "paths": [],
+            "processing_time": 0.00859
+        },
+        {
+            "id": 27,
+            "paths": [],
+            "processing_time": 0.017299
+        },
+        {
+            "distances": [
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 31,
+                    "target": 2
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 28,
+                    "target": 23
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 7,
+                    "target": 35
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 3,
+                    "target": 14
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 16,
+                    "target": 38
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 24,
+                    "target": 29
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 25,
+                    "target": 27
+                }
+            ],
+            "id": 30,
+            "processing_time": 0.054613
+        },
+        {
+            "id": 32,
+            "paths": [],
+            "processing_time": 0.008687
+        },
+        {
+            "id": 34,
+            "paths": [],
+            "processing_time": 0.017835
+        },
+        {
+            "id": 35,
+            "paths": [],
+            "processing_time": 0.017356
+        },
+        {
+            "id": 38,
+            "paths": [],
+            "processing_time": 0.017184
+        },
+        {
+            "id": 41,
+            "paths": [],
+            "processing_time": 0.008331
+        },
+        {
+            "id": 43,
+            "paths": [],
+            "processing_time": 0.0084
+        },
+        {
+            "id": 44,
+            "paths": [],
+            "processing_time": 0.008478
+        },
+        {
+            "id": 45,
+            "paths": [],
+            "processing_time": 0.008348
+        },
+        {
+            "id": 47,
+            "paths": [],
+            "processing_time": 0.017529
+        },
+        {
+            "distances": [
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 9,
+                    "target": 37
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 4,
+                    "target": 11
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 35,
+                    "target": 37
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 14,
+                    "target": 15
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 25,
+                    "target": 8
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 32,
+                    "target": 15
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 24,
+                    "target": 2
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 6,
+                    "target": 7
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 1,
+                    "target": 4
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 42,
+                    "target": 21
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 22,
+                    "target": 10
+                }
+            ],
+            "id": 49,
+            "processing_time": 0.084444
+        },
+        {
+            "id": 51,
+            "paths": [],
+            "processing_time": 0.018059
+        },
+        {
+            "id": 53,
+            "paths": [],
+            "processing_time": 0.008249
+        },
+        {
+            "id": 55,
+            "paths": [],
+            "processing_time": 0.008292
+        },
+        {
+            "id": 58,
+            "paths": [],
+            "processing_time": 0.008373
+        },
+        {
+            "id": 59,
+            "paths": [],
+            "processing_time": 0.008
+        },
+        {
+            "distances": [
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 13,
+                    "target": 5
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 23,
+                    "target": 5
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 27,
+                    "target": 13
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 36,
+                    "target": 33
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 18,
+                    "target": 11
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 42,
+                    "target": 25
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 1,
+                    "target": 23
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 26,
+                    "target": 25
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 35,
+                    "target": 29
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 26,
+                    "target": 2
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 42,
+                    "target": 9
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 35,
+                    "target": 3
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 36,
+                    "target": 6
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 25,
+                    "target": 10
+                }
+            ],
+            "id": 60,
+            "processing_time": 0.174618
+        }
+    ]
+}

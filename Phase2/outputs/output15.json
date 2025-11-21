@@ -1,0 +1,63 @@
+{
+    "meta": {
+        "id": "phase2_queries_graph_osm_hyderabad_india"
+    },
+    "results": [
+        {
+            "distances": [
+                {
+                    "approx_shortest_distance": 0.0490258661286235,
+                    "source": 30,
+                    "target": 146
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 234,
+                    "target": 254
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 57,
+                    "target": 287
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 154,
+                    "target": 175
+                }
+            ],
+            "id": 1,
+            "processing_time": 0.048034
+        },
+        {
+            "id": 3,
+            "paths": [],
+            "processing_time": 0.07458
+        },
+        {
+            "id": 6,
+            "paths": [],
+            "processing_time": 0.014295
+        },
+        {
+            "id": 8,
+            "paths": [],
+            "processing_time": 0.009325
+        },
+        {
+            "id": 11,
+            "paths": [],
+            "processing_time": 0.06448
+        },
+        {
+            "id": 14,
+            "paths": [],
+            "processing_time": 0.010074
+        },
+        {
+            "id": 15,
+            "paths": [],
+            "processing_time": 0.060273
+        }
+    ]
+}

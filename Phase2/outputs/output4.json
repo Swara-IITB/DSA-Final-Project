@@ -1,0 +1,337 @@
+{
+    "meta": {
+        "id": "phase2_queries_graph_osm_pune_india"
+    },
+    "results": [
+        {
+            "id": 1,
+            "paths": [
+                {
+                    "length": 237.57999999999998,
+                    "path": [
+                        5,
+                        0,
+                        7
+                    ]
+                }
+            ],
+            "processing_time": 0.050481
+        },
+        {
+            "id": 3,
+            "paths": [],
+            "processing_time": 0.009942
+        },
+        {
+            "id": 4,
+            "paths": [
+                {
+                    "length": 214.01,
+                    "path": [
+                        6,
+                        7,
+                        0,
+                        3,
+                        8
+                    ]
+                },
+                {
+                    "length": 214.01,
+                    "path": [
+                        6,
+                        7,
+                        0,
+                        3,
+                        8
+                    ]
+                },
+                {
+                    "length": 214.01,
+                    "path": [
+                        6,
+                        7,
+                        0,
+                        3,
+                        8
+                    ]
+                },
+                {
+                    "length": 214.01,
+                    "path": [
+                        6,
+                        7,
+                        0,
+                        3,
+                        8
+                    ]
+                },
+                {
+                    "length": 214.01,
+                    "path": [
+                        6,
+                        7,
+                        0,
+                        3,
+                        8
+                    ]
+                }
+            ],
+            "processing_time": 0.08835
+        },
+        {
+            "id": 7,
+            "paths": [],
+            "processing_time": 0.014627
+        },
+        {
+            "distances": [
+                {
+                    "approx_shortest_distance": 238.9012156239303,
+                    "source": 5,
+                    "target": 8
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 8,
+                    "target": 2
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 0,
+                    "target": 1
+                }
+            ],
+            "id": 9,
+            "processing_time": 0.040822
+        },
+        {
+            "distances": [
+                {
+                    "approx_shortest_distance": 30.57,
+                    "source": 7,
+                    "target": 0
+                },
+                {
+                    "approx_shortest_distance": 237.58192504263653,
+                    "source": 5,
+                    "target": 1
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 8,
+                    "target": 1
+                },
+                {
+                    "approx_shortest_distance": 221.95999999999998,
+                    "source": 3,
+                    "target": 5
+                },
+                {
+                    "approx_shortest_distance": 207.01,
+                    "source": 5,
+                    "target": 0
+                },
+                {
+                    "approx_shortest_distance": 221.95999999999998,
+                    "source": 5,
+                    "target": 3
+                },
+                {
+                    "approx_shortest_distance": 30.57,
+                    "source": 0,
+                    "target": 7
+                },
+                {
+                    "approx_shortest_distance": 39.73,
+                    "source": 1,
+                    "target": 8
+                }
+            ],
+            "id": 10,
+            "processing_time": 0.064799
+        },
+        {
+            "id": 13,
+            "paths": [
+                {
+                    "length": 128.74,
+                    "path": [
+                        3,
+                        8
+                    ]
+                }
+            ],
+            "processing_time": 0.020225
+        },
+        {
+            "id": 14,
+            "paths": [
+                {
+                    "length": 39.73,
+                    "path": [
+                        1,
+                        8
+                    ]
+                }
+            ],
+            "processing_time": 0.015018
+        },
+        {
+            "id": 16,
+            "paths": [],
+            "processing_time": 0.011557
+        },
+        {
+            "id": 19,
+            "paths": [
+                {
+                    "length": 30.57,
+                    "path": [
+                        7,
+                        0
+                    ]
+                },
+                {
+                    "length": 30.57,
+                    "path": [
+                        7,
+                        0
+                    ]
+                },
+                {
+                    "length": 30.57,
+                    "path": [
+                        7,
+                        0
+                    ]
+                },
+                {
+                    "length": 30.57,
+                    "path": [
+                        7,
+                        0
+                    ]
+                },
+                {
+                    "length": 30.57,
+                    "path": [
+                        7,
+                        0
+                    ]
+                },
+                {
+                    "length": 30.57,
+                    "path": [
+                        7,
+                        0
+                    ]
+                }
+            ],
+            "processing_time": 0.076531
+        },
+        {
+            "id": 20,
+            "paths": [
+                {
+                    "length": 30.57,
+                    "path": [
+                        0,
+                        7
+                    ]
+                }
+            ],
+            "processing_time": 0.019583
+        },
+        {
+            "id": 23,
+            "paths": [],
+            "processing_time": 0.018195
+        },
+        {
+            "distances": [
+                {
+                    "approx_shortest_distance": 14.950683811240406,
+                    "source": 3,
+                    "target": 6
+                },
+                {
+                    "approx_shortest_distance": 62.4614237910951,
+                    "source": 7,
+                    "target": 2
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 8,
+                    "target": 1
+                },
+                {
+                    "approx_shortest_distance": 237.58172456738487,
+                    "source": 7,
+                    "target": 6
+                },
+                {
+                    "approx_shortest_distance": 102.21,
+                    "source": 6,
+                    "target": 4
+                },
+                {
+                    "approx_shortest_distance": 207.01,
+                    "source": 0,
+                    "target": 5
+                },
+                {
+                    "approx_shortest_distance": 102.21,
+                    "source": 6,
+                    "target": 4
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 8,
+                    "target": 4
+                },
+                {
+                    "approx_shortest_distance": 39.73,
+                    "source": 1,
+                    "target": 8
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 6,
+                    "target": 2
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 7,
+                    "target": 2
+                },
+                {
+                    "approx_shortest_distance": 27.02,
+                    "source": 2,
+                    "target": 8
+                },
+                {
+                    "approx_shortest_distance": 27.02,
+                    "source": 2,
+                    "target": 8
+                },
+                {
+                    "approx_shortest_distance": 1e+18,
+                    "source": 2,
+                    "target": 4
+                }
+            ],
+            "id": 24,
+            "processing_time": 0.115112
+        },
+        {
+            "id": 27,
+            "paths": [],
+            "processing_time": 0.013626
+        },
+        {
+            "id": 29,
+            "paths": [],
+            "processing_time": 0.008945
+        }
+    ]
+}

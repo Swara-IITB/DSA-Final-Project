@@ -57,10 +57,7 @@ std::vector<std::pair<std::vector<ll>, double>> ksp(const Graph& g, ll source, l
             auto copy = g;
             for (auto i=0; i<copy.edges.size();i++) {
                 if(ans.size()==0){continue;}
-                double perc = 0.0;
-                if (!ans.empty()) { // added check because it was crashing with FPE
-                    perc = 100.0 * timesUsed[i] / ans.size();
-                }
+                double perc = 100.0 * timesUsed[i] / ans.size();
                 if (perc > 0) {
                     copy.edges[i].len *= 1 + (perc/100.0)*(threshold/100.0);
                 }
