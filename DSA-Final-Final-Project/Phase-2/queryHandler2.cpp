@@ -6,7 +6,7 @@ json process_k_shortest_paths(Graph& g, json query){
     ll source = query["source"].get<ll>();
     ll target = query["target"].get<ll>();
     ll k = query["k"].get<ll>();
-    std::vector<std::pair<std::vector<ll>, double>> ans = exact_ksp(g, source, target, k);
+    std::vector<std::pair<std::vector<ll>, double>> ans = getKBestPaths(g, source, target, k);
     json r;
     r["id"] = query["id"];
     r["paths"] = json::array();

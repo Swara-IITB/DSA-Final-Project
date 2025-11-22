@@ -48,6 +48,33 @@ ll farthestNodeFromMinDist(const std::vector<double>& minDist) {
     return idx;
 }
 
+std::vector<ll> get_first_nodes(Graph& g){
+    std::vector<bool> visited(g.V, false);
+    std::vector<ll> component_first_nodes;
+    // Find one node per connected component using BFS
+    for (ll v = 0; v < g.V; ++v) {
+        if (!visited[v]) {
+            std::queue<ll> q;
+            q.push(v);
+            visited[v] = true;
+            component_first_nodes.push_back(v);
+
+            while (!q.empty()) {
+                ll u = q.front(); q.pop();
+                for (auto& pr : g.adjList[u]) {
+                    ll w = pr.first;
+                    if (!visited[w]) {
+                        visited[w] = true;
+                        q.push(w);
+                    }
+                }
+            }
+        }
+    }
+    return component_first_nodes;
+ 
+}
+
 LandmarkOracle preprocessLandmarks(Graph& g, int L) {
     LandmarkOracle oracle;
     oracle.L = L;
@@ -55,17 +82,23 @@ LandmarkOracle preprocessLandmarks(Graph& g, int L) {
     oracle.dist_from.assign(L, std::vector<double>(g.V, INF));
     oracle.dist_to.assign(L, std::vector<double>(g.V, INF));
 
-    // pick first landmark randomly or 0
-    ll first = 0;
-    oracle.landmarks.push_back(first);
-    oracle.dist_from[0] = dijkstraFromSource(g, first, false);
-    // dist_to: run Dijkstra on reverse graph from 'first' => gives dist(v -> first)
-    oracle.dist_to[0] = dijkstraFromSource(g, first, true);
+    std::vector<ll> component_first_nodes = get_first_nodes(g);
+
+    int i = 0;
+    for (; i < component_first_nodes.size() && i < L; ++i) {
+        ll first = component_first_nodes[i];
+        oracle.landmarks.push_back(first);
+        oracle.dist_from[i] = dijkstraFromSource(g, first, false);
+        oracle.dist_to[i]   = dijkstraFromSource(g, first, true);
+    }
 
     // minDist[v] = min distance from v to any chosen landmark (using dist_from as proxy)
     std::vector<double> minDist(g.V, INF);
     for (ll v = 0; v < g.V; ++v) {
-        minDist[v] = oracle.dist_from[0][v];
+        for (int j = 0; j < i; ++j) {
+            if (oracle.dist_from[j][v] < minDist[v])
+                minDist[v] = oracle.dist_from[j][v];
+        }
     }
 
     for (int i = 1; i < L; ++i) {

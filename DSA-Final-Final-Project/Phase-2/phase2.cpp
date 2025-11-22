@@ -20,8 +20,8 @@ int main(int argc, char* argv[]) {
     std::string filename = argv[1];
     Graph g = loadGraph_parse(filename); // will throw runtime error if unable to open
     ll L;
-    if(g.V>10000) L = 64;
-    else L = 32;
+    if(g.V>10000) L = 256;
+    else L = 128;
     auto t0 = std::chrono::high_resolution_clock::now();
     LandmarkOracle oracle = preprocessLandmarks(g, L);
     auto t1 = std::chrono::high_resolution_clock::now();

@@ -16,7 +16,7 @@ int main(int argc, char* argv[]) {
 
     Graph g = loadGraph_parse(argv[1]);
 
-    int L = 16; // try 32; raise to 64 if needed
+    int L = 256; // try 32; raise to 64 if needed
     auto t0 = high_resolution_clock::now();
     LandmarkOracle oracle = preprocessLandmarks(g, L);
     auto t1 = high_resolution_clock::now();
@@ -28,7 +28,7 @@ int main(int argc, char* argv[]) {
     fin >> qjson;
 
     json results = json::array();
-    for (auto &q : qjson["events"][0]["queries"]) {
+    for (auto &q : qjson["events"][25]["queries"]) {
         long long u = q["source"];
         long long v = q["target"];
 
