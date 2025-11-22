@@ -19,6 +19,7 @@ struct Orders{
     ll drop;
 };
 
+double route_cost(const Graph& g, const std::vector<ll>& stops);
 double time(const Graph& g, std::vector<ll>path);
 double distance(const Graph& g, std::vector<ll>path);
 std::vector<ll> shortest_path(const Graph& g, ll pickup, ll drop);

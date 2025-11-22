@@ -1,3 +1,4 @@
+
 #include "DeliveryScheduling.hpp"
 #include <vector>
 #include <queue>
@@ -173,6 +174,27 @@ std::vector<ll> compress_consecutive(const std::vector<ll>& v) {
     return out;
 }
 
+std::vector<ll> expand_route(const Graph& g, const std::vector<ll>& stops) {
+    std::vector<ll> full;
+    if (stops.empty()) return full;
+
+    full.push_back(stops[0]);  // start with first stop
+
+    for (size_t i = 0; i + 1 < stops.size(); ++i) {
+        auto p = shortest_path(g, stops[i], stops[i+1]);
+        if (p.size() >= 2) {
+            // Append p[1..end] (skip the first node to avoid duplication)
+            for (size_t j = 1; j < p.size(); ++j)
+                full.push_back(p[j]);
+        }
+        else {
+            // fallback: if no path, just add the stop
+            full.push_back(stops[i+1]);
+        }
+    }
+    return full;
+}
+
 Assignments build_route_regret(
     const Graph& g, ll depot, std::vector<Orders> orders, int driver_id)
 {
@@ -204,7 +226,7 @@ Assignments build_route_regret(
 
             double regret = b2 - b1;
             if (regret > bestReg ||
-                ((bestIdx == -1 || orders[i].order_id < orders[bestIdx].order_id))) {
+                (std::abs(regret - bestReg) < 1e-12 && (bestIdx == -1 || orders[i].order_id < orders[bestIdx].order_id))) {
                 bestReg = regret;
                 bestIdx = i;
             }
@@ -226,9 +248,10 @@ Assignments build_route_regret(
         next_step:;
     }
 
-    // FINAL FIX: Remove duplicate consecutive nodes
-    A.route = compress_consecutive(R);
-    return A;
+        auto stops = compress_consecutive(R);   // clean up stop list
+        A.route = expand_route(g, stops);       // expand into full path
+        return A;
+
 }
 
 

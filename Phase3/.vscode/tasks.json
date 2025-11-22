@@ -1,0 +1,27 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build-phase3",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-std=c++17",
+                "phase3.cpp",
+                "DeliveryScheduling.cpp",
+                "minimum_penalty_next_scheduler.cpp",
+                "loadGraph3.cpp",
+                "graph3.cpp",
+                "queryHandler3.cpp",
+                "-o",
+                "a.out",
+                "-g"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": "build",
+            "problemMatcher": []
+        }
+    ]
+}

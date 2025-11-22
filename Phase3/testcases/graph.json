@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "id": "graph_osm_pune_india",
+    "nodes": 5,
+    "description": "Auto-generated graph for Pune, India"
+  },
+  "nodes": [
+    {
+      "id": 0,
+      "lat": 18.468366,
+      "lon": 73.854014,
+      "pois": []
+    },
+    {
+      "id": 1,
+      "lat": 18.468393,
+      "lon": 73.854268,
+      "pois": []
+    },
+    {
+      "id": 2,
+      "lat": 18.468409,
+      "lon": 73.854426,
+      "pois": []
+    },
+    {
+      "id": 3,
+      "lat": 18.46897,
+      "lon": 73.853899,
+      "pois": []
+    },
+    {
+      "id": 4,
+      "lat": 18.469006,
+      "lon": 73.854141,
+      "pois": []
+    }
+  ],
+  "edges": [
+    {
+      "id": 1001,
+      "u": 0,
+      "v": 1,
+      "length": 26.9,
+      "average_time": 23.27,
+      "oneway": false,
+      "road_type": "secondary"
+    },
+    {
+      "id": 1002,
+      "u": 0,
+      "v": 3,
+      "length": 68.16,
+      "average_time": 39.17,
+      "oneway": false,
+      "road_type": "secondary"
+    },
+    {
+      "id": 1003,
+      "u": 1,
+      "v": 2,
+      "length": 16.81,
+      "average_time": 24.61,
+      "oneway": false,
+      "road_type": "secondary"
+    },
+    {
+      "id": 1004,
+      "u": 1,
+      "v": 4,
+      "length": 69.49,
+      "average_time": 23.39,
+      "oneway": false,
+      "road_type": "primary"
+    },
+    {
+      "id": 1005,
+      "u": 3,
+      "v": 4,
+      "length": 25.79,
+      "average_time": 20.08,
+      "oneway": false,
+      "road_type": "primary"
+    }
+  ]
+}

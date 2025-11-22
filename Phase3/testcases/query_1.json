@@ -1,0 +1,18 @@
+{
+  "orders": [
+    {
+      "order_id": 1,
+      "pickup": 2,
+      "dropoff": 4
+    },
+    {
+      "order_id": 2,
+      "pickup": 1,
+      "dropoff": 2
+    }
+  ],
+  "fleet": {
+    "num_delivery_guys": 1,
+    "depot_node": 3
+  }
+}

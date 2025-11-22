@@ -1,0 +1,114 @@
+{
+    "assignments": [
+        {
+            "driver_id": 0,
+            "order_ids": [
+                17,
+                1,
+                8,
+                11
+            ],
+            "route": [
+                10,
+                6,
+                7,
+                16,
+                5,
+                17,
+                10
+            ]
+        },
+        {
+            "driver_id": 1,
+            "order_ids": [
+                10,
+                15,
+                18,
+                14
+            ],
+            "route": [
+                18,
+                11,
+                19,
+                9,
+                10,
+                3,
+                11,
+                14
+            ]
+        },
+        {
+            "driver_id": 2,
+            "order_ids": [
+                3,
+                2
+            ],
+            "route": [
+                10,
+                4,
+                9,
+                13
+            ]
+        },
+        {
+            "driver_id": 3,
+            "order_ids": [
+                4
+            ],
+            "route": [
+                12,
+                10,
+                9
+            ]
+        },
+        {
+            "driver_id": 4,
+            "order_ids": [
+                5,
+                9,
+                19
+            ],
+            "route": [
+                9,
+                5,
+                10,
+                3,
+                11,
+                13
+            ]
+        },
+        {
+            "driver_id": 5,
+            "order_ids": [
+                13,
+                6,
+                16
+            ],
+            "route": [
+                10,
+                13,
+                14,
+                11,
+                0,
+                3
+            ]
+        },
+        {
+            "driver_id": 6,
+            "order_ids": [
+                7,
+                12
+            ],
+            "route": [
+                10,
+                8,
+                14,
+                7
+            ]
+        }
+    ],
+    "metrics": {
+        "total_delivery_time_s": 7e+15
+    },
+    "processing_time": 15.97621
+}

@@ -1,0 +1,29 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Phase3",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/a.out",
+            "args": [
+                "${workspaceFolder}/testcases/graph.json",
+                "${workspaceFolder}/testcases/query_1.json",
+                "${workspaceFolder}/outputs/debug_output.json"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                { 
+                    "text": "-enable-pretty-printing", 
+                    "description": "Enable pretty-printing", 
+                    "ignoreFailures": true 
+                }
+            ],
+            "preLaunchTask": "build-phase3"
+        }
+    ]
+}
