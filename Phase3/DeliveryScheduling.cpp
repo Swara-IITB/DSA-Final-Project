@@ -5,17 +5,8 @@ double time(const Graph& g, std::vector<ll>path){
     if(path.empty()){return 1e15;}
     for(ll i=0; i+1<path.size();i++){
         ll edgeid = g.adjMatrix[path[i]][path[i+1]];
-<<<<<<< HEAD
-        try{
-            edge = g.edges.at(edgeid);
-        }
-        catch(const std::out_of_range& ex){
-            ans+=0;
-        }
-=======
         try{edge = g.edges.at(edgeid);}
         catch(const std::out_of_range& ex){ans+=1e15;}
->>>>>>> 3953e379c73f9f4d354b1c0198c707c2fb4e74ed
         ans+= edge.avg_t;
     }
     return ans;
