@@ -1,15 +1,21 @@
 #pragma once
-#include "../Phase-1/graph.hpp"
+#include "../Phase1/graph.hpp"
 #include <vector>
-#include <utility>
 #include <queue>
+#include <set>
 #include <algorithm>
 #include <limits>
-#include <set>
-#include <iostream>
+#include <cmath>
+#include <map>
+#include <utility>
 
 typedef long long ll;
+
 std::vector<std::pair<std::vector<ll>, double>>
-exact_ksp(const Graph& g, ll source, ll target, ll k);
+getKBestPaths(const Graph &g, ll source, ll target, ll k);
+
 std::pair<std::vector<ll>, double>
-run_dijkstra(const Graph& g,ll start,ll goal,const std::set<ll>& banned_nodes,const std::set<ll>& banned_edges);
+findShortestPath(const Graph &g,
+                 ll startNode, ll endNode,
+                 const std::set<ll> &bannedNodes,
+                 const std::set<ll> &bannedEdges);

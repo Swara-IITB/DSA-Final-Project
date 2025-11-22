@@ -1,122 +1,211 @@
 #include "Exact-kShortestPaths.hpp"
+#include <vector>
+#include <queue>
+#include <set>
+#include <algorithm>
+#include <limits>
+#include <cmath>
+#include <map>
+#include <utility>
+
 typedef long long ll;
-std::pair<std::vector<ll>, double>
-run_dijkstra(const Graph& g, ll start,ll goal,const std::set<ll>& banned_nodes,const std::set<ll>& banned_edges){
-    const double INF = 1e18;
-    std::vector<double> dist(g.V, INF);
-    std::vector<ll> parent(g.V, -1);
-    std::vector<ll> parent_edge(g.V, -1);
-    std::vector<bool> visited(g.V, false);
-    auto cmp = [](const std::pair<double,ll>& a,
-                  const std::pair<double,ll>& b){
-        return a.first > b.first;
-    };
-    std::priority_queue<std::pair<double,ll>,std::vector<std::pair<double,ll>>,decltype(cmp)> pq(cmp);
-    if (banned_nodes.count(start)) return {{}, INF};
-    dist[start] = 0;
-    pq.push({0, start});
-    while (!pq.empty()) {
-        auto [d, node] = pq.top();
-        pq.pop();
-        if (visited[node]) continue;
-        visited[node] = true;
-        if (node == goal) break;
-        for (auto &edge_info : g.adjList.at(node)) {
-            ll next = edge_info.first;
-            ll edge_id = edge_info.second;
-            if (banned_nodes.count(next)) continue;
-            if (banned_edges.count(edge_id)) continue;
-            const Edge& ed = g.edges.at(edge_id);
-            if (ed.disable) continue;
-            double newDist = d + ed.len;
-            if (newDist < dist[next]) {
-                dist[next] = newDist;
-                parent[next] = node;
-                parent_edge[next] = edge_id;
-                pq.push({newDist, next});
+
+double calculateRootCost(const Graph &theGraph, const std::vector<ll> &pathSegment)
+{
+    double totalCost = 0.0;
+    if (pathSegment.size() < 2)
+        return 0.0;
+
+    for (size_t i = 0; i < pathSegment.size() - 1; ++i)
+    {
+        ll u = pathSegment[i];
+        ll v = pathSegment[i + 1];
+
+        // Find the edge ID that connects u and v
+        for (const auto &edgeInfo : theGraph.adjList.at(u))
+        {
+            if (edgeInfo.first == v)
+            {
+                ll edgeId = edgeInfo.second;
+                // Add the edge length
+                totalCost += theGraph.edges.at(edgeId).len;
+                break;
             }
         }
     }
-    if (dist[goal] >= INF) return {{}, INF};
+    return totalCost;
+}
+
+std::pair<std::vector<ll>, double>
+findShortestPath(const Graph &theGraph,
+                 ll startNode, ll endNode,
+                 const std::set<ll> &bannedNodes,
+                 const std::set<ll> &bannedEdges)
+{
+    const double INF = 1e18;
+    std::vector<double> dist(theGraph.V, INF);
+    std::vector<ll> parent(theGraph.V, -1);
+
+    using NodePair = std::pair<double, ll>;
+    std::priority_queue<NodePair, std::vector<NodePair>, std::greater<NodePair>> pq;
+
+    if (bannedNodes.count(startNode))
+        return {{}, INF};
+
+    dist[startNode] = 0;
+    pq.push({0, startNode});
+
+    while (!pq.empty())
+    {
+        auto [d, u] = pq.top();
+        pq.pop();
+
+        if (d > dist[u])
+            continue;
+        if (u == endNode)
+            break;
+
+        for (auto &edgeInfo : theGraph.adjList.at(u))
+        {
+            ll v = edgeInfo.first;
+            ll edgeId = edgeInfo.second;
+
+            if (bannedNodes.count(v))
+                continue;
+            if (bannedEdges.count(edgeId))
+                continue;
+
+            const Edge &edgeData = theGraph.edges.at(edgeId);
+            if (edgeData.disable)
+                continue;
+
+            double weight = edgeData.len;
+
+            if (d + weight < dist[v])
+            {
+                dist[v] = d + weight;
+                parent[v] = u;
+                pq.push({dist[v], v});
+            }
+        }
+    }
+
+    if (dist[endNode] >= INF)
+        return {{}, INF};
+
     std::vector<ll> path;
-    ll cur = goal;
-    while (cur != -1) {
-        path.push_back(cur);
-        cur = parent[cur];
+    ll current = endNode;
+    while (current != -1)
+    {
+        path.push_back(current);
+        current = parent[current];
     }
     std::reverse(path.begin(), path.end());
-    return {path, dist[goal]};
+    return {path, dist[endNode]};
 }
-struct candidatePath {
+
+struct candidatePath
+{
     double cost;
     std::vector<ll> path;
+    bool operator>(const candidatePath &other) const
+    {
+        return cost > other.cost;
+    }
 };
+
 std::vector<std::pair<std::vector<ll>, double>>
-exact_ksp(const Graph& g, ll source, ll target, ll k)
+getKBestPaths(const Graph &theGraph, ll source, ll target, ll k)
 {
-    std::vector<std::pair<std::vector<ll>,double>> result;
-    if (k <= 0) return result;
-    auto first = run_dijkstra(g, source, target, {}, {});
-    if (first.first.empty()) return result;
-    result.push_back(first);
-    auto cmp = [](const candidatePath& a, const candidatePath& b){
-        return a.cost > b.cost;
-    };
-    std::priority_queue<
-        candidatePath,
-        std::vector<candidatePath>,
-        decltype(cmp)
-    > pq(cmp);
-    for (ll pi = 1; pi < k; pi++) {
-        const auto& prev_path = result.back().first;
-        for (ll i = 0; i < (ll)prev_path.size() - 1; i++) {
-            ll deviation_node = prev_path[i];
-            std::vector<ll> root(prev_path.begin(),
-                                 prev_path.begin() + i + 1);
-            std::set<ll> banned_nodes;
-            std::set<ll> banned_edges;
-            for (ll nd : root) {
-                if (nd != deviation_node) banned_nodes.insert(nd);
+    std::vector<std::pair<std::vector<ll>, double>> kShortestPaths;
+    if (k <= 0)
+        return kShortestPaths;
+
+    auto firstPath = findShortestPath(theGraph, source, target, {}, {});
+    if (firstPath.first.empty())
+        return kShortestPaths;
+
+    kShortestPaths.push_back(firstPath);
+
+    std::priority_queue<candidatePath, std::vector<candidatePath>, std::greater<candidatePath>> pq;
+
+    std::set<std::vector<ll>> seenPaths;
+    seenPaths.insert(firstPath.first);
+
+    for (ll count = 1; count < k; count++)
+    {
+
+        const auto &lastShortestPath = kShortestPaths.back().first;
+
+        for (ll i = 0; i < (ll)lastShortestPath.size() - 1; i++)
+        {
+
+            ll spurNode = lastShortestPath[i];
+
+            std::vector<ll> root(lastShortestPath.begin(), lastShortestPath.begin() + i + 1);
+            double rootDist = calculateRootCost(theGraph, root);
+
+            std::set<ll> bannedNodes;
+            for (ll node : root)
+            {
+                if (node != spurNode)
+                {
+                    bannedNodes.insert(node);
+                }
             }
-            for (auto& prev : result) {
-                const auto& path = prev.first;
-                if (path.size() > i &&
-                    std::equal(root.begin(), root.end(), path.begin())) {
+
+            std::set<ll> bannedEdges;
+            for (const auto &prev : kShortestPaths)
+            {
+                const auto &path = prev.first;
+
+                if ((ll)path.size() > i + 1 && std::equal(root.begin(), root.end(), path.begin()))
+                {
                     ll u = path[i];
-                    ll v = path[i+1];
-                    for (auto &adj : g.adjList.at(u)) {
-                        if (adj.first == v) {
-                            banned_edges.insert(adj.second);
+                    ll v = path[i + 1];
+
+                    for (auto &adj : theGraph.adjList.at(u))
+                    {
+                        if (adj.first == v)
+                        {
+                            bannedEdges.insert(adj.second);
+                            break;
                         }
                     }
                 }
             }
-           auto dev_res = run_dijkstra(g,
-                                        deviation_node,
-                                        target,
-                                        banned_nodes,
-                                        banned_edges);
-            if (dev_res.first.empty()) continue;
-            std::vector<ll> full = root;
-            full.insert(full.end(),
-                        dev_res.first.begin() + 1,
-                        dev_res.first.end());
-            double cost = 0;
-            for (ll j = 0; j + 1 < (ll)full.size(); j++) {
-                ll a = full[j];
-                ll b = full[j+1];
-                for (auto &adj : g.adjList.at(a)) {
-                    if (adj.first == b) {
-                        cost += g.edges.at(adj.second).len;
-                        break;
-                    }
-                }
+
+            auto spurPathResult = findShortestPath(theGraph,
+                                                   spurNode,
+                                                   target,
+                                                   bannedNodes,
+                                                   bannedEdges);
+
+            if (spurPathResult.first.empty())
+                continue;
+
+            std::vector<ll> totalPath = root;
+
+            totalPath.insert(totalPath.end(),
+                             spurPathResult.first.begin() + 1,
+                             spurPathResult.first.end());
+
+            double totalDist = rootDist + spurPathResult.second;
+
+            if (seenPaths.count(totalPath) == 0)
+            {
+                pq.push({totalDist, totalPath});
+                seenPaths.insert(totalPath);
             }
-            pq.push({cost, full});
         }
-        if (pq.empty()) break;
-        result.push_back({pq.top().path, pq.top().cost});
+
+        if (pq.empty())
+            break;
+
+        auto nextBest = pq.top();
         pq.pop();
+        kShortestPaths.push_back({nextBest.path, nextBest.cost});
     }
-    return result;
+
+    return kShortestPaths;
 }

@@ -3,7 +3,7 @@
 #include <chrono>
 #include <vector>
 #include "../preprocess.hpp"
-#include "algo4.hpp" // contains odAstar()
+#include "algo4.hpp" // contains ogAstar()
 
 using json = nlohmann::json;
 using namespace std::chrono;
@@ -28,7 +28,7 @@ int main(int argc, char* argv[]) {
     fin >> qjson;
 
     json results = json::array();
-    for (auto &q : qjson["events"][1]["queries"]) {
+    for (auto &q : qjson["events"][0]["queries"]) {
         long long u = q["source"];
         long long v = q["target"];
 
