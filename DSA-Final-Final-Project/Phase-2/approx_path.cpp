@@ -27,9 +27,11 @@ double landmarkApproxDist(const LandmarkOracle& oracle, ll u, ll v) {
     }
 
     // if upper is INF (no path via any landmark), fall back to lower
+    if(upper >=INF && lower == 0.0 && u!= v) return -1; 
     if (upper >= INF) return lower;
 
     // combine lower and upper — midpoint is simple and effective
     double approx = (lower + upper) * 0.5;
+    if(u!=v && approx == 0.0) return -1;
     return approx;
 }
