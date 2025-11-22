@@ -459,7 +459,7 @@
       "v": 47,
       "length": 18.91,
       "average_time": 27.46,
-      "oneway": true,
+      "oneway": false,
       "road_type": "primary",
       "speed_profile": [
         57.5,
@@ -566,7 +566,7 @@
       "v": 8,
       "length": 177.76,
       "average_time": 49.4,
-      "oneway": true,
+      "oneway": false,
       "road_type": "secondary"
     },
     {
@@ -691,7 +691,7 @@
       "v": 41,
       "length": 191.8,
       "average_time": 34.25,
-      "oneway": true,
+      "oneway": false,
       "road_type": "primary"
     },
     {
@@ -709,7 +709,7 @@
       "v": 42,
       "length": 91.92,
       "average_time": 28.72,
-      "oneway": true,
+      "oneway": false,
       "road_type": "expressway",
       "speed_profile": [
         39.4,
@@ -932,7 +932,7 @@
       "v": 11,
       "length": 103.48,
       "average_time": 16.39,
-      "oneway": true,
+      "oneway": false,
       "road_type": "secondary"
     },
     {
@@ -941,7 +941,7 @@
       "v": 47,
       "length": 29.15,
       "average_time": 35.7,
-      "oneway": true,
+      "oneway": false,
       "road_type": "primary",
       "speed_profile": [
         63.6,
@@ -1048,7 +1048,7 @@
       "v": 34,
       "length": 83.03,
       "average_time": 49.82,
-      "oneway": true,
+      "oneway": false,
       "road_type": "tertiary",
       "speed_profile": [
         69.0,
@@ -1378,7 +1378,7 @@
       "v": 25,
       "length": 142.03,
       "average_time": 41.52,
-      "oneway": true,
+      "oneway": false,
       "road_type": "local",
       "speed_profile": [
         56.9,
@@ -1485,7 +1485,7 @@
       "v": 27,
       "length": 99.88,
       "average_time": 14.78,
-      "oneway": true,
+      "oneway": false,
       "road_type": "expressway"
     },
     {
@@ -1494,7 +1494,7 @@
       "v": 60,
       "length": 23.54,
       "average_time": 46.57,
-      "oneway": true,
+      "oneway": false,
       "road_type": "local",
       "speed_profile": [
         39.1,
@@ -1610,7 +1610,7 @@
       "v": 15,
       "length": 78.24,
       "average_time": 33.21,
-      "oneway": true,
+      "oneway": false,
       "road_type": "primary",
       "speed_profile": [
         65.6,
@@ -1726,7 +1726,7 @@
       "v": 53,
       "length": 417.07,
       "average_time": 46.57,
-      "oneway": true,
+      "oneway": false,
       "road_type": "expressway",
       "speed_profile": [
         61.9,
@@ -1940,7 +1940,7 @@
       "v": 63,
       "length": 150.92,
       "average_time": 26.12,
-      "oneway": true,
+      "oneway": false,
       "road_type": "expressway"
     },
     {
@@ -2056,7 +2056,7 @@
       "v": 19,
       "length": 129.87,
       "average_time": 39.9,
-      "oneway": true,
+      "oneway": false,
       "road_type": "expressway",
       "speed_profile": [
         55.1,
@@ -2297,7 +2297,7 @@
       "v": 42,
       "length": 162.87,
       "average_time": 21.86,
-      "oneway": true,
+      "oneway": false,
       "road_type": "secondary",
       "speed_profile": [
         47.1,
@@ -2547,7 +2547,7 @@
       "v": 17,
       "length": 10.02,
       "average_time": 31.75,
-      "oneway": true,
+      "oneway": false,
       "road_type": "expressway",
       "speed_profile": [
         39.1,
@@ -2877,7 +2877,7 @@
       "v": 58,
       "length": 21.52,
       "average_time": 45.23,
-      "oneway": true,
+      "oneway": false,
       "road_type": "expressway"
     },
     {
@@ -2895,7 +2895,7 @@
       "v": 47,
       "length": 387.65,
       "average_time": 46.73,
-      "oneway": true,
+      "oneway": false,
       "road_type": "secondary"
     },
     {
@@ -2904,7 +2904,7 @@
       "v": 57,
       "length": 353.63,
       "average_time": 39.28,
-      "oneway": true,
+      "oneway": false,
       "road_type": "tertiary",
       "speed_profile": [
         45.6,
@@ -3145,7 +3145,7 @@
       "v": 24,
       "length": 19.98,
       "average_time": 47.07,
-      "oneway": true,
+      "oneway": false,
       "road_type": "expressway"
     },
     {
@@ -3154,7 +3154,7 @@
       "v": 26,
       "length": 9.94,
       "average_time": 35.47,
-      "oneway": true,
+      "oneway": false,
       "road_type": "tertiary"
     },
     {
@@ -3172,7 +3172,7 @@
       "v": 25,
       "length": 116.83,
       "average_time": 39.45,
-      "oneway": true,
+      "oneway": false,
       "road_type": "tertiary"
     },
     {
@@ -3395,7 +3395,7 @@
       "v": 56,
       "length": 42.67,
       "average_time": 25.71,
-      "oneway": true,
+      "oneway": false,
       "road_type": "local"
     },
     {
@@ -3422,7 +3422,7 @@
       "v": 29,
       "length": 163.35,
       "average_time": 38.0,
-      "oneway": true,
+      "oneway": false,
       "road_type": "local"
     },
     {
@@ -3547,7 +3547,7 @@
       "v": 43,
       "length": 30.26,
       "average_time": 41.14,
-      "oneway": true,
+      "oneway": false,
       "road_type": "expressway"
     },
     {
@@ -3556,7 +3556,7 @@
       "v": 61,
       "length": 75.06,
       "average_time": 27.94,
-      "oneway": true,
+      "oneway": false,
       "road_type": "local"
     },
     {
@@ -3886,7 +3886,7 @@
       "v": 66,
       "length": 123.79,
       "average_time": 44.36,
-      "oneway": true,
+      "oneway": false,
       "road_type": "tertiary",
       "speed_profile": [
         79.0,
@@ -3993,7 +3993,7 @@
       "v": 60,
       "length": 427.26,
       "average_time": 38.07,
-      "oneway": true,
+      "oneway": false,
       "road_type": "tertiary",
       "speed_profile": [
         57.5,
@@ -4109,7 +4109,7 @@
       "v": 45,
       "length": 371.06,
       "average_time": 27.95,
-      "oneway": true,
+      "oneway": false,
       "road_type": "secondary",
       "speed_profile": [
         68.9,
@@ -4216,7 +4216,7 @@
       "v": 37,
       "length": 24.97,
       "average_time": 39.69,
-      "oneway": true,
+      "oneway": false,
       "road_type": "tertiary",
       "speed_profile": [
         61.1,
@@ -4430,7 +4430,7 @@
       "v": 40,
       "length": 22.92,
       "average_time": 39.86,
-      "oneway": true,
+      "oneway": false,
       "road_type": "primary"
     },
     {
@@ -4439,7 +4439,7 @@
       "v": 41,
       "length": 121.4,
       "average_time": 44.83,
-      "oneway": true,
+      "oneway": false,
       "road_type": "primary",
       "speed_profile": [
         48.8,
@@ -4662,7 +4662,7 @@
       "v": 45,
       "length": 152.49,
       "average_time": 31.24,
-      "oneway": true,
+      "oneway": false,
       "road_type": "expressway"
     },
     {
@@ -4680,7 +4680,7 @@
       "v": 42,
       "length": 162.09,
       "average_time": 32.73,
-      "oneway": true,
+      "oneway": false,
       "road_type": "tertiary",
       "speed_profile": [
         55.8,
@@ -4894,7 +4894,7 @@
       "v": 55,
       "length": 138.73,
       "average_time": 19.97,
-      "oneway": true,
+      "oneway": false,
       "road_type": "tertiary",
       "speed_profile": [
         48.5,
@@ -5001,7 +5001,7 @@
       "v": 66,
       "length": 66.58,
       "average_time": 14.52,
-      "oneway": true,
+      "oneway": false,
       "road_type": "secondary"
     },
     {
@@ -5037,7 +5037,7 @@
       "v": 48,
       "length": 70.11,
       "average_time": 19.89,
-      "oneway": true,
+      "oneway": false,
       "road_type": "secondary",
       "speed_profile": [
         48.0,
@@ -5251,7 +5251,7 @@
       "v": 58,
       "length": 276.05,
       "average_time": 28.6,
-      "oneway": true,
+      "oneway": false,
       "road_type": "tertiary",
       "speed_profile": [
         76.3,
@@ -5572,7 +5572,7 @@
       "v": 64,
       "length": 65.7,
       "average_time": 21.46,
-      "oneway": true,
+      "oneway": false,
       "road_type": "primary",
       "speed_profile": [
         65.1,

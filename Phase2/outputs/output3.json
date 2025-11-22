@@ -6,58 +6,58 @@
         {
             "id": 1,
             "paths": [],
-            "processing_time": 8.395012
+            "processing_time": 24.344481
         },
         {
             "distances": [
                 {
-                    "approx_shortest_distance": 0.07674645423356509,
+                    "approx_shortest_distance": 0.0,
                     "source": 19758,
                     "target": 2070
                 },
                 {
-                    "approx_shortest_distance": 0.02235787219867718,
+                    "approx_shortest_distance": 0.0,
                     "source": 5651,
                     "target": 5173
                 },
                 {
-                    "approx_shortest_distance": 0.1065175500845962,
+                    "approx_shortest_distance": 0.0,
                     "source": 16278,
                     "target": 24741
                 },
                 {
-                    "approx_shortest_distance": 14.541539989766168,
+                    "approx_shortest_distance": 0.0,
                     "source": 9289,
                     "target": 7157
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 16120,
                     "target": 19168
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 4387,
                     "target": 17401
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 29816,
                     "target": 22275
                 }
             ],
             "id": 4,
-            "processing_time": 0.191298
+            "processing_time": 15.431485
         },
         {
             "id": 7,
             "paths": [],
-            "processing_time": 0.227545
+            "processing_time": 6.060985
         },
         {
             "id": 9,
             "paths": [],
-            "processing_time": 19.092459
+            "processing_time": 40.952619
         },
         {
             "id": 11,
@@ -203,509 +203,469 @@
                     ]
                 }
             ],
-            "processing_time": 32.858746
+            "processing_time": 62.945553
         },
         {
             "id": 12,
             "paths": [],
-            "processing_time": 22.09139
+            "processing_time": 38.43726
         },
         {
             "distances": [
                 {
-                    "approx_shortest_distance": 0.16825525523062995,
+                    "approx_shortest_distance": 0.0,
                     "source": 21601,
                     "target": 24794
                 },
                 {
-                    "approx_shortest_distance": 71.7202923671054,
+                    "approx_shortest_distance": 0.0,
                     "source": 8580,
                     "target": 14866
                 },
                 {
-                    "approx_shortest_distance": 391.0806798047965,
+                    "approx_shortest_distance": 0.0,
                     "source": 3844,
                     "target": 20042
                 }
             ],
             "id": 13,
-            "processing_time": 0.149538
+            "processing_time": 12.69112
         },
         {
             "id": 16,
             "paths": [],
-            "processing_time": 25.209192
+            "processing_time": 37.881433
         },
         {
             "distances": [
                 {
-                    "approx_shortest_distance": 0.1691582610155408,
+                    "approx_shortest_distance": 0.0,
                     "source": 24254,
                     "target": 28731
                 },
                 {
-                    "approx_shortest_distance": 0.036222898150471555,
+                    "approx_shortest_distance": 0.0,
                     "source": 29771,
                     "target": 6205
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 25821,
                     "target": 27041
                 },
                 {
-                    "approx_shortest_distance": 1282.3068362197457,
+                    "approx_shortest_distance": 0.0,
                     "source": 21543,
                     "target": 21793
                 }
             ],
             "id": 17,
-            "processing_time": 0.183487
+            "processing_time": 13.081012
         },
         {
             "id": 18,
             "paths": [],
-            "processing_time": 24.280511
+            "processing_time": 41.158085
         },
         {
             "id": 19,
             "paths": [],
-            "processing_time": 22.276495
+            "processing_time": 42.457966
         },
         {
             "id": 20,
             "paths": [],
-            "processing_time": 1.051851
+            "processing_time": 7.215408
         },
         {
             "id": 22,
             "paths": [],
-            "processing_time": 0.070378
+            "processing_time": 4.596616
         },
         {
             "id": 24,
             "paths": [],
-            "processing_time": 21.294225
+            "processing_time": 38.68642
         },
         {
             "id": 25,
             "paths": [],
-            "processing_time": 18.714145
+            "processing_time": 38.813729
         },
         {
             "id": 27,
             "paths": [],
-            "processing_time": 7.469932
+            "processing_time": 15.744674
         },
         {
             "id": 30,
             "paths": [],
-            "processing_time": 22.835434
+            "processing_time": 38.444768
         },
         {
             "id": 32,
             "paths": [],
-            "processing_time": 30.973591
+            "processing_time": 49.207159
         },
         {
             "id": 33,
             "paths": [],
-            "processing_time": 22.575792
+            "processing_time": 40.481515
         },
         {
             "id": 36,
             "paths": [],
-            "processing_time": 22.433705
+            "processing_time": 38.941059
         },
         {
             "id": 39,
             "paths": [],
-            "processing_time": 0.134694
+            "processing_time": 6.02419
         },
         {
             "id": 40,
             "paths": [],
-            "processing_time": 0.108173
+            "processing_time": 4.086822
         },
         {
             "id": 43,
             "paths": [],
-            "processing_time": 17.817111
+            "processing_time": 37.775203
         },
         {
             "id": 46,
             "paths": [],
-            "processing_time": 20.609179
+            "processing_time": 43.121011
         },
         {
             "id": 47,
             "paths": [],
-            "processing_time": 23.634101
+            "processing_time": 43.191327
         },
         {
             "id": 50,
             "paths": [],
-            "processing_time": 5.839985
+            "processing_time": 20.887779
         },
         {
             "id": 53,
             "paths": [],
-            "processing_time": 22.269161
+            "processing_time": 40.105247
         },
         {
             "id": 54,
             "paths": [],
-            "processing_time": 0.115027
+            "processing_time": 5.446247
         },
         {
             "distances": [
                 {
-                    "approx_shortest_distance": 0.00669666593164167,
+                    "approx_shortest_distance": 0.0,
                     "source": 29693,
                     "target": 31019
                 },
                 {
-                    "approx_shortest_distance": 0.1281700152313715,
+                    "approx_shortest_distance": 0.0,
                     "source": 17078,
                     "target": 28047
                 },
                 {
-                    "approx_shortest_distance": 0.162185127693802,
+                    "approx_shortest_distance": 0.0,
                     "source": 8220,
                     "target": 10552
                 },
                 {
-                    "approx_shortest_distance": 0.06546013372809258,
+                    "approx_shortest_distance": 0.0,
                     "source": 603,
                     "target": 8147
                 },
                 {
-                    "approx_shortest_distance": 0.08006918005886735,
+                    "approx_shortest_distance": 0.0,
                     "source": 7689,
                     "target": 25448
                 },
                 {
-                    "approx_shortest_distance": 0.020960756424569522,
+                    "approx_shortest_distance": 0.0,
                     "source": 29384,
                     "target": 15155
                 },
                 {
-                    "approx_shortest_distance": 0.052553219559696135,
+                    "approx_shortest_distance": 0.0,
                     "source": 16484,
                     "target": 5005
                 },
                 {
-                    "approx_shortest_distance": 74.37866197924228,
+                    "approx_shortest_distance": 0.0,
                     "source": 6307,
                     "target": 19391
                 },
                 {
-                    "approx_shortest_distance": 108.24205203275044,
+                    "approx_shortest_distance": 0.0,
                     "source": 19109,
                     "target": 3593
                 },
                 {
-                    "approx_shortest_distance": 516.494775270072,
+                    "approx_shortest_distance": 0.0,
                     "source": 14024,
                     "target": 29427
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 28547,
                     "target": 306
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 9062,
                     "target": 18637
                 },
                 {
-                    "approx_shortest_distance": 712.8327793191427,
+                    "approx_shortest_distance": 0.0,
                     "source": 16387,
                     "target": 6971
                 },
                 {
-                    "approx_shortest_distance": 6546.594618503716,
+                    "approx_shortest_distance": 0.0,
                     "source": 22484,
                     "target": 1218
                 },
                 {
-                    "approx_shortest_distance": 5274.768186180117,
+                    "approx_shortest_distance": 0.0,
                     "source": 7861,
                     "target": 25237
                 }
             ],
             "id": 57,
-            "processing_time": 1.251667
+            "processing_time": 11.283576
         },
         {
             "id": 58,
             "paths": [],
-            "processing_time": 0.064987
+            "processing_time": 5.813366
         },
         {
             "distances": [
                 {
-                    "approx_shortest_distance": 0.10659465477726887,
+                    "approx_shortest_distance": 0.0,
                     "source": 11948,
                     "target": 7680
                 },
                 {
-                    "approx_shortest_distance": 0.19964092681122783,
+                    "approx_shortest_distance": 0.0,
                     "source": 31934,
                     "target": 9386
                 },
                 {
-                    "approx_shortest_distance": 0.12177888553021676,
+                    "approx_shortest_distance": 0.0,
                     "source": 19384,
                     "target": 5418
                 },
                 {
-                    "approx_shortest_distance": 0.12875620445932554,
+                    "approx_shortest_distance": 0.0,
                     "source": 30076,
                     "target": 16308
                 },
                 {
-                    "approx_shortest_distance": 206.05624228031726,
+                    "approx_shortest_distance": 0.0,
                     "source": 7992,
                     "target": 1233
                 },
                 {
-                    "approx_shortest_distance": 481.89459490256905,
+                    "approx_shortest_distance": 0.0,
                     "source": 1939,
                     "target": 8215
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 23173,
                     "target": 4416
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 21892,
                     "target": 1531
                 }
             ],
             "id": 60,
-            "processing_time": 0.222184
+            "processing_time": 10.467206
         },
         {
             "id": 61,
             "paths": [],
-            "processing_time": 0.069235
+            "processing_time": 4.169533
         },
         {
             "id": 64,
             "paths": [],
-            "processing_time": 0.120555
+            "processing_time": 4.863269
         },
         {
             "id": 65,
             "paths": [],
-            "processing_time": 18.045811
+            "processing_time": 44.840303
         },
         {
             "distances": [
                 {
-                    "approx_shortest_distance": 0.06799357206827034,
+                    "approx_shortest_distance": 0.0,
                     "source": 22201,
                     "target": 17147
-                },
-                {
-                    "approx_shortest_distance": 0.046997932365633675,
-                    "source": 21866,
-                    "target": 17500
-                },
-                {
-                    "approx_shortest_distance": 335.38689510788464,
-                    "source": 27081,
-                    "target": 17633
-                },
-                {
-                    "approx_shortest_distance": 523.5562585624338,
-                    "source": 14593,
-                    "target": 31904
-                },
-                {
-                    "approx_shortest_distance": 1e+18,
-                    "source": 18500,
-                    "target": 8670
                 }
             ],
             "id": 66,
-            "processing_time": 0.205864
+            "processing_time": 12.773673
         },
         {
             "id": 67,
             "paths": [],
-            "processing_time": 28.799398
+            "processing_time": 36.51647
         },
         {
             "id": 68,
             "paths": [],
-            "processing_time": 1.062425
+            "processing_time": 7.215797
         },
         {
             "id": 71,
             "paths": [],
-            "processing_time": 0.065422
+            "processing_time": 3.989084
         },
         {
             "id": 73,
             "paths": [],
-            "processing_time": 27.38666
+            "processing_time": 38.08733
         },
         {
             "id": 74,
             "paths": [],
-            "processing_time": 22.091317
+            "processing_time": 38.963888
         },
         {
             "id": 77,
             "paths": [],
-            "processing_time": 25.273173
+            "processing_time": 51.522898
         },
         {
             "id": 78,
             "paths": [],
-            "processing_time": 5.629937
+            "processing_time": 16.540933
         },
         {
             "id": 81,
             "paths": [],
-            "processing_time": 0.142122
+            "processing_time": 5.3561
         },
         {
             "distances": [
                 {
-                    "approx_shortest_distance": 0.06776249249879981,
+                    "approx_shortest_distance": 0.0,
                     "source": 11995,
                     "target": 5901
                 },
                 {
-                    "approx_shortest_distance": 0.06334148851629838,
+                    "approx_shortest_distance": 0.0,
                     "source": 22907,
                     "target": 22493
                 },
                 {
-                    "approx_shortest_distance": 0.040417269703059255,
+                    "approx_shortest_distance": 0.0,
                     "source": 20008,
                     "target": 15960
                 },
                 {
-                    "approx_shortest_distance": 0.0760838709310323,
+                    "approx_shortest_distance": 0.0,
                     "source": 3073,
                     "target": 14227
                 },
                 {
-                    "approx_shortest_distance": 0.09073475923354536,
+                    "approx_shortest_distance": 0.0,
                     "source": 2771,
                     "target": 13997
                 },
                 {
-                    "approx_shortest_distance": 0.09253042013570194,
+                    "approx_shortest_distance": 0.0,
                     "source": 12937,
                     "target": 9715
                 },
                 {
-                    "approx_shortest_distance": 255.6056864471099,
+                    "approx_shortest_distance": 0.0,
                     "source": 26212,
                     "target": 30655
                 },
                 {
-                    "approx_shortest_distance": 228.20730568818618,
+                    "approx_shortest_distance": 0.0,
                     "source": 31648,
                     "target": 11382
                 },
                 {
-                    "approx_shortest_distance": 987.1255073613257,
+                    "approx_shortest_distance": 0.0,
                     "source": 10147,
                     "target": 32652
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 13948,
                     "target": 11698
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 23586,
                     "target": 30628
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 11324,
                     "target": 23405
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 6317,
                     "target": 27972
                 }
             ],
             "id": 84,
-            "processing_time": 0.771999
+            "processing_time": 10.919009
         },
         {
             "id": 86,
             "paths": [],
-            "processing_time": 5.884592
+            "processing_time": 14.034912
         },
         {
             "id": 87,
             "paths": [],
-            "processing_time": 18.219399
+            "processing_time": 38.172394
         },
         {
             "id": 88,
             "paths": [],
-            "processing_time": 20.310492
+            "processing_time": 40.647579
         },
         {
             "id": 91,
             "paths": [],
-            "processing_time": 6.482894
+            "processing_time": 19.29988
         },
         {
             "distances": [
                 {
-                    "approx_shortest_distance": 0.07707600889345292,
+                    "approx_shortest_distance": 0.0,
                     "source": 6704,
                     "target": 25862
-                },
-                {
-                    "approx_shortest_distance": 0.020116290611153807,
-                    "source": 22809,
-                    "target": 16857
-                },
-                {
-                    "approx_shortest_distance": 27.071170608167893,
-                    "source": 5724,
-                    "target": 2715
-                },
-                {
-                    "approx_shortest_distance": 571.4417508334941,
-                    "source": 8016,
-                    "target": 19584
-                },
-                {
-                    "approx_shortest_distance": 1784.7698293740432,
-                    "source": 16822,
-                    "target": 22474
                 }
             ],
             "id": 94,
-            "processing_time": 0.259183
+            "processing_time": 12.072179
         },
         {
             "id": 96,
             "paths": [],
-            "processing_time": 0.066505
+            "processing_time": 4.445447
         },
         {
             "id": 97,
             "paths": [],
-            "processing_time": 18.375897
+            "processing_time": 43.269399
         },
         {
             "id": 100,
@@ -1230,357 +1190,322 @@
                     ]
                 }
             ],
-            "processing_time": 265.810766
+            "processing_time": 454.980645
         },
         {
             "id": 102,
             "paths": [],
-            "processing_time": 0.078655
+            "processing_time": 6.407431
         },
         {
             "id": 103,
             "paths": [],
-            "processing_time": 0.458336
+            "processing_time": 4.832186
         },
         {
             "id": 105,
             "paths": [],
-            "processing_time": 21.424547
+            "processing_time": 45.830395
         },
         {
             "id": 108,
             "paths": [],
-            "processing_time": 21.707895
+            "processing_time": 40.483736
         },
         {
             "id": 109,
             "paths": [],
-            "processing_time": 18.116988
+            "processing_time": 39.195668
         },
         {
             "id": 112,
             "paths": [],
-            "processing_time": 20.262759
+            "processing_time": 40.096915
         },
         {
             "id": 115,
             "paths": [],
-            "processing_time": 0.364867
+            "processing_time": 6.112515
         },
         {
             "id": 117,
             "paths": [],
-            "processing_time": 0.170246
+            "processing_time": 4.211083
         },
         {
             "distances": [
                 {
-                    "approx_shortest_distance": 0.18093884274360136,
+                    "approx_shortest_distance": 0.0,
                     "source": 27370,
                     "target": 14760
                 },
                 {
-                    "approx_shortest_distance": 0.14340647822501124,
+                    "approx_shortest_distance": 0.0,
                     "source": 18911,
                     "target": 15822
                 },
                 {
-                    "approx_shortest_distance": 0.19549646092032053,
+                    "approx_shortest_distance": 0.0,
                     "source": 21155,
                     "target": 7713
                 },
                 {
-                    "approx_shortest_distance": 0.02230725088963213,
+                    "approx_shortest_distance": 0.0,
                     "source": 6415,
                     "target": 8474
                 },
                 {
-                    "approx_shortest_distance": 0.07141441174111497,
+                    "approx_shortest_distance": 0.0,
                     "source": 29320,
                     "target": 27157
                 },
                 {
-                    "approx_shortest_distance": 0.11703755640354484,
+                    "approx_shortest_distance": 0.0,
                     "source": 27416,
                     "target": 17177
                 },
                 {
-                    "approx_shortest_distance": 0.06743833254823044,
+                    "approx_shortest_distance": 0.0,
                     "source": 18079,
                     "target": 9658
                 },
                 {
-                    "approx_shortest_distance": 45.38367640245417,
+                    "approx_shortest_distance": 0.0,
                     "source": 25606,
                     "target": 4675
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 27322,
                     "target": 19640
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 7233,
                     "target": 26079
                 },
                 {
-                    "approx_shortest_distance": 1459.5541593630264,
+                    "approx_shortest_distance": 0.0,
                     "source": 25040,
                     "target": 23823
                 },
                 {
-                    "approx_shortest_distance": 1601.0653607040074,
+                    "approx_shortest_distance": 0.0,
                     "source": 4639,
                     "target": 323
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 31725,
                     "target": 9095
                 },
                 {
-                    "approx_shortest_distance": 1682.8734707995784,
+                    "approx_shortest_distance": 0.0,
                     "source": 96,
                     "target": 32608
                 }
             ],
             "id": 120,
-            "processing_time": 0.912206
+            "processing_time": 12.359082
         },
         {
             "id": 122,
             "paths": [],
-            "processing_time": 20.288422
+            "processing_time": 38.176216
         },
         {
             "id": 125,
             "paths": [],
-            "processing_time": 0.09515
+            "processing_time": 6.166265
         },
         {
             "id": 128,
             "paths": [],
-            "processing_time": 22.484748
+            "processing_time": 38.383023
         },
         {
             "id": 131,
             "paths": [],
-            "processing_time": 19.878848
+            "processing_time": 39.450418
         },
         {
             "id": 133,
             "paths": [],
-            "processing_time": 20.993494
+            "processing_time": 40.597803
         },
         {
             "id": 136,
             "paths": [],
-            "processing_time": 20.836242
+            "processing_time": 39.500945
         },
         {
             "distances": [
                 {
-                    "approx_shortest_distance": 0.05188171715840392,
+                    "approx_shortest_distance": 0.0,
                     "source": 1171,
                     "target": 27570
                 },
                 {
-                    "approx_shortest_distance": 0.15974660198165289,
+                    "approx_shortest_distance": 0.0,
                     "source": 2694,
                     "target": 29642
                 },
                 {
-                    "approx_shortest_distance": 0.05061683889587069,
+                    "approx_shortest_distance": 0.0,
                     "source": 11178,
                     "target": 9639
                 },
                 {
-                    "approx_shortest_distance": 0.08683317488898495,
+                    "approx_shortest_distance": 0.0,
                     "source": 21692,
                     "target": 32071
                 },
                 {
-                    "approx_shortest_distance": 0.04999962530469671,
+                    "approx_shortest_distance": 0.0,
                     "source": 29382,
                     "target": 29276
                 },
                 {
-                    "approx_shortest_distance": 0.017499365108779006,
+                    "approx_shortest_distance": 0.0,
                     "source": 22082,
                     "target": 25938
                 },
                 {
-                    "approx_shortest_distance": 33.43552693029814,
+                    "approx_shortest_distance": 0.0,
                     "source": 9655,
                     "target": 7937
                 },
                 {
-                    "approx_shortest_distance": 680.1326853533815,
+                    "approx_shortest_distance": 0.0,
                     "source": 22486,
                     "target": 11297
                 },
                 {
-                    "approx_shortest_distance": 1613.5398005441377,
+                    "approx_shortest_distance": 0.0,
                     "source": 28316,
                     "target": 13915
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 17808,
                     "target": 8361
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 11243,
                     "target": 22439
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 11474,
                     "target": 3959
                 }
             ],
             "id": 139,
-            "processing_time": 0.458467
+            "processing_time": 12.862656
         },
         {
             "distances": [
                 {
-                    "approx_shortest_distance": 0.12845749032814974,
+                    "approx_shortest_distance": 0.0,
                     "source": 28082,
                     "target": 17766
-                },
-                {
-                    "approx_shortest_distance": 0.13960152574897394,
-                    "source": 19346,
-                    "target": 27768
-                },
-                {
-                    "approx_shortest_distance": 0.11640547999482113,
-                    "source": 19719,
-                    "target": 9670
-                },
-                {
-                    "approx_shortest_distance": 204.15072622806363,
-                    "source": 14958,
-                    "target": 24430
-                },
-                {
-                    "approx_shortest_distance": 1e+18,
-                    "source": 31047,
-                    "target": 27272
                 }
             ],
             "id": 141,
-            "processing_time": 0.140025
+            "processing_time": 11.695688
         },
         {
             "id": 142,
             "paths": [],
-            "processing_time": 24.99043
+            "processing_time": 56.554226
         },
         {
             "id": 144,
             "paths": [],
-            "processing_time": 17.831303
+            "processing_time": 40.979983
         },
         {
             "id": 145,
             "paths": [],
-            "processing_time": 0.180645
+            "processing_time": 5.838766
         },
         {
             "distances": [
                 {
-                    "approx_shortest_distance": 0.07196920460149689,
+                    "approx_shortest_distance": 0.0,
                     "source": 30743,
                     "target": 32323
-                },
-                {
-                    "approx_shortest_distance": 0.08619354504369924,
-                    "source": 13107,
-                    "target": 14287
-                },
-                {
-                    "approx_shortest_distance": 339.0056421916112,
-                    "source": 10887,
-                    "target": 10971
-                },
-                {
-                    "approx_shortest_distance": 1e+18,
-                    "source": 8330,
-                    "target": 9396
                 }
             ],
             "id": 148,
-            "processing_time": 0.153284
+            "processing_time": 11.318342
         },
         {
             "id": 149,
             "paths": [],
-            "processing_time": 0.0937
+            "processing_time": 4.106554
         },
         {
             "id": 152,
             "paths": [],
-            "processing_time": 0.138055
+            "processing_time": 4.124691
         },
         {
             "distances": [
                 {
-                    "approx_shortest_distance": 0.09857973519157018,
+                    "approx_shortest_distance": 0.0,
                     "source": 20561,
                     "target": 13600
                 },
                 {
-                    "approx_shortest_distance": 0.059421200183429786,
+                    "approx_shortest_distance": 0.0,
                     "source": 1127,
                     "target": 2126
                 },
                 {
-                    "approx_shortest_distance": 0.023638532712919103,
+                    "approx_shortest_distance": 0.0,
                     "source": 31280,
                     "target": 12477
                 },
                 {
-                    "approx_shortest_distance": 0.1329229384101906,
+                    "approx_shortest_distance": 0.0,
                     "source": 7332,
                     "target": 20865
                 },
                 {
-                    "approx_shortest_distance": 126.6820611596149,
+                    "approx_shortest_distance": 0.0,
                     "source": 11835,
                     "target": 21843
                 },
                 {
-                    "approx_shortest_distance": 1501.2797374614524,
+                    "approx_shortest_distance": 0.0,
                     "source": 12428,
                     "target": 8316
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 20411,
                     "target": 5385
                 }
             ],
             "id": 153,
-            "processing_time": 0.332912
+            "processing_time": 11.504755
         },
         {
             "id": 155,
             "paths": [],
-            "processing_time": 20.288811
+            "processing_time": 42.501447
         },
         {
             "id": 158,
             "paths": [],
-            "processing_time": 19.864879
+            "processing_time": 42.101211
         },
         {
             "id": 161,
             "paths": [],
-            "processing_time": 20.424069
+            "processing_time": 44.638423
         },
         {
             "id": 163,
@@ -1652,27 +1577,27 @@
                     ]
                 }
             ],
-            "processing_time": 21.120104
+            "processing_time": 48.885839
         },
         {
             "id": 166,
             "paths": [],
-            "processing_time": 23.219701
+            "processing_time": 62.06363
         },
         {
             "id": 169,
             "paths": [],
-            "processing_time": 18.754663999999998
+            "processing_time": 49.843075
         },
         {
             "id": 172,
             "paths": [],
-            "processing_time": 18.92103
+            "processing_time": 50.10709
         },
         {
             "id": 173,
             "paths": [],
-            "processing_time": 1.300341
+            "processing_time": 6.899612
         },
         {
             "id": 174,
@@ -2044,306 +1969,306 @@
                     ]
                 }
             ],
-            "processing_time": 170.421045
+            "processing_time": 291.667154
         },
         {
             "id": 175,
             "paths": [],
-            "processing_time": 0.07359
+            "processing_time": 5.944047
         },
         {
             "distances": [
                 {
-                    "approx_shortest_distance": 0.05736344594584883,
+                    "approx_shortest_distance": 0.0,
                     "source": 902,
                     "target": 9079
                 },
                 {
-                    "approx_shortest_distance": 0.21584766968524868,
+                    "approx_shortest_distance": 0.0,
                     "source": 3025,
                     "target": 21889
                 },
                 {
-                    "approx_shortest_distance": 0.07883603302719377,
+                    "approx_shortest_distance": 0.0,
                     "source": 24886,
                     "target": 5221
                 },
                 {
-                    "approx_shortest_distance": 0.2109430495023099,
+                    "approx_shortest_distance": 0.0,
                     "source": 14351,
                     "target": 30901
                 },
                 {
-                    "approx_shortest_distance": 0.0640156344795006,
+                    "approx_shortest_distance": 0.0,
                     "source": 19856,
                     "target": 24475
                 },
                 {
-                    "approx_shortest_distance": 0.04812200752787247,
+                    "approx_shortest_distance": 0.0,
                     "source": 29381,
                     "target": 10245
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 30675,
                     "target": 26943
                 },
                 {
-                    "approx_shortest_distance": 83.867385517194,
+                    "approx_shortest_distance": 0.0,
                     "source": 28671,
                     "target": 7318
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 19069,
                     "target": 12302
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 25771,
                     "target": 8695
                 },
                 {
-                    "approx_shortest_distance": 3459.024280829398,
+                    "approx_shortest_distance": 0.0,
                     "source": 16697,
                     "target": 32143
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 23594,
                     "target": 28650
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 21329,
                     "target": 22950
                 }
             ],
             "id": 176,
-            "processing_time": 0.464488
+            "processing_time": 12.058627
         },
         {
             "id": 177,
             "paths": [],
-            "processing_time": 20.559663
+            "processing_time": 39.126507
         },
         {
             "id": 180,
             "paths": [],
-            "processing_time": 0.630893
+            "processing_time": 7.727142
         },
         {
             "id": 182,
             "paths": [],
-            "processing_time": 0.062781
+            "processing_time": 5.31206
         },
         {
             "id": 183,
             "paths": [],
-            "processing_time": 25.912357
+            "processing_time": 54.695526
         },
         {
             "id": 184,
             "paths": [],
-            "processing_time": 0.080258
+            "processing_time": 6.095624
         },
         {
             "distances": [
                 {
-                    "approx_shortest_distance": 0.08355651304937402,
+                    "approx_shortest_distance": 0.0,
                     "source": 19708,
                     "target": 9313
                 },
                 {
-                    "approx_shortest_distance": 0.18074325343949071,
+                    "approx_shortest_distance": 0.0,
                     "source": 29552,
                     "target": 32401
                 },
                 {
-                    "approx_shortest_distance": 0.15324226569357527,
+                    "approx_shortest_distance": 0.0,
                     "source": 20942,
                     "target": 22215
                 },
                 {
-                    "approx_shortest_distance": 0.03588252807704601,
+                    "approx_shortest_distance": 0.0,
                     "source": 9734,
                     "target": 344
                 },
                 {
-                    "approx_shortest_distance": 15.144746760197913,
+                    "approx_shortest_distance": 0.0,
                     "source": 423,
                     "target": 277
                 },
                 {
-                    "approx_shortest_distance": 368.2005797737522,
+                    "approx_shortest_distance": 0.0,
                     "source": 2955,
                     "target": 912
                 },
                 {
-                    "approx_shortest_distance": 998.822231987358,
+                    "approx_shortest_distance": 0.0,
                     "source": 9556,
                     "target": 19818
                 },
                 {
-                    "approx_shortest_distance": 709.3984714027426,
+                    "approx_shortest_distance": 0.0,
                     "source": 675,
                     "target": 10272
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 5796,
                     "target": 7637
                 }
             ],
             "id": 185,
-            "processing_time": 0.45681
+            "processing_time": 10.926158
         },
         {
             "distances": [
                 {
-                    "approx_shortest_distance": 0.07636828809022794,
+                    "approx_shortest_distance": 0.0,
                     "source": 26429,
                     "target": 213
                 },
                 {
-                    "approx_shortest_distance": 0.03784589662789663,
+                    "approx_shortest_distance": 0.0,
                     "source": 5487,
                     "target": 9300
                 },
                 {
-                    "approx_shortest_distance": 0.007016010508997529,
+                    "approx_shortest_distance": 0.0,
                     "source": 30662,
                     "target": 4977
                 },
                 {
-                    "approx_shortest_distance": 0.019875371897474157,
+                    "approx_shortest_distance": 0.0,
                     "source": 19167,
                     "target": 22313
                 },
                 {
-                    "approx_shortest_distance": 0.008385450214650574,
+                    "approx_shortest_distance": 0.0,
                     "source": 13947,
                     "target": 23596
                 },
                 {
-                    "approx_shortest_distance": 0.11884510755334002,
+                    "approx_shortest_distance": 0.0,
                     "source": 4875,
                     "target": 14202
                 },
                 {
-                    "approx_shortest_distance": 0.03321294307960714,
+                    "approx_shortest_distance": 0.0,
                     "source": 25530,
                     "target": 7088
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 24824,
                     "target": 23722
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 14716,
                     "target": 22197
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 20515,
                     "target": 16846
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 8958,
                     "target": 29138
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 3502,
                     "target": 18561
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 28194,
                     "target": 918
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 25601,
                     "target": 19364
                 }
             ],
             "id": 187,
-            "processing_time": 0.59905
+            "processing_time": 11.420993
         },
         {
             "distances": [
                 {
-                    "approx_shortest_distance": 0.07363506747210438,
+                    "approx_shortest_distance": 0.0,
                     "source": 31846,
                     "target": 28923
                 },
                 {
-                    "approx_shortest_distance": 0.03761903665140687,
+                    "approx_shortest_distance": 0.0,
                     "source": 4819,
                     "target": 6453
                 },
                 {
-                    "approx_shortest_distance": 0.017751926815133785,
+                    "approx_shortest_distance": 0.0,
                     "source": 22045,
                     "target": 12229
                 },
                 {
-                    "approx_shortest_distance": 0.12106464650070499,
+                    "approx_shortest_distance": 0.0,
                     "source": 20859,
                     "target": 4018
                 },
                 {
-                    "approx_shortest_distance": 0.12400558564632802,
+                    "approx_shortest_distance": 0.0,
                     "source": 1826,
                     "target": 32440
                 },
                 {
-                    "approx_shortest_distance": 0.09158142811492538,
+                    "approx_shortest_distance": 0.0,
                     "source": 29516,
                     "target": 11426
                 },
                 {
-                    "approx_shortest_distance": 15.488413216195578,
+                    "approx_shortest_distance": 0.0,
                     "source": 22089,
                     "target": 25016
                 },
                 {
-                    "approx_shortest_distance": 349.66153274688804,
+                    "approx_shortest_distance": 0.0,
                     "source": 2248,
                     "target": 9998
                 },
                 {
-                    "approx_shortest_distance": 328.8333529125363,
+                    "approx_shortest_distance": 0.0,
                     "source": 13133,
                     "target": 12153
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 2546,
                     "target": 9491
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 16457,
                     "target": 31228
                 },
                 {
-                    "approx_shortest_distance": 1660.247285371163,
+                    "approx_shortest_distance": 0.0,
                     "source": 26876,
                     "target": 12759
                 },
                 {
-                    "approx_shortest_distance": 2289.65724514689,
+                    "approx_shortest_distance": 0.0,
                     "source": 4168,
                     "target": 13093
                 }
             ],
             "id": 190,
-            "processing_time": 0.786281
+            "processing_time": 10.520436
         },
         {
             "id": 193,
@@ -3075,164 +3000,134 @@
                     ]
                 }
             ],
-            "processing_time": 187.317603
+            "processing_time": 313.707303
         },
         {
             "id": 196,
             "paths": [],
-            "processing_time": 0.077661
+            "processing_time": 6.195036
         },
         {
             "id": 197,
             "paths": [],
-            "processing_time": 19.86254
+            "processing_time": 38.958762
         },
         {
             "id": 200,
             "paths": [],
-            "processing_time": 0.203101
+            "processing_time": 6.657572
         },
         {
             "id": 201,
             "paths": [],
-            "processing_time": 0.087804
+            "processing_time": 4.188111
         },
         {
             "id": 204,
             "paths": [],
-            "processing_time": 0.07055
+            "processing_time": 4.67462
         },
         {
             "id": 206,
             "paths": [],
-            "processing_time": 0.079306
+            "processing_time": 4.161161
         },
         {
             "distances": [
                 {
-                    "approx_shortest_distance": 0.05348373766624315,
+                    "approx_shortest_distance": 0.0,
                     "source": 1127,
                     "target": 2453
                 },
                 {
-                    "approx_shortest_distance": 0.0999858414237859,
+                    "approx_shortest_distance": 0.0,
                     "source": 30843,
                     "target": 14456
                 },
                 {
-                    "approx_shortest_distance": 0.10768500563349655,
+                    "approx_shortest_distance": 0.0,
                     "source": 20050,
                     "target": 14300
                 },
                 {
-                    "approx_shortest_distance": 0.023482675187526583,
+                    "approx_shortest_distance": 0.0,
                     "source": 21287,
                     "target": 20495
                 },
                 {
-                    "approx_shortest_distance": 0.03457469218438123,
+                    "approx_shortest_distance": 0.0,
                     "source": 11587,
                     "target": 7987
                 },
                 {
-                    "approx_shortest_distance": 0.11474149444750051,
+                    "approx_shortest_distance": 0.0,
                     "source": 7125,
                     "target": 23780
                 },
                 {
-                    "approx_shortest_distance": 46.491481541857105,
+                    "approx_shortest_distance": 0.0,
                     "source": 28572,
                     "target": 32486
                 },
                 {
-                    "approx_shortest_distance": 187.9708051090551,
+                    "approx_shortest_distance": 0.0,
                     "source": 10510,
                     "target": 7977
                 },
                 {
-                    "approx_shortest_distance": 477.30387146526397,
+                    "approx_shortest_distance": 0.0,
                     "source": 1536,
                     "target": 5522
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 11735,
                     "target": 4060
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 24451,
                     "target": 11600
                 },
                 {
-                    "approx_shortest_distance": 6304.8091640938455,
+                    "approx_shortest_distance": 0.0,
                     "source": 5728,
                     "target": 31228
                 }
             ],
             "id": 208,
-            "processing_time": 0.582389
+            "processing_time": 10.529409
         },
         {
             "id": 211,
             "paths": [],
-            "processing_time": 18.990775
+            "processing_time": 40.844014
         },
         {
             "id": 214,
             "paths": [],
-            "processing_time": 17.892415
+            "processing_time": 42.54234
         },
         {
             "distances": [
                 {
-                    "approx_shortest_distance": 0.15542403195725618,
+                    "approx_shortest_distance": 0.0,
                     "source": 10988,
                     "target": 24590
-                },
-                {
-                    "approx_shortest_distance": 0.05300224706726577,
-                    "source": 4654,
-                    "target": 27478
-                },
-                {
-                    "approx_shortest_distance": 0.19037488512114764,
-                    "source": 15115,
-                    "target": 19428
-                },
-                {
-                    "approx_shortest_distance": 1e+18,
-                    "source": 31657,
-                    "target": 8552
-                },
-                {
-                    "approx_shortest_distance": 1e+18,
-                    "source": 11451,
-                    "target": 14305
-                },
-                {
-                    "approx_shortest_distance": 1e+18,
-                    "source": 20933,
-                    "target": 5954
-                },
-                {
-                    "approx_shortest_distance": 1e+18,
-                    "source": 21759,
-                    "target": 21207
                 }
             ],
             "id": 216,
-            "processing_time": 0.222002
+            "processing_time": 15.913842
         },
         {
             "id": 219,
             "paths": [],
-            "processing_time": 0.238792
+            "processing_time": 6.824205
         },
         {
             "id": 221,
             "paths": [],
-            "processing_time": 0.257138
+            "processing_time": 6.778046
         }
     ]
 }

@@ -40,7 +40,7 @@ def generate_approx_queries(G, n_queries=20):
             base_per_query = random.uniform(1.0, 2.0)
 
         # total budget = (base_per_query × num_pairs) + random noise
-        time_budget = int(base_per_query * num_pairs * 10000 + random.uniform(2.0, 5.0))
+        time_budget = int(base_per_query * num_pairs+ random.uniform(2.0, 5.0))
 
         events.append({
             "type": "approx_shortest_path",
@@ -73,7 +73,7 @@ def main():
     queries_json = generate_approx_queries(G, n_queries)
     queries_json = add_ground_truth(G, queries_json)
 
-    output_file = "queries_with_truthnew.json"
+    output_file = "queries_with_truth_test.json"
     with open(output_file, "w") as f:
         json.dump(queries_json, f, indent=2)
 

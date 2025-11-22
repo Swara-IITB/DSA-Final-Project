@@ -3,9 +3,10 @@
 #include <fstream>
 #include <chrono>
 #include <vector>
-#include "graph.hpp"
-#include "loadGraph1.hpp"
+#include "../Phase1/graph.hpp"
+#include "../Phase1/loadGraph1.hpp"
 #include "queryHandler2.hpp"
+#include "preprocess.hpp"
 
 using json = nlohmann::json;
 
@@ -18,7 +19,14 @@ int main(int argc, char* argv[]) {
     // Read graph from first file
     std::string filename = argv[1];
     Graph g = loadGraph_parse(filename); // will throw runtime error if unable to open
-    std::vector<std::vector<double>> dl = preprocess(g);
+    ll L;
+    if(g.V>10000) L = 64;
+    else L = 32;
+    auto t0 = std::chrono::high_resolution_clock::now();
+    LandmarkOracle oracle = preprocessLandmarks(g, L);
+    auto t1 = std::chrono::high_resolution_clock::now();
+    double prep_ms = std::chrono::duration_cast<std::chrono::milliseconds>(t1 - t0).count();
+    std::cout << "preprocessing_time_ms:" << prep_ms << std::endl;
     // Read queries from second file
     std::ifstream queries_file(argv[2]);
     if (!queries_file.is_open()) {
@@ -37,7 +45,7 @@ int main(int argc, char* argv[]) {
         auto start_time = std::chrono::high_resolution_clock::now();
         // Answer each query replacing the function process_query using 
         // whatever function or class methods that you have implemented
-        json result = process_query_phase2(g,query,start_time);
+        json result = process_query_phase2(g,query,start_time, oracle);
 
         auto end_time = std::chrono::high_resolution_clock::now();
         result["processing_time"] = std::chrono::duration<double, std::milli>(end_time - start_time).count();

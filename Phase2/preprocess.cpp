@@ -1,15 +1,31 @@
 #include "preprocess.hpp"
-typedef long long ll;
-std::vector<double> dijkstra( Graph &g, int src) {
-    int n = g.V;
-    std::vector<double> dist(n, 1e18);
-    dist[src] = 0;
-    std::priority_queue<std::pair<double,ll>, std::vector<std::pair<double,ll>>, std::greater<std::pair<double,ll>>> pq;
-    pq.push({0, src});
+#include <queue>
+#include <algorithm>
+#include <limits>
+#include <cmath>
+
+
+static const double INF = 1e18;
+
+// Single Dijkstra; if useReverse==false uses g.adjList, else uses g.revAdjList
+std::vector<double> dijkstraFromSource(const Graph& g, ll src, bool useReverse) {
+    std::vector<double> dist(g.V, INF);
+    dist[src] = 0.0;
+    using P = std::pair<double, ll>;
+    std::priority_queue<P, std::vector<P>, std::greater<P>> pq;
+    pq.push({0.0, src});
+
     while (!pq.empty()) {
-        auto [d, u] = pq.top(); pq.pop();
-        if (d > dist[u]) continue;
-        for (auto &[v, w] : g.adjList[u]) {
+        auto [cd, u] = pq.top(); pq.pop();
+        if (cd != dist[u]) continue;
+
+        const auto& neighbours = (useReverse ? g.revAdjList[u] : g.adjList[u]); 
+        for (auto &pr : neighbours) {
+            ll v = pr.first;
+            ll eID = pr.second;
+            const auto &e = g.edges.at(eID);
+            if (e.disable) continue;
+            double w = e.len;
             if (dist[v] > dist[u] + w) {
                 dist[v] = dist[u] + w;
                 pq.push({dist[v], v});
@@ -19,35 +35,51 @@ std::vector<double> dijkstra( Graph &g, int src) {
     return dist;
 }
 
-std::vector<int> selectLandmarks(Graph &g, int k) {
-    int n = g.V;
-    std::vector<int> landmarks;
-    std::random_device rd;
-    std::mt19937 gen(rd());
-    std::uniform_int_distribution<> dis(0, n-1);
-    int first = dis(gen);
-    landmarks.push_back(first);
-    std::vector<double> minDist(n, 1e18);
-    while ((int)landmarks.size() < k) {
-        int last = landmarks.back();
-        std::vector<double> distLast = dijkstra(g, last);
-        for (int i = 0; i < n; i++) {
-            minDist[i] = std::min(minDist[i], distLast[i]);
+// Choose next landmark = node with maximum of minDist[] (standard farthest-point)
+ll farthestNodeFromMinDist(const std::vector<double>& minDist) {
+    double mx = -1.0;
+    ll idx = 0;
+    for (ll i = 0; i < (ll)minDist.size(); ++i) {
+        if (minDist[i] < INF && minDist[i] > mx) {
+            mx = minDist[i];
+            idx = i;
         }
-        int nextLandmark = std::max_element(minDist.begin(), minDist.end()) - minDist.begin();
-        landmarks.push_back(nextLandmark);
     }
-    return landmarks;
+    return idx;
 }
 
-std::vector<std::vector<double>> preprocess(Graph& g){
-    ll k;
-    if(g.V>100) k=50;
-    else k = g.V;
-    std::vector<int> landmarks = selectLandmarks(g, k);
-    std::vector<std::vector<double>> landmarkDist(k, std::vector<double>(g.V, 1e18));
-    for (int i = 0; i < k; i++) {
-        landmarkDist[i] = dijkstra(g, landmarks[i]);
+LandmarkOracle preprocessLandmarks(Graph& g, int L) {
+    LandmarkOracle oracle;
+    oracle.L = L;
+    oracle.landmarks.reserve(L);
+    oracle.dist_from.assign(L, std::vector<double>(g.V, INF));
+    oracle.dist_to.assign(L, std::vector<double>(g.V, INF));
+
+    // pick first landmark randomly or 0
+    ll first = 0;
+    oracle.landmarks.push_back(first);
+    oracle.dist_from[0] = dijkstraFromSource(g, first, false);
+    // dist_to: run Dijkstra on reverse graph from 'first' => gives dist(v -> first)
+    oracle.dist_to[0] = dijkstraFromSource(g, first, true);
+
+    // minDist[v] = min distance from v to any chosen landmark (using dist_from as proxy)
+    std::vector<double> minDist(g.V, INF);
+    for (ll v = 0; v < g.V; ++v) {
+        minDist[v] = oracle.dist_from[0][v];
     }
-    return landmarkDist;
+
+    for (int i = 1; i < L; ++i) {
+        ll next = farthestNodeFromMinDist(minDist);
+        oracle.landmarks.push_back(next);
+        oracle.dist_from[i] = dijkstraFromSource(g, next, false);
+        oracle.dist_to[i]   = dijkstraFromSource(g, next, true);
+
+        // update minDist using newly computed dist_from[i]
+        for (ll v = 0; v < g.V; ++v) {
+            if (oracle.dist_from[i][v] < minDist[v]) minDist[v] = oracle.dist_from[i][v];
+        }
+    }
+
+    return oracle;
 }
+
