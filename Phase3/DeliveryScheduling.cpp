@@ -194,18 +194,16 @@ Assignments build_route_regret(const Graph& g,ll depot, std::vector<Orders> orde
 }
 
 std::vector<Assignments> clustering_method(const Graph& g,ll num_delivery_guys, ll depot_node, std::vector<Orders> ordersList){
-    ////////////// We need to precompute these //////////////////
-    std::vector<std::vector<ll>> timeMatrix;
-    timeMatrix.resize(g.V,std::vector<ll>(g.V,-1));
-    for(auto o : ordersList){
-        auto x = o.pickup;
-        auto y = o.drop;
-        auto z = shortest_path(g,x,y);
-        auto w = shortest_path(g,depot_node,x);
-        timeMatrix[x][y] = time(g,z);
-        timeMatrix[depot_node][x] = time(g,w);
-    }
-    ///////////////////////////////////////////
+    // std::vector<std::vector<ll>> timeMatrix;
+    // timeMatrix.resize(g.V,std::vector<ll>(g.V,-1));
+    // for(auto o : ordersList){
+    //     auto x = o.pickup;
+    //     auto y = o.drop;
+    //     auto z = shortest_path(g,x,y);
+    //     auto w = shortest_path(g,depot_node,x);
+    //     timeMatrix[x][y] = time(g,z);
+    //     timeMatrix[depot_node][x] = time(g,w);
+    // }
 
     auto buckets = cluster_by_shortest_path(g, ordersList, num_delivery_guys);
     std::vector<Assignments> ans;
