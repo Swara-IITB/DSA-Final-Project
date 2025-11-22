@@ -1,30 +1,71 @@
 #include "DeliveryScheduling.hpp"
 
-double time(const Graph& g, std::vector<ll>path){
-    double ans=0; Edge edge;
-    if(path.empty()){return 1e15;}
-    for(ll i=0; i+1<path.size();i++){
-        ll edgeid = g.adjMatrix[path[i]][path[i+1]];
+// double time(const Graph& g, std::vector<ll>path){
+//     double ans=0; Edge edge;
+//     if(path.empty()){return 1e15;}
+//     for(ll i=0; i+1<path.size();i++){
+//         ll edgeid = g.adjMatrix[path[i]][path[i+1]];
 
-        try{edge = g.edges.at(edgeid);}
-        catch(const std::out_of_range& ex){ans+=1e15;}
+//         try{edge = g.edges.at(edgeid);}
+//         catch(const std::out_of_range& ex){ans+=1e15;}
 
-        ans+= edge.avg_t;
+//         ans+= edge.avg_t;
+//     }
+//     return ans;
+// }
+double time(const Graph& g, std::vector<ll> path){
+    double ans = 0;
+    if (path.empty()) return 1e15;
+    for (ll i = 0; i + 1 < (ll)path.size(); i++) {
+        ll u = path[i], v = path[i+1];
+        if (u < 0 || u >= g.V || v < 0 || v >= g.V) {
+            ans += 1e15;
+            continue;
+        }
+        ll edgeid = g.adjMatrix[u][v];
+        try {
+            const Edge &edge = g.edges.at(edgeid);
+            ans += edge.avg_t;
+        } catch (const std::out_of_range& ex) {
+            // missing mapping: treat as unreachable / very expensive
+            ans += 1e15;
+            continue;
+        }
+    }
+    return ans;
+}
+double distance(const Graph& g, std::vector<ll> path){
+    double ans = 0;
+    if (path.empty()) return 1e15;
+    for (ll i = 0; i + 1 < (ll)path.size(); i++) {
+        ll u = path[i], v = path[i+1];
+        if (u < 0 || u >= g.V || v < 0 || v >= g.V) {
+            ans += 1e15;
+            continue;
+        }
+        ll edgeid = g.adjMatrix[u][v];
+        try {
+            const Edge &edge = g.edges.at(edgeid);
+            ans += edge.len;
+        } catch (const std::out_of_range& ex) {
+            ans += 1e15;
+            continue;
+        }
     }
     return ans;
 }
 
-double distance(const Graph& g, std::vector<ll>path){
-    double ans=0; Edge edge;
-    for(ll i=0; i+1<path.size();i++){
-        ll edgeid = g.adjMatrix[path[i]][path[i+1]];
-        try{edge = g.edges.at(edgeid);}
-        catch(const std::out_of_range& ex){ans+=1e15;}
-        ans+= edge.len;
-    }
-    if(path.empty()){return 1e15;}
-    return ans;
-}
+// double distance(const Graph& g, std::vector<ll>path){
+//     double ans=0; Edge edge;
+//     for(ll i=0; i+1<path.size();i++){
+//         ll edgeid = g.adjMatrix[path[i]][path[i+1]];
+//         try{edge = g.edges.at(edgeid);}
+//         catch(const std::out_of_range& ex){ans+=1e15;}
+//         ans+= edge.len;
+//     }
+//     if(path.empty()){return 1e15;}
+//     return ans;
+// }
 
 std::vector<ll> shortest_path(const Graph& g, ll pickup, ll drop){
     std::vector<ll> parent(g.V, -1);
@@ -123,30 +164,91 @@ std::vector<std::vector<Orders>> cluster_by_shortest_path(const Graph &g, std::v
     return buckets;
 }
 
-std::vector<ll> best_insertion(const Graph& g,const std::vector<ll>& R,ll P, ll D,double &deltaOut){
+// std::vector<ll> best_insertion(const Graph& g,const std::vector<ll>& R,ll P, ll D,double &deltaOut){
+//     if (R.size() == 1) {
+//     std::vector<ll> tmp = R;
+//     tmp.push_back(P);
+//     tmp.push_back(D);
+//     deltaOut = time(g,shortest_path(g, R[0], P)) +
+//                time(g,shortest_path(g, P, D));
+//     return tmp;
+// }
+//     double best = 1e15;
+//     std::vector<ll> bestR;
+//     double oldCost = time(g, R);
+
+//     for (int pi = 1; pi <= R.size(); pi++) {
+//         for (int di = pi+1; di <= R.size()+1; di++) {
+//             std::vector<ll> tmp;
+//             tmp.reserve(R.size()+2);
+
+//             for (int i=0; i< R.size(); i++) {
+//                 if (i == pi) tmp.push_back(P);
+//                 if (i == di) tmp.push_back(D);
+//                 tmp.push_back(R[i]);
+//             }
+//             if (di == R.size()+1) tmp.push_back(D);
+//             double newCost = time(g, tmp);
+//             double delta = newCost - oldCost;
+//             if (delta < best) {
+//                 best = delta;
+//                 bestR = tmp;
+//             }
+//         }
+//     }
+//     deltaOut = best;
+//     if (bestR.empty()) {
+//         std::vector<ll> tmp = R;
+//         tmp.push_back(P);
+//         tmp.push_back(D);
+//         deltaOut = 0;
+//         return tmp;
+//     }
+//     return bestR;
+// }
+std::vector<ll> best_insertion(const Graph& g, const std::vector<ll>& R, ll P, ll D, double &deltaOut){
+    // defensive: invalid inputs
+    if (R.empty()) {
+        deltaOut = 0;
+        return std::vector<ll>{P, D};
+    }
+    // if route only depot
     if (R.size() == 1) {
-    std::vector<ll> tmp = R;
-    tmp.push_back(P);
-    tmp.push_back(D);
-    deltaOut = time(g,shortest_path(g, R[0], P)) +
-               time(g,shortest_path(g, P, D));
-    return tmp;
-}
+        std::vector<ll> tmp = R;
+        tmp.push_back(P);
+        tmp.push_back(D);
+        deltaOut = time(g, shortest_path(g, R[0], P)) +
+                   time(g, shortest_path(g, P, D));
+        return tmp;
+    }
+
     double best = 1e15;
     std::vector<ll> bestR;
     double oldCost = time(g, R);
 
-    for (int pi = 1; pi <= R.size(); pi++) {
-        for (int di = pi+1; di <= R.size()+1; di++) {
+    // i = insertion index for P (1..R.size()), j = insertion index for D (i+1..R.size()+1)
+    for (int pi = 1; pi <= (int)R.size(); pi++) {
+        for (int di = pi + 1; di <= (int)R.size() + 1; di++) {
+            // sanity checks (defensive)
+            if (pi < 1 || pi > (int)R.size()) continue;
+            if (di < pi+1 || di > (int)R.size() + 1) continue;
             std::vector<ll> tmp;
-            tmp.reserve(R.size()+2);
+            tmp.reserve(R.size() + 2);
 
-            for (int i=0; i< R.size(); i++) {
+            for (int i = 0; i < (int)R.size(); i++) {
                 if (i == pi) tmp.push_back(P);
                 if (i == di) tmp.push_back(D);
                 tmp.push_back(R[i]);
             }
-            if (di == R.size()+1) tmp.push_back(D);
+            if (di == (int)R.size() + 1) tmp.push_back(D);
+
+            // validate tmp: no negative or out-of-range nodes
+            bool bad = false;
+            for (ll node : tmp) {
+                if (node < 0 || node >= g.V) { bad = true; break; }
+            }
+            if (bad) continue;
+
             double newCost = time(g, tmp);
             double delta = newCost - oldCost;
             if (delta < best) {
@@ -155,14 +257,29 @@ std::vector<ll> best_insertion(const Graph& g,const std::vector<ll>& R,ll P, ll 
             }
         }
     }
+
     deltaOut = best;
+    // fallback: if nothing found, append pickup & drop at end (safe)
     if (bestR.empty()) {
         std::vector<ll> tmp = R;
         tmp.push_back(P);
         tmp.push_back(D);
-        deltaOut = 0;
+        deltaOut = time(g, tmp) - oldCost;
+        // final sanity check
+        for (ll x : tmp) if (x < 0 || x >= g.V) {
+            throw std::runtime_error("best_insertion fallback contains invalid node");
+        }
         return tmp;
     }
+
+    // SANITY: ensure no invalid nodes
+    for (ll x : bestR) {
+        if (x < 0 || x >= g.V) {
+            std::cerr << "ERROR: best_insertion produced invalid node: " << x << "\n";
+            throw std::runtime_error("best_insertion returned invalid node");
+        }
+    }
+
     return bestR;
 }
 
@@ -210,10 +327,29 @@ Assignments build_route_regret(const Graph& g,ll depot, std::vector<Orders> orde
             }
         }
         continue_outer_loop:;
+        // double delta;
+        // R = best_insertion(g, R, orders[pick].pickup, orders[pick].drop, delta);
+        // used[pick] = true;
+        // A.order_ids.push_back(orders[pick].order_id);
+                // choose best pick (if no pick found, pick first unused as fallback)
+        if (pick == -1) {
+            // fallback: pick first unused
+            for (int ii = 0; ii < m; ++ii) if (!used[ii]) { pick = ii; break; }
+            if (pick == -1) break; // nothing left
+        }
+
         double delta;
-        R = best_insertion(g, R, orders[pick].pickup, orders[pick].drop, delta);
+        auto newR = best_insertion(g, R, orders[pick].pickup, orders[pick].drop, delta);
+        // ensure newR valid
+        for (ll node : newR) {
+            if (node < 0 || node >= g.V) {
+                throw std::runtime_error("build_route_regret: invalid node in new route");
+            }
+        }
+        R = std::move(newR);
         used[pick] = true;
         A.order_ids.push_back(orders[pick].order_id);
+
     }
 
     A.route = R;

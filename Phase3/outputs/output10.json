@@ -1,4 +1,4 @@
 {
-    "error": "[json.exception.type_error.302] type must be number, but is null",
-    "processing_time": 0.107108
+    "error": "fleet.num_delievery_guys is missing or null",
+    "processing_time": 0.150893
 }
