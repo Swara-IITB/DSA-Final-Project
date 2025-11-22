@@ -15,32 +15,32 @@
                     ]
                 }
             ],
-            "processing_time": 0.080849
+            "processing_time": 0.072265
         },
         {
             "distances": [
                 {
-                    "approx_shortest_distance": 0.0019322399443408769,
+                    "approx_shortest_distance": 0.0,
                     "source": 5,
                     "target": 2
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 5,
                     "target": 6
                 },
                 {
-                    "approx_shortest_distance": 86.42,
+                    "approx_shortest_distance": 0.0,
                     "source": 1,
                     "target": 3
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 0,
                     "target": 5
                 },
                 {
-                    "approx_shortest_distance": 52.64,
+                    "approx_shortest_distance": 26.32,
                     "source": 1,
                     "target": 4
                 },
@@ -50,33 +50,33 @@
                     "target": 4
                 },
                 {
-                    "approx_shortest_distance": 64.51,
+                    "approx_shortest_distance": 0.0,
                     "source": 1,
                     "target": 5
                 },
                 {
-                    "approx_shortest_distance": 86.42,
+                    "approx_shortest_distance": 0.0,
                     "source": 1,
                     "target": 3
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 4,
                     "target": 1
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 6,
                     "target": 3
                 },
                 {
-                    "approx_shortest_distance": 86.42,
+                    "approx_shortest_distance": 0.0,
                     "source": 3,
                     "target": 1
                 }
             ],
             "id": 3,
-            "processing_time": 0.238663
+            "processing_time": 0.158968
         },
         {
             "id": 6,
@@ -89,12 +89,12 @@
                     ]
                 }
             ],
-            "processing_time": 0.053034
+            "processing_time": 0.0462
         },
         {
             "distances": [
                 {
-                    "approx_shortest_distance": 139.0603959558719,
+                    "approx_shortest_distance": 87.705,
                     "source": 3,
                     "target": 0
                 },
@@ -104,12 +104,12 @@
                     "target": 0
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 0,
                     "target": 5
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 0,
                     "target": 5
                 },
@@ -124,18 +124,18 @@
                     "target": 0
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 5,
                     "target": 0
                 }
             ],
             "id": 7,
-            "processing_time": 0.125766
+            "processing_time": 0.102838
         },
         {
             "id": 9,
             "paths": [],
-            "processing_time": 0.047178
+            "processing_time": 0.048703
         },
         {
             "id": 10,
@@ -148,7 +148,7 @@
                     ]
                 }
             ],
-            "processing_time": 0.045726
+            "processing_time": 0.044266
         },
         {
             "id": 11,
@@ -182,7 +182,7 @@
                     ]
                 }
             ],
-            "processing_time": 0.19958
+            "processing_time": 0.08932
         }
     ]
 }

@@ -42,7 +42,7 @@
                     ]
                 }
             ],
-            "processing_time": 0.287358
+            "processing_time": 0.714908
         },
         {
             "id": 4,
@@ -90,63 +90,63 @@
                     ]
                 }
             ],
-            "processing_time": 0.184146
+            "processing_time": 0.607329
         },
         {
             "id": 7,
             "paths": [],
-            "processing_time": 0.052635
+            "processing_time": 0.193551
         },
         {
             "distances": [
                 {
-                    "approx_shortest_distance": 0.01155230248954334,
+                    "approx_shortest_distance": 0.0,
                     "source": 64,
                     "target": 62
                 },
                 {
-                    "approx_shortest_distance": 19.981275288594794,
+                    "approx_shortest_distance": 111.42500000000001,
                     "source": 22,
                     "target": 17
                 },
                 {
-                    "approx_shortest_distance": 394.0110753367669,
+                    "approx_shortest_distance": 0.0,
                     "source": 59,
                     "target": 64
                 },
                 {
-                    "approx_shortest_distance": 608.5199510708268,
+                    "approx_shortest_distance": 0.0,
                     "source": 66,
                     "target": 12
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 21,
                     "target": 2
                 },
                 {
-                    "approx_shortest_distance": 669.7643644924161,
+                    "approx_shortest_distance": 0.0,
                     "source": 16,
                     "target": 35
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 17,
                     "target": 65
                 },
                 {
-                    "approx_shortest_distance": 816.78,
+                    "approx_shortest_distance": 0.0,
                     "source": 37,
                     "target": 9
                 },
                 {
-                    "approx_shortest_distance": 1768.34,
+                    "approx_shortest_distance": 0.0,
                     "source": 63,
                     "target": 44
                 }
             ],
             "id": 10,
-            "processing_time": 0.128338
+            "processing_time": 0.410221
         },
         {
             "id": 12,
@@ -394,17 +394,17 @@
                     ]
                 }
             ],
-            "processing_time": 1.53626
+            "processing_time": 3.644158
         },
         {
             "id": 13,
             "paths": [],
-            "processing_time": 0.019928
+            "processing_time": 0.058638
         },
         {
             "id": 15,
             "paths": [],
-            "processing_time": 0.059596
+            "processing_time": 0.139947
         },
         {
             "id": 16,
@@ -473,38 +473,38 @@
                     ]
                 }
             ],
-            "processing_time": 0.403994
+            "processing_time": 0.935034
         },
         {
             "distances": [
                 {
-                    "approx_shortest_distance": 116.83660371376273,
+                    "approx_shortest_distance": 0.0,
                     "source": 23,
                     "target": 36
                 },
                 {
-                    "approx_shortest_distance": 217.78665116595232,
+                    "approx_shortest_distance": 0.0,
                     "source": 52,
                     "target": 40
                 },
                 {
-                    "approx_shortest_distance": 616.0338853242548,
+                    "approx_shortest_distance": 0.0,
                     "source": 41,
                     "target": 62
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 17,
                     "target": 28
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 3,
                     "target": 24
                 }
             ],
             "id": 17,
-            "processing_time": 0.063053
+            "processing_time": 0.11762
         },
         {
             "id": 19,
@@ -519,7 +519,7 @@
                     ]
                 }
             ],
-            "processing_time": 0.069838
+            "processing_time": 0.16324
         },
         {
             "id": 21,
@@ -552,12 +552,12 @@
                     ]
                 }
             ],
-            "processing_time": 0.070852
+            "processing_time": 0.170188
         },
         {
             "id": 23,
             "paths": [],
-            "processing_time": 0.014532
+            "processing_time": 0.047063
         }
     ]
 }

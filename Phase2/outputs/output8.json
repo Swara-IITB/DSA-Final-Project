@@ -6,94 +6,94 @@
         {
             "id": 1,
             "paths": [],
-            "processing_time": 0.033484
+            "processing_time": 0.077882
         },
         {
             "id": 4,
             "paths": [],
-            "processing_time": 0.012331
+            "processing_time": 0.03448
         },
         {
             "id": 5,
             "paths": [],
-            "processing_time": 0.008149
+            "processing_time": 0.028974
         },
         {
             "id": 6,
             "paths": [],
-            "processing_time": 0.007945
+            "processing_time": 0.028351
         },
         {
             "distances": [
                 {
-                    "approx_shortest_distance": 10.650478743960798,
+                    "approx_shortest_distance": 57.22,
                     "source": 0,
                     "target": 4
                 },
                 {
-                    "approx_shortest_distance": 53.57,
+                    "approx_shortest_distance": 26.785,
                     "source": 6,
                     "target": 10
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 10,
                     "target": 8
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 8,
                     "target": 1
                 }
             ],
             "id": 7,
-            "processing_time": 0.044948
+            "processing_time": 0.108968
         },
         {
             "distances": [
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 4,
                     "target": 1
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 1,
                     "target": 6
                 },
                 {
-                    "approx_shortest_distance": 58.06206237070443,
+                    "approx_shortest_distance": 0.0,
                     "source": 0,
                     "target": 1
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 132.08999999999997,
                     "source": 7,
                     "target": 5
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 5,
                     "target": 8
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 1,
                     "target": 9
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 0,
                     "target": 6
                 }
             ],
             "id": 9,
-            "processing_time": 0.063256
+            "processing_time": 0.140005
         },
         {
             "id": 10,
             "paths": [],
-            "processing_time": 0.053663
+            "processing_time": 0.056082
         },
         {
             "id": 11,
@@ -148,12 +148,12 @@
                     ]
                 }
             ],
-            "processing_time": 0.111424
+            "processing_time": 0.233418
         },
         {
             "id": 13,
             "paths": [],
-            "processing_time": 0.009872
+            "processing_time": 0.03223
         }
     ]
 }

@@ -6,119 +6,119 @@
         {
             "id": 1,
             "paths": [],
-            "processing_time": 0.029136
+            "processing_time": 0.070477
         },
         {
             "id": 4,
             "paths": [],
-            "processing_time": 0.010608
+            "processing_time": 0.034224
         },
         {
             "id": 5,
             "paths": [],
-            "processing_time": 0.019516
+            "processing_time": 0.051635
         },
         {
             "distances": [
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 0,
                     "target": 1
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 2,
                     "target": 1
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 0,
                     "target": 3
                 }
             ],
             "id": 7,
-            "processing_time": 0.036971
+            "processing_time": 0.109069
         },
         {
             "id": 10,
             "paths": [],
-            "processing_time": 0.012385
+            "processing_time": 0.041798
         },
         {
             "distances": [
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 4,
                     "target": 0
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 3,
                     "target": 4
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 3,
                     "target": 1
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 4,
                     "target": 2
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 1,
                     "target": 3
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 3,
                     "target": 0
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 1,
                     "target": 3
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 2,
                     "target": 4
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 1,
                     "target": 3
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 4,
                     "target": 3
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 2,
                     "target": 1
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 0,
                     "target": 1
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 4,
                     "target": 1
                 },
                 {
-                    "approx_shortest_distance": 1e+18,
+                    "approx_shortest_distance": 0.0,
                     "source": 3,
                     "target": 0
                 }
             ],
             "id": 13,
-            "processing_time": 0.111796
+            "processing_time": 0.2632
         }
     ]
 }
