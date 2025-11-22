@@ -6,3 +6,5 @@
 using json = nlohmann::json;
 
 json process_query_phase3(Graph& g , json query);
+json phase3_ps(Graph& g, json query);
+json phase3_ps_our(Graph& g, json query);

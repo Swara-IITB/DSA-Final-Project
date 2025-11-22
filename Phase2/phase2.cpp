@@ -18,7 +18,7 @@ int main(int argc, char* argv[]) {
     // Read graph from first file
     std::string filename = argv[1];
     Graph g = loadGraph_parse(filename); // will throw runtime error if unable to open
-
+    std::vector<std::vector<double>> dl = preprocess(g);
     // Read queries from second file
     std::ifstream queries_file(argv[2]);
     if (!queries_file.is_open()) {

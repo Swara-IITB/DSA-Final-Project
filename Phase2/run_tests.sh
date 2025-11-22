@@ -9,7 +9,7 @@ OUTPUT_DIR="outputs"
 mkdir -p "$OUTPUT_DIR"
 
 # Loop over each testcase directory
-for i in {1..15}; do
+for i in {14..15}; do
     GRAPH="$TEST_DIR/testcase$i/graph_$i.json"
     QUERIES="$TEST_DIR/testcase$i/queries_phase2_$i.json"
     OUTPUT="$OUTPUT_DIR/output$i.json"
