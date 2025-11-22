@@ -8,13 +8,16 @@
             ],
             "route": [
                 3,
+                0,
                 1,
-                2
+                2,
+                1,
+                4
             ]
         }
     ],
     "metrics": {
-        "total_delivery_time_s": 1.0000000000000246e+15
+        "total_delivery_time_s": 135.05
     },
-    "processing_time": 0.230313
+    "processing_time": 0.440565
 }

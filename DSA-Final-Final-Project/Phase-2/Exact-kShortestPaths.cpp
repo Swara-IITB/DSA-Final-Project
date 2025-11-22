@@ -1,7 +1,6 @@
 #include "Exact-kShortestPaths.hpp"
 
 typedef long long ll;
-
 std::pair<std::vector<ll>, double>
 findShortestPath(const Graph &g,
                  ll startNode, ll endNode,

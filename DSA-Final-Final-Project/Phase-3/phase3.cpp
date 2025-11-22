@@ -7,6 +7,7 @@
 #include "graph3.hpp"
 #include "loadGraph3.hpp"
 #include "queryHandler3.hpp"
+#include "minimum_penalty_next_scheduler.hpp"
 
 using json = nlohmann::json;
 

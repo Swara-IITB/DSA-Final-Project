@@ -3,6 +3,21 @@
 #include <queue>
 #include <algorithm>
 #include <limits>
+#include <unordered_map>
+
+struct pair_hash {
+    template <class T1, class T2>
+    std::size_t operator() (const std::pair<T1,T2> &p) const {
+        auto h1 = std::hash<T1>{}(p.first);
+        auto h2 = std::hash<T2>{}(p.second);
+        // combine the hashes
+        return h1 ^ (h2 << 1); 
+    }
+};
+
+// usage
+std::unordered_map<std::pair<long long, long long>, std::vector<long long>, pair_hash> path_feasibility;
+
 
 double time(const Graph& g, std::vector<ll> path) {
     double ans = 0;
@@ -82,6 +97,7 @@ double route_cost(const Graph& g, const std::vector<ll>& stops) {
     double ans = 0.0;
     for (size_t i = 0; i + 1 < stops.size(); ++i) {
         auto p = shortest_path(g, stops[i], stops[i+1]);
+        if (p.empty()) return 1e15; 
         ans += time(g, p);
     }
     return ans;
@@ -98,16 +114,36 @@ void compute_best_and_second_best_delta(
     double oldC = route_cost(g, R);
     int k = R.size();
 
+   // Inside compute_best_and_second_best_delta
     for (int pi = 1; pi <= k; ++pi) {
         for (int di = pi + 1; di <= k + 1; ++di) {
             std::vector<ll> cand;
-            for (int i = 0; i <= k; ++i) {
+            cand.reserve(k + 2);
+            cand.push_back(R[0]); // always start with depot
+
+            for (int i = 1; i < k; ++i) {
                 if (i == pi) cand.push_back(P);
                 if (i == di) cand.push_back(D);
-                if (i < k) cand.push_back(R[i]);
+                cand.push_back(R[i]);
             }
+
+            // if insertion is at the end
+            if (pi >= k) cand.push_back(P);
+            if (di >= k) cand.push_back(D);
+            bool feasible = true;
+            for (size_t j = 0; j + 1 < cand.size(); ++j) {
+                std::vector<ll> path = shortest_path(g, cand[j], cand[j+1]);
+                path_feasibility[{cand[j], cand[j+1]}] = path;
+                if (path.empty()) {
+                    feasible = false;
+                    break;
+                }
+            }
+            if(!feasible) continue;
             double newC = route_cost(g, cand);
+            if (newC >= 1e15) continue;
             double delta = newC - oldC;
+
             if (delta < best) { second_best = best; best = delta; }
             else if (delta < second_best) second_best = delta;
         }
@@ -126,16 +162,34 @@ std::vector<ll> best_insertion(
     for (int pi = 1; pi <= k; ++pi) {
         for (int di = pi + 1; di <= k + 1; ++di) {
             std::vector<ll> cand;
-            for (int i = 0; i <= k; ++i) {
+            cand.push_back(R[0]); // always start with depot
+
+            for (int i = 1; i < k; ++i) {
                 if (i == pi) cand.push_back(P);
                 if (i == di) cand.push_back(D);
-                if (i < k) cand.push_back(R[i]);
+                cand.push_back(R[i]);
             }
+
+            // if insertion is at the end
+            if (pi >= k) cand.push_back(P);
+            if (di >= k) cand.push_back(D);
+            bool feasible = true;
+            for (size_t j = 0; j + 1 < cand.size(); ++j) {
+                std::vector<ll> path = shortest_path(g, cand[j], cand[j+1]);
+                path_feasibility[{cand[j], cand[j+1]}] = path;
+                if (path.empty()) {
+                    feasible = false;
+                    break;
+                }
+            }
+            if (!feasible) continue;
             double newC = route_cost(g, cand);
+            if (newC >= 1e15) continue;
             double delta = newC - oldC;
             if (delta < best) { best = delta; bestR = cand; }
         }
     }
+
 
     if (bestR.empty()) {
         std::vector<ll> tmp = R;
@@ -151,13 +205,26 @@ std::vector<ll> best_insertion(
 std::vector<ll> compress_consecutive(const std::vector<ll>& v) {
     if (v.empty()) return v;
     std::vector<ll> out;
-    out.reserve(v.size());
     out.push_back(v[0]);
-    for (size_t i = 1; i < v.size(); i++) {
-        if (v[i] != v[i - 1]) out.push_back(v[i]);
+
+    for (size_t i = 1; i < v.size(); ++i) {
+        if (v[i] == v[i-1]) continue;
+
+        auto it = path_feasibility.find(std::make_pair(v[i-1], v[i]));
+        if (it == path_feasibility.end() || it->second.empty()) {
+            // No path found → insert direct node (may be infeasible)
+            out.push_back(v[i]);
+        } else {
+            // insert all nodes except first (already in out)
+            for (size_t j = 1; j < it->second.size(); ++j)
+                out.push_back(it->second[j]);
+        }
     }
+
     return out;
 }
+
+
 
 Assignments build_route_regret(
     const Graph& g, ll depot, std::vector<Orders> orders, int driver_id)

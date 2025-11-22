@@ -1,35 +1,64 @@
 #include "DeliveryScheduling.hpp"
+#include <vector>
+#include <queue>
+#include <algorithm>
+#include <limits>
+#include <unordered_map>
 
-double time(const Graph& g, std::vector<ll>path){
-    double ans=0; Edge edge;
-    if(path.empty()){return 1e15;}
-    for(ll i=0; i+1<path.size();i++){
-        ll edgeid = g.adjMatrix[path[i]][path[i+1]];
-        try{edge = g.edges.at(edgeid);}
-        catch(const std::out_of_range& ex){ans+=1e15;}
-        ans+= edge.avg_t;
+struct pair_hash {
+    template <class T1, class T2>
+    std::size_t operator() (const std::pair<T1,T2> &p) const {
+        auto h1 = std::hash<T1>{}(p.first);
+        auto h2 = std::hash<T2>{}(p.second);
+        // combine the hashes
+        return h1 ^ (h2 << 1); 
+    }
+};
+
+// usage
+std::unordered_map<std::pair<long long, long long>, std::vector<long long>, pair_hash> path_feasibility;
+
+
+double time(const Graph& g, std::vector<ll> path) {
+    double ans = 0;
+    if (path.empty()) return 1e15;
+    for (size_t i = 0; i + 1 < path.size(); ++i) {
+        ll u = path[i], v = path[i+1];
+        if (u < 0 || v < 0 || u >= g.V || v >= g.V) { ans += 1e15; continue; }
+        ll edgeid = g.adjMatrix[u][v];
+        if (edgeid < 0) { ans += 1e15; continue; }
+        auto it = g.edges.find(edgeid);
+        if (it == g.edges.end()) { ans += 1e15; continue; }
+        ans += it->second.avg_t;
     }
     return ans;
 }
 
-double distance(const Graph& g, std::vector<ll>path){
-    double ans=0; Edge edge;
-    for(ll i=0; i+1<path.size();i++){
-        ll edgeid = g.adjMatrix[path[i]][path[i+1]];
-        try{edge = g.edges.at(edgeid);}
-        catch(const std::out_of_range& ex){ans+=1e15;}
-        ans+= edge.len;
+double distance(const Graph& g, std::vector<ll> path) {
+    double ans = 0;
+    if (path.empty()) return 1e15;
+    for (size_t i = 0; i + 1 < path.size(); ++i) {
+        ll u = path[i], v = path[i+1];
+        if (u < 0 || v < 0 || u >= g.V || v >= g.V) { ans += 1e15; continue; }
+        ll edgeid = g.adjMatrix[u][v];
+        if (edgeid < 0) { ans += 1e15; continue; }
+        auto it = g.edges.find(edgeid);
+        if (it == g.edges.end()) { ans += 1e15; continue; }
+        ans += it->second.len;
     }
-    if(path.empty()){return 1e15;}
     return ans;
 }
 
-std::vector<ll> shortest_path(const Graph& g, ll pickup, ll drop){
+std::vector<ll> shortest_path(const Graph& g, ll src, ll dst) {
     std::vector<ll> parent(g.V, -1);
     std::vector<double> dist(g.V, std::numeric_limits<double>::infinity());
-    std::priority_queue<std::pair<double,ll>, std::vector<std::pair<double,ll>>, std::greater<std::pair<double,ll>>> pq;
-     dist[pickup] = 0.0;
-    pq.push({0.0, pickup});
+    std::priority_queue<
+        std::pair<double,ll>,
+        std::vector<std::pair<double,ll>>,
+        std::greater<std::pair<double,ll>> > pq;
+
+    dist[src] = 0;
+    pq.push({0, src});
 
     while (!pq.empty()) {
         auto x = pq.top();
@@ -37,16 +66,15 @@ std::vector<ll> shortest_path(const Graph& g, ll pickup, ll drop){
         auto u = x.second;
         pq.pop();
         if (d > dist[u]) continue;
-        if (u == drop) break;
-        for (auto& pr : g.adjList[u]) {
+        if (u == dst) break;
+
+        for (auto &pr : g.adjList[u]) {
             ll v = pr.first;
             ll eid = pr.second;
             auto it = g.edges.find(eid);
             if (it == g.edges.end()) continue;
-
-            const Edge& e = it->second;
+            const Edge &e = it->second;
             if (e.disable) continue;
-
             double w = e.len;
             if (dist[u] + w < dist[v]) {
                 dist[v] = dist[u] + w;
@@ -55,284 +83,285 @@ std::vector<ll> shortest_path(const Graph& g, ll pickup, ll drop){
             }
         }
     }
-    std::vector<ll> path;
-    if (dist[drop] == std::numeric_limits<double>::infinity()) {
-        return path;
-    }
 
-    for (ll cur = drop; cur != -1; cur = parent[cur]) {
+    std::vector<ll> path;
+    if (dist[dst] == std::numeric_limits<double>::infinity()) return path;
+    for (ll cur = dst; cur != -1; cur = parent[cur])
         path.push_back(cur);
-    }
     std::reverse(path.begin(), path.end());
     return path;
 }
 
-int nearestCenter_byPath(const Graph& g, ll pickupNode,const std::vector<ll>& centers){
+double route_cost(const Graph& g, const std::vector<ll>& stops) {
+    if (stops.size() < 2) return 0.0;
+    double ans = 0.0;
+    for (size_t i = 0; i + 1 < stops.size(); ++i) {
+        auto p = shortest_path(g, stops[i], stops[i+1]);
+        if (p.empty()) return 1e15; 
+        ans += time(g, p);
+    }
+    return ans;
+}
+
+void compute_best_and_second_best_delta(
+    const Graph& g,
+    const std::vector<ll>& R,
+    ll P, ll D,
+    double &best, double &second_best)
+{
+    best = 1e15; 
+    second_best = 1e15;
+    double oldC = route_cost(g, R);
+    int k = R.size();
+
+   // Inside compute_best_and_second_best_delta
+    for (int pi = 1; pi <= k; ++pi) {
+        for (int di = pi + 1; di <= k + 1; ++di) {
+            std::vector<ll> cand;
+            cand.reserve(k + 2);
+            cand.push_back(R[0]); // always start with depot
+
+            for (int i = 1; i < k; ++i) {
+                if (i == pi) cand.push_back(P);
+                if (i == di) cand.push_back(D);
+                cand.push_back(R[i]);
+            }
+
+            // if insertion is at the end
+            if (pi >= k) cand.push_back(P);
+            if (di >= k) cand.push_back(D);
+            bool feasible = true;
+            for (size_t j = 0; j + 1 < cand.size(); ++j) {
+                std::vector<ll> path = shortest_path(g, cand[j], cand[j+1]);
+                path_feasibility[{cand[j], cand[j+1]}] = path;
+                if (path.empty()) {
+                    feasible = false;
+                    break;
+                }
+            }
+            if(!feasible) continue;
+            double newC = route_cost(g, cand);
+            if (newC >= 1e15) continue;
+            double delta = newC - oldC;
+
+            if (delta < best) { second_best = best; best = delta; }
+            else if (delta < second_best) second_best = delta;
+        }
+    }
+
+}
+
+std::vector<ll> best_insertion(
+    const Graph& g, const std::vector<ll>& R, ll P, ll D, double &deltaOut)
+{
+    double oldC = route_cost(g, R);
+    double best = 1e15;
+    std::vector<ll> bestR;
+    int k = R.size();
+
+    for (int pi = 1; pi <= k; ++pi) {
+        for (int di = pi + 1; di <= k + 1; ++di) {
+            std::vector<ll> cand;
+            cand.push_back(R[0]); // always start with depot
+
+            for (int i = 1; i < k; ++i) {
+                if (i == pi) cand.push_back(P);
+                if (i == di) cand.push_back(D);
+                cand.push_back(R[i]);
+            }
+
+            // if insertion is at the end
+            if (pi >= k) cand.push_back(P);
+            if (di >= k) cand.push_back(D);
+            bool feasible = true;
+            for (size_t j = 0; j + 1 < cand.size(); ++j) {
+                std::vector<ll> path = shortest_path(g, cand[j], cand[j+1]);
+                path_feasibility[{cand[j], cand[j+1]}] = path;
+                if (path.empty()) {
+                    feasible = false;
+                    break;
+                }
+            }
+            if (!feasible) continue;
+            double newC = route_cost(g, cand);
+            if (newC >= 1e15) continue;
+            double delta = newC - oldC;
+            if (delta < best) { best = delta; bestR = cand; }
+        }
+    }
+
+
+    if (bestR.empty()) {
+        std::vector<ll> tmp = R;
+        tmp.push_back(P);
+        tmp.push_back(D);
+        deltaOut = route_cost(g, tmp) - oldC;
+        return tmp;
+    }
+
+    deltaOut = best;
+    return bestR;
+}
+std::vector<ll> compress_consecutive(const std::vector<ll>& v) {
+    if (v.empty()) return v;
+    std::vector<ll> out;
+    out.push_back(v[0]);
+
+    for (size_t i = 1; i < v.size(); ++i) {
+        if (v[i] == v[i-1]) continue;
+
+        auto it = path_feasibility.find(std::make_pair(v[i-1], v[i]));
+        if (it == path_feasibility.end() || it->second.empty()) {
+            // No path found → insert direct node (may be infeasible)
+            out.push_back(v[i]);
+        } else {
+            // insert all nodes except first (already in out)
+            for (size_t j = 1; j < it->second.size(); ++j)
+                out.push_back(it->second[j]);
+        }
+    }
+
+    return out;
+}
+
+
+
+Assignments build_route_regret(
+    const Graph& g, ll depot, std::vector<Orders> orders, int driver_id)
+{
+    Assignments A;
+    A.driver_id = driver_id;
+    int m = orders.size();
+    std::vector<bool> used(m, false);
+    std::vector<ll> R = { depot };
+
+    for (int step = 0; step < m; ++step) {
+        double bestReg = -1e18;
+        int bestIdx = -1;
+
+        for (int i = 0; i < m; ++i) {
+            if (used[i]) continue;
+            ll P = orders[i].pickup;
+            ll D = orders[i].drop;
+
+            double b1, b2;
+            compute_best_and_second_best_delta(g, R, P, D, b1, b2);
+
+            if (b1 > 1e14) {
+                R.push_back(P);
+                R.push_back(D);
+                used[i] = true;
+                A.order_ids.push_back(orders[i].order_id);
+                goto next_step;
+            }
+
+            double regret = b2 - b1;
+            if (regret > bestReg ||
+                ((bestIdx == -1 || orders[i].order_id < orders[bestIdx].order_id))) {
+                bestReg = regret;
+                bestIdx = i;
+            }
+        }
+
+        if (bestIdx == -1) break;
+
+        {
+            double delta;
+            R = best_insertion(g, R,
+                orders[bestIdx].pickup,
+                orders[bestIdx].drop,
+                delta
+            );
+        }
+        used[bestIdx] = true;
+        A.order_ids.push_back(orders[bestIdx].order_id);
+
+        next_step:;
+    }
+
+    // FINAL FIX: Remove duplicate consecutive nodes
+    A.route = compress_consecutive(R);
+    return A;
+}
+
+
+int nearestCenter_byPath(const Graph& g, ll node, const std::vector<ll>& centers){
     double best = 1e15;
     int idx = 0;
-    for (int i = 0; i < centers.size(); i++) {
-        auto x = shortest_path(g, pickupNode, centers[i]);
-        double d = distance(g,x);
+    for (int i = 0; i < (int)centers.size(); i++) {
+        auto p = shortest_path(g, node, centers[i]);
+        double d = distance(g, p);
         if (d < best) { best = d; idx = i; }
     }
     return idx;
 }
 
-std::vector<std::vector<Orders>> cluster_by_shortest_path(const Graph &g, std::vector<Orders>& ordersList, int K){
-    std::vector<ll> centers(K);
-    for(int i=0; i<K;i++){
+std::vector<std::vector<Orders>> cluster_by_shortest_path(
+    const Graph &g, std::vector<Orders>& ordersList, int K)
+{
+    int N = ordersList.size();
+    int Ksafe = std::min(N, K);
+    std::vector<ll> centers(Ksafe);
+
+    for (int i = 0; i < Ksafe; i++)
         centers[i] = ordersList[i].pickup;
-    }
-    std::vector<int> assign(ordersList.size(),0);
-    for(int j=0;j<3;j++){
-        for(int i=0;i<ordersList.size();i++){
+
+    std::vector<int> assign(N,0);
+
+    for (int rep = 0; rep < 3; rep++) {
+        for (int i = 0; i < N; i++)
             assign[i] = nearestCenter_byPath(g, ordersList[i].pickup, centers);
-        }
-        for (int k = 0; k < K; k++){
+
+        for (int k = 0; k < Ksafe; k++) {
             std::vector<int> idxs;
-            for (int i = 0; i < ordersList.size(); i++){
+            for (int i = 0; i < N; i++)
                 if (assign[i] == k) idxs.push_back(i);
-            }
 
             if (idxs.empty()) continue;
+
             double bestSum = 1e15;
             ll bestNode = ordersList[idxs[0]].pickup;
 
-            for (int ii : idxs){
-                ll candidate = ordersList[ii].pickup;
+            for (int ii : idxs) {
+                ll cand = ordersList[ii].pickup;
                 double sum = 0;
                 for (int jj : idxs) {
-                    auto z = shortest_path(g, candidate, ordersList[jj].pickup);
-                    sum+= distance(g, z);
+                    auto p = shortest_path(g, cand, ordersList[jj].pickup);
+                    sum += distance(g, p);
                     if (sum > bestSum) break;
                 }
                 if (sum < bestSum) {
                     bestSum = sum;
-                    bestNode = candidate;
+                    bestNode = cand;
                 }
             }
             centers[k] = bestNode;
         }
     }
-    std::vector<std::vector<Orders>> buckets(K);
-    for (int i = 0; i < ordersList.size(); i++)
-        buckets[assign[i]].push_back(ordersList[i]);
 
+    std::vector<std::vector<Orders>> buckets(Ksafe);
+    for (int i = 0; i < N; i++)
+        buckets[assign[i]].push_back(ordersList[i]);
     return buckets;
 }
 
-std::vector<ll> best_insertion(const Graph& g,const std::vector<ll>& R,ll P, ll D,double &deltaOut){
-    if (R.size() == 1) {
-    std::vector<ll> tmp = R;
-    tmp.push_back(P);
-    tmp.push_back(D);
-    deltaOut = time(g,shortest_path(g, R[0], P)) +
-               time(g,shortest_path(g, P, D));
-    return tmp;
-}
-    double best = 1e15;
-    std::vector<ll> bestR;
-    double oldCost = time(g, R);
-
-    for (int pi = 1; pi <= R.size(); pi++) {
-        for (int di = pi+1; di <= R.size()+1; di++) {
-            std::vector<ll> tmp;
-            tmp.reserve(R.size()+2);
-
-            for (int i=0; i< R.size(); i++) {
-                if (i == pi) tmp.push_back(P);
-                if (i == di) tmp.push_back(D);
-                tmp.push_back(R[i]);
-            }
-            if (di == R.size()+1) tmp.push_back(D);
-            double newCost = time(g, tmp);
-            double delta = newCost - oldCost;
-            if (delta < best) {
-                best = delta;
-                bestR = tmp;
-            }
-        }
-    }
-    deltaOut = best;
-    if (bestR.empty()) {
-        std::vector<ll> tmp = R;
-        tmp.push_back(P);
-        tmp.push_back(D);
-        deltaOut = 0;
-        return tmp;
-    }
-    return bestR;
-}
-
-Assignments build_route_regret(const Graph& g,ll depot, std::vector<Orders> orders,int driver_id){
-    Assignments A;
-    A.driver_id = driver_id;
-
-    int m = orders.size();
-    std::vector<bool> used(m, false);
-    std::vector<ll> R = {depot};
-
-    for (int t = 0; t < m; t++) {
-        double bestReg = -1;
-        int pick = -1;
-        std::vector<ll> bestRoute;
-
-        for (int i = 0; i < m; i++) {
-            if (used[i]) continue;
-
-            ll P = orders[i].pickup;
-            ll D = orders[i].drop;
-
-            double b1 = 1e15, b2 = 1e15;
-            for (int pi = 1; pi <= R.size(); pi++) {
-                for (int di = pi+1; di <= R.size()+1; di++) {
-                    double delta;
-                    auto _ = best_insertion(g, R, P, D, delta);
-                    if (delta < b1) { b2 = b1; b1 = delta; }
-                    else if (delta < b2) b2 = delta;
-                }
-            }
-            if (b1 > 1e14) {
-                std::vector<ll> tmp = R;
-                tmp.push_back(P);
-                tmp.push_back(D);
-                used[i] = true;
-                A.order_ids.push_back(orders[i].order_id);
-                R = tmp;
-                goto continue_outer_loop;
-            }
-            double regret = b2 - b1;
-            if (regret > bestReg) {
-                bestReg = regret;
-                pick = i;
-            }
-        }
-        continue_outer_loop:;
-        double delta;
-        R = best_insertion(g, R, orders[pick].pickup, orders[pick].drop, delta);
-        used[pick] = true;
-        A.order_ids.push_back(orders[pick].order_id);
-    }
-
-    A.route = R;
-    return A;
-}
-
-std::vector<Assignments> clustering_method(const Graph& g,ll num_delivery_guys, ll depot_node, std::vector<Orders> ordersList){
-    // std::vector<std::vector<ll>> timeMatrix;
-    // timeMatrix.resize(g.V,std::vector<ll>(g.V,-1));
-    // for(auto o : ordersList){
-    //     auto x = o.pickup;
-    //     auto y = o.drop;
-    //     auto z = shortest_path(g,x,y);
-    //     auto w = shortest_path(g,depot_node,x);
-    //     timeMatrix[x][y] = time(g,z);
-    //     timeMatrix[depot_node][x] = time(g,w);
-    // }
-
+std::vector<Assignments> clustering_method(
+    const Graph& g, ll num_delivery_guys, ll depot_node,
+    std::vector<Orders> ordersList)
+{
     auto buckets = cluster_by_shortest_path(g, ordersList, num_delivery_guys);
     std::vector<Assignments> ans;
-    for (int d = 0; d < num_delivery_guys; d++) {
+
+    for (int d = 0; d < (int)buckets.size(); d++) {
         if (buckets[d].empty()) {
             Assignments A;
             A.driver_id = d;
             A.route = { depot_node };
-            A.order_ids = {};
             ans.push_back(A);
             continue;
         }
-
-        Assignments A =
-            build_route_regret(g, depot_node, buckets[d], d);
+        Assignments A = build_route_regret(g, depot_node, buckets[d], d);
         ans.push_back(A);
     }
     return ans;
 }
-
-
-
-
-
-/* this block has another idea(incomplete)..... using deterministic method when there are almost no clusters and using cluster method otherwise
-
-double pickup_disp(const Graph& g, std::vector<Orders>& ordersList){
-    if(ordersList.empty()) return 0;
-    double cx=0, cy=0;
-    for(auto o: ordersList){
-        cx+= g.nodes[o.pickup].lat;
-        cy+= g.nodes[o.pickup].lon;
-    }
-    cx/=ordersList.size();
-    cy/=ordersList.size();
-
-    double sum=0.0;
-    for(auto o: ordersList){
-        double dx = g.nodes[o.pickup].lat - cx;
-        double dy = g.nodes[o.pickup].lon - cy;
-        sum += dx*dx + dy*dy;
-    }
-    return sum/ordersList.size();
-}
-
-std::vector<Assignments> choose(const Graph& g,ll num_delivery_guys,  ll depot_node, std::vector<Orders> ordersList){
-    if(ordersList.size()==0 || num_delivery_guys<=1){
-        return deterministic_method(g, num_delivery_guys, depot_node, ordersList);
-    }
-
-    double disp = pickup_disp(g, ordersList);
-    if(disp < 0.00002){return deterministic_method(g, num_delivery_guys, depot_node, ordersList);}
-    else if(disp > 0.0003){return clustering_method(g, num_delivery_guys, depot_node, ordersList);}
-
-    return deterministic_method(g, num_delivery_guys, depot_node, ordersList);
-}
-
-double pathDeliveryTime(std::vector<std::vector<ll>>& timeMatrix, std::vector<ll> path, std::unordered_map<ll,ll>& dropMark){
-    double T = 0;
-    double sum = 0;
-    for (int i=0; i+1<path.size(); i++){
-        T += timeMatrix[path[i]][path[i+1]];
-        if (dropMark.count(path[i+1])) sum += T;
-    }
-    return sum;
-}
-
-std::vector<Assignments> deterministic_method(const Graph& g,ll num_delivery_guys, ll depot_node, std::vector<Orders> ordersList){
-    ////////////// We need to precompute these
-    std::vector<std::vector<ll>> timeMatrix;
-    timeMatrix.resize(g.V,std::vector<ll>(g.V,-1));
-    for(auto o : ordersList){
-        auto x = o.pickup;
-        auto y = o.drop;
-        auto z = shortest_path(g,x,y);
-        auto w = shortest_path(g,depot_node,x);
-        timeMatrix[x][y] = time(g,z);
-        timeMatrix[depot_node][x] = time(g,w);
-    }
-    ///////////////////////////////////////////
-
-    std::vector<std::pair<Orders, double>> arr;
-    for(auto o: ordersList){
-        double c = timeMatrix[depot_node][o.pickup] + timeMatrix[o.pickup][o.drop];
-        arr.push_back({o,c});
-    }
-
-    std::sort(arr.begin(), arr.end(),[](auto &a, auto &b){ return a.second < b.second;});
-    std::vector<std::vector<ll>> routes(num_delivery_guys);
-    std::vector<std::vector<ll>> driverOrders(num_delivery_guys);
-    std::vector<std::unordered_map<ll,ll>> dropMark(num_delivery_guys);
-
-    for (int d=0; d<num_delivery_guys; d++){
-        routes[d].push_back(depot_node);
-    }
-    for(auto x: arr){
-        auto o = x.first;
-        ll p = o.pickup; ll d = o.drop;
-
-        for (int d=0; d<num_delivery_guys; d++){
-            double oldSum = pathDeliveryTime(timeMatrix, routes[d], dropMark[d]);
-        }
-    }
-    /////////////////////////////NOT DONE YET////////////////////////////////////
-}
-
-*/
