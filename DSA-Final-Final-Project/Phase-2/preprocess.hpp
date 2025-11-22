@@ -1,3 +1,5 @@
+#ifndef PREPROCESS_HPP
+#define PREPROCESS_HPP
 
 #include "../Phase-1/graph.hpp"
 #include <vector>
@@ -18,3 +20,4 @@ std::vector<double> dijkstraFromSource(const Graph& g, ll src, bool useReverse=f
 ll farthestNodeFromMinDist(const std::vector<double>& minDist);
 double landmarkApproxDist(const LandmarkOracle& oracle, ll u, ll v);
 
+#endif
