@@ -101,23 +101,18 @@ void compute_best_and_second_best_delta(
     for (int pi = 1; pi <= k; ++pi) {
         for (int di = pi + 1; di <= k + 1; ++di) {
             std::vector<ll> cand;
-            cand.reserve(k+2);
-
-            for (int i = 0; i < k; ++i) {
+            for (int i = 0; i <= k; ++i) {
                 if (i == pi) cand.push_back(P);
-                cand.push_back(R[i]);
-                if (i+1 == di) cand.push_back(D);
+                if (i == di) cand.push_back(D);
+                if (i < k) cand.push_back(R[i]);
             }
-            if (pi == k) cand.push_back(P);
-            if (di == k+1) cand.push_back(D);
-
             double newC = route_cost(g, cand);
             double delta = newC - oldC;
-
             if (delta < best) { second_best = best; best = delta; }
             else if (delta < second_best) second_best = delta;
         }
     }
+
 }
 
 std::vector<ll> best_insertion(
@@ -131,23 +126,14 @@ std::vector<ll> best_insertion(
     for (int pi = 1; pi <= k; ++pi) {
         for (int di = pi + 1; di <= k + 1; ++di) {
             std::vector<ll> cand;
-            cand.reserve(k+2);
-
-            for (int i = 0; i < k; ++i) {
+            for (int i = 0; i <= k; ++i) {
                 if (i == pi) cand.push_back(P);
-                cand.push_back(R[i]);
-                if (i+1 == di) cand.push_back(D);
+                if (i == di) cand.push_back(D);
+                if (i < k) cand.push_back(R[i]);
             }
-            if (pi == k) cand.push_back(P);
-            if (di == k+1) cand.push_back(D);
-
             double newC = route_cost(g, cand);
             double delta = newC - oldC;
-
-            if (delta < best) {
-                best = delta;
-                bestR = cand;
-            }
+            if (delta < best) { best = delta; bestR = cand; }
         }
     }
 
