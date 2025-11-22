@@ -1,0 +1,38 @@
+{
+  "orders": [
+    {
+      "order_id": 1,
+      "pickup": 10,
+      "dropoff": 36
+    },
+    {
+      "order_id": 2,
+      "pickup": 2,
+      "dropoff": 44
+    },
+    {
+      "order_id": 3,
+      "pickup": 47,
+      "dropoff": 3
+    },
+    {
+      "order_id": 4,
+      "pickup": 63,
+      "dropoff": 14
+    },
+    {
+      "order_id": 5,
+      "pickup": 6,
+      "dropoff": 30
+    },
+    {
+      "order_id": 6,
+      "pickup": 54,
+      "dropoff": 23
+    }
+  ],
+  "fleet": {
+    "num_delivery_guys": 47,
+    "depot_node": 64
+  }
+}
