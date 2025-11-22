@@ -2,10 +2,11 @@
 
 double time(const Graph& g, std::vector<ll>path){
     double ans=0; Edge edge;
+    if(path.empty()){return 1e15;}
     for(ll i=0; i+1<path.size();i++){
         ll edgeid = g.adjMatrix[path[i]][path[i+1]];
         try{edge = g.edges.at(edgeid);}
-        catch(const std::out_of_range& ex){ans+=0;}
+        catch(const std::out_of_range& ex){ans+=1e15;}
         ans+= edge.avg_t;
     }
     return ans;
@@ -19,6 +20,7 @@ double distance(const Graph& g, std::vector<ll>path){
         catch(const std::out_of_range& ex){ans+=1e15;}
         ans+= edge.len;
     }
+    if(path.empty()){return 1e15;}
     return ans;
 }
 
@@ -120,6 +122,14 @@ std::vector<std::vector<Orders>> cluster_by_shortest_path(const Graph &g, std::v
 }
 
 std::vector<ll> best_insertion(const Graph& g,const std::vector<ll>& R,ll P, ll D,double &deltaOut){
+    if (R.size() == 1) {
+    std::vector<ll> tmp = R;
+    tmp.push_back(P);
+    tmp.push_back(D);
+    deltaOut = time(g,shortest_path(g, R[0], P)) +
+               time(g,shortest_path(g, P, D));
+    return tmp;
+}
     double best = 1e15;
     std::vector<ll> bestR;
     double oldCost = time(g, R);
@@ -144,6 +154,13 @@ std::vector<ll> best_insertion(const Graph& g,const std::vector<ll>& R,ll P, ll 
         }
     }
     deltaOut = best;
+    if (bestR.empty()) {
+        std::vector<ll> tmp = R;
+        tmp.push_back(P);
+        tmp.push_back(D);
+        deltaOut = 0;
+        return tmp;
+    }
     return bestR;
 }
 
@@ -175,14 +192,22 @@ Assignments build_route_regret(const Graph& g,ll depot, std::vector<Orders> orde
                     else if (delta < b2) b2 = delta;
                 }
             }
-
+            if (b1 > 1e14) {
+                std::vector<ll> tmp = R;
+                tmp.push_back(P);
+                tmp.push_back(D);
+                used[i] = true;
+                A.order_ids.push_back(orders[i].order_id);
+                R = tmp;
+                goto continue_outer_loop;
+            }
             double regret = b2 - b1;
             if (regret > bestReg) {
                 bestReg = regret;
                 pick = i;
             }
         }
-
+        continue_outer_loop:;
         double delta;
         R = best_insertion(g, R, orders[pick].pickup, orders[pick].drop, delta);
         used[pick] = true;
