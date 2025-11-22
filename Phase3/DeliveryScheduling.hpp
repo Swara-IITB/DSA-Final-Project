@@ -3,6 +3,8 @@
 #include<queue>
 #include<limits>
 #include<algorithm>
+#include <stdexcept>
+
 
 struct Assignments{
     ll driver_id;

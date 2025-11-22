@@ -4,8 +4,12 @@ double time(const Graph& g, std::vector<ll>path){
     double ans=0; Edge edge;
     for(ll i=0; i+1<path.size();i++){
         ll edgeid = g.adjMatrix[path[i]][path[i+1]];
-        try{edge = g.edges.at(edgeid);}
-        catch(const std::out_of_range& ex){ans+=0;}
+        try{
+            edge = g.edges.at(edgeid);
+        }
+        catch(const std::out_of_range& ex){
+            ans+=0;
+        }
         ans+= edge.avg_t;
     }
     return ans;
@@ -212,6 +216,7 @@ std::vector<Assignments> clustering_method(const Graph& g,ll num_delivery_guys, 
             Assignments A;
             A.driver_id = d;
             A.route = { depot_node };
+            A.order_ids = {};
             ans.push_back(A);
             continue;
         }

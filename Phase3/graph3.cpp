@@ -26,41 +26,41 @@ void Graph::add_edge(ll id,ll u, ll v,double len,double avg_t, bool oneway,std::
         adjList[vp].push_back({up,e.id}); // added adjList
     }
 }
-bool Graph::remove_edge(ll id){
-    if(edges.find(id)!=edges.end()){ 
-        if(edges.at(id).disable) return false;
-        edges.at(id).disable=true;
-        return true;
-    } else return false;
+// bool Graph::remove_edge(ll id){
+//     if(edges.find(id)!=edges.end()){ 
+//         if(edges.at(id).disable) return false;
+//         edges.at(id).disable=true;
+//         return true;
+//     } else return false;
 
-}
-bool Graph::modify_edge_len(ll id, double len){
-    if(edges.find(id)!=edges.end()){
-        edges.at(id).len = len; 
-        // edges.at(id).disable=false;
-        return true;
-    } else return false;
-}
-bool Graph::modify_edge_sp_profile(ll id, std::vector<double> sp){ 
-    if(edges.find(id)!=edges.end()){
-        edges.at(id).sp_profile = sp; 
-        // edges.at(id).disable=false;
-        return true;
-    } else return false;
-}
-bool Graph::modify_edge_avg_t(ll id, double t){
-    if(edges.find(id)!=edges.end()){
-        edges.at(id).avg_t = t;
-        // edges.at(id).disable=false;
-        return true;
-    } else return false;
-}
-bool Graph::modify_edge_roadtype(ll id, std::string road){
-    if(edges.find(id)!=edges.end()){
-        edges.at(id).roadtype = road;
-        // edges.at(id).disable=false; 
-        return true;
-    } else return false;
-}
+// }
+// bool Graph::modify_edge_len(ll id, double len){
+//     if(edges.find(id)!=edges.end()){
+//         edges.at(id).len = len; 
+//         // edges.at(id).disable=false;
+//         return true;
+//     } else return false;
+// }
+// bool Graph::modify_edge_sp_profile(ll id, std::vector<double> sp){ 
+//     if(edges.find(id)!=edges.end()){
+//         edges.at(id).sp_profile = sp; 
+//         // edges.at(id).disable=false;
+//         return true;
+//     } else return false;
+// }
+// bool Graph::modify_edge_avg_t(ll id, double t){
+//     if(edges.find(id)!=edges.end()){
+//         edges.at(id).avg_t = t;
+//         // edges.at(id).disable=false;
+//         return true;
+//     } else return false;
+// }
+// bool Graph::modify_edge_roadtype(ll id, std::string road){
+//     if(edges.find(id)!=edges.end()){
+//         edges.at(id).roadtype = road;
+//         // edges.at(id).disable=false; 
+//         return true;
+//     } else return false;
+// }
 
 // We are assuming oneway var never changes once given
