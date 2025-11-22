@@ -17,43 +17,16 @@ json process_query_phase3(Graph& g , json query){
 }
 
 json phase3_ps(Graph& g, json query){
-    if (!query.contains("fleet"))
-    throw std::runtime_error("Missing 'fleet' object");
-
-    auto& fleet = query["fleet"];
-
-    if (!fleet.contains("depot_node") || fleet["depot_node"].is_null())
-        throw std::runtime_error("fleet.depot_node is missing or null");
-
-    if (!fleet.contains("num_delievery_guys") || fleet["num_delievery_guys"].is_null())
-        throw std::runtime_error("fleet.num_delievery_guys is missing or null");
-
-    ll depot = fleet["depot_node"].get<ll>();
-    ll num_delievery_guys = fleet["num_delievery_guys"].get<ll>();
-
-    if (!query.contains("orders"))
-        throw std::runtime_error("Missing 'orders'");
-
+    ll depot = query["fleet"]["depot_node"].get<ll>();
+    ll num_delievery_guys = query["fleet"]["num_delivery_guys"].get<ll>();
     std::vector<Orders> order_list;
-
-    for (auto& order : query["orders"]) {
-        
-        if (!order.contains("order_id") || order["order_id"].is_null())
-            throw std::runtime_error("An order has null order_id");
-
-        if (!order.contains("pickup") || order["pickup"].is_null())
-            throw std::runtime_error("An order has null pickup");
-
-        if (!order.contains("dropoff") || order["dropoff"].is_null())
-            throw std::runtime_error("An order has null dropoff");
-
-        ll order_id = order["order_id"].get<ll>();
-        ll pickup = order["pickup"].get<ll>();
-        ll dropoff = order["dropoff"].get<ll>();
-
-        order_list.push_back({order_id,pickup,dropoff});
+    for( auto& order : query["orders"] ){
+    ll order_id = order["order_id"].get<ll>();
+    ll pickup = order["pickup"].get<ll>();
+    ll dropoff = order["dropoff"].get<ll>();
+    Orders Or = {order_id,pickup,dropoff};
+    order_list.push_back(Or);
     }
-
     std::vector<Assignments> ans = clustering_method(g,num_delievery_guys,depot,order_list);
     json result;
     std::vector<json> as;

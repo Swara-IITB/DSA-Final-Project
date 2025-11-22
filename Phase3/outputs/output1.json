@@ -1,4 +1,116 @@
 {
-    "error": "fleet.num_delievery_guys is missing or null",
-    "processing_time": 0.258342
+    "assignments": [
+        {
+            "driver_id": 0,
+            "order_ids": [
+                8,
+                1,
+                11,
+                17
+            ],
+            "route": [
+                10,
+                16,
+                6,
+                7,
+                17,
+                7,
+                16
+            ]
+        },
+        {
+            "driver_id": 1,
+            "order_ids": [
+                10,
+                14,
+                15,
+                18
+            ],
+            "route": [
+                10,
+                11,
+                14,
+                11,
+                9,
+                19,
+                3,
+                18,
+                19
+            ]
+        },
+        {
+            "driver_id": 2,
+            "order_ids": [
+                3,
+                2
+            ],
+            "route": [
+                10,
+                4,
+                9,
+                4,
+                13
+            ]
+        },
+        {
+            "driver_id": 3,
+            "order_ids": [
+                4
+            ],
+            "route": [
+                10,
+                12,
+                9
+            ]
+        },
+        {
+            "driver_id": 4,
+            "order_ids": [
+                5,
+                9,
+                19
+            ],
+            "route": [
+                10,
+                5,
+                3,
+                5,
+                11,
+                13
+            ]
+        },
+        {
+            "driver_id": 5,
+            "order_ids": [
+                6,
+                16,
+                13
+            ],
+            "route": [
+                10,
+                14,
+                13,
+                0,
+                13,
+                3
+            ]
+        },
+        {
+            "driver_id": 6,
+            "order_ids": [
+                12,
+                7
+            ],
+            "route": [
+                10,
+                8,
+                10,
+                14
+            ]
+        }
+    ],
+    "metrics": {
+        "total_delivery_time_s": 8e+15
+    },
+    "processing_time": 62.936474
 }
