@@ -1,5 +1,6 @@
 #include "graph3.hpp"
 #include "DeliveryScheduling.hpp"
+#include "minimum_penalty_next_scheduler.hpp"
 #include <nlohmann/json.hpp>
 #include <vector>
 #include <string>

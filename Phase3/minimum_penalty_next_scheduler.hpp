@@ -1,7 +1,7 @@
 #ifndef MPN_SCHEDULER_HPP
 #define MPN_SCHEDULER_HPP
 
-#include "graph.hpp"
+#include "graph3.hpp"
 #include <vector>
 #include <unordered_map>
 #include <queue>
